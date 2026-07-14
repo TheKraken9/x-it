@@ -1739,6 +1739,42 @@
 	background-color: var(--main-color);
 }
 
+.language-switcher{
+	position:relative;
+	display:flex;
+	align-items:center;
+	gap:4px;
+	margin-left:0;
+	padding:4px;
+	border-radius:999px;
+	background-color:rgba(var(--main-color-rgb),0.06);
+	border:1px solid rgba(var(--main-color-rgb),0.16);
+}
+
+.language-switcher_btn{
+	position:relative;
+	border:0;
+	height:32px;
+	min-width:38px;
+	padding:0 10px;
+	cursor:pointer;
+	font-size:13px;
+	font-weight:700;
+	line-height:32px;
+	border-radius:999px;
+	color:var(--black-color);
+	background-color:transparent;
+	font-family:"Outfit", serif;
+	transition:all 300ms ease;
+}
+
+.language-switcher_btn:hover,
+.language-switcher_btn.active{
+	color:var(--white-color);
+	background-color:var(--main-color);
+	background-image:linear-gradient(90deg,var(--main-color) 0%,var(--color-two) 100%);
+}
+
 /*** 
 
 ====================================================================
