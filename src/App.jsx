@@ -1,25 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
-import { Link, NavLink, Navigate, Route, Routes, useParams } from "react-router-dom";
-import {
-  ArrowRight,
-  BriefcaseBusiness,
-  CalendarDays,
-  CheckCircle2,
-  CircuitBoard,
-  Compass,
-  Globe2,
-  Languages,
-  Mail,
-  MapPin,
-  Menu,
-  MessageCircle,
-  Palette,
-  Phone,
-  ShieldCheck,
-  Smartphone,
-  UsersRound,
-  X
-} from "lucide-react";
+import { Link, NavLink, Navigate, Route, Routes, useLocation, useParams } from "react-router-dom";
 import { siteData as fallbackData } from "./data/content.js";
 import "./styles.css";
 
@@ -31,41 +11,35 @@ const ui = {
     projects: "Nos réalisations",
     blog: "Blog",
     contact: "Contact",
-    heroEyebrow: "Agence digitale OCTO",
-    heroTitle: "Une vision humaine du digital pour faire avancer vos projets.",
-    heroText: "Nous concevons des solutions web, mobile et logicielles qui simplifient les opérations, améliorent la performance et aident votre organisation à se concentrer sur son cœur de métier.",
-    startProject: "Parler d'un projet",
-    exploreServices: "Voir les services",
-    aboutEyebrow: "À propos",
-    aboutTitle: "OCTO conseille, construit et accompagne durablement.",
-    servicesEyebrow: "Expertises",
-    servicesTitle: "Tous les services OCTO sont reliés à leurs détails.",
-    serviceDetails: "Voir le détail",
-    offersEyebrow: "Offres",
+    start: "Démarrer",
+    work: "Travailler avec nous",
+    moreServices: "Voir nos services",
+    heroTitle: "Des solutions digitales pensées pour votre croissance",
+    heroSubtitle: "Libérez votre potentiel digital",
+    clients: "Nous accompagnons les entreprises dans leur transformation digitale",
+    aboutTitle: "Une agence portée par une vision humaine du digital",
+    processTitle: "Un accompagnement clair, de l'idée au déploiement",
+    processText: "Nous simplifions les processus, améliorons la performance et optimisons les ressources pour vous aider à vous concentrer sur votre cœur de métier.",
+    servicesTitle: "Nos services",
+    servicesEyebrow: "Ce que nous proposons",
     offersTitle: "Trois formats pour collaborer",
-    projectsEyebrow: "Réalisations",
-    projectsTitle: "Un portfolio prêt à évoluer avec vos références",
-    blogEyebrow: "Blog",
-    blogTitle: "Articles et contenus à mettre à jour régulièrement",
-    contactEyebrow: "Contact",
-    contactTitle: "Plusieurs moyens de nous contacter",
+    offersEyebrow: "Offres",
+    contactTitle: "Parlons de votre projet",
     contactText: "Notre équipe d'experts est à votre écoute pour vous conseiller et vous accompagner à chaque étape de votre projet.",
-    servicePageTitle: "Services OCTO",
-    servicePageText: "Chaque service mène vers une page dédiée avec son texte complet, ses objectifs et les offres associées.",
-    detailBack: "Tous les services",
-    included: "Ce que nous prenons en charge",
-    offersForService: "Offres associées",
-    projectsText: "Les réalisations personnelles peuvent être intégrées maintenant, puis remplacées ou complétées par les références de l'équipe au fur et à mesure.",
-    blogText: "Le blog est prévu pour évoluer avec de nouveaux articles, par exemple toutes les deux semaines.",
+    blogTitle: "Actualités & articles",
+    blogText: "Le blog peut évoluer avec de nouveaux articles, par exemple toutes les deux semaines.",
+    projectsTitle: "Portfolio & réalisations",
+    projectsText: "Les réalisations personnelles peuvent être intégrées maintenant, puis complétées par les références de l'équipe.",
+    detailBack: "Retour aux services",
+    offerings: "Ce que couvre ce service",
+    included: "Offres associées",
     formName: "Nom",
     formEmail: "Email",
     formMessage: "Message",
     formSubmit: "Envoyer",
     formSuccess: "Message envoyé. OCTO reviendra vers vous rapidement.",
     formError: "Impossible d'envoyer le message pour le moment.",
-    newsletter: "Abonnez-vous !",
-    emailPlaceholder: "Votre email",
-    footerText: "Nous privilégions la collaboration avec nos clients.",
+    footerText: "Nous privilégions la collaboration avec nos clients",
     rights: "Tous droits réservés."
   },
   en: {
@@ -75,65 +49,41 @@ const ui = {
     projects: "Our work",
     blog: "Blog",
     contact: "Contact",
-    heroEyebrow: "OCTO digital agency",
-    heroTitle: "A human vision of digital work to move your projects forward.",
-    heroText: "We design web, mobile and software solutions that simplify operations, improve performance and help your organization focus on its core business.",
-    startProject: "Discuss a project",
-    exploreServices: "Explore services",
-    aboutEyebrow: "About",
-    aboutTitle: "OCTO advises, builds and supports over the long term.",
-    servicesEyebrow: "Expertise",
-    servicesTitle: "Every OCTO service is linked to its own detail page.",
-    serviceDetails: "View details",
-    offersEyebrow: "Offers",
+    start: "Get started",
+    work: "Work with us",
+    moreServices: "View services",
+    heroTitle: "Digital solutions designed for your growth",
+    heroSubtitle: "Unlock digital potential",
+    clients: "We support companies through their digital transformation",
+    aboutTitle: "An agency driven by a human vision of digital work",
+    processTitle: "Clear support, from idea to deployment",
+    processText: "We simplify processes, improve performance and optimize resources so you can focus on your core business.",
+    servicesTitle: "Our services",
+    servicesEyebrow: "What we offer",
     offersTitle: "Three ways to collaborate",
-    projectsEyebrow: "Work",
-    projectsTitle: "A portfolio ready to evolve with your references",
-    blogEyebrow: "Blog",
-    blogTitle: "Articles and content to update regularly",
-    contactEyebrow: "Contact",
-    contactTitle: "Several ways to contact us",
+    offersEyebrow: "Offers",
+    contactTitle: "Let's talk about your project",
     contactText: "Our expert team is ready to listen, advise you and support you at every stage of your project.",
-    servicePageTitle: "OCTO services",
-    servicePageText: "Each service leads to a dedicated page with its full text, goals and associated offers.",
-    detailBack: "All services",
-    included: "What we cover",
-    offersForService: "Associated offers",
-    projectsText: "Personal work can be added now, then replaced or completed by team references over time.",
-    blogText: "The blog is designed to evolve with new articles, for example every two weeks.",
+    blogTitle: "News & articles",
+    blogText: "The blog can evolve with new articles, for example every two weeks.",
+    projectsTitle: "Portfolio & work",
+    projectsText: "Personal work can be added now, then completed with team references over time.",
+    detailBack: "Back to services",
+    offerings: "What this service covers",
+    included: "Associated offers",
     formName: "Name",
     formEmail: "Email",
     formMessage: "Message",
     formSubmit: "Send",
     formSuccess: "Message sent. OCTO will get back to you shortly.",
     formError: "Unable to send the message right now.",
-    newsletter: "Subscribe!",
-    emailPlaceholder: "Your email",
-    footerText: "We prioritize collaboration with our clients.",
+    footerText: "We prioritize collaboration with our clients",
     rights: "All rights reserved."
   }
 };
 
-const serviceIcons = {
-  Globe2,
-  Smartphone,
-  CircuitBoard,
-  Palette,
-  ShieldCheck,
-  UsersRound,
-  Compass
-};
-
-const contactIcons = {
-  call: Phone,
-  email: Mail,
-  whatsapp: MessageCircle,
-  visit: MapPin
-};
-
-function text(language, key) {
-  const dictionary = ui[language] || ui.fr;
-  return dictionary[key] || ui.fr[key] || key;
+function t(language, key) {
+  return (ui[language] || ui.fr)[key] || ui.fr[key] || key;
 }
 
 function localize(value, language) {
@@ -179,6 +129,7 @@ function useSiteData() {
 function App() {
   const [language, setLanguage] = useState(() => (localStorage.getItem("octo-language") === "en" ? "en" : "fr"));
   const data = useSiteData();
+  const location = useLocation();
 
   useEffect(() => {
     document.documentElement.lang = language;
@@ -186,76 +137,125 @@ function App() {
     localStorage.setItem("octo-language", language);
   }, [language]);
 
+  useEffect(() => {
+    if (location.hash) {
+      document.querySelector(location.hash)?.scrollIntoView({ behavior: "smooth" });
+    } else {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  }, [location.pathname, location.hash]);
+
   return (
-    <div className="app-shell">
+    <div className="page-wrapper octo-react-template">
       <Header data={data} language={language} setLanguage={setLanguage} />
-      <main>
-        <Routes>
-          <Route path="/" element={<Home data={data} language={language} />} />
-          <Route path="/index.html" element={<Navigate to="/" replace />} />
-          <Route path="/about.html" element={<Navigate to="/#about" replace />} />
-          <Route path="/services" element={<ServicesPage data={data} language={language} />} />
-          <Route path="/services.html" element={<Navigate to="/services" replace />} />
-          <Route path="/services/:slug" element={<ServiceDetailPage data={data} language={language} />} />
-          <Route path="/service-detail.html" element={<Navigate to="/services/developpement-web" replace />} />
-          <Route path="/projects" element={<ProjectsPage data={data} language={language} />} />
-          <Route path="/project.html" element={<Navigate to="/projects" replace />} />
-          <Route path="/project-detail.html" element={<Navigate to="/projects" replace />} />
-          <Route path="/blog" element={<BlogPage data={data} language={language} />} />
-          <Route path="/blog.html" element={<Navigate to="/blog" replace />} />
-          <Route path="/blog-detail.html" element={<Navigate to="/blog" replace />} />
-          <Route path="/contact" element={<ContactPage data={data} language={language} />} />
-          <Route path="/contact.html" element={<Navigate to="/contact" replace />} />
-          <Route path="*" element={<Navigate to="/" replace />} />
-        </Routes>
-      </main>
+      <Routes>
+        <Route path="/" element={<Home data={data} language={language} />} />
+        <Route path="/index.html" element={<Navigate to="/" replace />} />
+        <Route path="/about.html" element={<Navigate to="/#about" replace />} />
+        <Route path="/services" element={<ServicesPage data={data} language={language} />} />
+        <Route path="/services.html" element={<Navigate to="/services" replace />} />
+        <Route path="/services/:slug" element={<ServiceDetailPage data={data} language={language} />} />
+        <Route path="/service-detail.html" element={<Navigate to="/services/developpement-web" replace />} />
+        <Route path="/projects" element={<ProjectsPage data={data} language={language} />} />
+        <Route path="/project.html" element={<Navigate to="/projects" replace />} />
+        <Route path="/project-detail.html" element={<Navigate to="/projects" replace />} />
+        <Route path="/blog" element={<BlogPage data={data} language={language} />} />
+        <Route path="/blog.html" element={<Navigate to="/blog" replace />} />
+        <Route path="/blog-detail.html" element={<Navigate to="/blog" replace />} />
+        <Route path="/contact" element={<ContactPage data={data} language={language} />} />
+        <Route path="/contact.html" element={<Navigate to="/contact" replace />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
+      </Routes>
       <Footer data={data} language={language} />
     </div>
   );
 }
 
 function Header({ data, language, setLanguage }) {
-  const [open, setOpen] = useState(false);
-  const navItems = [
-    { to: "/", label: text(language, "home") },
-    { to: "/#about", label: text(language, "about") },
-    { to: "/services", label: text(language, "services") },
-    { to: "/projects", label: text(language, "projects") },
-    { to: "/blog", label: text(language, "blog") },
-    { to: "/contact", label: text(language, "contact") }
+  const nav = [
+    { to: "/", label: t(language, "home") },
+    { to: "/#about", label: t(language, "about") },
+    { to: "/services", label: t(language, "services") },
+    { to: "/projects", label: t(language, "projects") },
+    { to: "/blog", label: t(language, "blog") },
+    { to: "/contact", label: t(language, "contact") }
   ];
 
   return (
-    <header className="site-header">
-      <Link className="brand" to="/" onClick={() => setOpen(false)} aria-label="OCTO">
-        <span className="brand-mark">O</span>
-        <span>
-          <strong>{data.company.name}</strong>
-          <small>Digital agency</small>
-        </span>
-      </Link>
-
-      <nav className={open ? "nav-links open" : "nav-links"} aria-label="Navigation principale">
-        {navItems.map((item) => (
-          <NavLink key={item.to} to={item.to} onClick={() => setOpen(false)}>
-            {item.label}
-          </NavLink>
-        ))}
-      </nav>
-
-      <div className="header-actions">
-        <div className="language-toggle" aria-label="Choisir la langue">
-          <Languages size={16} aria-hidden="true" />
-          <button className={language === "fr" ? "active" : ""} type="button" onClick={() => setLanguage("fr")}>
-            FR
-          </button>
-          <button className={language === "en" ? "active" : ""} type="button" onClick={() => setLanguage("en")}>
-            EN
-          </button>
+    <header className="main-header header-style-one">
+      <div className="header-top">
+        <div className="auto-container">
+          <div className="inner-container">
+            <div className="d-flex justify-content-between align-items-center flex-wrap">
+              <ul className="header-top_list d-flex flex-wrap">
+                <li>
+                  <span className="icon fa-classic fa-solid fa-envelope fa-fw"></span>
+                  <a href={`mailto:${data.company.email}`}>{data.company.email}</a>
+                </li>
+                <li>
+                  <span className="icon fa-classic fa-solid fa-location-dot fa-fw"></span>
+                  {localize(data.company.address, language)}
+                </li>
+              </ul>
+              <div className="header-top_socials">
+                <div className="social-inner">
+                  {data.company.socialLinks.map((item) => (
+                    <a href={item.href} aria-label={item.label} key={item.label}>
+                      <i className={item.label === "LinkedIn" ? "fa-brands fa-linkedin-in" : "fa-brands fa-facebook-f"}></i>
+                    </a>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <button className="menu-button" type="button" onClick={() => setOpen((value) => !value)} aria-label="Menu">
-          {open ? <X size={22} /> : <Menu size={22} />}
-        </button>
+      </div>
+
+      <div className="header-lower">
+        <div className="auto-container">
+          <div className="inner-container">
+            <div className="d-flex justify-content-between align-items-center">
+              <div className="logo-box">
+                <div className="logo">
+                  <Link to="/" className="octo-logo-text">
+                    OCTO
+                  </Link>
+                </div>
+              </div>
+              <div className="nav-outer d-flex flex-wrap">
+                <nav className="main-menu navbar-expand-md">
+                  <div className="navbar-collapse collapse clearfix show">
+                    <ul className="navigation clearfix">
+                      {nav.map((item) => (
+                        <li key={item.to}>
+                          <NavLink to={item.to}>{item.label}</NavLink>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+              <div className="outer-box d-flex align-items-center flex-wrap">
+                <div className="language-switcher" role="group" aria-label="Choisir la langue">
+                  <button type="button" className={language === "fr" ? "language-switcher_btn active" : "language-switcher_btn"} onClick={() => setLanguage("fr")}>
+                    FR
+                  </button>
+                  <button type="button" className={language === "en" ? "language-switcher_btn active" : "language-switcher_btn"} onClick={() => setLanguage("en")}>
+                    EN
+                  </button>
+                </div>
+                <div className="main-header_button">
+                  <Link to="/contact" className="theme-btn btn-style-one">
+                    <span className="btn-wrap">
+                      <span className="text-one">{t(language, "start")}</span>
+                      <span className="text-two">{t(language, "start")}</span>
+                    </span>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
   );
@@ -264,315 +264,322 @@ function Header({ data, language, setLanguage }) {
 function Home({ data, language }) {
   return (
     <>
-      <section className="hero-section">
-        <div className="hero-content">
-          <p className="eyebrow">{text(language, "heroEyebrow")}</p>
-          <h1>{text(language, "heroTitle")}</h1>
-          <p>{text(language, "heroText")}</p>
-          <div className="hero-actions">
-            <Link className="primary-button" to="/contact">
-              {text(language, "startProject")}
-              <ArrowRight size={18} />
-            </Link>
-            <Link className="secondary-button" to="/services">
-              {text(language, "exploreServices")}
-            </Link>
-          </div>
-        </div>
-        <div className="hero-media">
-          <img src="/assets/images/resource/about-2.jpg" alt="OCTO digital workspace" />
-          <div className="hero-panel">
-            <strong>7</strong>
-            <span>{text(language, "services")}</span>
-          </div>
-        </div>
-      </section>
-
+      <Hero language={language} />
+      <Clients language={language} />
       <AboutSection data={data} language={language} />
-      <ServicesPreview data={data} language={language} />
+      <ProcessSection language={language} />
+      <OfferOne data={data} language={language} />
       <OffersSection data={data} language={language} />
-      <ProjectsPreview data={data} language={language} />
-      <BlogPreview data={data} language={language} />
-      <ContactPreview data={data} language={language} />
+      <ContactBand data={data} language={language} />
+      <ProjectsSection data={data} language={language} />
+      <BlogSection data={data} language={language} />
     </>
   );
 }
 
-function SectionHeading({ eyebrow, title, text: body }) {
+function Hero({ language }) {
   return (
-    <div className="section-heading">
-      <p className="eyebrow">{eyebrow}</p>
-      <h2>{title}</h2>
-      {body ? <p>{body}</p> : null}
+    <section className="slider-one">
+      <div className="main-slider swiper-container">
+        <div className="swiper-wrapper">
+          <div className="swiper-slide">
+            <div className="slider-one_image-layer" style={{ backgroundImage: "url(/assets/images/main-slider/1.jpg)" }}></div>
+            <div className="slider-one_pattern" style={{ backgroundImage: "url(/assets/images/main-slider/vector-1.png)" }}></div>
+            <div className="auto-container">
+              <div className="slider-one_content">
+                <div className="slider-one_content-inner">
+                  <div className="slider-one_title">{t(language, "heroSubtitle")}</div>
+                  <h1 className="slider-one_heading">
+                    {language === "fr" ? (
+                      <>
+                        Des solutions <span>digitales</span> pensées pour votre croissance
+                      </>
+                    ) : (
+                      <>
+                        Digital <span>solutions</span> designed for your growth
+                      </>
+                    )}
+                  </h1>
+                  <div className="slider-one_button d-flex align-items-center flex-wrap">
+                    <Link to="/contact" className="theme-btn btn-style-two">
+                      <span className="btn-wrap">
+                        <span className="text-one">{t(language, "work")}</span>
+                        <span className="text-two">{t(language, "work")}</span>
+                      </span>
+                    </Link>
+                  </div>
+                  <div className="slider-one_arrow" style={{ backgroundImage: "url(/assets/images/main-slider/vector-2.png)" }}></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="slider-one_socials">
+        <a href="https://facebook.com/">facebook</a>
+        <a href="https://linkedin.com/">linkedin</a>
+      </div>
+      <div className="slider-one_options">
+        <div className="button">
+          <Link className="service-btn" to="/services">
+            {t(language, "moreServices")} <i className="fa-arrow-right"></i>
+          </Link>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function Clients({ language }) {
+  return (
+    <section className="clients-one">
+      <div className="auto-container">
+        <div className="inner-container">
+          <div className="row clearfix">
+            <div className="column col-lg-3 col-md-12 col-sm-12">
+              <div className="clients-one_title">{t(language, "clients")}</div>
+            </div>
+            <div className="column col-lg-9 col-md-12 col-sm-12">
+              <div className="clients-one_slider swiper-container">
+                <div className="swiper-wrapper octo-client-row">
+                  {[1, 2, 3, 4].map((item) => (
+                    <div className="swiper-slide" key={item}>
+                      <div className="client-image">
+                        <img src={`/assets/images/clients/${item}.png`} alt="" />
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function SectionTitle({ eyebrow, title, centered = false }) {
+  return (
+    <div className={centered ? "sec-title centered" : "sec-title title-anim"}>
+      <div className="sec-title_title">
+        {centered ? dots() : null}
+        {eyebrow}
+        {dots()}
+      </div>
+      <h2 className="sec-title_heading">{title}</h2>
+    </div>
+  );
+}
+
+function dots() {
+  return (
+    <div className="sec-title_dots">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
   );
 }
 
 function AboutSection({ data, language }) {
   return (
-    <section className="content-section about-layout" id="about">
-      <div>
-        <SectionHeading eyebrow={text(language, "aboutEyebrow")} title={text(language, "aboutTitle")} />
-        <div className="paragraph-stack">
-          {data.intro[language].map((paragraph) => (
-            <p key={paragraph}>{paragraph}</p>
-          ))}
-        </div>
-      </div>
-      <div className="about-card">
-        <CheckCircle2 />
-        <h3>{language === "fr" ? "Une approche claire" : "A clear approach"}</h3>
-        <p>
-          {language === "fr"
-            ? "Conseil, conception, développement, suivi et amélioration continue sont reliés dans un même accompagnement."
-            : "Consulting, design, development, monitoring and continuous improvement are connected in one support flow."}
-        </p>
-      </div>
-    </section>
-  );
-}
-
-function ServicesPreview({ data, language }) {
-  return (
-    <section className="content-section" id="services">
-      <SectionHeading
-        eyebrow={text(language, "servicesEyebrow")}
-        title={text(language, "servicesTitle")}
-        text={text(language, "servicePageText")}
-      />
-      <div className="service-grid">
-        {data.services.map((service) => (
-          <ServiceCard key={service.slug} service={service} language={language} />
-        ))}
-      </div>
-    </section>
-  );
-}
-
-function ServicesPage({ data, language }) {
-  return (
-    <section className="page-section">
-      <SectionHeading
-        eyebrow={text(language, "servicesEyebrow")}
-        title={text(language, "servicePageTitle")}
-        text={text(language, "servicePageText")}
-      />
-      <div className="service-grid">
-        {data.services.map((service) => (
-          <ServiceCard key={service.slug} service={service} language={language} />
-        ))}
-      </div>
-    </section>
-  );
-}
-
-function ServiceCard({ service, language }) {
-  const Icon = serviceIcons[service.icon] || BriefcaseBusiness;
-
-  return (
-    <article className="service-card">
-      <Icon aria-hidden="true" />
-      <h3>{localize(service.title, language)}</h3>
-      <p>{localize(service.summary, language)}</p>
-      <Link to={`/services/${service.slug}`}>
-        {text(language, "serviceDetails")}
-        <ArrowRight size={16} />
-      </Link>
-    </article>
-  );
-}
-
-function ServiceDetailPage({ data, language }) {
-  const { slug } = useParams();
-  const service = useMemo(() => data.services.find((item) => item.slug === slug), [data.services, slug]);
-
-  if (!service) {
-    return <Navigate to="/services" replace />;
-  }
-
-  const Icon = serviceIcons[service.icon] || BriefcaseBusiness;
-
-  return (
-    <section className="page-section service-detail-page">
-      <Link className="back-link" to="/services">
-        {text(language, "detailBack")}
-      </Link>
-      <div className="detail-layout">
-        <aside className="detail-sidebar">
-          <h2>{text(language, "services")}</h2>
-          {data.services.map((item) => (
-            <NavLink key={item.slug} to={`/services/${item.slug}`}>
-              {localize(item.title, language)}
-            </NavLink>
-          ))}
-        </aside>
-
-        <article className="detail-content">
-          <div className="detail-hero">
-            <img src={service.image} alt={localize(service.title, language)} />
-            <div>
-              <Icon />
-              <p className="eyebrow">{text(language, "included")}</p>
-              <h1>{localize(service.title, language)}</h1>
-              <p>{localize(service.summary, language)}</p>
-            </div>
-          </div>
-
-          <div className="paragraph-stack detail-text">
-            {service.details[language].map((paragraph) => (
-              <p key={paragraph}>{paragraph}</p>
-            ))}
-          </div>
-
-          {service.extraTitle ? (
-            <div className="detail-extra">
-              <h2>{localize(service.extraTitle, language)}</h2>
-              <div className="paragraph-stack">
-                {service.extraDetails[language].map((paragraph) => (
+    <section className="about-one" id="about">
+      <div className="about-one_vector" style={{ backgroundImage: "url(/assets/images/background/pattern-3.png)" }}></div>
+      <div className="about-one_pattern-layer" style={{ backgroundImage: "url(/assets/images/background/pattern-1.png)" }}></div>
+      <div className="about-one_pattern-two" style={{ backgroundImage: "url(/assets/images/background/pattern-2.png)" }}></div>
+      <div className="auto-container">
+        <div className="inner-container">
+          <div className="row clearfix">
+            <div className="column col-lg-6 col-md-12 col-sm-12">
+              <SectionTitle eyebrow={t(language, "about")} title={t(language, "aboutTitle")} />
+              <div className="about-one_text octo-about-text">
+                {data.intro[language].map((paragraph) => (
                   <p key={paragraph}>{paragraph}</p>
                 ))}
               </div>
             </div>
-          ) : null}
-
-          <OffersSection data={data} language={language} compact />
-        </article>
-      </div>
-    </section>
-  );
-}
-
-function OffersSection({ data, language, compact = false }) {
-  return (
-    <section className={compact ? "offers-section compact" : "content-section offers-section"}>
-      <SectionHeading eyebrow={text(language, "offersEyebrow")} title={compact ? text(language, "offersForService") : text(language, "offersTitle")} />
-      <div className="offer-grid">
-        {data.offers.map((offer) => (
-          <article className="offer-card" key={offer.key}>
-            <span>{localize(offer.label, language)}</span>
-            <h3>{localize(offer.title, language)}</h3>
-            <strong>{localize(offer.price, language)}</strong>
-            <ul>
-              {offer.items[language].map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
-          </article>
-        ))}
-      </div>
-    </section>
-  );
-}
-
-function ProjectsPreview({ data, language }) {
-  return (
-    <section className="content-section">
-      <SectionHeading eyebrow={text(language, "projectsEyebrow")} title={text(language, "projectsTitle")} text={text(language, "projectsText")} />
-      <ProjectGrid projects={data.projects} language={language} />
-    </section>
-  );
-}
-
-function ProjectsPage({ data, language }) {
-  return (
-    <section className="page-section">
-      <SectionHeading eyebrow={text(language, "projectsEyebrow")} title={text(language, "projectsTitle")} text={text(language, "projectsText")} />
-      <ProjectGrid projects={data.projects} language={language} />
-    </section>
-  );
-}
-
-function ProjectGrid({ projects, language }) {
-  return (
-    <div className="project-grid">
-      {projects.map((project) => (
-        <article className="project-card" key={localize(project.title, language)}>
-          <img src={project.image} alt={localize(project.title, language)} />
-          <div>
-            <span>{localize(project.type, language)}</span>
-            <h3>{localize(project.title, language)}</h3>
-            <p>{localize(project.text, language)}</p>
+            <div className="column col-lg-6 col-md-12 col-sm-12">
+              <div className="about-one_image-outer">
+                <div className="about-one_image">
+                  <img src="/assets/images/resource/about-2.jpg" alt="OCTO" />
+                </div>
+              </div>
+              <div className="d-flex align-items-center flex-wrap">
+                <div className="about-one_image-two">
+                  <img src="/assets/images/resource/about-3.png" alt="" />
+                </div>
+                <div className="about-one_carousel">
+                  <div className="review-block_one">
+                    <div className="review-block_one-quote">
+                      <img src="/assets/images/icons/quote.svg" alt="" />
+                    </div>
+                    <div className="review-block_one-text">{t(language, "processText")}</div>
+                    <div className="review-block_one-info">
+                      <i>OCTO</i>
+                      <strong>{language === "fr" ? "Vision humaine" : "Human vision"}</strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </article>
-      ))}
-    </div>
-  );
-}
-
-function BlogPreview({ data, language }) {
-  return (
-    <section className="content-section">
-      <SectionHeading eyebrow={text(language, "blogEyebrow")} title={text(language, "blogTitle")} text={text(language, "blogText")} />
-      <BlogGrid posts={data.blogPosts} language={language} />
-    </section>
-  );
-}
-
-function BlogPage({ data, language }) {
-  return (
-    <section className="page-section">
-      <SectionHeading eyebrow={text(language, "blogEyebrow")} title={text(language, "blogTitle")} text={text(language, "blogText")} />
-      <BlogGrid posts={data.blogPosts} language={language} />
-    </section>
-  );
-}
-
-function BlogGrid({ posts, language }) {
-  return (
-    <div className="blog-grid">
-      {posts.map((post) => (
-        <article className="blog-card" key={post.slug}>
-          <img src={post.image} alt={localize(post.title, language)} />
-          <div>
-            <CalendarDays size={18} />
-            <span>{language === "fr" ? "Mise à jour éditoriale" : "Editorial update"}</span>
-          </div>
-          <h3>{localize(post.title, language)}</h3>
-          <p>{localize(post.excerpt, language)}</p>
-        </article>
-      ))}
-    </div>
-  );
-}
-
-function ContactPreview({ data, language }) {
-  return (
-    <section className="content-section contact-band" id="contact">
-      <SectionHeading eyebrow={text(language, "contactEyebrow")} title={text(language, "contactTitle")} text={text(language, "contactText")} />
-      <ContactOptions options={data.contactOptions} language={language} />
-      <Link className="primary-button" to="/contact">
-        {text(language, "startProject")}
-        <ArrowRight size={18} />
-      </Link>
-    </section>
-  );
-}
-
-function ContactPage({ data, language }) {
-  return (
-    <section className="page-section contact-page">
-      <div>
-        <SectionHeading eyebrow={text(language, "contactEyebrow")} title={text(language, "contactTitle")} text={text(language, "contactText")} />
-        <ContactOptions options={data.contactOptions} language={language} />
+        </div>
       </div>
-      <ContactForm language={language} />
     </section>
   );
 }
 
-function ContactOptions({ options, language }) {
+function ProcessSection({ language }) {
+  const steps = language === "fr"
+    ? ["Comprendre le projet", "Définir la stratégie", "Déployer la solution", "Suivre les résultats"]
+    : ["Understand the project", "Define the strategy", "Deploy the solution", "Track results"];
+
   return (
-    <div className="contact-options">
-      {options.map((option) => {
-        const Icon = contactIcons[option.key] || Phone;
-        return (
-          <a className="contact-option" href={option.href} key={option.key}>
-            <Icon aria-hidden="true" />
-            <strong>{localize(option.title, language)}</strong>
-            <span>{localize(option.text, language)}</span>
-          </a>
-        );
-      })}
+    <section className="process-one">
+      <div className="auto-container">
+        <SectionTitle eyebrow={language === "fr" ? "Notre approche" : "Our approach"} title={t(language, "processTitle")} />
+        <div className="process-one_inner-container">
+          {steps.map((step, index) => (
+            <div className="step-block_one" key={step}>
+              <div className="step-block_one-inner">
+                <div className="step-block_one-number">
+                  <span>{String(index + 1).padStart(2, "0")}</span>
+                  {language === "fr" ? "Étape" : "Step"}
+                </div>
+                <h4 className="step-block_one-heading">{step}</h4>
+                <div className="step-block_one-text">{t(language, "processText")}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function OfferOne({ data, language }) {
+  const [active, setActive] = useState(0);
+
+  return (
+    <section className="offer-one" id="services">
+      <div className="offer-one_color"></div>
+      <div className="offer-one_bg-color"></div>
+      <div className="auto-container">
+        <div className="row clearfix">
+          <div className="offer-one_image-column col-lg-6 col-md-12 col-sm-12">
+            <div className="offer-one_image-outer">
+              <div className="offer-one_images_outer">
+                {data.services.map((service, index) => (
+                  <div className={index === active ? "offer-one_image active" : "offer-one_image"} key={service.slug}>
+                    <img src={service.image} alt={localize(service.title, language)} />
+                  </div>
+                ))}
+              </div>
+              <div className="step-award_box">
+                <div className="step-award_count">7</div>
+                <span className="step-award_subtitle">{t(language, "services")}</span>
+              </div>
+            </div>
+          </div>
+          <div className="offer-one_content-column col-lg-6 col-md-12 col-sm-12">
+            <div className="offer-one_content-outer">
+              <SectionTitle eyebrow={t(language, "servicesEyebrow")} title={t(language, "servicesTitle")} />
+              <div className="offer-one_titles">
+                {data.services.map((service, index) => (
+                  <div
+                    className={index === active ? "offer-one_title active" : "offer-one_title"}
+                    key={service.slug}
+                    onMouseEnter={() => setActive(index)}
+                    onFocus={() => setActive(index)}
+                  >
+                    <div className="offer-one_icon-outer">
+                      <span className="offer-one_number">{index + 1}</span>
+                      <div className="offer-one_icon">
+                        <img src={`/assets/images/icons/offer-${(index % 7) + 1}.svg`} alt="" />
+                      </div>
+                    </div>
+                    <h3 className="offer-one_heading">
+                      <Link to={`/services/${service.slug}`}>{localize(service.title, language)}</Link>
+                    </h3>
+                    <div className="octo-service-summary">{localize(service.summary, language)}</div>
+                    <ul className="offer-one_tags">
+                      <li><a>Stratégie</a></li>
+                      <li><a>Design</a></li>
+                      <li><a>Développement</a></li>
+                      <li><a>Support</a></li>
+                    </ul>
+                    <Link className="offer-one_arrow" to={`/services/${service.slug}`}>
+                      <img src="/assets/images/icons/offer_arrow.svg" alt="" />
+                    </Link>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function OffersSection({ data, language }) {
+  return (
+    <section className="octo-offers" id="offers">
+      <div className="auto-container">
+        <SectionTitle eyebrow={t(language, "offersEyebrow")} title={t(language, "offersTitle")} centered />
+        <div className="row clearfix">
+          {data.offers.map((offer) => (
+            <div className="col-lg-4 col-md-6 col-sm-12" key={offer.key}>
+              <div className={offer.key === "regie" ? "octo-offer-card featured" : "octo-offer-card"}>
+                <span className="octo-offer-card_label">{localize(offer.label, language)}</span>
+                <h3>{localize(offer.title, language)}</h3>
+                <div className="octo-offer-card_price">{localize(offer.price, language)}</div>
+                <ul>
+                  {offer.items[language].map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function ContactBand({ data, language }) {
+  return (
+    <section className="testimonial-one" id="contact">
+      <div className="testimonial-one_pattern-layer" style={{ backgroundImage: "url(/assets/images/background/pattern-6.png)" }}></div>
+      <div className="auto-container">
+        <div className="row clearfix">
+          <div className="testimonial-one_content-column col-lg-5 col-md-12 col-sm-12">
+            <SectionTitle eyebrow={t(language, "contact")} title={t(language, "contactTitle")} />
+            <div className="sec-title_text">{t(language, "contactText")}</div>
+            <ContactOptions data={data} language={language} />
+          </div>
+          <div className="testimonial-one_carousel-column col-lg-7 col-md-12 col-sm-12">
+            <ContactForm language={language} />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function ContactOptions({ data, language }) {
+  return (
+    <div className="octo-contact-methods">
+      <h3>{language === "fr" ? "Plusieurs moyens de nous contacter" : "Several ways to contact us"}</h3>
+      {data.contactOptions.map((option) => (
+        <a className="octo-contact-method" href={option.href} key={option.key}>
+          <span className={option.key === "whatsapp" ? "fa-brands fa-whatsapp" : option.key === "email" ? "fa-solid fa-envelope" : option.key === "visit" ? "fa-solid fa-location-dot" : "fa-solid fa-phone"}></span>
+          <strong>{localize(option.title, language)}</strong>
+          <em>{localize(option.text, language)}</em>
+        </a>
+      ))}
     </div>
   );
 }
@@ -582,8 +589,7 @@ function ContactForm({ language }) {
 
   async function handleSubmit(event) {
     event.preventDefault();
-    const formData = new FormData(event.currentTarget);
-    const payload = Object.fromEntries(formData.entries());
+    const payload = Object.fromEntries(new FormData(event.currentTarget).entries());
 
     try {
       const response = await fetch("/api/contact", {
@@ -597,63 +603,281 @@ function ContactForm({ language }) {
       }
 
       event.currentTarget.reset();
-      setStatus(text(language, "formSuccess"));
+      setStatus(t(language, "formSuccess"));
     } catch {
-      setStatus(text(language, "formError"));
+      setStatus(t(language, "formError"));
     }
   }
 
   return (
-    <form className="contact-form" onSubmit={handleSubmit}>
-      <label>
-        {text(language, "formName")}
-        <input name="name" type="text" required />
-      </label>
-      <label>
-        {text(language, "formEmail")}
-        <input name="email" type="email" required />
-      </label>
-      <label>
-        {text(language, "formMessage")}
-        <textarea name="message" rows="6" required />
-      </label>
-      <button className="primary-button" type="submit">
-        {text(language, "formSubmit")}
-        <ArrowRight size={18} />
-      </button>
-      {status ? <p className="form-status">{status}</p> : null}
-    </form>
+    <div className="contact-one_form-outer octo-contact-form">
+      <div className="contact-one_form-title-box">
+        <h3 className="contact-one_form-title">{t(language, "contact")}</h3>
+        <div className="contact-one_form-text">{t(language, "contactText")}</div>
+      </div>
+      <form onSubmit={handleSubmit}>
+        <div className="form-group">
+          <input type="text" name="name" placeholder={t(language, "formName")} required />
+        </div>
+        <div className="form-group">
+          <input type="email" name="email" placeholder={t(language, "formEmail")} required />
+        </div>
+        <div className="form-group">
+          <textarea name="message" placeholder={t(language, "formMessage")} required></textarea>
+        </div>
+        <button className="theme-btn btn-style-one" type="submit">
+          <span className="btn-wrap">
+            <span className="text-one">{t(language, "formSubmit")}</span>
+            <span className="text-two">{t(language, "formSubmit")}</span>
+          </span>
+        </button>
+        {status ? <div className="octo-form-status">{status}</div> : null}
+      </form>
+    </div>
+  );
+}
+
+function ProjectsSection({ data, language }) {
+  return (
+    <section className="project-one">
+      <div className="auto-container">
+        <SectionTitle eyebrow={t(language, "projects")} title={t(language, "projectsTitle")} centered />
+        <div className="row clearfix">
+          {data.projects.map((project) => (
+            <div className="gallery-block-one col-lg-4 col-md-6 col-sm-12" key={localize(project.title, language)}>
+              <div className="gallery-block-one_inner">
+                <div className="gallery-block_one-image">
+                  <img src={project.image} alt={localize(project.title, language)} />
+                  <div className="gallery-block-one_overlay">
+                    <div className="gallery-block-one_title">{localize(project.title, language)}</div>
+                    <div className="gallery-block-one_designation">{localize(project.type, language)}</div>
+                  </div>
+                </div>
+                <div className="octo-card-text">{localize(project.text, language)}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function BlogSection({ data, language }) {
+  return (
+    <section className="news-one" id="blog">
+      <div className="auto-container">
+        <div className="sec-title d-flex justify-content-between align-items-center flex-wrap">
+          <div className="left-box title-anim">
+            <div className="sec-title_title">
+              {t(language, "blog")}
+              {dots()}
+            </div>
+            <h2 className="sec-title_heading">{t(language, "blogTitle")}</h2>
+          </div>
+          <div className="right-box title-anim">
+            <div className="news-one_button">
+              <Link to="/blog" className="theme-btn btn-style-three">
+                <span className="btn-wrap">
+                  <span className="text-one">{t(language, "start")}</span>
+                  <span className="text-two">{t(language, "start")}</span>
+                </span>
+              </Link>
+            </div>
+          </div>
+        </div>
+        <div className="row clearfix">
+          {data.blogPosts.map((post, index) => (
+            <div className="news-block_one col-lg-4 col-md-6 col-sm-12" key={post.slug}>
+              <div className="news-block_one-inner">
+                <div className="news-block_one-date_outer">
+                  <div className="news-block_one-date">{String(index + 1).padStart(2, "0")}/<span>2026</span></div>
+                </div>
+                <div className="news-block_one-image">
+                  <img src={post.image} alt={localize(post.title, language)} />
+                </div>
+                <div className="news-block_one-content">
+                  <h3 className="news-block_one-title">{localize(post.title, language)}</h3>
+                  <div className="octo-card-text">{localize(post.excerpt, language)}</div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function ServicesPage({ data, language }) {
+  return (
+    <>
+      <PageTitle title={t(language, "services")} />
+      <OfferOne data={data} language={language} />
+      <OffersSection data={data} language={language} />
+    </>
+  );
+}
+
+function ServiceDetailPage({ data, language }) {
+  const { slug } = useParams();
+  const service = useMemo(() => data.services.find((item) => item.slug === slug), [data.services, slug]);
+
+  if (!service) {
+    return <Navigate to="/services" replace />;
+  }
+
+  return (
+    <>
+      <PageTitle title={localize(service.title, language)} />
+      <section className="services-detail">
+        <div className="auto-container">
+          <Link className="octo-back-link" to="/services">{t(language, "detailBack")}</Link>
+          <div className="row clearfix">
+            <div className="sidebar-side col-lg-4 col-md-12 col-sm-12">
+              <aside className="sidebar">
+                <div className="service-widget">
+                  <ul className="service-list">
+                    {data.services.map((item) => (
+                      <li key={item.slug} className={item.slug === service.slug ? "active" : ""}>
+                        <Link to={`/services/${item.slug}`}>{localize(item.title, language)}</Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </aside>
+            </div>
+            <div className="content-side col-lg-8 col-md-12 col-sm-12">
+              <div className="service-detail">
+                <div className="service-detail_inner">
+                  <div className="service-detail_image">
+                    <img src={service.image} alt={localize(service.title, language)} />
+                    <div className="service-detail_tag">{t(language, "services")}</div>
+                  </div>
+                  <h2 className="service-detail_title">{localize(service.title, language)}</h2>
+                  <div className="service-detail_text">
+                    {service.details[language].map((paragraph) => (
+                      <p key={paragraph}>{paragraph}</p>
+                    ))}
+                  </div>
+                  {service.extraTitle ? (
+                    <>
+                      <h3 className="service-detail_subtitle">{localize(service.extraTitle, language)}</h3>
+                      <ul className="service-detail_list">
+                        {service.extraDetails[language].map((item) => (
+                          <li key={item}>{item}</li>
+                        ))}
+                      </ul>
+                    </>
+                  ) : null}
+                  <h3 className="service-detail_subtitle">{t(language, "included")}</h3>
+                  <ul className="service-detail_list-two">
+                    {data.offers.map((offer) => (
+                      <li key={offer.key}>{localize(offer.label, language)} - {localize(offer.price, language)}</li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
+
+function ProjectsPage({ data, language }) {
+  return (
+    <>
+      <PageTitle title={t(language, "projects")} />
+      <ProjectsSection data={data} language={language} />
+    </>
+  );
+}
+
+function BlogPage({ data, language }) {
+  return (
+    <>
+      <PageTitle title={t(language, "blog")} />
+      <BlogSection data={data} language={language} />
+    </>
+  );
+}
+
+function ContactPage({ data, language }) {
+  return (
+    <>
+      <PageTitle title={t(language, "contact")} />
+      <section className="contact-one">
+        <div className="auto-container">
+          <div className="row clearfix">
+            <div className="contact-one_form-column col-lg-5 col-md-12 col-sm-12">
+              <ContactForm language={language} />
+            </div>
+            <div className="contact-one_info-column col-lg-7 col-md-12 col-sm-12">
+              <SectionTitle eyebrow={t(language, "contact")} title={t(language, "contactTitle")} />
+              <ContactOptions data={data} language={language} />
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
+
+function PageTitle({ title }) {
+  return (
+    <section className="page-title">
+      <div className="page-title_big-title">{title}</div>
+      <div className="page-title_bg-image" style={{ backgroundImage: "url(/assets/images/background/3.jpg)" }}></div>
+      <div className="page-title_shape-one" style={{ backgroundImage: "url(/assets/images/background/page-title-1.png)" }}></div>
+      <div className="page-title_shape-two" style={{ backgroundImage: "url(/assets/images/background/page-title-2.png)" }}></div>
+      <div className="auto-container">
+        <h1>{title}</h1>
+        <ul className="bread-crumb clearfix">
+          <li><Link to="/">OCTO</Link></li>
+          <li>{title}</li>
+        </ul>
+      </div>
+    </section>
   );
 }
 
 function Footer({ data, language }) {
   return (
-    <footer className="site-footer">
-      <div>
-        <Link className="brand" to="/" aria-label="OCTO">
-          <span className="brand-mark">O</span>
-          <span>
-            <strong>{data.company.name}</strong>
-            <small>Digital agency</small>
-          </span>
-        </Link>
-        <p>{text(language, "footerText")}</p>
+    <footer className="main-footer" id="footer">
+      <div className="main-footer_bg-color"></div>
+      <div className="main-footer_vector" style={{ backgroundImage: "url(/assets/images/icons/vector-3.png)" }}></div>
+      <div className="auto-container">
+        <div className="inner-container">
+          <div className="footer-logo">
+            <Link to="/" className="octo-footer-logo">OCTO</Link>
+          </div>
+          <div className="d-flex justify-content-between align-items-center flex-wrap">
+            <div className="footer-text">{t(language, "footerText")}</div>
+            <div className="footer-social_box">
+              {data.company.socialLinks.map((item) => (
+                <a href={item.href} aria-label={item.label} key={item.label}>
+                  <i className={item.label === "LinkedIn" ? "fa-brands fa-linkedin-in" : "fa-brands fa-facebook-f"}></i>
+                </a>
+              ))}
+            </div>
+          </div>
+          <div className="footer-discuss">
+            <span className="up-down_animation">{language === "fr" ? "discutons !" : "let's discuss!"}</span>
+          </div>
+          <ul className="footer-contact_list d-flex justify-content-end">
+            <li><a href={`mailto:${data.company.email}`}>{data.company.email}</a></li>
+            <li><a href="tel:+33000000000">{data.company.phoneLabel}</a></li>
+          </ul>
+          <div className="footer-type_title variable-text"></div>
+        </div>
       </div>
-      <div className="footer-contact">
-        <a href={`mailto:${data.company.email}`}>
-          <Mail size={16} />
-          {data.company.email}
-        </a>
-        <span>
-          <Phone size={16} />
-          {data.company.phoneLabel}
-        </span>
-        <span>
-          <MapPin size={16} />
-          {localize(data.company.address, language)}
-        </span>
+      <div className="footer-bottom">
+        <div className="auto-container">
+          <div className="main-footer_copyright">OCTO © 2026. {t(language, "rights")}</div>
+        </div>
       </div>
-      <p className="copyright">OCTO © 2026. {text(language, "rights")}</p>
     </footer>
   );
 }
