@@ -535,6 +535,14 @@
 	margin-top:40px;
 }
 
+.about-one_text p{
+	margin-bottom:18px;
+}
+
+.about-one_text p:last-child{
+	margin-bottom:0px;
+}
+
 .about-one_text span{
 	position:relative;
 	font-weight:600;
@@ -1306,6 +1314,16 @@
 	color: var(--black-color);
 }
 
+.octo-service-summary{
+	position:relative;
+	max-width:560px;
+	margin-top:10px;
+	padding-right:95px;
+	font-size:15px;
+	line-height:26px;
+	color:#666666;
+}
+
 .offer-one_title.active .offer-one_arrow,
 .offer-one_title:hover .offer-one_arrow{
 	color: var(--white-color);
@@ -1398,6 +1416,90 @@
 	padding-left:70px;
 }
 
+/***
+
+====================================================================
+	OCTO Offers
+====================================================================
+
+***/
+
+.octo-offers{
+	position:relative;
+	padding:110px 0px 90px;
+	background:#f7f8ff;
+}
+
+.octo-offer-card{
+	position:relative;
+	height:100%;
+	margin-bottom:30px;
+	padding:34px 32px;
+	border-radius:8px;
+	background:var(--white-color);
+	border:1px solid rgba(0, 13, 255, 0.12);
+	box-shadow:0px 18px 44px rgba(0, 0, 0, 0.06);
+	transition:all 500ms ease;
+}
+
+.octo-offer-card.featured,
+.octo-offer-card:hover{
+	transform:translateY(-6px);
+	border-color:rgba(193, 21, 236, 0.25);
+	box-shadow:0px 24px 54px rgba(0, 13, 255, 0.12);
+}
+
+.octo-offer-card_label{
+	display:inline-block;
+	margin-bottom:18px;
+	padding:7px 14px;
+	border-radius:8px;
+	font-size:12px;
+	font-weight:800;
+	letter-spacing:0px;
+	color:var(--white-color);
+	text-transform:uppercase;
+	background-image:linear-gradient(180deg, rgba(0, 13, 255, 1) 0%, rgba(193, 21, 236, 1) 100%);
+}
+
+.octo-offer-card h3{
+	font-size:24px;
+	line-height:32px;
+	margin-bottom:18px;
+	color:var(--black-color);
+}
+
+.octo-offer-card_price{
+	margin-bottom:24px;
+	font-size:30px;
+	line-height:38px;
+	font-weight:800;
+	color:var(--main-color);
+}
+
+.octo-offer-card ul{
+	position:relative;
+}
+
+.octo-offer-card li{
+	position:relative;
+	padding-left:28px;
+	margin-bottom:13px;
+	font-size:15px;
+	line-height:24px;
+	color:#555555;
+}
+
+.octo-offer-card li:before{
+	position:absolute;
+	content:'\f058';
+	left:0px;
+	top:1px;
+	font-weight:800;
+	color:rgba(193, 21, 236, 1);
+	font-family:'Font Awesome 6 Free';
+}
+
 /*** 
 
 ====================================================================
@@ -1445,6 +1547,63 @@
 
 .testimonial-one_content-column{
 	position:relative;
+}
+
+.octo-contact-methods{
+	position:relative;
+	display:grid;
+	gap:12px;
+	margin:26px 0px 28px;
+}
+
+.octo-contact-methods h3{
+	margin-bottom:4px;
+	font-size:22px;
+	line-height:30px;
+	color:var(--black-color);
+}
+
+.octo-contact-method{
+	position:relative;
+	display:grid;
+	grid-template-columns:44px 1fr;
+	column-gap:14px;
+	padding:15px;
+	border-radius:8px;
+	background:var(--white-color);
+	border:1px solid rgba(0, 13, 255, 0.12);
+	color:var(--black-color);
+}
+
+.octo-contact-method:hover{
+	border-color:rgba(193, 21, 236, 0.30);
+	box-shadow:0px 14px 34px rgba(0, 13, 255, 0.10);
+}
+
+.octo-contact-method span{
+	grid-row:1 / span 2;
+	width:44px;
+	height:44px;
+	line-height:44px;
+	text-align:center;
+	border-radius:8px;
+	color:var(--white-color);
+	background-image:linear-gradient(180deg, rgba(0, 13, 255, 1) 0%, rgba(193, 21, 236, 1) 100%);
+}
+
+.octo-contact-method strong{
+	display:block;
+	font-size:16px;
+	line-height:23px;
+	color:var(--black-color);
+}
+
+.octo-contact-method em{
+	display:block;
+	font-style:normal;
+	font-size:14px;
+	line-height:23px;
+	color:#666666;
 }
 
 .testimonial-one_carousel-column{

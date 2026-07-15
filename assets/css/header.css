@@ -2276,6 +2276,90 @@
 	color: var(--color-five);
 }
 
+.about-sidebar .octo-sidebar-intro p{
+	margin-bottom:14px;
+}
+
+.about-sidebar .octo-sidebar-intro p:last-child{
+	margin-bottom:0px;
+}
+
+.octo-sidebar-details{
+	position:relative;
+	margin:8px 0px 28px;
+	padding:22px;
+	border-radius:8px;
+	background:#f8f8ff;
+	border:1px solid rgba(0, 13, 255, 0.12);
+}
+
+.octo-sidebar-details div{
+	position:relative;
+	display:flex;
+	gap:12px;
+	align-items:flex-start;
+	justify-content:space-between;
+	margin-bottom:14px;
+}
+
+.octo-sidebar-details div:last-child{
+	margin-bottom:0px;
+}
+
+.octo-sidebar-details strong{
+	font-size:13px;
+	font-weight:800;
+	color:var(--black-color);
+	text-transform:uppercase;
+}
+
+.octo-sidebar-details span,
+.octo-sidebar-details a{
+	font-size:14px;
+	font-weight:600;
+	text-align:right;
+	color:var(--color-five);
+}
+
+.octo-sidebar-newsletter{
+	position:relative;
+	margin-bottom:30px;
+}
+
+.octo-sidebar-newsletter label{
+	display:block;
+	font-size:16px;
+	font-weight:800;
+	margin-bottom:10px;
+	color:var(--black-color);
+}
+
+.octo-newsletter-control{
+	position:relative;
+	display:flex;
+	overflow:hidden;
+	border-radius:8px;
+	border:1px solid rgba(0, 13, 255, 0.16);
+	background:var(--white-color);
+}
+
+.octo-newsletter-control input{
+	width:100%;
+	height:48px;
+	border:0px;
+	padding:0px 15px;
+	color:var(--black-color);
+}
+
+.octo-newsletter-control button{
+	width:52px;
+	height:48px;
+	border:0px;
+	flex:0 0 52px;
+	color:var(--white-color);
+	background-image:linear-gradient(180deg, rgba(0, 13, 255, 1) 0%, rgba(193, 21, 236, 1) 100%);
+}
+
 .about-sidebar .social-box{
 	position:relative;
 	margin-left:50px;

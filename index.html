@@ -54,8 +54,8 @@
 							<div class="info-list_outer">
 								<!-- Info List -->
 								<ul class="header-top_list d-flex flex-wrap">
-									<li><span class="icon fa-classic fa-solid fa-envelope fa-fw"></span><a href="mailto:ithub@mail.com">ithub@mail.com</a></li>
-									<li><span class="icon fa-classic fa-solid fa-location-dot fa-fw"></span>24 Street, New York, USA</li>
+									<li><span class="icon fa-classic fa-solid fa-envelope fa-fw"></span><a href="mailto:contact@octo.digital" data-i18n="top.email">contact@octo.digital</a></li>
+									<li data-i18n-html="top.address"><span class="icon fa-classic fa-solid fa-location-dot fa-fw"></span>Tananarive</li>
 								</ul>
 							</div>
 						</div>
@@ -64,10 +64,8 @@
 							<!-- Social Box -->
 							<div class="header-top_socials">
 								<div class="social-inner">
-									<a href="https://facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
-									<a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-									<a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
-									<a href="https://dribbble.com/"><i class="fa-brands fa-dribbble"></i></a>
+									<a href="https://facebook.com/" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+									<a href="https://linkedin.com/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
 								</div>
 							</div>
 
@@ -182,21 +180,44 @@
 				</div>
 				<div class="content-box">
 					<h3 data-i18n-html="sidebar.title">À propos <span>OCTO</span></h3>
-					<div class="text" data-i18n="sidebar.text">OCTO est une agence portée par une vision humaine du digital. Nous vous conseillons et vous soutenons durablement dans vos projets.</div>
+					<div class="text octo-sidebar-intro" data-i18n-html="sidebar.text">
+						<p>OCTO est une agence portée par une vision humaine du digital, qui vous conseille et vous soutient durablement dans vos projets.</p>
+						<p>Nous accompagnons les entreprises dans leur transformation digitale en leur apportant des solutions innovantes et un accompagnement stratégique adaptés à leurs objectifs. Notre approche vise à simplifier les processus, améliorer la performance et optimiser les ressources afin de permettre à chaque organisation de gagner en efficacité et de se concentrer sur son cœur de métier.</p>
+						<p>Chez OCTO, nous croyons que le numérique est un véritable levier de croissance, capable de réduire les contraintes opérationnelles et de créer de nouvelles opportunités pour les entreprises de toutes tailles.</p>
+					</div>
 					<ul class="about-sidebar_list">
 						<li data-i18n="sidebar.item1">Conseil stratégique</li>
 						<li data-i18n="sidebar.item2">Développement digital</li>
 						<li data-i18n="sidebar.item3">Mise en œuvre des solutions</li>
 						<li data-i18n="sidebar.item4">Suivi et amélioration continue</li>
 					</ul>
+					<div class="octo-sidebar-details">
+						<div>
+							<strong data-i18n="sidebar.addressLabel">Adresse</strong>
+							<span data-i18n="sidebar.address">Tananarive</span>
+						</div>
+						<div>
+							<strong data-i18n="sidebar.emailLabel">Email</strong>
+							<a href="mailto:contact@octo.digital" data-i18n="sidebar.email">contact@octo.digital</a>
+						</div>
+						<div>
+							<strong data-i18n="sidebar.contactLabel">Contact</strong>
+							<span data-i18n="sidebar.contact">WhatsApp +33 / Ligne +261</span>
+						</div>
+					</div>
+					<form class="octo-sidebar-newsletter" action="#" method="post">
+						<label for="octo-sidebar-email" data-i18n="sidebar.subscribe">Abonnez-vous !</label>
+						<div class="octo-newsletter-control">
+							<input id="octo-sidebar-email" type="email" name="newsletter-email" placeholder="Votre email" data-i18n-placeholder="sidebar.emailPlaceholder">
+							<button type="submit" aria-label="S'abonner" data-i18n-aria-label="sidebar.subscribeAction"><span class="fa-solid fa-arrow-right"></span></button>
+						</div>
+					</form>
 				</div>
 			</div>
 			<!-- Social Box -->
 			<div class="social-box">
-				<a href="https://facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
-				<a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
-				<a href="https://youtube.com/"><i class="fa-brands fa-youtube"></i></a>
-				<a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+				<a href="https://facebook.com/" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+				<a href="https://linkedin.com/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
 			</div>
 		</div>
 	</div>
@@ -296,9 +317,8 @@
 		</div>
 		<!-- Slider One Socials -->
 		<div class="slider-one_socials">
-			<a href="#">facebook</a>
-			<a href="#">instagram</a>
-			<a href="#">twitter</a>
+			<a href="https://facebook.com/">facebook</a>
+			<a href="https://linkedin.com/">linkedin</a>
 		</div>
 		
 		<!-- Slider One Options -->
@@ -407,7 +427,11 @@
 						<div class="about-one_years">
 							<img src="assets/images/resource/years.png" alt="" />
 						</div>
-						<div class="about-one_text">Partnering with <span>ITHUB-iT Consulting</span> ensures peace of mind, knowing that your books are accurately updated in real time, and taxes are filed and paid on schedule.</div>
+						<div class="about-one_text">
+							<p>Nous accompagnons les entreprises dans leur transformation digitale en leur apportant des solutions innovantes et un accompagnement stratégique adaptés à leurs objectifs.</p>
+							<p>Notre approche vise à simplifier les processus, améliorer la performance et optimiser les ressources afin de permettre à chaque organisation de gagner en efficacité et de se concentrer sur son cœur de métier.</p>
+							<p>Chez OCTO, nous croyons que le numérique est un véritable levier de croissance, capable de réduire les contraintes opérationnelles et de créer de nouvelles opportunités pour les entreprises de toutes tailles.</p>
+						</div>
 					</div>
 					<!-- Column -->
 					<div class="column col-lg-6 col-md-12 col-sm-12">
@@ -673,6 +697,18 @@
 							<div class="offer-one_image four">
 								<img src="assets/images/resource/offer-4.jpg" alt="" />
 							</div>
+							<!-- Image -->
+							<div class="offer-one_image five">
+								<img src="assets/images/resource/offer-1.jpg" alt="" />
+							</div>
+							<!-- Image -->
+							<div class="offer-one_image six">
+								<img src="assets/images/resource/offer-2.jpg" alt="" />
+							</div>
+							<!-- Image -->
+							<div class="offer-one_image seven">
+								<img src="assets/images/resource/offer-3.jpg" alt="" />
+							</div>
 						</div>
 						<!-- Award Box -->
 						<div class="step-award_box">
@@ -706,12 +742,13 @@
 										<img src="assets/images/icons/offer-1.svg" alt="" />
 									</div>
 								</div>
-								<h3 class="offer-one_heading"><a href="service-detail.html">Internet Marketing</a></h3>
+								<h3 class="offer-one_heading"><a href="service-detail.html">Développement web</a></h3>
+								<div class="octo-service-summary" data-i18n="services.webText">Sites vitrines, e-commerce et plateformes web sur-mesure, rapides, sécurisés et faciles à faire évoluer.</div>
 								<ul class="offer-one_tags">
-									<li><a href="#">Strategy</a></li>
-									<li><a href="#">Marketing</a></li>
-									<li><a href="#">Advertisement</a></li>
-									<li><a href="#">Planing</a></li>
+									<li><a href="#">Stratégie</a></li>
+									<li><a href="#">Design</a></li>
+									<li><a href="#">Développement</a></li>
+									<li><a href="#">Support</a></li>
 								</ul>
 								<a class="offer-one_arrow" href="service-detail.html">
 									<img src="assets/images/icons/offer_arrow.svg" alt="" />
@@ -725,12 +762,13 @@
 										<img src="assets/images/icons/offer-2.svg" alt="" />
 									</div>
 								</div>
-								<h3 class="offer-one_heading"><a href="service-detail.html">Google Ads Advertising</a></h3>
+								<h3 class="offer-one_heading"><a href="service-detail.html">Développement mobile</a></h3>
+								<div class="octo-service-summary" data-i18n="services.mobileText">Applications iOS et Android pensées pour vos besoins métier, de l'expérience utilisateur à la publication.</div>
 								<ul class="offer-one_tags">
-									<li><a href="#">Strategy</a></li>
-									<li><a href="#">Marketing</a></li>
-									<li><a href="#">Advertisement</a></li>
-									<li><a href="#">Planing</a></li>
+									<li><a href="#">Stratégie</a></li>
+									<li><a href="#">Design</a></li>
+									<li><a href="#">Développement</a></li>
+									<li><a href="#">Support</a></li>
 								</ul>
 								<a class="offer-one_arrow" href="service-detail.html">
 									<img src="assets/images/icons/offer_arrow.svg" alt="" />
@@ -744,12 +782,13 @@
 										<img src="assets/images/icons/offer-3.svg" alt="" />
 									</div>
 								</div>
-								<h3 class="offer-one_heading"><a href="service-detail.html">Social Media Marketing</a></h3>
+								<h3 class="offer-one_heading"><a href="service-detail.html">Logiciel sur-mesure</a></h3>
+								<div class="octo-service-summary" data-i18n="services.softwareText">Outils internes, gestion, suivi logistique ou plateformes SaaS adaptés à votre façon de travailler.</div>
 								<ul class="offer-one_tags">
-									<li><a href="#">Strategy</a></li>
-									<li><a href="#">Marketing</a></li>
-									<li><a href="#">Advertisement</a></li>
-									<li><a href="#">Planing</a></li>
+									<li><a href="#">Stratégie</a></li>
+									<li><a href="#">Design</a></li>
+									<li><a href="#">Développement</a></li>
+									<li><a href="#">Support</a></li>
 								</ul>
 								<a class="offer-one_arrow" href="service-detail.html">
 									<img src="assets/images/icons/offer_arrow.svg" alt="" />
@@ -763,12 +802,73 @@
 										<img src="assets/images/icons/offer-4.svg" alt="" />
 									</div>
 								</div>
-								<h3 class="offer-one_heading"><a href="service-detail.html">Search Engine Optimization</a></h3>
+								<h3 class="offer-one_heading"><a href="service-detail.html">Design UI/UX & identité visuelle</a></h3>
+								<div class="octo-service-summary" data-i18n="services.uxText">Interfaces claires, parcours intuitifs, logo, charte graphique et supports visuels cohérents.</div>
 								<ul class="offer-one_tags">
-									<li><a href="#">Strategy</a></li>
-									<li><a href="#">Marketing</a></li>
-									<li><a href="#">Advertisement</a></li>
-									<li><a href="#">Planing</a></li>
+									<li><a href="#">Stratégie</a></li>
+									<li><a href="#">Design</a></li>
+									<li><a href="#">Développement</a></li>
+									<li><a href="#">Support</a></li>
+								</ul>
+								<a class="offer-one_arrow" href="service-detail.html">
+									<img src="assets/images/icons/offer_arrow.svg" alt="" />
+								</a>
+							</div>
+							<!-- Five -->
+							<div class="offer-one_title">
+								<div class="offer-one_icon-outer">
+									<span class="offer-one_number">5</span>
+									<div class="offer-one_icon">
+										<img src="assets/images/icons/offer-5.svg" alt="" />
+									</div>
+								</div>
+								<h3 class="offer-one_heading"><a href="service-detail.html">Maintenance & support</a></h3>
+								<div class="octo-service-summary" data-i18n="services.maintenanceText">Mises à jour de sécurité, corrections, petites évolutions et suivi technique dans la durée.</div>
+								<ul class="offer-one_tags">
+									<li><a href="#">Stratégie</a></li>
+									<li><a href="#">Design</a></li>
+									<li><a href="#">Développement</a></li>
+									<li><a href="#">Support</a></li>
+								</ul>
+								<a class="offer-one_arrow" href="service-detail.html">
+									<img src="assets/images/icons/offer_arrow.svg" alt="" />
+								</a>
+							</div>
+							<!-- Six -->
+							<div class="offer-one_title">
+								<div class="offer-one_icon-outer">
+									<span class="offer-one_number">6</span>
+									<div class="offer-one_icon">
+										<img src="assets/images/icons/offer-6.svg" alt="" />
+									</div>
+								</div>
+								<h3 class="offer-one_heading"><a href="service-detail.html">Externalisation / équipe dédiée</a></h3>
+								<div class="octo-service-summary" data-i18n="services.outsourcingText">Développeurs et designers intégrés à votre organisation avec flexibilité, suivi collaboratif et confidentialité.</div>
+								<ul class="offer-one_tags">
+									<li><a href="#">Stratégie</a></li>
+									<li><a href="#">Design</a></li>
+									<li><a href="#">Développement</a></li>
+									<li><a href="#">Support</a></li>
+								</ul>
+								<a class="offer-one_arrow" href="service-detail.html">
+									<img src="assets/images/icons/offer_arrow.svg" alt="" />
+								</a>
+							</div>
+							<!-- Seven -->
+							<div class="offer-one_title">
+								<div class="offer-one_icon-outer">
+									<span class="offer-one_number">7</span>
+									<div class="offer-one_icon">
+										<img src="assets/images/icons/offer-7.svg" alt="" />
+									</div>
+								</div>
+								<h3 class="offer-one_heading"><a href="service-detail.html">Accompagnement à la digitalisation</a></h3>
+								<div class="octo-service-summary" data-i18n="services.digitalizationText">Diagnostic, recommandation d'outils, mise en place progressive et formation des équipes, sans jargon inutile.</div>
+								<ul class="offer-one_tags">
+									<li><a href="#">Stratégie</a></li>
+									<li><a href="#">Design</a></li>
+									<li><a href="#">Développement</a></li>
+									<li><a href="#">Support</a></li>
 								</ul>
 								<a class="offer-one_arrow" href="service-detail.html">
 									<img src="assets/images/icons/offer_arrow.svg" alt="" />
@@ -782,9 +882,71 @@
 		</div>
 	</section>
 	<!-- End Program One -->
+
+	<!-- OCTO Offers -->
+	<section class="octo-offers" id="offers">
+		<div class="auto-container">
+			<div class="sec-title centered">
+				<div class="sec-title_title" data-i18n-html="offers.eyebrow">
+					<div class="sec-title_dots">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					Offres
+					<div class="sec-title_dots">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+				<h2 class="sec-title_heading" data-i18n="offers.title">Trois formats pour avancer avec OCTO</h2>
+			</div>
+			<div class="row clearfix">
+				<div class="col-lg-4 col-md-6 col-sm-12">
+					<div class="octo-offer-card">
+						<span class="octo-offer-card_label" data-i18n="offers.cmsLabel">CMS</span>
+						<h3 data-i18n="offers.cmsTitle">CMS WordPress / PrestaShop / Drupal</h3>
+						<div class="octo-offer-card_price" data-i18n="offers.cmsPrice">60€ par jour</div>
+						<ul>
+							<li data-i18n="offers.cmsItem1">Un chef de projet</li>
+							<li data-i18n="offers.cmsItem2">Réduction progressive selon le volume apporté</li>
+							<li data-i18n="offers.cmsItem3">Des équipes dédiées à vos projets</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12">
+					<div class="octo-offer-card featured">
+						<span class="octo-offer-card_label" data-i18n="offers.regieLabel">Régie</span>
+						<h3 data-i18n="offers.regieTitle">Développeur web full-stack à temps plein</h3>
+						<div class="octo-offer-card_price" data-i18n="offers.regiePrice">850€ / développement</div>
+						<ul>
+							<li data-i18n="offers.regieItem1">Un chef de projet</li>
+							<li data-i18n="offers.regieItem2">8h de travail par jour avec 1h de pause</li>
+							<li data-i18n="offers.regieItem3">Une équipe qui s'adapte à vos horaires</li>
+							<li data-i18n="offers.regieItem4">Pas de contrainte de technologie</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12">
+					<div class="octo-offer-card">
+						<span class="octo-offer-card_label" data-i18n="offers.customLabel">Sur mesure</span>
+						<h3 data-i18n="offers.customTitle">Développement sur mesure</h3>
+						<div class="octo-offer-card_price" data-i18n="offers.customPrice">85€ / jour</div>
+						<ul>
+							<li data-i18n="offers.customItem1">Un chef de projet</li>
+							<li data-i18n="offers.customItem2">Réduction progressive selon le volume apporté</li>
+							<li data-i18n="offers.customItem3">Des équipes dédiées à vos projets</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End OCTO Offers -->
 	
 	<!-- Testimonial One -->
-	<section class="testimonial-one">
+	<section class="testimonial-one" id="contact">
 		<div class="testimonial-one_pattern-layer" style="background-image:url(assets/images/background/pattern-6.png)"></div>
 		<div class="auto-container">
 			<div class="row clearfix">
@@ -793,23 +955,46 @@
 					<!-- Sec Title -->
 					<div class="sec-title title-anim">
 						<div class="sec-title_title">
-							Testimonials
+							Contact
 							<div class="sec-title_dots">
 								<span></span>
 								<span></span>
 								<span></span>
 							</div>
 						</div>
-						<h2 class="sec-title_heading">We want the best work For Us!</h2>
-						<div class="sec-title_text">Collaborate Consulting exists to find the place where to <br> being seemingly disparate interests meet.</div>
+						<h2 class="sec-title_heading">Parlons de votre projet</h2>
+						<div class="sec-title_text">Notre équipe d'experts est à votre écoute pour vous conseiller et vous accompagner à chaque étape de votre projet.</div>
 					</div>
-					<div class="testimonial-one_talk d-flex"><span class="up-down_animation">Lets Talk</span> <i><img src="assets/images/icons/hand-shake.png" alt="" /></i></div>
+					<div class="octo-contact-methods">
+						<h3 data-i18n="contact.methodsTitle">Plusieurs moyens de nous contacter</h3>
+						<a class="octo-contact-method" href="tel:+33000000000">
+							<span class="fa-solid fa-phone"></span>
+							<strong data-i18n="contact.callTitle">Appelez-nous</strong>
+							<em data-i18n="contact.callText">Échangez directement avec l'un de nos conseillers pour obtenir des informations ou discuter de votre projet.</em>
+						</a>
+						<a class="octo-contact-method" href="mailto:contact@octo.digital">
+							<span class="fa-solid fa-envelope"></span>
+							<strong data-i18n="contact.emailTitle">Envoyez-nous un e-mail</strong>
+							<em data-i18n="contact.emailText">Décrivez-nous votre besoin et nous vous répondrons dans les meilleurs délais avec une solution adaptée.</em>
+						</a>
+						<a class="octo-contact-method" href="https://wa.me/33000000000">
+							<span class="fa-brands fa-whatsapp"></span>
+							<strong data-i18n="contact.whatsappTitle">Contactez-nous sur WhatsApp</strong>
+							<em data-i18n="contact.whatsappText">Discutez rapidement avec notre équipe pour obtenir des réponses immédiates ou un premier accompagnement.</em>
+						</a>
+						<a class="octo-contact-method" href="https://maps.google.com/?q=Tananarive">
+							<span class="fa-solid fa-location-dot"></span>
+							<strong data-i18n="contact.visitTitle">Rendez-nous visite</strong>
+							<em data-i18n="contact.visitText">Rencontrez notre équipe dans nos bureaux afin d'échanger sur votre projet et bénéficier de conseils personnalisés.</em>
+						</a>
+					</div>
+					<div class="testimonial-one_talk d-flex"><span class="up-down_animation">Discutons</span> <i><img src="assets/images/icons/hand-shake.png" alt="" /></i></div>
 					<!-- Button Box -->
 					<div class="testimonial-one_button d-flex justify-content-end">
 						<a href="contact.html" class="theme-btn btn-style-three">
 							<span class="btn-wrap">
-								<span class="text-one">Contact Us</span>
-								<span class="text-two">Contact Us</span>
+								<span class="text-one">Nous contacter</span>
+								<span class="text-two">Nous contacter</span>
 							</span>
 						</a>
 					</div>
@@ -1270,26 +1455,24 @@
 	<!-- news One -->
 	
 	<!-- Main Footer -->
-	<footer class="main-footer" id="contact">
+	<footer class="main-footer" id="footer">
 		<div class="main-footer_bg-color"></div>
 		<div class="main-footer_vector" style="background-image:url(assets/images/icons/vector-3.png)"></div>
 		<div class="auto-container">
 			<div class="inner-container">
 				<div class="footer-logo"><a href="index.html"><img src="assets/images/footer-logo.svg" alt="" title=""></a></div>
 				<div class="d-flex justify-content-between align-items-center flex-wrap">
-					<div class="footer-text">We are prioritize collaboration <br> With our clients</div>
+					<div class="footer-text">Nous privilégions la collaboration <br>avec nos clients</div>
 					<!-- Social Box -->
 					<div class="footer-social_box">
-						<a href="https://facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
-						<a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-						<a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
-						<a href="https://dribbble.com/"><i class="fa-brands fa-dribbble"></i></a>
+						<a href="https://facebook.com/" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+						<a href="https://linkedin.com/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
 					</div>
 				</div>
-				<div class="footer-discuss"><span class="up-down_animation">let’s discuss!</span></div>
+				<div class="footer-discuss"><span class="up-down_animation">discutons !</span></div>
 				<ul class="footer-contact_list d-flex justify-content-end">
-					<li><a href="mailto:info@ithub.com">info@ithub.com</a></li>
-					<li><a href="tel:+123-456-789-00">+(123) 456 789 00</a></li>
+					<li><a href="mailto:contact@octo.digital">contact@octo.digital</a></li>
+					<li><a href="tel:+33000000000">+33 WhatsApp / +261</a></li>
 				</ul>
 				<div class="footer-type_title variable-text"></div>
 			</div>
@@ -1397,7 +1580,7 @@
 		<div class="footer-bottom">
 			<div class="auto-container">
 				<!-- Copyright -->
-				<div class="main-footer_copyright">ITHUB &copy; 2025. All Rights Reserved.</div>
+				<div class="main-footer_copyright">OCTO © 2026. Tous droits réservés.</div>
 			</div>
 		</div>
 	</footer>
