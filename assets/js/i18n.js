@@ -136,10 +136,10 @@
 			"meta.title": "OCTO | Digital agency",
 			"nav.home": "Home",
 			"nav.about": "About",
-			"nav.services": "Services",
+			"nav.services": "Our services",
 			"nav.work": "Our work",
-			"nav.blog": "Blog",
-			"nav.contact": "Contact",
+			"nav.blog": "Articles",
+			"nav.contact": "Contact us",
 			"cta.start": "Get started",
 			"cta.work": "Work with us",
 			"cta.services": "View services",
@@ -335,13 +335,13 @@
 		en: {
 			"OCTO | Agence digitale": "OCTO | Digital agency",
 			"OCTO | À propos": "OCTO | About",
-			"OCTO | Services": "OCTO | Services",
+			"OCTO | Services": "OCTO | Our services",
 			"OCTO | Détails des services": "OCTO | Service details",
 			"OCTO | Réalisations": "OCTO | Work",
 			"OCTO | Détails des réalisations": "OCTO | Work details",
-			"OCTO | Blog": "OCTO | Blog",
+			"OCTO | Blog": "OCTO | Articles",
 			"OCTO | Articles": "OCTO | Articles",
-			"OCTO | Contact": "OCTO | Contact"
+			"OCTO | Contact": "OCTO | Contact us"
 		}
 	};
 
@@ -349,14 +349,15 @@
 		en: {
 			"Accueil": "Home",
 			"À propos": "About",
-			"Services": "Services",
+			"Services": "Our services",
 			"Nos réalisations": "Our work",
 			"Réalisations": "Work",
 			"Détails": "Details",
 			"Détails des services": "Service details",
 			"Détails des réalisations": "Work details",
+			"Blog": "Articles",
 			"Articles": "Articles",
-			"Contact": "Contact",
+			"Contact": "Contact us",
 			"Contactez OCTO": "Contact OCTO",
 			"Blog OCTO": "OCTO Blog",
 			"Articles OCTO": "OCTO Articles",
