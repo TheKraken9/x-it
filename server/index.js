@@ -12,7 +12,6 @@ const distDir = path.join(rootDir, "dist");
 
 const app = express();
 const port = process.env.PORT || 3001;
-const host = process.env.HOST || "127.0.0.1";
 
 app.use(cors());
 app.use(express.json());
@@ -73,6 +72,6 @@ if (existsSync(distDir)) {
   });
 }
 
-app.listen(port, host, () => {
-  console.log(`OCTO Express API running on http://${host}:${port}`);
+app.listen(port, () => {
+  console.log(`OCTO Express API running on http://127.0.0.1:${port}`);
 });
