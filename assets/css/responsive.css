@@ -305,6 +305,10 @@
 	.offer-one_arrow{
 		display:none;
 	}
+
+	.octo-service-summary{
+		padding-right:0px;
+	}
 	
 	h3 {
 		line-height: 38px;

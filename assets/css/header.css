@@ -1,6 +1,6 @@
 /* ITHUB IT solution & Technology Services HTML-5 Template */
 
-/*** 
+/***
 
 ====================================================================
 	Header style One
@@ -99,8 +99,8 @@
 	position: relative;
 	padding:13px 20px;
 	border-radius:50px;
-	background-color: rgba(0, 13, 255, 1);
-	background-image: linear-gradient(90deg, rgba(0, 13, 255, 1) 0%, rgba(193, 21, 236, 1) 100%);
+	background-color: rgba(20, 33, 61, 1);
+	background-image: linear-gradient(90deg, rgba(20, 33, 61, 1) 0%, rgba(252, 163, 17, 1) 100%);
 }
 
 .header-top_list li{
@@ -149,8 +149,8 @@
 	bottom:0px;
 	border-radius:12px;
 	transform:skewX(15deg);
-	background-color: rgba(0, 13, 255, 1);
-	background-image: linear-gradient(-90deg, rgba(0, 13, 255, 1) 0%, rgba(193, 21, 236, 1) 100%);
+	background-color: rgba(20, 33, 61, 1);
+	background-image: linear-gradient(-90deg, rgba(20, 33, 61, 1) 0%, rgba(252, 163, 17, 1) 100%);
 }
 
 .header-top_list-two li{
@@ -664,7 +664,7 @@
 	-ms-transition:all 300ms ease;
 	-o-transition:all 300ms ease;
 	-moz-transition:all 300ms ease;
-	transition:all 300ms ease;	
+	transition:all 300ms ease;
 }
 
 .main-header .header-lower .nav-outer{
@@ -785,7 +785,7 @@
 
 .main-header .main-menu .navigation > li.dropdown a{
 	padding-right: 17px !important;
-} 
+}
 
 .main-header .main-menu .navigation > li.dropdown > a:after{
     position: absolute;
@@ -964,7 +964,7 @@
 
 .main-header .main-menu .navigation > li > ul.from-right{
 	left:auto;
-	right:0px;	
+	right:0px;
 }
 
 .main-header .main-menu .navigation > li > ul > li{
@@ -1164,7 +1164,7 @@
 
 .main-header .main-menu .navigation > li > ul > li > ul.from-right{
 	left:auto;
-	right:0px;	
+	right:0px;
 }
 
 .main-header .main-menu .navigation > li > ul > li > ul > li{
@@ -1252,7 +1252,7 @@
 }
 
 .main-header .main-menu .navigation > li > ul > li > ul > li:last-child{
-	border-bottom:none;	
+	border-bottom:none;
 }
 
 .main-header .main-menu .navigation > li > ul > li > ul > li > a{
@@ -1332,9 +1332,9 @@
 .main-header.header-style-two .header-lower .nav-outer{
 	border-radius:50px;
 	padding:0px 50px;
-	background-color: rgba(0, 13, 255, 0);
+	background-color: rgba(20, 33, 61, 0);
 	border-left:8px solid var(--black-color);
-    background-image: linear-gradient(-90deg, rgba(0, 13, 255, 1) 0%, rgba(193, 21, 236, 1) 100%);
+    background-image: linear-gradient(-90deg, rgba(20, 33, 61, 1) 0%, rgba(252, 163, 17, 1) 100%);
 }
 
 /* Header Style Three */
@@ -1385,8 +1385,8 @@
 
 .main-header.header-style-three .main-menu .navigation > li > a:hover,
 .main-header.header-style-three .main-menu .navigation > li.current > a{
-	background-color: rgba(0, 13, 255, 1);
-    background-image: linear-gradient(180deg, rgba(0, 13, 255, 1) 0%, rgba(193, 21, 236, 1) 100%);
+	background-color: rgba(20, 33, 61, 1);
+    background-image: linear-gradient(180deg, rgba(20, 33, 61, 1) 0%, rgba(252, 163, 17, 1) 100%);
 }
 
 .header-style-three.fixed-header .header-lower{
@@ -1415,7 +1415,7 @@
 	background-color:var(--white-color);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Mobile Menu
@@ -1453,7 +1453,7 @@
 .mobile-menu .nav-logo{
 	position:relative;
 	padding:20px 20px;
-	text-align:left;	
+	text-align:left;
 }
 
 .mobile-menu .nav-logo img{
@@ -1484,7 +1484,7 @@
     -webkit-transition: all 900ms ease;
     -ms-transition: all 900ms ease;
     -o-transition: all 900ms ease;
-	
+
 	-webkit-transition-delay: 300ms;
 	-moz-transition-delay: 300ms;
 	-ms-transition-delay: 300ms;
@@ -1518,7 +1518,7 @@
 	padding: 0px 0px;
 	z-index: 5;
 	border-radius: 0px;
-	
+
 	transition: all 900ms ease;
     -moz-transition: all 900ms ease;
     -webkit-transition: all 900ms ease;
@@ -1661,7 +1661,7 @@
 
 .main-header .mobile-menu .navigation li:hover > a,
 .main-header .mobile-menu .navigation li.current > a{
-	
+
 }
 
 .main-header .mobile-menu .navigation li.dropdown .dropdown-btn{
@@ -1739,7 +1739,43 @@
 	background-color: var(--main-color);
 }
 
-/*** 
+.language-switcher{
+	position:relative;
+	display:flex;
+	align-items:center;
+	gap:4px;
+	margin-left:0;
+	padding:4px;
+	border-radius:999px;
+	background-color:rgba(var(--main-color-rgb),0.06);
+	border:1px solid rgba(var(--main-color-rgb),0.16);
+}
+
+.language-switcher_btn{
+	position:relative;
+	border:0;
+	height:32px;
+	min-width:38px;
+	padding:0 10px;
+	cursor:pointer;
+	font-size:13px;
+	font-weight:700;
+	line-height:32px;
+	border-radius:999px;
+	color:var(--black-color);
+	background-color:transparent;
+	font-family:"Outfit", serif;
+	transition:all 300ms ease;
+}
+
+.language-switcher_btn:hover,
+.language-switcher_btn.active{
+	color:var(--white-color);
+	background-color:var(--main-color);
+	background-image:linear-gradient(90deg,var(--main-color) 0%,var(--color-two) 100%);
+}
+
+/***
 
 ====================================================================
 	Search Popup
@@ -1755,7 +1791,7 @@
 	width: 100%;
 	z-index: 999999999;
 	margin-top: -540px;
-	transform: translateY(-100%); 
+	transform: translateY(-100%);
     transition:all 500ms ease;
 	-moz-transition:all 500ms ease;
 	-webkit-transition:all 500ms ease;
@@ -1946,7 +1982,7 @@
 }
 
 
-/*** 
+/***
 
 ====================================================================
 	Hidden Sidebar style
@@ -2023,7 +2059,7 @@
 	padding:25px 20px;
 	margin:0px;
 }
-	
+
 .sidebar-info-contents .lower-box{
 	position:relative;
 	border-top:1px solid rgba(var(--black-color-rgb), 0.10);
@@ -2070,7 +2106,7 @@
 }
 
 .post-block .inner-box h6{
-	
+
 }
 
 .post-block .inner-box h6 a{
@@ -2240,6 +2276,90 @@
 	color: var(--color-five);
 }
 
+.about-sidebar .octo-sidebar-intro p{
+	margin-bottom:14px;
+}
+
+.about-sidebar .octo-sidebar-intro p:last-child{
+	margin-bottom:0px;
+}
+
+.octo-sidebar-details{
+	position:relative;
+	margin:8px 0px 28px;
+	padding:22px;
+	border-radius:8px;
+	background:#f8f8ff;
+	border:1px solid rgba(20, 33, 61, 0.12);
+}
+
+.octo-sidebar-details div{
+	position:relative;
+	display:flex;
+	gap:12px;
+	align-items:flex-start;
+	justify-content:space-between;
+	margin-bottom:14px;
+}
+
+.octo-sidebar-details div:last-child{
+	margin-bottom:0px;
+}
+
+.octo-sidebar-details strong{
+	font-size:13px;
+	font-weight:800;
+	color:var(--black-color);
+	text-transform:uppercase;
+}
+
+.octo-sidebar-details span,
+.octo-sidebar-details a{
+	font-size:14px;
+	font-weight:600;
+	text-align:right;
+	color:var(--color-five);
+}
+
+.octo-sidebar-newsletter{
+	position:relative;
+	margin-bottom:30px;
+}
+
+.octo-sidebar-newsletter label{
+	display:block;
+	font-size:16px;
+	font-weight:800;
+	margin-bottom:10px;
+	color:var(--black-color);
+}
+
+.octo-newsletter-control{
+	position:relative;
+	display:flex;
+	overflow:hidden;
+	border-radius:8px;
+	border:1px solid rgba(20, 33, 61, 0.16);
+	background:var(--white-color);
+}
+
+.octo-newsletter-control input{
+	width:100%;
+	height:48px;
+	border:0px;
+	padding:0px 15px;
+	color:var(--black-color);
+}
+
+.octo-newsletter-control button{
+	width:52px;
+	height:48px;
+	border:0px;
+	flex:0 0 52px;
+	color:var(--white-color);
+	background-image:linear-gradient(180deg, rgba(20, 33, 61, 1) 0%, rgba(252, 163, 17, 1) 100%);
+}
+
 .about-sidebar .social-box{
 	position:relative;
 	margin-left:50px;
@@ -2290,7 +2410,7 @@
 	padding-left:30px;
 	margin-bottom:20px;
 	color:var(--black-color);
-	text-transform: capitalize; 
+	text-transform: capitalize;
 }
 
 .about-sidebar_list li:before{
@@ -2322,7 +2442,7 @@
 	-o-transition:all 500ms ease;
 	background-color: var(--white-color);
 }
-  
+
   .hamburger span {
 	height: 2px;
 	width: 83.33333333%;
@@ -2343,31 +2463,31 @@
 	width: 100%;
 	transition: all 200ms ease-in-out;
   }
-  
+
   .hamburger .bottom-bun {
 	width: 58.33333333%;
 	transition: all 100ms ease-in-out;
   }
-  
+
   .hamburger:hover span {
 	width: 100%;
   }
-  
+
   html:not(.body-menu-opened) .hamburger .top-bun {
 	-webkit-animation: burger-hover 1s infinite ease-in-out alternate forwards 200ms;
 			animation: burger-hover 1s infinite ease-in-out alternate forwards 200ms;
   }
-  
+
   html:not(.body-menu-opened) .hamburger .meat {
 	-webkit-animation: burger-hover 1s infinite ease-in-out alternate forwards 400ms;
 			animation: burger-hover 1s infinite ease-in-out alternate forwards 400ms;
   }
-  
+
   html:not(.body-menu-opened) .hamburger .bottom-bun {
 	-webkit-animation: burger-hover 1s infinite ease-in-out alternate forwards 600ms;
 			animation: burger-hover 1s infinite ease-in-out alternate forwards 600ms;
   }
-  
+
   @-webkit-keyframes burger-hover {
 	0% {
 	  width: 100%;
@@ -2379,7 +2499,7 @@
 	  width: 100%;
 	}
   }
-  
+
   @keyframes burger-hover {
 	0% {
 	  width: 100%;
@@ -2391,17 +2511,17 @@
 	  width: 100%;
 	}
   }
-  
+
   .body-menu-opened .hamburger .top-bun {
 	  transform: rotate(-45deg) translate(-4.5px,4px);
 	  width: 100%;
   }
-  
+
   .body-menu-opened .hamburger .bottom-bun {
 	  transform: rotate(45deg) translate(-4.5px,-4px);
 	  width: 100%;
   }
-  
+
   .body-menu-opened .hamburger .meat {
 	  width: 0;
   }
