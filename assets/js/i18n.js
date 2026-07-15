@@ -331,6 +331,191 @@
 		{ selector: ".main-footer_copyright", key: "footer.copyright" }
 	];
 
+	var documentTitleTranslations = {
+		en: {
+			"OCTO | Agence digitale": "OCTO | Digital agency",
+			"OCTO | À propos": "OCTO | About",
+			"OCTO | Services": "OCTO | Services",
+			"OCTO | Détails des services": "OCTO | Service details",
+			"OCTO | Réalisations": "OCTO | Work",
+			"OCTO | Détails des réalisations": "OCTO | Work details",
+			"OCTO | Blog": "OCTO | Blog",
+			"OCTO | Articles": "OCTO | Articles",
+			"OCTO | Contact": "OCTO | Contact"
+		}
+	};
+
+	var autoTextTranslations = {
+		en: {
+			"Accueil": "Home",
+			"À propos": "About",
+			"Services": "Services",
+			"Nos réalisations": "Our work",
+			"Réalisations": "Work",
+			"Détails": "Details",
+			"Détails des services": "Service details",
+			"Détails des réalisations": "Work details",
+			"Articles": "Articles",
+			"Contact": "Contact",
+			"Contactez OCTO": "Contact OCTO",
+			"Blog OCTO": "OCTO Blog",
+			"Articles OCTO": "OCTO Articles",
+			"Navigation": "Navigation",
+			"Prêt à avancer ?": "Ready to move forward?",
+			"Parlons de votre projet digital.": "Let's talk about your digital project.",
+			"Nous contacter": "Contact us",
+			"Démarrer": "Start",
+			"Voir le détail": "View details",
+			"Conseil": "Consulting",
+			"Design": "Design",
+			"Développement": "Development",
+			"Maintenance": "Maintenance",
+			"Support": "Support",
+			"Stratégie": "Strategy",
+			"Développement Web": "Web Development",
+			"Développement web": "Web development",
+			"Développement Mobile": "Mobile Development",
+			"Développement mobile": "Mobile development",
+			"Logiciel sur-mesure": "Custom software",
+			"Design UI/UX & Identité visuelle": "UI/UX Design & Visual Identity",
+			"Design UI/UX & identité visuelle": "UI/UX design & visual identity",
+			"Maintenance & Support": "Maintenance & Support",
+			"Maintenance & support": "Maintenance & support",
+			"Externalisation / Mise à disposition d'équipe": "Outsourcing / Dedicated team",
+			"Externalisation / équipe dédiée": "Outsourcing / dedicated team",
+			"Accompagnement à la digitalisation": "Digitalization support",
+			"Offres": "Offers",
+			"Offres associées": "Related offers",
+			"Offres CMS, Régie, Sur mesure": "CMS, staffing and custom offers",
+			"Trois formats pour avancer avec OCTO": "Three ways to move forward with OCTO",
+			"CMS WordPress / PrestaShop / Drupal": "WordPress / PrestaShop / Drupal CMS",
+			"60€ par jour": "€60 per day",
+			"Un chef de projet": "A project manager",
+			"Réduction progressive selon le volume apporté": "Progressive discount based on volume",
+			"Des équipes dédiées à vos projets": "Dedicated teams for your projects",
+			"Régie": "Staffing",
+			"Développeur Web full-stack à temps plein": "Full-time full-stack web developer",
+			"Développeur web full-stack à temps plein": "Full-time full-stack web developer",
+			"850€ / développement": "€850 / development",
+			"8h de travail par jour avec 1h de pause": "8 working hours per day with a 1-hour break",
+			"Une équipe qui s'adapte à vos horaires": "A team that adapts to your schedule",
+			"Pas de contrainte de technologie": "No technology constraint",
+			"Sur mesure": "Custom",
+			"Développement sur mesure": "Custom development",
+			"85€ / jour": "€85 / day",
+			"Une agence portée par une vision humaine du digital": "An agency driven by a human vision of digital work",
+			"OCTO est une agence portée par une vision humaine du digital, qui vous conseille et vous soutient durablement dans vos projets.": "OCTO is an agency driven by a human vision of digital work, advising you and supporting your projects over the long term.",
+			"Nous accompagnons les entreprises dans leur transformation digitale en leur apportant des solutions innovantes et un accompagnement stratégique adaptés à leurs objectifs. Notre approche vise à simplifier les processus, améliorer la performance et optimiser les ressources afin de permettre à chaque organisation de gagner en efficacité et de se concentrer sur son cœur de métier.": "We support companies through their digital transformation by providing innovative solutions and strategic guidance tailored to their goals. Our approach simplifies processes, improves performance and optimizes resources so every organization can become more efficient and focus on its core business.",
+			"Chez OCTO, nous croyons que le numérique est un véritable levier de croissance, capable de réduire les contraintes opérationnelles et de créer de nouvelles opportunités pour les entreprises de toutes tailles.": "At OCTO, we believe digital technology is a true growth driver, able to reduce operational constraints and create new opportunities for companies of every size.",
+			"Notre approche": "Our approach",
+			"Un accompagnement clair, de l'idée au déploiement": "Clear support, from idea to deployment",
+			"Étape": "Step",
+			"Comprendre le projet": "Understand the project",
+			"Définir la stratégie": "Define the strategy",
+			"Déployer la solution": "Deploy the solution",
+			"Suivre et améliorer": "Track and improve",
+			"Nous avançons avec méthode pour garder le projet lisible, utile et durable.": "We move forward methodically to keep the project clear, useful and sustainable.",
+			"Ce que nous proposons": "What we offer",
+			"Nos services": "Our services",
+			"Des solutions digitales concrètes pour votre activité": "Concrete digital solutions for your business",
+			"OCTO conçoit, développe et maintient des outils adaptés à vos objectifs, sans vous imposer de solution standardisée.": "OCTO designs, develops and maintains tools tailored to your goals, without imposing a standardized solution.",
+			"Sites vitrines, boutiques e-commerce et plateformes web sur-mesure, rapides, sécurisées et évolutives.": "Showcase websites, e-commerce stores and custom web platforms that are fast, secure and scalable.",
+			"Applications iOS et Android pensées pour un besoin métier précis, de l'UX à la publication.": "iOS and Android apps designed for a precise business need, from UX to publication.",
+			"Outils internes, gestion de stock, suivi logistique et plateformes SaaS adaptés à votre façon de travailler.": "Internal tools, stock management, logistics tracking and SaaS platforms adapted to the way you work.",
+			"Interfaces claires, parcours intuitifs, logo, charte graphique et supports cohérents.": "Clear interfaces, intuitive journeys, logo design, brand guidelines and consistent assets.",
+			"Mises à jour, corrections, petites évolutions et suivi technique pour garder vos outils fiables.": "Updates, fixes, small improvements and technical monitoring to keep your tools reliable.",
+			"Développeurs et designers intégrés à votre organisation, avec flexibilité, suivi et confidentialité.": "Developers and designers integrated into your organization, with flexibility, tracking and confidentiality.",
+			"Diagnostic, conseil, choix d'outils, mise en place progressive et accompagnement des équipes.": "Diagnosis, consulting, tool selection, progressive implementation and team support.",
+			"Nous créons des sites internet sur-mesure, adaptés à vos objectifs : site vitrine pour présenter votre activité, boutique e-commerce pour vendre en ligne, ou plateforme web plus complexe pour vos besoins spécifiques. Notre équipe s'adapte aux technologies les plus pertinentes pour votre projet, sans vous imposer une solution standardisée. Chaque site est pensé pour être rapide, sécurisé, et facile à faire évoluer dans le temps.": "We create custom websites tailored to your goals: showcase websites to present your activity, e-commerce stores to sell online, or more complex web platforms for specific needs. Our team adapts to the technologies that best fit your project, without imposing a standardized solution. Every site is built to be fast, secure and easy to evolve over time.",
+			"Nous concevons des applications mobiles iOS et Android sur-mesure, pensées pour répondre à un besoin métier précis : gestion, logistique, services aux clients, ou usage interne. De la conception de l'expérience utilisateur jusqu'à la publication sur les stores, notre équipe vous accompagne à chaque étape, avec une attention particulière portée à la fluidité et à la fiabilité de l'application.": "We design custom iOS and Android mobile apps built around a precise business need: management, logistics, customer services or internal use. From user experience design to store publication, our team supports you at every stage, with particular attention to fluidity and reliability.",
+			"Toutes les entreprises n'ont pas les mêmes besoins, et les outils standards du marché ne conviennent pas toujours. Nous développons des logiciels entièrement adaptés à votre activité : gestion de stock, suivi logistique, plateformes SaaS, outils internes de pilotage. L'objectif est simple : un outil pensé pour votre façon de travailler, pas l'inverse.": "Every company has different needs, and standard market tools are not always suitable. We develop software fully adapted to your activity: stock management, logistics tracking, SaaS platforms and internal management tools. The goal is simple: a tool designed around the way you work, not the other way around.",
+			"Un bon produit digital ne se limite pas à sa technique : il doit aussi être agréable et intuitif à utiliser. Notre équipe design conçoit des interfaces claires, pensées pour l'expérience de vos utilisateurs (UI/UX), ainsi que des identités visuelles cohérentes pour votre marque (logo, charte graphique, supports visuels). Design et développement travaillent main dans la main pour un résultat homogène du premier croquis à la mise en ligne.": "A good digital product is not only technical: it must also be pleasant and intuitive to use. Our design team creates clear interfaces focused on your users' experience (UI/UX), as well as coherent visual identities for your brand (logo, brand guidelines, visual assets). Design and development work hand in hand for a consistent result from first sketch to launch.",
+			"Un site, une application ou un logiciel a besoin d'être entretenu pour rester performant et sécurisé dans le temps. Nous proposons un service de maintenance incluant les mises à jour de sécurité, les corrections de bugs, les petites évolutions et le suivi technique de votre outil. Vous gardez ainsi l'esprit tranquille, avec une équipe qui connaît déjà votre projet et reste disponible en cas de besoin.": "A website, app or software product needs maintenance to remain performant and secure over time. We offer maintenance services including security updates, bug fixes, small improvements and technical monitoring. You keep peace of mind with a team that already knows your project and remains available when needed.",
+			"Besoin de renforcer temporairement votre équipe technique sans passer par un recrutement long et coûteux ? Nous mettons à votre disposition un ou plusieurs de nos développeurs ou designers, intégrés à votre organisation le temps nécessaire à votre projet. Vous gardez le contrôle de votre roadmap, nous apportons la compétence et la disponibilité, avec une grande flexibilité selon vos besoins (de quelques semaines à plusieurs mois).": "Need to temporarily strengthen your technical team without a long and costly recruitment process? We provide one or more of our developers or designers, integrated into your organization for the time your project requires. You keep control of your roadmap, while we bring skills and availability with strong flexibility according to your needs, from a few weeks to several months.",
+			"Nous vous aidons à identifier les processus à simplifier, les outils à mettre en place et les priorités à traiter pour transformer votre organisation sans complexité inutile. L'accompagnement peut couvrir l'audit, la recommandation, le cadrage, la mise en œuvre et la formation des équipes.": "We help you identify processes to simplify, tools to implement and priorities to address in order to transform your organization without unnecessary complexity. Support can cover audits, recommendations, framing, implementation and team training.",
+			"Pourquoi externaliser chez OCTO ?": "Why outsource with OCTO?",
+			"Habitués à collaborer avec des agences, des entreprises et des partenaires techniques, nous nous adaptons à vos méthodes de travail et à vos exigences afin de garantir une collaboration fluide et efficace.": "Used to working with agencies, companies and technical partners, we adapt to your methods and requirements to ensure smooth and efficient collaboration.",
+			"La confidentialité est au cœur de nos engagements. Si nécessaire, nous pouvons signer un accord de confidentialité (NDA) garantissant la protection de vos informations et le respect de votre relation avec vos clients. Nous nous engageons notamment à ne jamais solliciter directement vos clients finaux dans le cadre d'une mission réalisée pour votre compte.": "Confidentiality is central to our commitments. If needed, we can sign a non-disclosure agreement (NDA) guaranteeing the protection of your information and respect for your client relationships. In particular, we commit never to directly solicit your end clients as part of a mission carried out on your behalf.",
+			"Tout au long du projet, vous bénéficiez d'outils de suivi collaboratifs vous permettant de communiquer facilement avec notre équipe et de suivre en toute transparence l'avancement des travaux.": "Throughout the project, you benefit from collaborative tracking tools that let you communicate easily with our team and transparently monitor progress.",
+			"Des projets pensés pour des besoins concrets": "Projects designed for concrete needs",
+			"Plateforme e-commerce sur-mesure": "Custom e-commerce platform",
+			"Application mobile métier": "Business mobile app",
+			"Outil interne de pilotage": "Internal management tool",
+			"Mobile / Opérations": "Mobile / Operations",
+			"Une boutique pensée pour vendre en ligne, gérer les contenus, suivre les commandes et rester simple à faire évoluer.": "A store designed to sell online, manage content, track orders and remain easy to evolve.",
+			"Une application iOS et Android pour fluidifier les échanges entre les équipes terrain, les clients et l'administration.": "An iOS and Android app to streamline exchanges between field teams, clients and administration.",
+			"Un outil de suivi opérationnel pour centraliser les données, automatiser les tâches et piloter les décisions.": "An operational tracking tool to centralize data, automate tasks and guide decisions.",
+			"Cadrage du besoin et des utilisateurs": "Framing needs and users",
+			"Design d'une interface claire et exploitable": "Designing a clear and usable interface",
+			"Développement, tests et mise en ligne progressive": "Development, testing and progressive launch",
+			"Conseils et repères pour vos projets digitaux": "Guidance and benchmarks for your digital projects",
+			"Comment structurer un projet digital efficace": "How to structure an effective digital project",
+			"Créer du contenu utile pour attirer les bons clients": "Create useful content to attract the right clients",
+			"Réussir sa transformation digitale étape par étape": "Succeed in digital transformation step by step",
+			"Un projet digital réussit mieux quand les objectifs, les utilisateurs, les contraintes et les étapes de livraison sont cadrés dès le départ.": "A digital project succeeds more easily when goals, users, constraints and delivery stages are framed from the start.",
+			"Le contenu devient un levier commercial quand il répond aux vraies questions des clients et met en avant l'expertise de l'entreprise.": "Content becomes a business driver when it answers real client questions and showcases the company's expertise.",
+			"La transformation digitale est plus durable quand elle avance par priorités, avec des outils adaptés et un accompagnement clair des équipes.": "Digital transformation is more sustainable when it moves forward by priorities, with suitable tools and clear team support.",
+			"Chez OCTO, nous privilégions une approche progressive : comprendre le besoin réel, choisir les bons outils, construire une solution lisible, puis l'améliorer dans le temps avec les retours des utilisateurs.": "At OCTO, we favor a progressive approach: understand the real need, choose the right tools, build a clear solution, then improve it over time with user feedback.",
+			"Clarifier les objectifs métier avant la solution technique.": "Clarify business goals before the technical solution.",
+			"Prévoir une première version utile, puis l'enrichir étape par étape.": "Plan a useful first version, then enrich it step by step.",
+			"Garder un suivi collaboratif pour décider vite et bien.": "Keep collaborative tracking to make fast, sound decisions.",
+			"Parlons de votre projet": "Let's talk about your project",
+			"Notre équipe d'experts est à votre écoute pour vous conseiller et vous accompagner à chaque étape de votre projet.": "Our expert team is ready to listen, advise you and support you at every stage of your project.",
+			"Notre équipe d'experts est à votre écoute pour vous conseiller et vous accompagner à chaque étape de votre projet. Contactez-nous afin de bénéficier d'un accompagnement personnalisé et de solutions conçues pour répondre efficacement à vos enjeux.": "Our expert team is ready to listen, advise you and support you at every stage of your project. Contact us to benefit from personalized guidance and solutions designed to address your challenges effectively.",
+			"Appelez-nous": "Call us",
+			"Échangez directement avec un conseiller.": "Speak directly with an advisor.",
+			"Envoyez-nous un e-mail": "Send us an email",
+			"Décrivez votre besoin et recevez une réponse adaptée.": "Describe your need and receive a suitable response.",
+			"WhatsApp": "WhatsApp",
+			"Obtenez rapidement une première orientation.": "Quickly get initial guidance.",
+			"Rendez-nous visite": "Visit us",
+			"Tananarive, Madagascar.": "Antananarivo, Madagascar.",
+			"Envoyer le message": "Send message",
+			"Client OCTO": "OCTO client",
+			"Direction générale": "Executive management",
+			"Partenaire agence": "Agency partner",
+			"Responsable projet digital": "Digital project manager",
+			"Entreprise accompagnée": "Supported company",
+			"Opérations & digitalisation": "Operations & digitalization",
+			"OCTO nous a aidés à clarifier notre besoin, structurer le projet et livrer une solution web adaptée à notre façon de travailler.": "OCTO helped us clarify our need, structure the project and deliver a web solution adapted to the way we work.",
+			"L'équipe s'est intégrée rapidement à notre méthode de travail. Le suivi était clair, les échanges fluides et la confidentialité respectée.": "The team quickly integrated into our way of working. Tracking was clear, exchanges were smooth and confidentiality was respected.",
+			"Les outils mis en place ont simplifié nos processus internes et nous ont permis de suivre plus facilement l'avancement de nos opérations.": "The tools implemented simplified our internal processes and helped us track operations more easily.",
+			"Actualités & articles": "News & articles",
+			"Des profils engagés": "Committed profiles",
+			"derrière": "behind",
+			"Web / E-commerce": "Web / E-commerce",
+			"Logiciel / SaaS": "Software / SaaS"
+		}
+	};
+
+	var autoAttributeTranslations = {
+		en: {
+			"Choisir la langue": "Choose language",
+			"Équipe OCTO": "OCTO team",
+			"Plateforme e-commerce sur-mesure": "Custom e-commerce platform",
+			"Application mobile métier": "Business mobile app",
+			"Outil interne de pilotage": "Internal management tool",
+			"Comment structurer un projet digital efficace": "How to structure an effective digital project",
+			"Créer du contenu utile pour attirer les bons clients": "Create useful content to attract the right clients",
+			"Réussir sa transformation digitale étape par étape": "Succeed in digital transformation step by step",
+			"Développement Web": "Web Development",
+			"Développement Mobile": "Mobile Development",
+			"Logiciel sur-mesure": "Custom software",
+			"Design UI/UX & Identité visuelle": "UI/UX Design & Visual Identity",
+			"Maintenance & Support": "Maintenance & Support",
+			"Externalisation / Mise à disposition d'équipe": "Outsourcing / Dedicated team",
+			"Accompagnement à la digitalisation": "Digitalization support",
+			"Votre nom": "Your name",
+			"Votre email": "Your email",
+			"Sujet du projet": "Project subject",
+			"Décrivez votre besoin": "Describe your need",
+			"Rechercher": "Search"
+		}
+	};
+
+	var originalTextNodes = typeof WeakMap !== "undefined" ? new WeakMap() : null;
+	var originalAttributeValues = typeof WeakMap !== "undefined" ? new WeakMap() : null;
+
 	function t(language, key) {
 		return translations[language][key] || translations[defaultLanguage][key] || "";
 	}
@@ -364,11 +549,121 @@
 		element.textContent = value;
 	}
 
+	function normalizeAutoValue(value) {
+		return value.replace(/\s+/g, " ").trim();
+	}
+
+	function translatedAutoValue(language, originalValue, dictionary) {
+		if (language === defaultLanguage) {
+			return originalValue;
+		}
+
+		return (dictionary[language] && dictionary[language][normalizeAutoValue(originalValue)]) || originalValue;
+	}
+
+	function shouldTranslateTextNode(node) {
+		if (!node.nodeValue || !normalizeAutoValue(node.nodeValue)) {
+			return false;
+		}
+
+		var parent = node.parentElement;
+		if (!parent) {
+			return false;
+		}
+
+		if (parent.closest("script, style, noscript, textarea, [data-i18n], [data-i18n-html], [data-lang-switch]")) {
+			return false;
+		}
+
+		return true;
+	}
+
+	function applyAutoTextTranslations(language) {
+		if (!document.body || !originalTextNodes) {
+			return;
+		}
+
+		var walker = document.createTreeWalker(
+			document.body,
+			NodeFilter.SHOW_TEXT,
+			{
+				acceptNode: function (node) {
+					return shouldTranslateTextNode(node) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
+				}
+			}
+		);
+
+		var node;
+		while ((node = walker.nextNode())) {
+			if (!originalTextNodes.has(node)) {
+				originalTextNodes.set(node, node.nodeValue);
+			}
+
+			var originalValue = originalTextNodes.get(node);
+			var translatedValue = translatedAutoValue(language, originalValue, autoTextTranslations);
+			var leading = originalValue.match(/^\s*/)[0];
+			var trailing = originalValue.match(/\s*$/)[0];
+			node.nodeValue = leading + normalizeAutoValue(translatedValue) + trailing;
+		}
+	}
+
+	function getOriginalAttributeValue(element, attribute) {
+		if (!originalAttributeValues) {
+			return element.getAttribute(attribute) || "";
+		}
+
+		var values = originalAttributeValues.get(element);
+		if (!values) {
+			values = {};
+			originalAttributeValues.set(element, values);
+		}
+
+		if (!Object.prototype.hasOwnProperty.call(values, attribute)) {
+			values[attribute] = element.getAttribute(attribute) || "";
+		}
+
+		return values[attribute];
+	}
+
+	function applyAutoAttributeTranslations(language) {
+		var attributes = ["placeholder", "alt", "aria-label"];
+
+		attributes.forEach(function (attribute) {
+			document.querySelectorAll("[" + attribute + "]").forEach(function (element) {
+				if (element.hasAttribute("data-i18n-" + attribute)) {
+					return;
+				}
+
+				var originalValue = getOriginalAttributeValue(element, attribute);
+				element.setAttribute(attribute, translatedAutoValue(language, originalValue, autoAttributeTranslations));
+			});
+		});
+	}
+
+	function applyDocumentTitle(language) {
+		var originalTitle = document.documentElement.getAttribute("data-original-title");
+		if (!originalTitle) {
+			originalTitle = document.title;
+			document.documentElement.setAttribute("data-original-title", originalTitle);
+		}
+
+		if (language === defaultLanguage) {
+			document.title = originalTitle;
+			return;
+		}
+
+		document.title = (documentTitleTranslations[language] && documentTitleTranslations[language][originalTitle]) || t(language, "meta.title");
+	}
+
+	function applyAutoTranslations(language) {
+		applyDocumentTitle(language);
+		applyAutoTextTranslations(language);
+		applyAutoAttributeTranslations(language);
+	}
+
 	function applyTranslations(language) {
 		document.documentElement.lang = language;
-		if (document.title === translations.fr["meta.title"] || document.title === translations.en["meta.title"]) {
-			document.title = t(language, "meta.title");
-		}
+		applyDocumentTitle(language);
 
 		document.querySelectorAll("[data-i18n]").forEach(function (element) {
 			element.textContent = t(language, element.getAttribute("data-i18n"));
@@ -385,6 +680,8 @@
 		document.querySelectorAll("[data-i18n-aria-label]").forEach(function (element) {
 			element.setAttribute("aria-label", t(language, element.getAttribute("data-i18n-aria-label")));
 		});
+
+		applyAutoTranslations(language);
 
 		selectorMap.forEach(function (item) {
 			document.querySelectorAll(item.selector).forEach(function (element) {
