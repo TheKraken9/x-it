@@ -366,7 +366,9 @@
 
 	function applyTranslations(language) {
 		document.documentElement.lang = language;
-		document.title = t(language, "meta.title");
+		if (document.title === translations.fr["meta.title"] || document.title === translations.en["meta.title"]) {
+			document.title = t(language, "meta.title");
+		}
 
 		document.querySelectorAll("[data-i18n]").forEach(function (element) {
 			element.textContent = t(language, element.getAttribute("data-i18n"));

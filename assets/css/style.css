@@ -1,6 +1,6 @@
 /* ITHUB IT solution & Technology Services HTML-5 Template */
 
-/*** 
+/***
 
 ====================================================================
 	Attachment Css Files
@@ -22,7 +22,7 @@
 @import url('odometer-theme-default.css');
 @import url('jquery.bootstrap-touchspin.css');
 
-/*** 
+/***
 
 ====================================================================
 	Main Slider
@@ -139,8 +139,8 @@
 	right:0px;
 	bottom:0px;
 	opacity:0.20;
-	background-color: rgba(0, 13, 255, 0);
-	background-image: linear-gradient(90deg, rgba(0, 13, 255, 1) 0%, rgba(193, 21, 236, 0) 100%);
+	background-color: rgba(3, 18, 38, 0);
+	background-image: linear-gradient(90deg, rgba(3, 18, 38, 1) 0%, rgba(8, 30, 66, 0) 100%);
 }
 
 .slider-one .swiper-slide-active .slider-one_image-layer{
@@ -182,8 +182,8 @@
 	-ms-transition:all 900ms ease;
 	-o-transition:all 900ms ease;
 	text-transform:capitalize;
-	background-color: rgba(0, 13, 255, 0);
-	background-image: linear-gradient(90deg, rgba(0, 13, 255, 1) 0%, rgba(193, 21, 236, 1) 100%);
+	background-color: rgba(3, 18, 38, 0);
+	background-image: linear-gradient(90deg, rgba(3, 18, 38, 1) 0%, rgba(8, 30, 66, 1) 100%);
 }
 
 .slider-one .swiper-slide-active .slider-one_title{
@@ -303,8 +303,8 @@
 	-webkit-transition:all 300ms ease;
 	-ms-transition:all 300ms ease;
 	-o-transition:all 300ms ease;
-	background-color: rgba(0, 13, 255, 1);
-	background-image: linear-gradient(90deg, rgba(0, 13, 255, 1) 0%, rgba(193, 21, 236, 1) 100%);
+	background-color: rgba(3, 18, 38, 1);
+	background-image: linear-gradient(90deg, rgba(3, 18, 38, 1) 0%, rgba(8, 30, 66, 1) 100%);
 }
 
 /* Slider Socials Box */
@@ -424,7 +424,7 @@
 	color:var(--black-color);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Clients One
@@ -476,7 +476,7 @@
 	opacity:0.50;
 }
 
-/*** 
+/***
 
 ====================================================================
 	About One
@@ -646,7 +646,7 @@
 	display:block;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Marketing One
@@ -690,7 +690,7 @@
 	padding-top:0px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Achieve One
@@ -773,8 +773,8 @@
 	-webkit-transition:all 500ms ease;
 	-ms-transition:all 500ms ease;
 	-o-transition:all 500ms ease;
-	background-color: rgba(0, 13, 255, 1);
-    background-image: linear-gradient(180deg, rgba(0, 13, 255, 1) 0%, rgba(193, 21, 236, 1) 100%);
+	background-color: rgba(3, 18, 38, 1);
+    background-image: linear-gradient(180deg, rgba(3, 18, 38, 1) 0%, rgba(8, 30, 66, 1) 100%);
 }
 
 .counter-one_inner:hover::before{
@@ -801,7 +801,7 @@
 	line-height:1em;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Video One
@@ -892,9 +892,9 @@
     -ms-transition: all 900ms ease;
     -o-transition: all 900ms ease;
 	border:20px solid var(--white-color);
-	background-color: rgba(0, 13, 255, 1);
+	background-color: rgba(3, 18, 38, 1);
 	box-shadow:0px 20px 20px rgba(0,0,0,0.15);
-    background-image: linear-gradient(180deg, rgba(0, 13, 255, 1) 0%, rgba(193, 21, 236, 1) 100%);
+    background-image: linear-gradient(180deg, rgba(3, 18, 38, 1) 0%, rgba(8, 30, 66, 1) 100%);
 	-webkit-animation: icon-bounce 0.8s ease-out infinite;
     animation: icon-bounce 0.8s ease-out infinite;
 }
@@ -959,7 +959,7 @@
     100% {box-shadow: 0 0 0 0 rgba(253, 167, 0, 0);}
 }
 
-/*** 
+/***
 
 ====================================================================
 	Process One
@@ -977,7 +977,7 @@
 }
 
 .process-one .step-block_one:nth-child(2){
-	
+
 	top:30px;
 }
 
@@ -987,7 +987,7 @@
 }
 
 .process-one .step-block_one:nth-child(3){
-	
+
 	top:-160px;
 }
 
@@ -998,7 +998,7 @@
 
 .process-one .step-block_one:nth-child(4){
 	top:-325px;
-	
+
 }
 
 .step-block_one:last-child .step-block_one-inner:before{
@@ -1115,7 +1115,7 @@
 	margin-top:20px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Offer One
@@ -1149,8 +1149,8 @@
 	width:80px;
 	height:1100px;
 	border-radius:50px;
-	background-color: rgba(0, 13, 255, 1);
-    background-image: linear-gradient(180deg, rgba(0, 13, 255, 1) 0%, rgba(193, 21, 236, 1) 100%);
+	background-color: rgba(3, 18, 38, 1);
+    background-image: linear-gradient(180deg, rgba(3, 18, 38, 1) 0%, rgba(8, 30, 66, 1) 100%);
 }
 
 .offer-one .auto-container{
@@ -1166,8 +1166,8 @@
 	padding:25px 25px;
 	border-radius:20px;
 	border:10px solid var(--white-color);
-	background-color: rgba(0, 13, 255, 1);
-    background-image: linear-gradient(180deg, rgba(0, 13, 255, 1) 0%, rgba(193, 21, 236, 1) 100%);
+	background-color: rgba(3, 18, 38, 1);
+    background-image: linear-gradient(180deg, rgba(3, 18, 38, 1) 0%, rgba(8, 30, 66, 1) 100%);
 }
 
 .step-award_box:before{
@@ -1224,9 +1224,9 @@
 
 .offer-one_title:hover .offer-one_arrow{
 	color:var(--white-color);
-	background-color: rgba(0, 13, 255, 1);
+	background-color: rgba(3, 18, 38, 1);
     box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.15);
-    background-image: linear-gradient(180deg, rgba(0, 13, 255, 1) 0%, rgba(193, 21, 236, 1) 100%);
+    background-image: linear-gradient(180deg, rgba(3, 18, 38, 1) 0%, rgba(8, 30, 66, 1) 100%);
 }
 
 .offer-one_title.active .offer-one_arrow img,
@@ -1292,13 +1292,13 @@
 .offer-one_title.active .offer-one_number,
 .offer-one_title:hover .offer-one_number{
 	color:var(--white-color);
-	background-color: rgba(0, 13, 255, 1);
+	background-color: rgba(3, 18, 38, 1);
     box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.15);
-    background-image: linear-gradient(180deg, rgba(0, 13, 255, 1) 0%, rgba(193, 21, 236, 1) 100%);
+    background-image: linear-gradient(180deg, rgba(3, 18, 38, 1) 0%, rgba(8, 30, 66, 1) 100%);
 }
 
 .offer-one_heading{
-	margin-top: 10px; 
+	margin-top: 10px;
 	color: var(--black-color);
 	text-transform: capitalize;
 	transition:all 500ms ease;
@@ -1327,9 +1327,9 @@
 .offer-one_title.active .offer-one_arrow,
 .offer-one_title:hover .offer-one_arrow{
 	color: var(--white-color);
-    background-color: rgba(0, 13, 255, 1);
+    background-color: rgba(3, 18, 38, 1);
     box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.15);
-    background-image: linear-gradient(180deg, rgba(0, 13, 255, 1) 0%, rgba(193, 21, 236, 1) 100%);
+    background-image: linear-gradient(180deg, rgba(3, 18, 38, 1) 0%, rgba(8, 30, 66, 1) 100%);
 }
 
 .offer-one_title.active .offer-one_heading a,
@@ -1437,7 +1437,7 @@
 	padding:34px 32px;
 	border-radius:8px;
 	background:var(--white-color);
-	border:1px solid rgba(0, 13, 255, 0.12);
+	border:1px solid rgba(3, 18, 38, 0.12);
 	box-shadow:0px 18px 44px rgba(0, 0, 0, 0.06);
 	transition:all 500ms ease;
 }
@@ -1445,8 +1445,8 @@
 .octo-offer-card.featured,
 .octo-offer-card:hover{
 	transform:translateY(-6px);
-	border-color:rgba(193, 21, 236, 0.25);
-	box-shadow:0px 24px 54px rgba(0, 13, 255, 0.12);
+	border-color:rgba(8, 30, 66, 0.25);
+	box-shadow:0px 24px 54px rgba(3, 18, 38, 0.12);
 }
 
 .octo-offer-card_label{
@@ -1459,7 +1459,7 @@
 	letter-spacing:0px;
 	color:var(--white-color);
 	text-transform:uppercase;
-	background-image:linear-gradient(180deg, rgba(0, 13, 255, 1) 0%, rgba(193, 21, 236, 1) 100%);
+	background-image:linear-gradient(180deg, rgba(3, 18, 38, 1) 0%, rgba(8, 30, 66, 1) 100%);
 }
 
 .octo-offer-card h3{
@@ -1496,11 +1496,11 @@
 	left:0px;
 	top:1px;
 	font-weight:800;
-	color:rgba(193, 21, 236, 1);
+	color:rgba(8, 30, 66, 1);
 	font-family:'Font Awesome 6 Free';
 }
 
-/*** 
+/***
 
 ====================================================================
 	Testimonial One
@@ -1571,13 +1571,13 @@
 	padding:15px;
 	border-radius:8px;
 	background:var(--white-color);
-	border:1px solid rgba(0, 13, 255, 0.12);
+	border:1px solid rgba(3, 18, 38, 0.12);
 	color:var(--black-color);
 }
 
 .octo-contact-method:hover{
-	border-color:rgba(193, 21, 236, 0.30);
-	box-shadow:0px 14px 34px rgba(0, 13, 255, 0.10);
+	border-color:rgba(8, 30, 66, 0.30);
+	box-shadow:0px 14px 34px rgba(3, 18, 38, 0.10);
 }
 
 .octo-contact-method span{
@@ -1588,7 +1588,7 @@
 	text-align:center;
 	border-radius:8px;
 	color:var(--white-color);
-	background-image:linear-gradient(180deg, rgba(0, 13, 255, 1) 0%, rgba(193, 21, 236, 1) 100%);
+	background-image:linear-gradient(180deg, rgba(3, 18, 38, 1) 0%, rgba(8, 30, 66, 1) 100%);
 }
 
 .octo-contact-method strong{
@@ -1740,7 +1740,7 @@
 	display:inline-block;
 	color:var(--white-color);
 	background-image: linear-gradient(180deg, #000bff, #c115ec);
-	
+
 }
 
 .testimonial-one_carousel-prev:hover,
@@ -1749,7 +1749,7 @@
 	background-image: linear-gradient(180deg, var(--black-color), var(--black-color));
 }
 
-/*** 
+/***
 
 ====================================================================
 	Team One
@@ -2043,7 +2043,7 @@
 	margin-left:30px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Incredible One
@@ -2077,8 +2077,8 @@
 	right:15px;
 	bottom:0px;
 	border-radius:50px;
-	background-color: rgba(0, 13, 255, 0);
-    background-image: linear-gradient(90deg, rgba(0, 13, 255, 1) 0%, rgba(193, 21, 236, 1) 100%);
+	background-color: rgba(3, 18, 38, 0);
+    background-image: linear-gradient(90deg, rgba(3, 18, 38, 1) 0%, rgba(8, 30, 66, 1) 100%);
 }
 
 .incredible-one_pattern{
@@ -2103,7 +2103,7 @@
     -webkit-text-stroke-color: rgba(var(--white-color-rgb), 1);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Experiance One
@@ -2197,7 +2197,7 @@
 	z-index:9;
 }
 
-/*** 
+/***
 
 ====================================================================
 	News One
@@ -2291,8 +2291,8 @@
 	color: var(--white-color);
 	text-transform: capitalize;
 	font-family: "Outfit", serif;
-	background-color: rgba(0, 13, 255, 1);
-    background-image: linear-gradient(90deg, rgba(0, 13, 255, 1) 0%, rgba(193, 21, 236, 1) 100%);
+	background-color: rgba(3, 18, 38, 1);
+    background-image: linear-gradient(90deg, rgba(3, 18, 38, 1) 0%, rgba(8, 30, 66, 1) 100%);
 	outline: 5px solid var(--white-color);
 	outline-offset: 0px;
 }
@@ -2371,8 +2371,8 @@
 	text-align:center;
 	border-radius:50px;
 	transform:rotate(90deg);
-	background-color: rgba(0, 13, 255, 1);
-    background-image: linear-gradient(0deg, rgba(0, 13, 255, 1) 0%, rgba(193, 21, 236, 1) 100%);
+	background-color: rgba(3, 18, 38, 1);
+    background-image: linear-gradient(0deg, rgba(3, 18, 38, 1) 0%, rgba(8, 30, 66, 1) 100%);
 	transition:all 500ms ease;
 	-moz-transition:all 500ms ease;
 	-webkit-transition:all 500ms ease;
@@ -2417,7 +2417,7 @@
 	padding-right: var(--padding-right-25);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Slider Two
@@ -2499,8 +2499,8 @@
 	-ms-transition:all 900ms ease;
 	-o-transition:all 900ms ease;
 	text-transform:capitalize;
-	background-color: rgba(0, 13, 255, 0);
-	background-image: linear-gradient(90deg, rgba(0, 13, 255, 1) 0%, rgba(193, 21, 236, 1) 100%);
+	background-color: rgba(3, 18, 38, 0);
+	background-image: linear-gradient(90deg, rgba(3, 18, 38, 1) 0%, rgba(8, 30, 66, 1) 100%);
 	transition: 1.3s cubic-bezier(0.5, 0.5, 0, 1);
     clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
 }
@@ -2647,7 +2647,7 @@
 	display:inline-block;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Counter Two
@@ -2722,7 +2722,7 @@
 	color: var(--main-color);
 }
 
-/*** 
+/***
 
 ====================================================================
 	About Two
@@ -2814,9 +2814,9 @@
 	line-height:147px;
 	display:inline-block;
 	color:var(--white-color);
-	background-color: rgba(0, 13, 255, 1);
+	background-color: rgba(3, 18, 38, 1);
     box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.15);
-    background-image: linear-gradient(180deg, rgba(0, 13, 255, 1) 0%, rgba(193, 21, 236, 1) 100%);
+    background-image: linear-gradient(180deg, rgba(3, 18, 38, 1) 0%, rgba(8, 30, 66, 1) 100%);
 }
 
 .about-two_video .ripple,
@@ -2837,11 +2837,11 @@
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     border-radius: 50%;
-    -webkit-box-shadow: 0 0 0 0 rgba(0,13,255, .3);
-    -moz-box-shadow: 0 0 0 0 rgba(0,13,255, .3);
-    -ms-box-shadow: 0 0 0 0 rgba(0,13,255, .3);
-    -o-box-shadow: 0 0 0 0 rgba(0,13,255, .3);
-    box-shadow: 0 0 0 0 rgba(0,13,255, .3);
+    -webkit-box-shadow: 0 0 0 0 rgba(3,18,38, .3);
+    -moz-box-shadow: 0 0 0 0 rgba(3,18,38, .3);
+    -ms-box-shadow: 0 0 0 0 rgba(3,18,38, .3);
+    -o-box-shadow: 0 0 0 0 rgba(3,18,38, .3);
+    box-shadow: 0 0 0 0 rgba(3,18,38, .3);
     -webkit-animation: ripple 3s infinite;
     -moz-animation: ripple 3s infinite;
     -ms-animation: ripple 3s infinite;
@@ -2975,8 +2975,8 @@
 	height:16px;
 	width:0px;
 	border-radius:50px;
-	background-color: rgba(0, 13, 255, 0);
-    background-image: linear-gradient(90deg, rgba(0, 13, 255, 1) 0%, rgba(193, 21, 236, 1) 100%);
+	background-color: rgba(3, 18, 38, 0);
+    background-image: linear-gradient(90deg, rgba(3, 18, 38, 1) 0%, rgba(8, 30, 66, 1) 100%);
 	-webkit-transition:all 2000ms ease;
 	-ms-transition:all 2000ms ease;
 	-o-transition:all 2000ms ease;
@@ -2998,7 +2998,7 @@
 	margin-top:60px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Services One
@@ -3132,8 +3132,8 @@
 	-webkit-transition:all 500ms ease;
 	-ms-transition:all 500ms ease;
 	-o-transition:all 500ms ease;
-    background-color: rgba(0, 13, 255, 1);
-    background-image: linear-gradient(180deg, rgba(0, 13, 255, 1) 0%, rgba(193, 21, 236, 1) 100%);
+    background-color: rgba(3, 18, 38, 1);
+    background-image: linear-gradient(180deg, rgba(3, 18, 38, 1) 0%, rgba(8, 30, 66, 1) 100%);
 }
 
 .service-block_one-inner:hover .service-block_one-icon{
@@ -3230,7 +3230,7 @@
     animation: icon-bounce 0.8s ease-out infinite;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Gallery One
@@ -3294,7 +3294,7 @@
 	position:relative;
 	width:100%;
 	display:block;
-	
+
 	transition:all 500ms ease;
 	-moz-transition:all 500ms ease;
 	-webkit-transition:all 500ms ease;
@@ -3374,8 +3374,8 @@
 }
 
 .gallery-block-one_inner:hover .gallery-block_one-arrow{
-	background-color: rgba(0, 13, 255, 1);
-    background-image: linear-gradient(180deg, rgba(0, 13, 255, 1) 0%, rgba(193, 21, 236, 1) 100%);
+	background-color: rgba(3, 18, 38, 1);
+    background-image: linear-gradient(180deg, rgba(3, 18, 38, 1) 0%, rgba(8, 30, 66, 1) 100%);
 }
 
 .gallery-block_one-hand{
@@ -3389,7 +3389,7 @@
 	padding-top:30px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Faq One
@@ -3458,7 +3458,7 @@
     left: -10px;
     right: -10px;
     bottom: -10px;
-    background: linear-gradient(to bottom, #ffffff, #C115EC);
+    background: linear-gradient(to bottom, #ffffff, #081E42);
     border-radius: 360px; /* Slightly larger for a smooth effect */
 }
 
@@ -3490,7 +3490,7 @@
     border-radius: 360px; /* Slightly larger for a smooth effect */
 }
 
-/*** 
+/***
 
 ====================================================================
 	Accordion Style
@@ -3562,8 +3562,8 @@
 	-webkit-transition:all 500ms ease;
 	-ms-transition:all 500ms ease;
 	-o-transition:all 500ms ease;
-	background-color: rgba(0, 13, 255, 1);
-    background-image: linear-gradient(180deg, rgba(0, 13, 255, 1) 0%, rgba(193, 21, 236, 1) 100%);
+	background-color: rgba(3, 18, 38, 1);
+    background-image: linear-gradient(180deg, rgba(3, 18, 38, 1) 0%, rgba(8, 30, 66, 1) 100%);
 }
 
 .accordion-box .block .acc-btn.active .icon-outer .icon{
@@ -3581,11 +3581,11 @@
 }
 
 .accordion-box .block .acc-content .content-text{
-	
+
 }
 
 .accordion-box .block .acc-content.current{
-	display:block;	
+	display:block;
 }
 
 .accordion-box .block .content{
@@ -3603,7 +3603,7 @@
 	background-color:#feefff;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Offer Two
@@ -3671,8 +3671,8 @@
 	-webkit-transition:all 500ms ease;
 	-ms-transition:all 500ms ease;
 	-o-transition:all 500ms ease;
-	background-color: rgba(0, 13, 255, 1);
-    background-image: linear-gradient(180deg, rgba(0, 13, 255, 1) 0%, rgba(193, 21, 236, 1) 100%);
+	background-color: rgba(3, 18, 38, 1);
+    background-image: linear-gradient(180deg, rgba(3, 18, 38, 1) 0%, rgba(8, 30, 66, 1) 100%);
 }
 
 .offer-block_one-inner:hover::before{
@@ -3724,7 +3724,7 @@
 	margin-top:30px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Price One
@@ -3765,7 +3765,7 @@
 }
 
 .pricing-tabs .tabs-content .tab.active-tab{
-	display:block;	
+	display:block;
 }
 
 .pricing-tabs .buttons-outer{
@@ -4019,17 +4019,17 @@
     color: var(--white-color);
     text-transform: capitalize;
     font-family: 'Manrope', sans-serif;
-    background-color: rgba(0, 13, 255, 1);
-    background-image: linear-gradient(90deg, rgba(0, 13, 255, 1) 0%, rgba(193, 21, 236, 1) 100%);
+    background-color: rgba(3, 18, 38, 1);
+    background-image: linear-gradient(90deg, rgba(3, 18, 38, 1) 0%, rgba(8, 30, 66, 1) 100%);
 }
 
 .price-block_one-btn:hover{
 	color: var(--white-color);
-	background-color: rgba(0, 13, 255, 1);
-    background-image: linear-gradient(0deg, rgba(0, 13, 255, 1) 0%, rgba(193, 21, 236, 1) 100%);
+	background-color: rgba(3, 18, 38, 1);
+    background-image: linear-gradient(0deg, rgba(3, 18, 38, 1) 0%, rgba(8, 30, 66, 1) 100%);
 }
 
-/*** 
+/***
 
 ====================================================================
 	News Two
@@ -4067,7 +4067,7 @@
 }
 
 .news-two_images-outer{
-	
+
 }
 
 .sticky-top{
@@ -4084,7 +4084,7 @@
 	position:relative;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Slider Three
@@ -4204,8 +4204,8 @@
 	right:0px;
 	bottom:0px;
 	opacity:0.10;
-	background-color: rgba(0, 13, 255, 0);
-    background-image: linear-gradient(0deg, rgba(0, 13, 255, 1) 0%, rgba(193, 21, 236, 1) 100%);
+	background-color: rgba(3, 18, 38, 0);
+    background-image: linear-gradient(0deg, rgba(3, 18, 38, 1) 0%, rgba(8, 30, 66, 1) 100%);
 }
 
 .slider-three .swiper-slide-active .slider-three_image-layer{
@@ -4409,7 +4409,7 @@
 	font-size:16px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Employer One
@@ -4509,8 +4509,8 @@
 	padding:12px 12px;
 	border-radius:50px;
 	display:inline-block;
-	background-color: rgba(0, 13, 255, 1);
-    background-image: linear-gradient(180deg, rgba(0, 13, 255, 1) 0%, rgba(193, 21, 236, 1) 100%);
+	background-color: rgba(3, 18, 38, 1);
+    background-image: linear-gradient(180deg, rgba(3, 18, 38, 1) 0%, rgba(8, 30, 66, 1) 100%);
 }
 
 .empower-block_one-content{
@@ -4561,7 +4561,7 @@
 	margin-top:30px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	About Three
@@ -4746,7 +4746,7 @@
     font-family: "Raleway", serif;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Gallery Two
@@ -4764,7 +4764,7 @@
 	overflow:visible;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Inspire One
@@ -4789,8 +4789,8 @@
 	top:22px;
 	right:0px;
 	height:100px;
-	background-color: rgba(0, 13, 255, 1);
-    background-image: linear-gradient(-90deg, rgba(0, 13, 255, 1) 0%, rgba(193, 21, 236, 1) 100%);
+	background-color: rgba(3, 18, 38, 1);
+    background-image: linear-gradient(-90deg, rgba(3, 18, 38, 1) 0%, rgba(8, 30, 66, 1) 100%);
 }
 
 .inspire-one .animation_mode{
@@ -4815,7 +4815,7 @@
 	color: var(--main-color);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Clients Two
@@ -4876,7 +4876,7 @@
 	opacity:0.50;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Business One
@@ -4888,8 +4888,8 @@
 	position:relative;
 	overflow:hidden;
 	padding:130px 0px 85px;
-	background-color: rgba(0, 13, 255, 1);
-    background-image: linear-gradient(0deg, rgba(0, 13, 255, 1) 0%, rgba(193, 21, 236, 1) 100%);
+	background-color: rgba(3, 18, 38, 1);
+    background-image: linear-gradient(0deg, rgba(3, 18, 38, 1) 0%, rgba(8, 30, 66, 1) 100%);
 }
 
 .business-one_vector{
@@ -4946,9 +4946,9 @@
 	display:inline-block;
 	color:var(--white-color);
 	border:12px solid var(--white-color);
-	background-color: rgba(0, 13, 255, 1);
+	background-color: rgba(3, 18, 38, 1);
     box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.15);
-    background-image: linear-gradient(180deg, rgba(0, 13, 255, 1) 0%, rgba(193, 21, 236, 1) 100%);
+    background-image: linear-gradient(180deg, rgba(3, 18, 38, 1) 0%, rgba(8, 30, 66, 1) 100%);
 }
 
 .business-one_play .ripple,
@@ -4969,11 +4969,11 @@
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     border-radius: 50%;
-    -webkit-box-shadow: 0 0 0 0 rgba(0,13,255, .3);
-    -moz-box-shadow: 0 0 0 0 rgba(0,13,255, .3);
-    -ms-box-shadow: 0 0 0 0 rgba(0,13,255, .3);
-    -o-box-shadow: 0 0 0 0 rgba(0,13,255, .3);
-    box-shadow: 0 0 0 0 rgba(0,13,255, .3);
+    -webkit-box-shadow: 0 0 0 0 rgba(3,18,38, .3);
+    -moz-box-shadow: 0 0 0 0 rgba(3,18,38, .3);
+    -ms-box-shadow: 0 0 0 0 rgba(3,18,38, .3);
+    -o-box-shadow: 0 0 0 0 rgba(3,18,38, .3);
+    box-shadow: 0 0 0 0 rgba(3,18,38, .3);
     -webkit-animation: ripple 3s infinite;
     -moz-animation: ripple 3s infinite;
     -ms-animation: ripple 3s infinite;
@@ -5079,7 +5079,7 @@
 	margin-top: 30px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Testimonial Two
@@ -5365,7 +5365,7 @@
 	justify-content:end;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Team Two
@@ -5414,8 +5414,8 @@
 	height:750px;
 	border-radius:100px;
 	transform:rotate(-45deg);
-	background-color: rgba(0, 13, 255, 1);
-    background-image: linear-gradient(90deg, rgba(0, 13, 255, 1) 0%, rgba(193, 21, 236, 1) 100%);
+	background-color: rgba(3, 18, 38, 1);
+    background-image: linear-gradient(90deg, rgba(3, 18, 38, 1) 0%, rgba(8, 30, 66, 1) 100%);
 }
 
 /* Team Block Three */
@@ -5448,8 +5448,8 @@
 	overflow:hidden;
 	padding:15px 15px;
 	border-radius:50%;
-	background-color: rgba(0, 13, 255, 1);
-    background-image: linear-gradient(90deg, rgba(0, 13, 255, 1) 0%, rgba(193, 21, 236, 1) 100%);
+	background-color: rgba(3, 18, 38, 1);
+    background-image: linear-gradient(90deg, rgba(3, 18, 38, 1) 0%, rgba(8, 30, 66, 1) 100%);
 }
 
 .team-block_two-image img{
@@ -5504,8 +5504,8 @@
 }
 
 .team-block_two-socials a:hover{
-	background-color: rgba(0, 13, 255, 1);
-    background-image: linear-gradient(180deg, rgba(0, 13, 255, 1) 0%, rgba(193, 21, 236, 1) 100%);
+	background-color: rgba(3, 18, 38, 1);
+    background-image: linear-gradient(180deg, rgba(3, 18, 38, 1) 0%, rgba(8, 30, 66, 1) 100%);
 }
 
 .team-two .thumbs-column{
@@ -5577,7 +5577,7 @@
 	font-family: "Outfit", serif;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Contact One
@@ -5785,8 +5785,8 @@
 	text-align:center;
 	border-radius:50px;
 	display:inline-block;
-	background-color: rgba(0, 13, 255, 1);
-    background-image: linear-gradient(180deg, rgba(0, 13, 255, 1) 0%, rgba(193, 21, 236, 1) 100%);
+	background-color: rgba(3, 18, 38, 1);
+    background-image: linear-gradient(180deg, rgba(3, 18, 38, 1) 0%, rgba(8, 30, 66, 1) 100%);
 }
 
 .contact-one_info li strong{
@@ -5813,7 +5813,7 @@
 	bottom:0px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	News Three
@@ -5939,8 +5939,8 @@
 }
 
 .news-block_two-inner:hover .news-block_two-arrow a{
-	background-color: rgba(0, 13, 255, 1);
-    background-image: linear-gradient(180deg, rgba(0, 13, 255, 1) 0%, rgba(193, 21, 236, 1) 100%);
+	background-color: rgba(3, 18, 38, 1);
+    background-image: linear-gradient(180deg, rgba(3, 18, 38, 1) 0%, rgba(8, 30, 66, 1) 100%);
 }
 
 .news-block_two-hover{
@@ -5967,7 +5967,7 @@
 	opacity:1;
 }
 
-/*** 
+/***
 
 ====================================================================
 	CTA One
@@ -6109,7 +6109,7 @@
 	-moz-transition: all 300ms ease;
 	-ms-transition: all 300ms ease;
 	-o-transition: all 300ms ease;
-	transition: all 300ms ease;	
+	transition: all 300ms ease;
 }
 
 .page-title .bread-crumb li a:hover{
@@ -6182,7 +6182,7 @@
 	margin-top:30px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Project Detail
@@ -6334,7 +6334,7 @@
 }
 
 .time-counter .time-countdown .counter-column:nth-child(2){
-	background-color: #C115EC;
+	background-color: #081E42;
 }
 
 .time-counter .time-countdown .counter-column:nth-child(3){
@@ -6342,7 +6342,7 @@
 }
 
 .time-counter .time-countdown .counter-column:nth-child(4){
-	background-color: #000DFF;
+	background-color: #031226;
 }
 
 .time-counter .time-countdown .counter-column .count{
@@ -6399,7 +6399,7 @@
 	-moz-transition:all 300ms ease;
 	-ms-transition:all 300ms ease;
 	-o-transition:all 300ms ease;
-	transition:all 300ms ease;	
+	transition:all 300ms ease;
 }
 
 .coming-soon .emailed-form .form-group input:focus,
@@ -6423,7 +6423,7 @@
 	-moz-transition:all 300ms ease;
 	-ms-transition:all 300ms ease;
 	-o-transition:all 300ms ease;
-	transition:all 300ms ease;	
+	transition:all 300ms ease;
 }
 
 .coming-soon .emailed-form .form-group input[type="submit"]:hover,
@@ -6687,8 +6687,8 @@
 	color: var(--black-color);
 	text-transform: capitalize;
 	font-family: "Outfit", serif;
-	background-color: rgba(0, 13, 255, 0);
-    background-image: linear-gradient(-90deg, rgba(0, 13, 255, 1) 0%, rgba(193, 21, 236, 1) 100%);
+	background-color: rgba(3, 18, 38, 0);
+    background-image: linear-gradient(-90deg, rgba(3, 18, 38, 1) 0%, rgba(8, 30, 66, 1) 100%);
 	-webkit-transition:all 300ms ease;
 	-moz-transition:all 300ms ease;
 	-ms-transition:all 300ms ease;
@@ -6726,8 +6726,8 @@
 	padding:12px 12px;
 	border-radius:50px;
 	display:inline-block;
-	background-color: rgba(0, 13, 255, 0);
-    background-image: linear-gradient(-90deg, rgba(0, 13, 255, 1) 0%, rgba(193, 21, 236, 1) 100%);
+	background-color: rgba(3, 18, 38, 0);
+    background-image: linear-gradient(-90deg, rgba(3, 18, 38, 1) 0%, rgba(8, 30, 66, 1) 100%);
 }
 
 .category-list li a:hover span{
@@ -6924,7 +6924,7 @@
 	margin-bottom:0px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Team Three
@@ -6955,8 +6955,8 @@
 	padding:25px 25px;
 	outline: 8px solid var(--white-color);
 	outline-offset: -26px;
-	background-color: rgba(0, 13, 255, 1);
-    background-image: linear-gradient(90deg, rgba(0, 13, 255, 1) 0%, rgba(193, 21, 236, 1) 100%);
+	background-color: rgba(3, 18, 38, 1);
+    background-image: linear-gradient(90deg, rgba(3, 18, 38, 1) 0%, rgba(8, 30, 66, 1) 100%);
 }
 
 .team-block_three-image img{
@@ -7035,8 +7035,8 @@
 }
 
 .team-block_three-socials a:hover{
-	background-color: rgba(0, 13, 255, 1);
-    background-image: linear-gradient(180deg, rgba(0, 13, 255, 1) 0%, rgba(193, 21, 236, 1) 100%);
+	background-color: rgba(3, 18, 38, 1);
+    background-image: linear-gradient(180deg, rgba(3, 18, 38, 1) 0%, rgba(8, 30, 66, 1) 100%);
 }
 
 .team-block_three-layer{
@@ -7062,7 +7062,7 @@
 	opacity:1;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Team Detail
@@ -7155,7 +7155,7 @@
 	margin-bottom:25px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Team Tabs Style
@@ -7194,9 +7194,9 @@
 
 .team-tabs .tab-btns .tab-btn:hover,
 .team-tabs .tab-btns .tab-btn.active-btn{
-	color:var(--white-color); 
-	background-color: rgba(0, 13, 255, 1);
-    background-image: linear-gradient(90deg, rgba(0, 13, 255, 1) 0%, rgba(193, 21, 236, 1) 100%);
+	color:var(--white-color);
+	background-color: rgba(3, 18, 38, 1);
+    background-image: linear-gradient(90deg, rgba(3, 18, 38, 1) 0%, rgba(8, 30, 66, 1) 100%);
 }
 
 .team-tabs .tabs-content{
@@ -7211,7 +7211,7 @@
 }
 
 .team-tabs .tabs-content .tab.active-tab{
-	display:block;	
+	display:block;
 }
 
 .team-detail_contact{
@@ -7275,7 +7275,7 @@
 .contact-form .form-group input[type="email"]:focus,
 .contact-form .form-group select:focus,
 .contact-form .form-group textarea:focus{
-	
+
 }
 
 .contact-form .form-group .theme-btn{
@@ -7305,10 +7305,10 @@
 .contact-form input:focus,
 .contact-form select:focus,
 .contact-form textarea:focus{
-	
+
 }
 
-/*** 
+/***
 
 ====================================================================
 	News Four
@@ -7321,7 +7321,7 @@
 	padding:110px 0px 110px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Styled Pagination
@@ -7361,8 +7361,8 @@
 	-o-transition:all 500ms ease;
 	-moz-transition:all 500ms ease;
 	color:var(--white-color);
-	background-color: rgba(0, 13, 255, 1);
-    background-image: linear-gradient(90deg, rgba(0, 13, 255, 1) 0%, rgba(193, 21, 236, 1) 100%);
+	background-color: rgba(3, 18, 38, 1);
+    background-image: linear-gradient(90deg, rgba(3, 18, 38, 1) 0%, rgba(8, 30, 66, 1) 100%);
 }
 
 .styled-pagination li.prev a,
@@ -7464,8 +7464,8 @@
 	color: var(--white-color);
 	text-transform: capitalize;
 	font-family: "Outfit", serif;
-	background-color: rgba(0, 13, 255, 1);
-    background-image: linear-gradient(90deg, rgba(0, 13, 255, 1) 0%, rgba(193, 21, 236, 1) 100%);
+	background-color: rgba(3, 18, 38, 1);
+    background-image: linear-gradient(90deg, rgba(3, 18, 38, 1) 0%, rgba(8, 30, 66, 1) 100%);
 	outline: 5px solid var(--white-color);
 	outline-offset: 0px;
 }
@@ -7550,8 +7550,8 @@
 	border-radius:50px;
 	display:inline-block;
 	transform:rotate(90deg);
-	background-color: rgba(0, 13, 255, 1);
-    background-image: linear-gradient(0deg, rgba(0, 13, 255, 1) 0%, rgba(193, 21, 236, 1) 100%);
+	background-color: rgba(3, 18, 38, 1);
+    background-image: linear-gradient(0deg, rgba(3, 18, 38, 1) 0%, rgba(8, 30, 66, 1) 100%);
 	transition:all 500ms ease;
 	-moz-transition:all 500ms ease;
 	-webkit-transition:all 500ms ease;
@@ -7648,8 +7648,8 @@
 	-webkit-transition:all 500ms ease;
 	-ms-transition:all 500ms ease;
 	-o-transition:all 500ms ease;
-	background-color: rgba(0, 13, 255, 1);
-    background-image: linear-gradient(0deg, rgba(0, 13, 255, 1) 0%, rgba(193, 21, 236, 1) 100%);
+	background-color: rgba(3, 18, 38, 1);
+    background-image: linear-gradient(0deg, rgba(3, 18, 38, 1) 0%, rgba(8, 30, 66, 1) 100%);
 }
 
 .sidebar .search-box .form-group button:hover{
@@ -7772,8 +7772,8 @@
 }
 
 .category-list_two li a:hover{
-	background-color: rgba(0, 13, 255, 1);
-    background-image: linear-gradient(0deg, rgba(0, 13, 255, 1) 0%, rgba(193, 21, 236, 1) 100%);
+	background-color: rgba(3, 18, 38, 1);
+    background-image: linear-gradient(0deg, rgba(3, 18, 38, 1) 0%, rgba(8, 30, 66, 1) 100%);
 	color: var(--white-color);
 }
 
@@ -7902,8 +7902,8 @@
 	color: var(--white-color);
 	text-transform: capitalize;
 	font-family: "Outfit", serif;
-	background-color: rgba(0, 13, 255, 1);
-    background-image: linear-gradient(90deg, rgba(0, 13, 255, 1) 0%, rgba(193, 21, 236, 1) 100%);
+	background-color: rgba(3, 18, 38, 1);
+    background-image: linear-gradient(90deg, rgba(3, 18, 38, 1) 0%, rgba(8, 30, 66, 1) 100%);
 	outline: 5px solid var(--white-color);
 	outline-offset: 0px;
 }
@@ -8026,8 +8026,8 @@
 	border-radius:10px;
 	text-align:center;
 	display:inline-block;
-	background-color: rgba(0, 13, 255, 1);
-    background-image: linear-gradient(90deg, rgba(0, 13, 255, 1) 0%, rgba(193, 21, 236, 1) 100%);
+	background-color: rgba(3, 18, 38, 1);
+    background-image: linear-gradient(90deg, rgba(3, 18, 38, 1) 0%, rgba(8, 30, 66, 1) 100%);
 }
 
 .blog-detail blockquote i{
@@ -8239,7 +8239,7 @@
 	margin-bottom:10px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Comments Area
@@ -8360,7 +8360,7 @@
 	background-color: var(--main-color);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Comment Form
@@ -8459,7 +8459,7 @@
 	padding:17px 40px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Contact Two
@@ -8528,7 +8528,7 @@
 	color:var(--black-color);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Map One
@@ -8547,7 +8547,7 @@
 	border-radius: 20px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Privacy Section
@@ -8621,7 +8621,7 @@
 	background-color:var(--main-color);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Contact Three
@@ -8737,7 +8737,7 @@
 	border:4px solid var(--white-color);
 	background:var(--main-color);
 	border-radius:0px;
-	cursor:pointer;	
+	cursor:pointer;
 }
 
 .range-slider-one .theme-btn{
@@ -8770,7 +8770,7 @@
 
 .sidebar .related-posts .post .post-thumb img{
 	display:block;
-	width:100%;	
+	width:100%;
 }
 
 .sidebar .related-posts .post h4{
@@ -9029,7 +9029,7 @@
 	color:var(--white-color);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Shop Detail
@@ -9214,7 +9214,7 @@
 
 .quantity-box .bootstrap-touchspin .input-group-btn-vertical > .btn.bootstrap-touchspin-down:hover,
 .quantity-box .bootstrap-touchspin .input-group-btn-vertical > .btn.bootstrap-touchspin-up:hover{
-	
+
 }
 
 .quantity-box .bootstrap-touchspin .glyphicon-chevron-up:before {
@@ -9243,7 +9243,7 @@
 .quantity-box .bootstrap-touchspin .input-group-btn-vertical i{
 	top: 6px;
 	left: 14px;
-	font-size: inherit !important; 
+	font-size: inherit !important;
 }
 
 .quantity-box .bootstrap-touchspin .input-group-btn-vertical .bootstrap-touchspin-down{
@@ -9320,7 +9320,7 @@
 	background-color: var(--color-two);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Product Tabs Style
@@ -9368,7 +9368,7 @@
 
 .shop-detail .prod-tabs .tab-btns .tab-btn:hover,
 .shop-detail .prod-tabs .tab-btns .tab-btn.active-btn{
-	color:var(--white-color); 
+	color:var(--white-color);
 	background-color: var(--main-color);
 }
 
@@ -9384,7 +9384,7 @@
 }
 
 .shop-detail .prod-tabs .tabs-content .tab.active-tab{
-	display:block;	
+	display:block;
 }
 
 .prod-tabs .tabs-content p{
@@ -9548,7 +9548,7 @@
 	text-transform: uppercase;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Cart Section
@@ -9581,7 +9581,7 @@
 
 .cart-section .cart-table{
 	width:100%;
-	min-width:900px;	
+	min-width:900px;
 }
 
 .cart-table .cart-header{
@@ -9639,7 +9639,7 @@
 	left:0px;
 	top:0px;
 	padding:10px 10px;
-	border:1px solid #f0f0f0;	
+	border:1px solid #f0f0f0;
 }
 
 .cart-table .cross-icon{
@@ -9715,7 +9715,7 @@
 }
 
 .cart-table tbody tr{
-	border-bottom:1px solid #f0f0f0;	
+	border-bottom:1px solid #f0f0f0;
 }
 
 .cart-table tbody tr td.price{
@@ -9737,7 +9737,7 @@
 
 .shoping-cart-section .total-column .inner-column{
 	position:relative;
-	
+
 }
 
 .shoping-cart-section .total-column .title-box{
@@ -9866,7 +9866,7 @@
 
 .shoping-cart-section .check-box input[type="checkbox"]:checked + label:after {
 	max-width: 20px;
-	opacity: 1;	
+	opacity: 1;
 }
 
 /* Shipping Outer */
@@ -9932,7 +9932,7 @@
 	position:relative;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Shipping Form
@@ -10098,7 +10098,7 @@
 
 .shipping-form .check-box input[type="checkbox"]:checked + label:after {
 	max-width: 20px;
-	opacity: 1;	
+	opacity: 1;
 }
 
 .shipping-form .theme-btn{
@@ -10231,7 +10231,7 @@
 	background-color:var(--black-color);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Register One
@@ -10269,4 +10269,189 @@
 
 .color-palate{
 	display:none;
+}
+
+
+/***
+
+====================================================================
+	OCTO Static Pages
+====================================================================
+
+***/
+
+.octo-brand-logo,
+.octo-footer-logo{
+	display:inline-block;
+	font-size:34px;
+	line-height:42px;
+	font-weight:900;
+	letter-spacing:0px;
+	color:var(--white-color);
+}
+
+.header-style-one .octo-brand-logo{
+	color:var(--black-color);
+}
+
+.octo-footer-logo{
+	margin-bottom:18px;
+}
+
+.octo-page-section{
+	position:relative;
+	padding:110px 0px 90px;
+}
+
+.octo-image-panel img,
+.octo-detail-article img{
+	width:100%;
+	border-radius:8px;
+	display:block;
+}
+
+.octo-rich-text p{
+	margin-bottom:18px;
+	font-size:17px;
+	line-height:29px;
+	color:#555555;
+}
+
+.octo-pill-list{
+	display:flex;
+	gap:10px;
+	flex-wrap:wrap;
+	margin-top:24px;
+}
+
+.octo-pill-list span{
+	padding:9px 14px;
+	border-radius:8px;
+	font-weight:700;
+	color:var(--white-color);
+	background:var(--main-color);
+}
+
+.octo-service-card{
+	margin-bottom:30px;
+}
+
+.octo-service-card_inner{
+	height:100%;
+	position:relative;
+	padding:34px 30px;
+	border-radius:8px;
+	background:var(--white-color);
+	border:1px solid rgba(var(--main-color-rgb), 0.14);
+	box-shadow:0px 18px 42px rgba(0, 0, 0, 0.06);
+	transition:all 500ms ease;
+}
+
+.octo-service-card_inner:hover{
+	transform:translateY(-6px);
+	box-shadow:0px 24px 54px rgba(var(--main-color-rgb), 0.14);
+}
+
+.octo-service-card_count{
+	font-size:14px;
+	font-weight:800;
+	color:var(--main-color);
+	margin-bottom:16px;
+}
+
+.octo-service-card_icon{
+	width:58px;
+	height:58px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	border-radius:8px;
+	margin-bottom:22px;
+	background:rgba(var(--main-color-rgb), 0.06);
+}
+
+.octo-service-card h3{
+	font-size:24px;
+	line-height:31px;
+	margin-bottom:15px;
+}
+
+.octo-service-card h3 a{
+	color:var(--black-color);
+}
+
+.octo-service-card p,
+.octo-card-text{
+	font-size:15px;
+	line-height:25px;
+	color:#626262;
+}
+
+.octo-link{
+	display:inline-flex;
+	align-items:center;
+	gap:8px;
+	margin-top:18px;
+	font-weight:800;
+	color:var(--main-color);
+}
+
+.octo-service-detail-block{
+	position:relative;
+	padding-bottom:45px;
+	margin-bottom:45px;
+	border-bottom:1px solid rgba(var(--main-color-rgb), 0.12);
+	scroll-margin-top:110px;
+}
+
+.octo-service-detail-block:last-child{
+	border-bottom:0px;
+}
+
+.octo-service-detail .service-detail_text{
+	margin-bottom:18px;
+}
+
+.octo-sticky-sidebar{
+	top:100px;
+}
+
+.octo-detail-article{
+	position:relative;
+	padding:0px 0px 44px;
+	margin-bottom:46px;
+	border-bottom:1px solid rgba(var(--main-color-rgb), 0.12);
+	scroll-margin-top:110px;
+}
+
+.octo-detail-article span{
+	display:inline-block;
+	margin:22px 0px 12px;
+	font-weight:800;
+	color:var(--main-color);
+}
+
+.octo-detail-article h2{
+	font-size:34px;
+	line-height:42px;
+	margin-bottom:16px;
+	color:var(--black-color);
+}
+
+.octo-detail-article p{
+	font-size:17px;
+	line-height:29px;
+	color:#555555;
+}
+
+.octo-footer .footer-three_list li{
+	margin-bottom:10px;
+}
+
+.octo-footer .footer-three_list a{
+	color:rgba(255,255,255,0.78);
+}
+
+.octo-footer .footer-three_list a:hover{
+	color:var(--white-color);
 }
