@@ -331,6 +331,120 @@
 		{ selector: ".main-footer_copyright", key: "footer.copyright" }
 	];
 
+	var pageContentMap = [
+		{ pages: ["services.html"], selector: ".page-title h1", fr: "Nos services", en: "Our services" },
+		{ pages: ["services.html"], selector: ".bread-crumb li:last-child", fr: "Services", en: "Our services" },
+		{ pages: ["services.html"], selector: ".octo-services-page .sec-title_title", fr: "Ce que nous proposons", en: "What we offer", mode: "centeredSectionTitle" },
+		{ pages: ["services.html"], selector: ".octo-services-page .sec-title_heading", fr: "Des solutions digitales concrètes pour votre activité", en: "Concrete digital solutions for your business" },
+		{ pages: ["services.html"], selector: ".octo-services-page .sec-title_text", fr: "OCTO conçoit, développe et maintient des outils adaptés à vos objectifs, sans vous imposer de solution standardisée.", en: "OCTO designs, develops and maintains tools tailored to your goals, without imposing a standardized solution." },
+		{ pages: ["services.html"], selector: ".octo-services-page .octo-service-card:nth-child(1) h3 a", fr: "Développement Web", en: "Web Development" },
+		{ pages: ["services.html"], selector: ".octo-services-page .octo-service-card:nth-child(1) p", fr: "Sites vitrines, boutiques e-commerce et plateformes web sur-mesure, rapides, sécurisées et évolutives.", en: "Showcase websites, e-commerce stores and custom web platforms that are fast, secure and scalable." },
+		{ pages: ["services.html"], selector: ".octo-services-page .octo-service-card:nth-child(2) h3 a", fr: "Développement Mobile", en: "Mobile Development" },
+		{ pages: ["services.html"], selector: ".octo-services-page .octo-service-card:nth-child(2) p", fr: "Applications iOS et Android pensées pour un besoin métier précis, de l'UX à la publication.", en: "iOS and Android apps designed for a precise business need, from UX to publication." },
+		{ pages: ["services.html"], selector: ".octo-services-page .octo-service-card:nth-child(3) h3 a", fr: "Logiciel sur-mesure", en: "Custom software" },
+		{ pages: ["services.html"], selector: ".octo-services-page .octo-service-card:nth-child(3) p", fr: "Outils internes, gestion de stock, suivi logistique et plateformes SaaS adaptés à votre façon de travailler.", en: "Internal tools, stock management, logistics tracking and SaaS platforms adapted to the way you work." },
+		{ pages: ["services.html"], selector: ".octo-services-page .octo-service-card:nth-child(4) h3 a", fr: "Design UI/UX & Identité visuelle", en: "UI/UX Design & Visual Identity" },
+		{ pages: ["services.html"], selector: ".octo-services-page .octo-service-card:nth-child(4) p", fr: "Interfaces claires, parcours intuitifs, logo, charte graphique et supports cohérents.", en: "Clear interfaces, intuitive journeys, logo design, brand guidelines and consistent assets." },
+		{ pages: ["services.html"], selector: ".octo-services-page .octo-service-card:nth-child(5) h3 a", fr: "Maintenance & Support", en: "Maintenance & Support" },
+		{ pages: ["services.html"], selector: ".octo-services-page .octo-service-card:nth-child(5) p", fr: "Mises à jour, corrections, petites évolutions et suivi technique pour garder vos outils fiables.", en: "Updates, fixes, small improvements and technical monitoring to keep your tools reliable." },
+		{ pages: ["services.html"], selector: ".octo-services-page .octo-service-card:nth-child(6) h3 a", fr: "Externalisation / Mise à disposition d'équipe", en: "Outsourcing / Dedicated team" },
+		{ pages: ["services.html"], selector: ".octo-services-page .octo-service-card:nth-child(6) p", fr: "Développeurs et designers intégrés à votre organisation, avec flexibilité, suivi et confidentialité.", en: "Developers and designers integrated into your organization, with flexibility, tracking and confidentiality." },
+		{ pages: ["services.html"], selector: ".octo-services-page .octo-service-card:nth-child(7) h3 a", fr: "Accompagnement à la digitalisation", en: "Digitalization support" },
+		{ pages: ["services.html"], selector: ".octo-services-page .octo-service-card:nth-child(7) p", fr: "Diagnostic, conseil, choix d'outils, mise en place progressive et accompagnement des équipes.", en: "Diagnosis, consulting, tool selection, progressive implementation and team support." },
+		{ pages: ["services.html"], selector: ".octo-services-page .octo-link", fr: "Voir le détail", en: "View details", mode: "html", suffix: " <span class=\"fa-solid fa-arrow-right\"></span>" },
+		{ pages: ["services.html", "service-detail.html"], selector: ".octo-offers .sec-title_title", fr: "Offres", en: "Offers", mode: "centeredSectionTitle" },
+		{ pages: ["services.html", "service-detail.html"], selector: ".octo-offers .sec-title_heading", fr: "Trois formats pour avancer avec OCTO", en: "Three ways to move forward with OCTO" },
+		{ pages: ["services.html", "service-detail.html"], selector: ".octo-offers .row > div:nth-child(1) .octo-offer-card_label, #offres .row > div:nth-child(1) .octo-offer-card_label", fr: "CMS", en: "CMS" },
+		{ pages: ["services.html", "service-detail.html"], selector: ".octo-offers .row > div:nth-child(1) .octo-offer-card h3, #offres .row > div:nth-child(1) .octo-offer-card h3", fr: "CMS WordPress / PrestaShop / Drupal", en: "WordPress / PrestaShop / Drupal CMS" },
+		{ pages: ["services.html", "service-detail.html"], selector: ".octo-offers .row > div:nth-child(1) .octo-offer-card_price, #offres .row > div:nth-child(1) .octo-offer-card_price", fr: "60€ par jour", en: "€60 per day" },
+		{ pages: ["services.html", "service-detail.html"], selector: ".octo-offers .row > div:nth-child(1) li:nth-child(1), #offres .row > div:nth-child(1) li:nth-child(1)", fr: "Un chef de projet", en: "A project manager" },
+		{ pages: ["services.html", "service-detail.html"], selector: ".octo-offers .row > div:nth-child(1) li:nth-child(2), #offres .row > div:nth-child(1) li:nth-child(2)", fr: "Réduction progressive selon le volume apporté", en: "Progressive discount based on volume" },
+		{ pages: ["services.html", "service-detail.html"], selector: ".octo-offers .row > div:nth-child(1) li:nth-child(3), #offres .row > div:nth-child(1) li:nth-child(3)", fr: "Des équipes dédiées à vos projets", en: "Dedicated teams for your projects" },
+		{ pages: ["services.html", "service-detail.html"], selector: ".octo-offers .row > div:nth-child(2) .octo-offer-card_label, #offres .row > div:nth-child(2) .octo-offer-card_label", fr: "Régie", en: "Staffing" },
+		{ pages: ["services.html", "service-detail.html"], selector: ".octo-offers .row > div:nth-child(2) .octo-offer-card h3, #offres .row > div:nth-child(2) .octo-offer-card h3", fr: "Développeur Web full-stack à temps plein", en: "Full-time full-stack web developer" },
+		{ pages: ["services.html", "service-detail.html"], selector: ".octo-offers .row > div:nth-child(2) .octo-offer-card_price, #offres .row > div:nth-child(2) .octo-offer-card_price", fr: "850€ / développement", en: "€850 / development" },
+		{ pages: ["services.html", "service-detail.html"], selector: ".octo-offers .row > div:nth-child(2) li:nth-child(1), #offres .row > div:nth-child(2) li:nth-child(1)", fr: "Un chef de projet", en: "A project manager" },
+		{ pages: ["services.html", "service-detail.html"], selector: ".octo-offers .row > div:nth-child(2) li:nth-child(2), #offres .row > div:nth-child(2) li:nth-child(2)", fr: "8h de travail par jour avec 1h de pause", en: "8 working hours per day with a 1-hour break" },
+		{ pages: ["services.html", "service-detail.html"], selector: ".octo-offers .row > div:nth-child(2) li:nth-child(3), #offres .row > div:nth-child(2) li:nth-child(3)", fr: "Une équipe qui s'adapte à vos horaires", en: "A team that adapts to your schedule" },
+		{ pages: ["services.html", "service-detail.html"], selector: ".octo-offers .row > div:nth-child(2) li:nth-child(4), #offres .row > div:nth-child(2) li:nth-child(4)", fr: "Pas de contrainte de technologie", en: "No technology constraint" },
+		{ pages: ["services.html", "service-detail.html"], selector: ".octo-offers .row > div:nth-child(3) .octo-offer-card_label, #offres .row > div:nth-child(3) .octo-offer-card_label", fr: "Sur mesure", en: "Custom" },
+		{ pages: ["services.html", "service-detail.html"], selector: ".octo-offers .row > div:nth-child(3) .octo-offer-card h3, #offres .row > div:nth-child(3) .octo-offer-card h3", fr: "Développement sur mesure", en: "Custom development" },
+		{ pages: ["services.html", "service-detail.html"], selector: ".octo-offers .row > div:nth-child(3) .octo-offer-card_price, #offres .row > div:nth-child(3) .octo-offer-card_price", fr: "85€ / jour", en: "€85 / day" },
+		{ pages: ["services.html", "service-detail.html"], selector: ".octo-offers .row > div:nth-child(3) li:nth-child(1), #offres .row > div:nth-child(3) li:nth-child(1)", fr: "Un chef de projet", en: "A project manager" },
+		{ pages: ["services.html", "service-detail.html"], selector: ".octo-offers .row > div:nth-child(3) li:nth-child(2), #offres .row > div:nth-child(3) li:nth-child(2)", fr: "Réduction progressive selon le volume apporté", en: "Progressive discount based on volume" },
+		{ pages: ["services.html", "service-detail.html"], selector: ".octo-offers .row > div:nth-child(3) li:nth-child(3), #offres .row > div:nth-child(3) li:nth-child(3)", fr: "Des équipes dédiées à vos projets", en: "Dedicated teams for your projects" },
+
+		{ pages: ["project.html"], selector: ".page-title h1", fr: "Nos réalisations", en: "Our work" },
+		{ pages: ["project.html"], selector: ".bread-crumb li:last-child", fr: "Réalisations", en: "Work" },
+		{ pages: ["project.html"], selector: ".octo-project-page .sec-title_title", fr: "Réalisations", en: "Work", mode: "centeredSectionTitle" },
+		{ pages: ["project.html"], selector: ".octo-project-page .sec-title_heading", fr: "Des projets pensés pour des besoins concrets", en: "Projects designed for concrete needs" },
+		{ pages: ["project.html"], selector: ".gallery-block-one:nth-child(1) .gallery-block_one-designation", fr: "Web / E-commerce", en: "Web / E-commerce" },
+		{ pages: ["project.html"], selector: ".gallery-block-one:nth-child(1) .gallery-block-one_title a", fr: "Plateforme e-commerce sur-mesure", en: "Custom e-commerce platform" },
+		{ pages: ["project.html"], selector: ".gallery-block-one:nth-child(2) .gallery-block_one-designation", fr: "Mobile / Opérations", en: "Mobile / Operations" },
+		{ pages: ["project.html"], selector: ".gallery-block-one:nth-child(2) .gallery-block-one_title a", fr: "Application mobile métier", en: "Business mobile app" },
+		{ pages: ["project.html"], selector: ".gallery-block-one:nth-child(3) .gallery-block_one-designation", fr: "Logiciel / SaaS", en: "Software / SaaS" },
+		{ pages: ["project.html"], selector: ".gallery-block-one:nth-child(3) .gallery-block-one_title a", fr: "Outil interne de pilotage", en: "Internal management tool" },
+
+		{ pages: ["blog.html"], selector: ".page-title h1", fr: "Blog OCTO", en: "OCTO Articles" },
+		{ pages: ["blog.html"], selector: ".bread-crumb li:last-child", fr: "Blog", en: "Articles" },
+		{ pages: ["blog.html"], selector: ".octo-blog-page .sec-title_title", fr: "Blog", en: "Articles", mode: "centeredSectionTitle" },
+		{ pages: ["blog.html"], selector: ".octo-blog-page .sec-title_heading", fr: "Conseils et repères pour vos projets digitaux", en: "Guidance and benchmarks for your digital projects" },
+		{ pages: ["blog.html"], selector: ".octo-blog-page .news-block_one:nth-child(1) .news-block_one-title a", fr: "Comment structurer un projet digital efficace", en: "How to structure an effective digital project" },
+		{ pages: ["blog.html"], selector: ".octo-blog-page .news-block_one:nth-child(1) .octo-card-text", fr: "Un projet digital réussit mieux quand les objectifs, les utilisateurs, les contraintes et les étapes de livraison sont cadrés dès le départ.", en: "A digital project succeeds more easily when goals, users, constraints and delivery stages are framed from the start." },
+		{ pages: ["blog.html"], selector: ".octo-blog-page .news-block_one:nth-child(2) .news-block_one-title a", fr: "Créer du contenu utile pour attirer les bons clients", en: "Create useful content to attract the right clients" },
+		{ pages: ["blog.html"], selector: ".octo-blog-page .news-block_one:nth-child(2) .octo-card-text", fr: "Le contenu devient un levier commercial quand il répond aux vraies questions des clients et met en avant l'expertise de l'entreprise.", en: "Content becomes a business driver when it answers real client questions and showcases the company's expertise." },
+		{ pages: ["blog.html"], selector: ".octo-blog-page .news-block_one:nth-child(3) .news-block_one-title a", fr: "Réussir sa transformation digitale étape par étape", en: "Succeed in digital transformation step by step" },
+		{ pages: ["blog.html"], selector: ".octo-blog-page .news-block_one:nth-child(3) .octo-card-text", fr: "La transformation digitale est plus durable quand elle avance par priorités, avec des outils adaptés et un accompagnement clair des équipes.", en: "Digital transformation is more sustainable when it moves forward by priorities, with suitable tools and clear team support." },
+		{ pages: ["blog.html"], selector: ".octo-blog-page .news-block_one-meta li:nth-child(2)", fr: "<span class=\"icon fa-solid fa-user fa-fw\"></span>Conseil", en: "<span class=\"icon fa-solid fa-user fa-fw\"></span>Consulting", mode: "html" },
+
+		{ pages: ["contact.html"], selector: ".page-title h1", fr: "Contactez OCTO", en: "Contact OCTO" },
+		{ pages: ["contact.html"], selector: ".bread-crumb li:last-child", fr: "Contact", en: "Contact us" },
+		{ pages: ["contact.html"], selector: ".octo-contact-page .sec-title_title", fr: "Contact", en: "Contact us", mode: "sectionTitle" },
+		{ pages: ["contact.html"], selector: ".octo-contact-page .sec-title_heading", fr: "Parlons de votre projet", en: "Let's talk about your project" },
+		{ pages: ["contact.html"], selector: ".octo-contact-page .octo-rich-text p", fr: "Notre équipe d'experts est à votre écoute pour vous conseiller et vous accompagner à chaque étape de votre projet. Contactez-nous afin de bénéficier d'un accompagnement personnalisé et de solutions conçues pour répondre efficacement à vos enjeux.", en: "Our expert team is ready to listen, advise you and support you at every stage of your project. Contact us to benefit from personalized guidance and solutions designed to address your challenges effectively." },
+		{ pages: ["contact.html"], selector: ".octo-contact-method:nth-child(1) strong", fr: "Appelez-nous", en: "Call us" },
+		{ pages: ["contact.html"], selector: ".octo-contact-method:nth-child(1) em", fr: "Échangez directement avec un conseiller.", en: "Speak directly with an advisor." },
+		{ pages: ["contact.html"], selector: ".octo-contact-method:nth-child(2) strong", fr: "Envoyez-nous un e-mail", en: "Send us an email" },
+		{ pages: ["contact.html"], selector: ".octo-contact-method:nth-child(2) em", fr: "Décrivez votre besoin et recevez une réponse adaptée.", en: "Describe your need and receive a suitable response." },
+		{ pages: ["contact.html"], selector: ".octo-contact-method:nth-child(3) strong", fr: "WhatsApp", en: "WhatsApp" },
+		{ pages: ["contact.html"], selector: ".octo-contact-method:nth-child(3) em", fr: "Obtenez rapidement une première orientation.", en: "Quickly get initial guidance." },
+		{ pages: ["contact.html"], selector: ".octo-contact-method:nth-child(4) strong", fr: "Rendez-nous visite", en: "Visit us" },
+		{ pages: ["contact.html"], selector: ".octo-contact-method:nth-child(4) em", fr: "Tananarive, Madagascar.", en: "Antananarivo, Madagascar." },
+		{ pages: ["contact.html"], selector: ".octo-contact-page .btn-style-one .text-one, .octo-contact-page .btn-style-one .text-two", fr: "Envoyer le message", en: "Send message" },
+
+		{ pages: ["project-detail.html"], selector: ".page-title h1", fr: "Détails des réalisations", en: "Work details" },
+		{ pages: ["project-detail.html"], selector: ".bread-crumb li:last-child", fr: "Détails des réalisations", en: "Work details" },
+		{ pages: ["project-detail.html"], selector: "#plateforme-ecommerce h2", fr: "Plateforme e-commerce sur-mesure", en: "Custom e-commerce platform" },
+		{ pages: ["project-detail.html"], selector: "#plateforme-ecommerce p", fr: "Une boutique pensée pour vendre en ligne, gérer les contenus, suivre les commandes et rester simple à faire évoluer.", en: "A store designed to sell online, manage content, track orders and remain easy to evolve." },
+		{ pages: ["project-detail.html"], selector: "#application-mobile-metier h2", fr: "Application mobile métier", en: "Business mobile app" },
+		{ pages: ["project-detail.html"], selector: "#application-mobile-metier p", fr: "Une application iOS et Android pour fluidifier les échanges entre les équipes terrain, les clients et l'administration.", en: "An iOS and Android app to streamline exchanges between field teams, clients and administration." },
+		{ pages: ["project-detail.html"], selector: "#outil-pilotage-interne h2", fr: "Outil interne de pilotage", en: "Internal management tool" },
+		{ pages: ["project-detail.html"], selector: "#outil-pilotage-interne p", fr: "Un outil de suivi opérationnel pour centraliser les données, automatiser les tâches et piloter les décisions.", en: "An operational tracking tool to centralize data, automate tasks and guide decisions." },
+		{ pages: ["project-detail.html"], selector: ".service-detail_list-two li:nth-child(1)", fr: "Cadrage du besoin et des utilisateurs", en: "Framing needs and users" },
+		{ pages: ["project-detail.html"], selector: ".service-detail_list-two li:nth-child(2)", fr: "Design d'une interface claire et exploitable", en: "Designing a clear and usable interface" },
+		{ pages: ["project-detail.html"], selector: ".service-detail_list-two li:nth-child(3)", fr: "Développement, tests et mise en ligne progressive", en: "Development, testing and progressive launch" },
+
+		{ pages: ["blog-detail.html"], selector: ".page-title h1", fr: "Articles OCTO", en: "OCTO Articles" },
+		{ pages: ["blog-detail.html"], selector: ".bread-crumb li:last-child", fr: "Articles", en: "Articles" },
+		{ pages: ["blog-detail.html"], selector: "#structurer-projet-digital h2", fr: "Comment structurer un projet digital efficace", en: "How to structure an effective digital project" },
+		{ pages: ["blog-detail.html"], selector: "#contenu-utile-clients h2", fr: "Créer du contenu utile pour attirer les bons clients", en: "Create useful content to attract the right clients" },
+		{ pages: ["blog-detail.html"], selector: "#transformation-digitale h2", fr: "Réussir sa transformation digitale étape par étape", en: "Succeed in digital transformation step by step" },
+		{ pages: ["blog-detail.html"], selector: "#structurer-projet-digital p:nth-of-type(1)", fr: "Un projet digital réussit mieux quand les objectifs, les utilisateurs, les contraintes et les étapes de livraison sont cadrés dès le départ.", en: "A digital project succeeds more easily when goals, users, constraints and delivery stages are framed from the start." },
+		{ pages: ["blog-detail.html"], selector: "#contenu-utile-clients p:nth-of-type(1)", fr: "Le contenu devient un levier commercial quand il répond aux vraies questions des clients et met en avant l'expertise de l'entreprise.", en: "Content becomes a business driver when it answers real client questions and showcases the company's expertise." },
+		{ pages: ["blog-detail.html"], selector: "#transformation-digitale p:nth-of-type(1)", fr: "La transformation digitale est plus durable quand elle avance par priorités, avec des outils adaptés et un accompagnement clair des équipes.", en: "Digital transformation is more sustainable when it moves forward by priorities, with suitable tools and clear team support." },
+		{ pages: ["blog-detail.html"], selector: ".octo-detail-article p:nth-of-type(2)", fr: "Chez OCTO, nous privilégions une approche progressive : comprendre le besoin réel, choisir les bons outils, construire une solution lisible, puis l'améliorer dans le temps avec les retours des utilisateurs.", en: "At OCTO, we favor a progressive approach: understand the real need, choose the right tools, build a clear solution, then improve it over time with user feedback." },
+		{ pages: ["blog-detail.html"], selector: ".service-detail_list li:nth-child(1)", fr: "Clarifier les objectifs métier avant la solution technique.", en: "Clarify business goals before the technical solution." },
+		{ pages: ["blog-detail.html"], selector: ".service-detail_list li:nth-child(2)", fr: "Prévoir une première version utile, puis l'enrichir étape par étape.", en: "Plan a useful first version, then enrich it step by step." },
+		{ pages: ["blog-detail.html"], selector: ".service-detail_list li:nth-child(3)", fr: "Garder un suivi collaboratif pour décider vite et bien.", en: "Keep collaborative tracking to make fast, sound decisions." }
+	];
+
+	var pageAttributeMap = [
+		{ pages: ["contact.html"], selector: "input[name='name']", attribute: "placeholder", fr: "Votre nom", en: "Your name" },
+		{ pages: ["contact.html"], selector: "input[name='email']", attribute: "placeholder", fr: "Votre email", en: "Your email" },
+		{ pages: ["contact.html"], selector: "input[name='subject']", attribute: "placeholder", fr: "Sujet du projet", en: "Project subject" },
+		{ pages: ["contact.html"], selector: "textarea[name='message']", attribute: "placeholder", fr: "Décrivez votre besoin", en: "Describe your need" }
+	];
+
 	var documentTitleTranslations = {
 		en: {
 			"OCTO | Agence digitale": "OCTO | Digital agency",
@@ -662,6 +776,43 @@
 		applyAutoAttributeTranslations(language);
 	}
 
+	function currentPageName() {
+		var page = window.location.pathname.split("/").pop();
+		return page || "index.html";
+	}
+
+	function pageMatches(item, page) {
+		return !item.pages || item.pages.indexOf(page) !== -1;
+	}
+
+	function localizedPageValue(language, item) {
+		return language === defaultLanguage ? item.fr : item.en;
+	}
+
+	function applyPageContentTranslations(language) {
+		var page = currentPageName();
+
+		pageContentMap.forEach(function (item) {
+			if (!pageMatches(item, page)) {
+				return;
+			}
+
+			document.querySelectorAll(item.selector).forEach(function (element) {
+				setElementContent(element, localizedPageValue(language, item), item);
+			});
+		});
+
+		pageAttributeMap.forEach(function (item) {
+			if (!pageMatches(item, page)) {
+				return;
+			}
+
+			document.querySelectorAll(item.selector).forEach(function (element) {
+				element.setAttribute(item.attribute, localizedPageValue(language, item));
+			});
+		});
+	}
+
 	function applyTranslations(language) {
 		document.documentElement.lang = language;
 		applyDocumentTitle(language);
@@ -689,6 +840,8 @@
 				setElementContent(element, t(language, item.key), item);
 			});
 		});
+
+		applyPageContentTranslations(language);
 
 		document.querySelectorAll("[data-lang-switch]").forEach(function (button) {
 			var isActive = button.getAttribute("data-lang-switch") === language;
