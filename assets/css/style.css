@@ -10781,9 +10781,50 @@
 	background:#FCA311;
 }
 
+.offer-one_icon{
+	width:70px;
+	height:70px;
+	line-height:70px;
+}
+
 .octo-service-card_icon img,
 .offer-one_icon img{
+	width:40px;
+	height:40px;
+	max-width:40px;
+	max-height:40px;
+	object-fit:contain;
+	vertical-align:middle;
 	filter:none;
+}
+
+.octo-service-card_icon{
+	width:58px;
+	height:58px;
+	min-width:58px;
+	min-height:58px;
+}
+
+.octo-service-card_icon img{
+	width:34px;
+	height:34px;
+	max-width:34px;
+	max-height:34px;
+}
+
+.category-list li span{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	padding:0px;
+}
+
+.category-list li span img{
+	width:24px;
+	height:24px;
+	max-width:24px;
+	max-height:24px;
+	object-fit:contain;
 }
 
 .octo-contact-page{
