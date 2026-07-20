@@ -8683,12 +8683,13 @@
 }
 
 .legal-language{
-	display:none;
+	display:block;
 }
 
-html[lang="fr"] .legal-language[data-legal-lang="fr"],
-html[lang="en"] .legal-language[data-legal-lang="en"]{
-	display:block;
+html[lang="fr"] .legal-language[data-legal-lang="en"],
+html[lang="en"] .legal-language[data-legal-lang="fr"],
+.legal-language[hidden]{
+	display:none !important;
 }
 
 .legal-content-block{
@@ -8791,8 +8792,7 @@ html[lang="en"] .legal-language[data-legal-lang="en"]{
 	display:none;
 }
 
-.legal-page.is-country-selected .legal-country-content,
-.legal-page.is-country-selected .legal-country-reset{
+.legal-page.is-country-selected .legal-country-content{
 	display:block;
 }
 
@@ -8832,6 +8832,20 @@ html[data-legal-country="france"] .country-clause[data-country="france"]{
 .legal-table th{
 	color:#ffffff;
 	background:#14213D;
+}
+
+.octo-legal-link{
+	display:inline-flex;
+	align-items:center;
+	gap:8px;
+	font-weight:700;
+	color:#14213D;
+	border-bottom:2px solid #FCA311;
+}
+
+.octo-legal-link:hover{
+	color:#FCA311;
+	border-color:#14213D;
 }
 
 .legal-cta .cta-one_heading{

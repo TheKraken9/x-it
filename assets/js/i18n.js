@@ -18,6 +18,8 @@
 			"legal.notice.big": "Légal",
 			"legal.notice.title": "Mentions légales",
 			"legal.notice.breadcrumb": "Mentions légales",
+			"legal.cookies.title": "Politique de cookies",
+			"legal.cookies.breadcrumb": "Cookies",
 			"legal.country.kicker": "Sélection du pays",
 			"legal.country.title": "Choisissez votre pays avant de consulter les mentions légales",
 			"legal.country.text": "La clause de droit applicable et de juridiction s'adapte au pays sélectionné.",
@@ -143,6 +145,7 @@
 			"footer.phone": "+33 WhatsApp / +261",
 			"footer.terms": "CGV",
 			"footer.legal": "Mentions légales",
+			"footer.cookies": "Politique de cookies",
 			"footer.copyright": "OCTO © 2026. Tous droits réservés."
 		},
 		en: {
@@ -158,6 +161,8 @@
 			"legal.notice.big": "Legal",
 			"legal.notice.title": "Legal Notice",
 			"legal.notice.breadcrumb": "Legal Notice",
+			"legal.cookies.title": "Cookie Policy",
+			"legal.cookies.breadcrumb": "Cookies",
 			"legal.country.kicker": "Country selection",
 			"legal.country.title": "Choose your country before reading the legal notice",
 			"legal.country.text": "The applicable law and jurisdiction clause adapts to the selected country.",
@@ -283,6 +288,7 @@
 			"footer.phone": "+33 WhatsApp / +261",
 			"footer.terms": "Sales Terms",
 			"footer.legal": "Legal Notice",
+			"footer.cookies": "Cookie Policy",
 			"footer.copyright": "OCTO © 2026. All rights reserved."
 		}
 	};
@@ -483,7 +489,8 @@
 			"OCTO | Articles": "OCTO | Articles",
 			"OCTO | Contact": "OCTO | Contact us",
 			"OCTO | Conditions générales de vente": "OCTO | Sales Terms",
-			"OCTO | Mentions légales": "OCTO | Legal Notice"
+			"OCTO | Mentions légales": "OCTO | Legal Notice",
+			"OCTO | Politique de cookies": "OCTO | Cookie Policy"
 		}
 	};
 
@@ -502,6 +509,7 @@
 			"Contact": "Contact us",
 			"CGV": "Sales Terms",
 			"Mentions légales": "Legal Notice",
+			"Politique de cookies": "Cookie Policy",
 			"Conditions générales de vente": "Sales Terms",
 			"Contactez OCTO": "Contact OCTO",
 			"Blog OCTO": "OCTO Blog",
@@ -879,6 +887,12 @@
 			button.classList.toggle("active", isActive);
 			button.setAttribute("aria-pressed", isActive ? "true" : "false");
 		});
+
+		document.dispatchEvent(new CustomEvent("octo:languagechange", {
+			detail: {
+				language: language
+			}
+		}));
 	}
 
 	function setLanguage(language) {
