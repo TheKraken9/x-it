@@ -18,6 +18,7 @@
 			"legal.notice.big": "Légal",
 			"legal.notice.title": "Mentions légales",
 			"legal.notice.breadcrumb": "Mentions légales",
+			"legal.cookies.big": "Cookies",
 			"legal.cookies.title": "Politique de cookies",
 			"legal.cookies.breadcrumb": "Cookies",
 			"legal.country.kicker": "Sélection du pays",
@@ -33,7 +34,7 @@
 			"cta.contactNow": "Contacter maintenant",
 			"search.placeholder": "Rechercher",
 			"top.email": "contact@octo.digital",
-			"top.address": "<span class=\"icon fa-classic fa-solid fa-location-dot fa-fw\"></span>Tananarive",
+			"top.address": "<span class=\"icon fa-classic fa-solid fa-location-dot fa-fw\"></span>Antananarivo / France",
 			"sidebar.title": "À propos <span>OCTO</span>",
 			"sidebar.text": "<p>OCTO est une agence portée par une vision humaine du digital, qui vous conseille et vous soutient durablement dans vos projets.</p><p>Nous accompagnons les entreprises dans leur transformation digitale en leur apportant des solutions innovantes et un accompagnement stratégique adaptés à leurs objectifs. Notre approche vise à simplifier les processus, améliorer la performance et optimiser les ressources afin de permettre à chaque organisation de gagner en efficacité et de se concentrer sur son cœur de métier.</p><p>Chez OCTO, nous croyons que le numérique est un véritable levier de croissance, capable de réduire les contraintes opérationnelles et de créer de nouvelles opportunités pour les entreprises de toutes tailles.</p>",
 			"sidebar.item1": "Conseil stratégique",
@@ -41,7 +42,7 @@
 			"sidebar.item3": "Mise en œuvre des solutions",
 			"sidebar.item4": "Suivi et amélioration continue",
 			"sidebar.addressLabel": "Adresse",
-			"sidebar.address": "Tananarive",
+			"sidebar.address": "Antananarivo / France",
 			"sidebar.emailLabel": "Email",
 			"sidebar.email": "contact@octo.digital",
 			"sidebar.contactLabel": "Contact",
@@ -161,6 +162,7 @@
 			"legal.notice.big": "Legal",
 			"legal.notice.title": "Legal Notice",
 			"legal.notice.breadcrumb": "Legal Notice",
+			"legal.cookies.big": "Cookies",
 			"legal.cookies.title": "Cookie Policy",
 			"legal.cookies.breadcrumb": "Cookies",
 			"legal.country.kicker": "Country selection",
@@ -176,7 +178,7 @@
 			"cta.contactNow": "Contact now",
 			"search.placeholder": "Search",
 			"top.email": "contact@octo.digital",
-			"top.address": "<span class=\"icon fa-classic fa-solid fa-location-dot fa-fw\"></span>Antananarivo",
+			"top.address": "<span class=\"icon fa-classic fa-solid fa-location-dot fa-fw\"></span>Antananarivo / France",
 			"sidebar.title": "About <span>OCTO</span>",
 			"sidebar.text": "<p>OCTO is an agency driven by a human vision of digital work, advising you and supporting your projects over the long term.</p><p>We support companies through their digital transformation by providing innovative solutions and strategic guidance tailored to their goals. Our approach simplifies processes, improves performance and optimizes resources so every organization can become more efficient and focus on its core business.</p><p>At OCTO, we believe digital technology is a true growth driver, able to reduce operational constraints and create new opportunities for companies of every size.</p>",
 			"sidebar.item1": "Strategic consulting",
@@ -184,7 +186,7 @@
 			"sidebar.item3": "Solution implementation",
 			"sidebar.item4": "Monitoring and continuous improvement",
 			"sidebar.addressLabel": "Address",
-			"sidebar.address": "Antananarivo",
+			"sidebar.address": "Antananarivo / France",
 			"sidebar.emailLabel": "Email",
 			"sidebar.email": "contact@octo.digital",
 			"sidebar.contactLabel": "Contact",
@@ -294,7 +296,7 @@
 	};
 
 	var selectorMap = [
-		{ selector: ".header-top_list li:nth-child(2)", key: "top.address", mode: "html" },
+		{ selector: ".header-top_list li:nth-child(2), .header-top_list-two li:nth-child(2)", key: "top.address", mode: "html" },
 		{ selector: ".slider-one_title", key: "hero.eyebrow" },
 		{ selector: ".slider-one_heading", key: "hero.title", mode: "html" },
 		{ selector: ".slider-one_button .text-one, .slider-one_button .text-two", key: "cta.work" },
@@ -852,6 +854,14 @@
 		});
 	}
 
+	function applyLegalLanguageSections(language) {
+		document.querySelectorAll(".legal-language").forEach(function (section) {
+			var isActive = section.getAttribute("data-legal-lang") === language;
+			section.hidden = !isActive;
+			section.setAttribute("aria-hidden", isActive ? "false" : "true");
+		});
+	}
+
 	function applyTranslations(language) {
 		document.documentElement.lang = language;
 		applyDocumentTitle(language);
@@ -881,6 +891,7 @@
 		});
 
 		applyPageContentTranslations(language);
+		applyLegalLanguageSections(language);
 
 		document.querySelectorAll("[data-lang-switch]").forEach(function (button) {
 			var isActive = button.getAttribute("data-lang-switch") === language;

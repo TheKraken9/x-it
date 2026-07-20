@@ -34,12 +34,12 @@
 		var htmlLanguage = (document.documentElement.lang || "").toLowerCase().split("-")[0];
 		var savedLanguage = storedValue(languageStorageKey);
 
-		if (isValidLanguage(htmlLanguage)) {
-			return htmlLanguage;
-		}
-
 		if (isValidLanguage(savedLanguage)) {
 			return savedLanguage;
+		}
+
+		if (isValidLanguage(htmlLanguage)) {
+			return htmlLanguage;
 		}
 
 		return "fr";
