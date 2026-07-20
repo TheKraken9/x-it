@@ -14,6 +14,10 @@
 		return validLanguages.indexOf(language) !== -1;
 	}
 
+	function countryValue(country) {
+		return isValidCountry(country) ? country : "madagascar";
+	}
+
 	function storedValue(key) {
 		try {
 			return localStorage.getItem(key);
@@ -56,8 +60,8 @@
 	}
 
 	function applyCountry(page, country) {
-		var selectedCountry = isValidCountry(country) ? country : "";
-		var hasSelection = Boolean(selectedCountry);
+		var selectedCountry = countryValue(country);
+		var hasSelection = true;
 
 		page.classList.toggle("is-country-selected", hasSelection);
 
@@ -79,7 +83,7 @@
 		}
 
 		page.addEventListener("click", function (event) {
-			var countryButton = event.target.closest("[data-legal-country]");
+			var countryButton = event.target.closest(".legal-country-actions [data-legal-country]");
 
 			if (countryButton) {
 				var country = countryButton.getAttribute("data-legal-country");
