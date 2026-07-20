@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8">
-<title>OCTO | Agence digitale</title>
+<title>OCTO | Mentions légales</title>
 <!-- Stylesheets -->
 <link href="assets/css/bootstrap.css" rel="stylesheet">
 <link href="assets/css/style.css" rel="stylesheet">
@@ -139,7 +139,15 @@
 					<div class="octo-sidebar-details">
 						<div><strong data-i18n="sidebar.addressLabel">Adresse</strong><span data-i18n="sidebar.address">Tananarive</span></div>
 						<div><strong data-i18n="sidebar.emailLabel">Email</strong><a href="mailto:contact@octo.digital" data-i18n="sidebar.email">contact@octo.digital</a></div>
+						<div><strong data-i18n="sidebar.contactLabel">Contact</strong><a href="contact.html" data-i18n="sidebar.contact">WhatsApp +33 / Ligne +261</a></div>
 					</div>
+					<form class="octo-sidebar-newsletter" action="#" method="post">
+						<label data-i18n="sidebar.subscribe">Abonnez-vous !</label>
+						<div class="octo-newsletter-control">
+							<input type="email" name="email" placeholder="Votre email" data-i18n-placeholder="sidebar.emailPlaceholder">
+							<button type="submit" data-i18n-aria-label="sidebar.subscribeAction" aria-label="S'abonner"><span class="fa-solid fa-paper-plane"></span></button>
+						</div>
+					</form>
 				</div>
 			</div>
 			<div class="social-box">
@@ -150,92 +158,278 @@
 	</div>
 	<!-- End About Sidebar -->
 
+
 	<!-- Page Title -->
     <section class="page-title">
-		<div class="page-title_big-title">Privacy</div>
+		<div class="page-title_big-title" data-i18n="legal.notice.big">Légal</div>
 		<div class="page-title_bg-image" style="background-image:url(assets/images/background/3.jpg)"></div>
 		<div class="page-title_shape-one" style="background-image:url(assets/images/background/page-title-1.png)"></div>
 		<div class="page-title_shape-two" style="background-image:url(assets/images/background/page-title-2.png)"></div>
         <div class="auto-container">
-			<h1>Privacy Policy</h1>
+			<h1 data-i18n="legal.notice.title">Mentions légales</h1>
 			<ul class="bread-crumb clearfix">
-				<li><a href="index.html">Home</a></li>
-				<li>Privacy</li>
+				<li><a href="index.html" data-i18n="nav.home">Accueil</a></li>
+				<li data-i18n="legal.notice.breadcrumb">Mentions légales</li>
 			</ul>
         </div>
     </section>
     <!-- End Page Title -->
 
-	<!-- Privacy Section -->
-	<section class="privacy-section">
+	<!-- Legal Section -->
+	<section class="privacy-section legal-page legal-notice-page" data-legal-country-page>
 		<div class="auto-container">
-			<!-- Privacy Content -->
-			<div class="privacy-content">
-				<h3>Privacy Policy</h3>
-				<p>For each project we establish relationships with partners who we know will help us create added value for your project. As well as bringing together the public and private sectors, we make sector-overarching links to gather knowledge and to learn from each other who we know will help us create added value for your project.</p>
-				<div class="date">Updated March 24, 2025</div>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at nisl ligula. Suspendisse vitae ex fermentum, suscipit sem id, dapibus orci. Cras efficitur mi augue, ut sodales felis rhoncus bibendum. Fusce sagittis nibh orci, id vestibulum tortor aliquet ut. Vivamus maximus felis ac nisl luctus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at nisl ligula. Suspendisse vitae ex fermentum, suscipit sem id, dapibus orci. Cras efficitur mi augue, ut sodales felis rhoncus bibendum. Fusce sagittis nibh orci, id vestibulum tortor aliquet ut. Vivamus maximus felis ac nisl luctus.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at nisl ligula. Suspendisse vitae ex fermentum, suscipit sem id, dapibus orci. Cras efficitur mi augue Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at nisl ligula. Suspendisse vitae ex fermentum, suscipit sem id, dapibus orci. Cras efficitur mi augue.</p>
-				<h3>Overview</h3>
-				<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+			<div class="legal-country-gate">
+				<div class="date" data-i18n="legal.country.kicker">Sélection du pays</div>
+				<h3 data-i18n="legal.country.title">Choisissez votre pays avant de consulter les mentions légales</h3>
+				<p data-i18n="legal.country.text">La clause de droit applicable et de juridiction s'adapte au pays sélectionné.</p>
+				<div class="legal-country-actions">
+					<button type="button" data-legal-country="madagascar" data-i18n="legal.country.madagascar">Madagascar</button>
+					<button type="button" data-legal-country="france" data-i18n="legal.country.france">France</button>
+				</div>
+				<button type="button" class="legal-country-reset" data-legal-reset data-i18n="legal.country.change">Modifier le pays</button>
 			</div>
-			<!-- Privacy Content -->
-			<div class="privacy-content">
-				<h4>The standard chunk of Lorem Ipsum used since the 1500s is <br> reproduced below for those interested.</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at nisl ligula. Suspendisse vitae ex fermentum, suscipit sem id, dapibus orci. Cras efficitur mi augue, ut sodales felis rhoncus bibendum. Fusce sagittis nibh orci, id vestibulum tortor aliquet ut. Vivamus maximus felis ac nisl luctus, ut aliquet massa suscipit. Sed scelerisque quam justo, sed volutpat neque tempor porta. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam consequat tellus id risus condimentum fringilla. Etiam maximus porttitor magna sit amet consectetur. Integer eget ante scelerisque tortor sodales aliquet. Integer in vestibulum leo, vitae tristique orci. Etiam tortor sem, porttitor at pellentesque sit amet, fringilla nec massa. Nunc nec magna sed metus tristique ornare vitae ut nisl. Mauris lacus enim, posuere et tincidunt condimentum, sodales ac elit.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at nisl ligula. Suspendisse vitae ex fermentum, suscipit sem id, dapibus orci. Cras efficitur mi augue, ut sodales felis rhoncus bibendum. Fusce sagittis nibh orci, id vestibulum tortor aliquet ut.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at nisl ligula. Suspendisse vitae ex fermentum, suscipit sem id, dapibus orci. Cras efficitur mi augue, ut sodales felis rhoncus bibendum. Fusce sagittis nibh orci, id vestibulum tortor aliquet ut. Vivamus maximus felis ac nisl luctus, ut aliquet massa suscipit. Sed scelerisque quam justo, sed volutpat neque tempor porta. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam consequat tellus id risus condimentum fringilla. Etiam maximus porttitor magna sit amet consectetur. Integer eget ante scelerisque tortor sodales aliquet. Integer in vestibulum leo, vitae tristique orci. Etiam tortor </p>
+			<div class="legal-country-content">
+				<div class="legal-language" data-legal-lang="fr">
+			<div class="privacy-content legal-content-block">
+				<h3>Mentions légales</h3>
+				<p>www.octo.fr — Octo-SARL</p>
+				<p>Définitions</p>
+				<p>Client : tout professionnel ou personne physique capable au sens des articles 1123 et suivants du Code civil, ou personne morale, qui visite le Site objet des présentes conditions générales.</p>
+				<p>Prestations et Services : www.octo.fr met à disposition des Clients :</p>
+				<p>Contenu : Ensemble des éléments constituants l&#x27;information présente sur le Site, notamment textes – images – vidéos.</p>
+				<p>Informations clients : Ci après dénommé « Information (s) » qui correspondent à l&#x27;ensemble des données personnelles susceptibles d&#x27;être détenues par www.octo.fr pour la gestion de votre compte, de la gestion de la relation client et à des fins d&#x27;analyses et de statistiques.</p>
+				<p>Utilisateur : Internaute se connectant, utilisant le site susnommé.</p>
+				<p>Informations personnelles : « Les informations qui permettent, sous quelque forme que ce soit, directement ou non, l&#x27;identification des personnes physiques auxquelles elles s&#x27;appliquent » (article 4 de la loi n° 78-17 du 6 janvier 1978).</p>
+				<p>Les termes « données à caractère personnel », « personne concernée », « sous traitant » et « données sensibles » ont le sens défini par le Règlement Général sur la Protection des Données (RGPD : n° 2016-679).</p>
 			</div>
-			<!-- Privacy Content -->
-			<div class="privacy-content">
-				<h4>The standard chunk of Lorem Ipsum used since the 1500s is <br> reproduced below for those interested.</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at nisl ligula. Suspendisse vitae ex fermentum, suscipit sem id, dapibus orci. Cras efficitur mi augue, ut sodales felis rhoncus bibendum. Fusce sagittis nibh orci, id vestibulum tortor aliquet ut. Vivamus maximus felis ac nisl luctus, ut aliquet massa suscipit. Sed scelerisque quam justo, sed volutpat neque tempor porta. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam consequat tellus id risus condimentum fringilla.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at nisl ligula. Suspendisse vitae ex fermentum, suscipit sem id, dapibus orci. Cras efficitur mi augue, ut sodales felis rhoncus bibendum. Fusce sagittis nibh orci, id vestibulum tortor aliquet ut.</p>
-				<ul class="privacy-list">
-					<li>Discover the Project</li>
-					<li>Strategy Development</li>
-					<li>Implementation the solution</li>
-					<li>Monitoring Progress</li>
-				</ul>
+			<div class="privacy-content legal-content-block">
+				<h3>1. Présentation du site internet</h3>
+				<p>En vertu de l&#x27;article 6 de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l&#x27;économie numérique, il est précisé aux utilisateurs du site internet www.octo.fr l&#x27;identité des différents intervenants dans le cadre de sa réalisation et de son suivi :</p>
+				<p>Propriétaire : Octo-SARL – Capital social de 2 000 € – Antananarivo, Madagascar – +261 38 38 38 000</p>
+				<p>Responsable publication : Octo-SARL – contact@octo.fr</p>
+				<p>Le responsable publication est une personne physique ou une personne morale.</p>
+				<p>Webmaster : Octo-SARL – contact@octo.fr</p>
+				<p>Hébergeur : à compléter</p>
+				<p>Délégué à la protection des données : Fenitra Andrianambinina – contact@octo.fr</p>
 			</div>
+			<div class="privacy-content legal-content-block">
+				<h3>2. Conditions générales d&#x27;utilisation du site et des services proposés</h3>
+				<p>Le Site constitue une œuvre de l&#x27;esprit protégée par les dispositions du Code de la Propriété Intellectuelle et des Réglementations Internationales applicables. Le Client ne peut en aucune manière réutiliser, céder ou exploiter pour son propre compte tout ou partie des éléments ou travaux du Site.</p>
+				<p>L&#x27;utilisation du site www.octo.fr implique l&#x27;acceptation pleine et entière des conditions générales d&#x27;utilisation ci-après décrites. Ces conditions d&#x27;utilisation sont susceptibles d&#x27;être modifiées ou complétées à tout moment, les utilisateurs du site www.octo.fr sont donc invités à les consulter de manière régulière.</p>
+				<p>Ce site internet est normalement accessible à tout moment aux utilisateurs. Une interruption pour raison de maintenance technique peut être toutefois décidée par www.octo.fr, qui s&#x27;efforcera alors de communiquer préalablement aux utilisateurs les dates et heures de l&#x27;intervention. Le site web www.octo.fr est mis à jour régulièrement par www.octo.fr responsable. De la même façon, les mentions légales peuvent être modifiées à tout moment : elles s&#x27;imposent néanmoins à l&#x27;utilisateur qui est invité à s&#x27;y référer le plus souvent possible afin d&#x27;en prendre connaissance.</p>
+			</div>
+			<div class="privacy-content legal-content-block">
+				<h3>3. Description des services fournis</h3>
+				<p>Le site internet www.octo.fr a pour objet de fournir une information concernant l&#x27;ensemble des activités de la société. www.octo.fr s&#x27;efforce de fournir sur le site www.octo.fr des informations aussi précises que possible. Toutefois, il ne pourra être tenu responsable des oublis, des inexactitudes et des carences dans la mise à jour, qu&#x27;elles soient de son fait ou du fait des tiers partenaires qui lui fournissent ces informations.</p>
+				<p>Toutes les informations indiquées sur le site www.octo.fr sont données à titre indicatif, et sont susceptibles d&#x27;évoluer. Par ailleurs, les renseignements figurant sur le site www.octo.fr ne sont pas exhaustifs. Ils sont donnés sous réserve de modifications ayant été apportées depuis leur mise en ligne.</p>
+			</div>
+			<div class="privacy-content legal-content-block">
+				<h3>4. Limitations contractuelles sur les données techniques</h3>
+				<p>Le site utilise la technologie JavaScript. Le site Internet ne pourra être tenu responsable de dommages matériels liés à l&#x27;utilisation du site. De plus, l&#x27;utilisateur du site s&#x27;engage à accéder au site en utilisant un matériel récent, ne contenant pas de virus et avec un navigateur de dernière génération mis-à-jour. Le site www.octo.fr est hébergé au Canada, pays bénéficiant d&#x27;une décision d&#x27;adéquation de la Commission européenne pour les organismes soumis à la loi canadienne sur la protection des renseignements personnels (LPRPDE/PIPEDA), garantissant un niveau de protection des données conforme aux exigences du Règlement Général sur la Protection des Données (RGPD : n° 2016-679) et, le cas échéant, de la loi malgache n° 2014-038 du 9 janvier 2015 sur la protection des données à caractère personnel.</p>
+				<p>L&#x27;objectif est d&#x27;apporter une prestation qui assure le meilleur taux d&#x27;accessibilité. L&#x27;hébergeur assure la continuité de son service 24 Heures sur 24, tous les jours de l&#x27;année. Il se réserve néanmoins la possibilité d&#x27;interrompre le service d&#x27;hébergement pour les durées les plus courtes possibles notamment à des fins de maintenance, d&#x27;amélioration de ses infrastructures, de défaillance de ses infrastructures ou si les Prestations et Services génèrent un trafic réputé anormal.</p>
+				<p>www.octo.fr et l&#x27;hébergeur ne pourront être tenus responsables en cas de dysfonctionnement du réseau Internet, des lignes téléphoniques ou du matériel informatique et de téléphonie lié notamment à l&#x27;encombrement du réseau empêchant l&#x27;accès au serveur.</p>
+			</div>
+			<div class="privacy-content legal-content-block">
+				<h3>5. Propriété intellectuelle et contrefaçons</h3>
+				<p>www.octo.fr est propriétaire des droits de propriété intellectuelle et détient les droits d&#x27;usage sur tous les éléments accessibles sur le site internet, notamment les textes, images, graphismes, logos, vidéos, icônes et sons. Toute reproduction, représentation, modification, publication, adaptation de tout ou partie des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite, sauf autorisation écrite préalable de : www.octo.fr.</p>
+				<p>Toute exploitation non autorisée du site ou de l&#x27;un quelconque des éléments qu&#x27;il contient sera considérée comme constitutive d&#x27;une contrefaçon et poursuivie conformément aux dispositions des articles L.335-2 et suivants du Code de Propriété Intellectuelle.</p>
+			</div>
+			<div class="privacy-content legal-content-block">
+				<h3>6. Limitations de responsabilité</h3>
+				<p>www.octo.fr agit en tant qu&#x27;éditeur du site. www.octo.fr est responsable de la qualité et de la véracité du Contenu qu&#x27;il publie.</p>
+				<p>www.octo.fr ne pourra être tenu responsable des dommages directs et indirects causés au matériel de l&#x27;utilisateur, lors de l&#x27;accès au site internet www.octo.fr, et résultant soit de l&#x27;utilisation d&#x27;un matériel ne répondant pas aux spécifications indiquées au point 4, soit de l&#x27;apparition d&#x27;un bug ou d&#x27;une incompatibilité.</p>
+				<p>www.octo.fr ne pourra également être tenu responsable des dommages indirects (tels par exemple qu&#x27;une perte de marché ou perte d&#x27;une chance) consécutifs à l&#x27;utilisation du site www.octo.fr. Des espaces interactifs (possibilité de poser des questions dans l&#x27;espace contact) sont à la disposition des utilisateurs. www.octo.fr se réserve le droit de supprimer, sans mise en demeure préalable, tout contenu déposé dans cet espace qui contreviendrait à la législation applicable en France, en particulier aux dispositions relatives à la protection des données. Le cas échéant, www.octo.fr se réserve également la possibilité de mettre en cause la responsabilité civile et/ou pénale de l&#x27;utilisateur, notamment en cas de message à caractère raciste, injurieux, diffamant, ou pornographique, quel que soit le support utilisé (texte, photographie …).</p>
+			</div>
+			<div class="privacy-content legal-content-block">
+				<h3>7. Gestion des données personnelles</h3>
+				<p>Le Client est informé des réglementations concernant la communication marketing, la loi du 21 Juin 2014 pour la confiance dans l&#x27;Economie Numérique, la Loi Informatique et Liberté du 06 Août 2004 ainsi que du Règlement Général sur la Protection des Données (RGPD : n° 2016-679). Octo-SARL, société de droit malgache, applique également les dispositions de la loi malgache n° 2014-038 du 9 janvier 2015 relative à la protection des données à caractère personnel.</p>
+				<p>7.1 Responsables de la collecte des données personnelles</p>
+				<p>Pour les Données Personnelles collectées dans le cadre de la création du compte personnel de l&#x27;Utilisateur et de sa navigation sur le Site, le responsable du traitement des Données Personnelles est : Octo-SARL. www.octo.fr est représenté par Fenitra Andrianambinina, son représentant légal.</p>
+				<p>En tant que responsable du traitement des données qu&#x27;il collecte, www.octo.fr s&#x27;engage à respecter le cadre des dispositions légales en vigueur. Il lui appartient notamment au Client d&#x27;établir les finalités de ses traitements de données, de fournir à ses prospects et clients, à partir de la collecte de leurs consentements, une information complète sur le traitement de leurs données personnelles et de maintenir un registre des traitements conforme à la réalité. Chaque fois que www.octo.fr traite des Données Personnelles, www.octo.fr prend toutes les mesures raisonnables pour s&#x27;assurer de l&#x27;exactitude et de la pertinence des Données Personnelles au regard des finalités pour lesquelles www.octo.fr les traite.</p>
+				<p>7.2 Finalité des données collectées</p>
+				<p>www.octo.fr est susceptible de traiter tout ou partie des données :</p>
+				<p>pour permettre la navigation sur le Site et la gestion et la traçabilité des prestations et services commandés par l&#x27;utilisateur : données de connexion et d&#x27;utilisation du Site, facturation, historique des commandes, etc.</p>
+				<p>pour prévenir et lutter contre la fraude informatique (spamming, hacking…) : matériel informatique utilisé pour la navigation, l&#x27;adresse IP, le mot de passe (hashé)</p>
+				<p>pour améliorer la navigation sur le Site : données de connexion et d&#x27;utilisation</p>
+				<p>pour mener des enquêtes de satisfaction facultatives sur www.octo.fr : adresse email</p>
+				<p>pour mener des campagnes de communication (sms, mail) : numéro de téléphone, adresse email</p>
+				<p>www.octo.fr ne commercialise pas vos données personnelles qui sont donc uniquement utilisées par nécessité ou à des fins statistiques et d&#x27;analyses.</p>
+				<p>7.3 Droit d&#x27;accès, de rectification et d&#x27;opposition</p>
+				<p>Conformément à la réglementation européenne en vigueur, les Utilisateurs de www.octo.fr disposent des droits suivants :</p>
+				<p>droit d&#x27;accès (article 15 RGPD) et de rectification (article 16 RGPD), de mise à jour, de complétude des données des Utilisateurs</p>
+				<p>droit de verrouillage ou d&#x27;effacement des données des Utilisateurs à caractère personnel (article 17 du RGPD), lorsqu&#x27;elles sont inexactes, incomplètes, équivoques, périmées, ou dont la collecte, l&#x27;utilisation, la communication ou la conservation est interdite</p>
+				<p>droit de retirer à tout moment un consentement (article 13-2c RGPD)</p>
+				<p>droit à la limitation du traitement des données des Utilisateurs (article 18 RGPD)</p>
+				<p>droit d&#x27;opposition au traitement des données des Utilisateurs (article 21 RGPD)</p>
+				<p>droit à la portabilité des données que les Utilisateurs auront fournies, lorsque ces données font l&#x27;objet de traitements automatisés fondés sur leur consentement ou sur un contrat (article 20 RGPD)</p>
+				<p>droit de définir le sort des données des Utilisateurs après leur mort et de choisir à qui www.octo.fr devra communiquer (ou non) ses données à un tiers qu&#x27;ils aura préalablement désigné</p>
+				<p>Dès que www.octo.fr a connaissance du décès d&#x27;un Utilisateur et à défaut d&#x27;instructions de sa part, www.octo.fr s&#x27;engage à détruire ses données, sauf si leur conservation s&#x27;avère nécessaire à des fins probatoires ou pour répondre à une obligation légale.</p>
+				<p>Si l&#x27;Utilisateur souhaite savoir comment www.octo.fr utilise ses Données Personnelles, demander à les rectifier ou s&#x27;oppose à leur traitement, l&#x27;Utilisateur peut contacter www.octo.fr par écrit à l&#x27;adresse suivante :</p>
+				<p>Octo-SARL – DPO, Fenitra Andrianambinina</p>
+				<p>Antananarivo, Madagascar.</p>
+				<p>Dans ce cas, l&#x27;Utilisateur doit indiquer les Données Personnelles qu&#x27;il souhaiterait que www.octo.fr corrige, mette à jour ou supprime, en s&#x27;identifiant précisément avec une copie d&#x27;une pièce d&#x27;identité (carte d&#x27;identité ou passeport).</p>
+				<p>Les demandes de suppression de Données Personnelles seront soumises aux obligations qui sont imposées à www.octo.fr par la loi, notamment en matière de conservation ou d&#x27;archivage des documents. Enfin, les Utilisateurs de www.octo.fr peuvent déposer une réclamation auprès des autorités de contrôle, et notamment de la CNIL (http://www.cnil.fr/fr/plaintes).</p>
+				<p>7.4 Non-communication des données personnelles</p>
+				<p>www.octo.fr veille à ce que tout transfert de Données Personnelles vers un pays situé en dehors de l&#x27;Union européenne soit encadré par les garanties appropriées : décision d&#x27;adéquation de la Commission européenne, clauses contractuelles types, ou tout autre mécanisme reconnu par le RGPD. www.octo.fr, société de droit malgache traitant notamment des données de clients français, applique conjointement les exigences du RGPD et celles de la loi malgache n° 2014-038 du 9 janvier 2015 relative à la protection des données à caractère personnel. Pour autant, www.octo.fr reste libre du choix de ses sous-traitants techniques et commerciaux à la condition qu&#x27;ils présentent les garanties suffisantes au regard de ces exigences.</p>
+				<p>www.octo.fr s&#x27;engage à prendre toutes les précautions nécessaires afin de préserver la sécurité des Informations et notamment qu&#x27;elles ne soient pas communiquées à des personnes non autorisées. Cependant, si un incident impactant l&#x27;intégrité ou la confidentialité des Informations du Client est portée à la connaissance de www.octo.fr, celle-ci devra dans les meilleurs délais informer le Client et lui communiquer les mesures de corrections prises. Par ailleurs www.octo.fr ne collecte aucune « données sensibles ».</p>
+				<p>Les Données Personnelles de l&#x27;Utilisateur peuvent être traitées par des filiales de www.octo.fr et des sous-traitants (prestataires de services), exclusivement afin de réaliser les finalités de la présente politique.</p>
+				<p>Dans la limite de leurs attributions respectives et pour les finalités rappelées ci-dessus, les principales personnes susceptibles d&#x27;avoir accès aux données des Utilisateurs de www.octo.fr sont principalement les agents de notre service client.</p>
+				<p>7.5 Types de données collectées</p>
+				<p>Concernant les utilisateurs d&#x27;un Site www.octo.fr, nous collectons les données suivantes qui sont indispensables au fonctionnement du service, et qui seront conservées pendant une période maximale de 24 mois après la fin de la relation contractuelle :</p>
+				<p>Nom, prénom, adresse, code postal, ville, adresse email, numéro de téléphone.</p>
+			</div>
+			<div class="privacy-content legal-content-block">
+				<h3>8. Notification d&#x27;incident</h3>
+				<p>Quels que soient les efforts fournis, aucune méthode de transmission sur Internet et aucune méthode de stockage électronique n&#x27;est complètement sûre. Nous ne pouvons en conséquence pas garantir une sécurité absolue. Si nous prenions connaissance d&#x27;une brèche de la sécurité, nous avertirions les utilisateurs concernés afin qu&#x27;ils puissent prendre les mesures appropriées. Nos procédures de notification d&#x27;incident tiennent compte de nos obligations légales, qu&#x27;elles se situent au niveau national ou européen. Nous nous engageons à informer pleinement nos clients de toutes les questions relevant de la sécurité de leur compte et à leur fournir toutes les informations nécessaires pour les aider à respecter leurs propres obligations réglementaires en matière de reporting.</p>
+				<p>Aucune information personnelle de l&#x27;utilisateur du site www.octo.fr n&#x27;est publiée à l&#x27;insu de l&#x27;utilisateur, échangée, transférée, cédée ou vendue sur un support quelconque à des tiers. Seule l&#x27;hypothèse du rachat de www.octo.fr et de ses droits permettrait la transmission des dites informations à l&#x27;éventuel acquéreur qui serait à son tour tenu de la même obligation de conservation et de modification des données vis à vis de l&#x27;utilisateur du site www.octo.fr.</p>
+				<p>Sécurité</p>
+				<p>Pour assurer la sécurité et la confidentialité des Données Personnelles et des Données Personnelles de Santé, www.octo.fr utilise des réseaux protégés par des dispositifs standards tels que par pare-feu, la pseudonymisation, l&#x27;encryption et mot de passe.</p>
+				<p>Lors du traitement des Données Personnelles, www.octo.fr prend toutes les mesures raisonnables visant à les protéger contre toute perte, utilisation détournée, accès non autorisé, divulgation, altération ou destruction.</p>
+			</div>
+			<div class="privacy-content legal-content-block">
+				<h3>9. Liens hypertextes « cookies » et balises (&quot;tags&quot;) internet</h3>
+				<p>Le site www.octo.fr contient un certain nombre de liens hypertextes vers d&#x27;autres sites, mis en place avec l&#x27;autorisation de www.octo.fr. Cependant, www.octo.fr n&#x27;a pas la possibilité de vérifier le contenu des sites ainsi visités, et n&#x27;assumera en conséquence aucune responsabilité de ce fait.</p>
+				<p>Sauf si vous décidez de désactiver les cookies, vous acceptez que le site puisse les utiliser. Vous pouvez à tout moment désactiver ces cookies et ce gratuitement à partir des possibilités de désactivation qui vous sont offertes et rappelées ci-après, sachant que cela peut réduire ou empêcher l&#x27;accessibilité à tout ou partie des Services proposés par le site.</p>
+				<p>9.1 « Cookies »</p>
+				<p>Un « cookie » est un petit fichier d&#x27;information envoyé sur le navigateur de l&#x27;Utilisateur et enregistré au sein du terminal de l&#x27;Utilisateur (ex : ordinateur, smartphone), (ci-après « Cookies »). Ce fichier comprend des informations telles que le nom de domaine de l&#x27;Utilisateur, le fournisseur d&#x27;accès Internet de l&#x27;Utilisateur, le système d&#x27;exploitation de l&#x27;Utilisateur, ainsi que la date et l&#x27;heure d&#x27;accès. Les Cookies ne risquent en aucun cas d&#x27;endommager le terminal de l&#x27;Utilisateur.</p>
+				<p>www.octo.fr est susceptible de traiter les informations de l&#x27;Utilisateur concernant sa visite du Site, telles que les pages consultées, les recherches effectuées. Ces informations permettent à www.octo.fr d&#x27;améliorer le contenu du Site, de la navigation de l&#x27;Utilisateur.</p>
+				<p>Les Cookies facilitant la navigation et/ou la fourniture des services proposés par le Site, l&#x27;Utilisateur peut configurer son navigateur pour qu&#x27;il lui permette de décider s&#x27;il souhaite ou non les accepter de manière à ce que des Cookies soient enregistrés dans le terminal ou, au contraire, qu&#x27;ils soient rejetés, soit systématiquement, soit selon leur émetteur. L&#x27;Utilisateur peut également configurer son logiciel de navigation de manière à ce que l&#x27;acceptation ou le refus des Cookies lui soient proposés ponctuellement, avant qu&#x27;un Cookie soit susceptible d&#x27;être enregistré dans son terminal. www.octo.fr informe l&#x27;Utilisateur que, dans ce cas, il se peut que les fonctionnalités de son logiciel de navigation ne soient pas toutes disponibles.</p>
+				<p>Si l&#x27;Utilisateur refuse l&#x27;enregistrement de Cookies dans son terminal ou son navigateur, ou si l&#x27;Utilisateur supprime ceux qui y sont enregistrés, l&#x27;Utilisateur est informé que sa navigation et son expérience sur le Site peuvent être limitées. Cela pourrait également être le cas lorsque www.octo.fr ou l&#x27;un de ses prestataires ne peut pas reconnaître, à des fins de compatibilité technique, le type de navigateur utilisé par le terminal, les paramètres de langue et d&#x27;affichage ou le pays depuis lequel le terminal semble connecté à Internet.</p>
+				<p>Le cas échéant, www.octo.fr décline toute responsabilité pour les conséquences liées au fonctionnement dégradé du Site et des services éventuellement proposés par www.octo.fr, résultant (i) du refus de Cookies par l&#x27;Utilisateur (ii) de l&#x27;impossibilité pour www.octo.fr d&#x27;enregistrer ou de consulter les Cookies nécessaires à leur fonctionnement du fait du choix de l&#x27;Utilisateur. Pour la gestion des Cookies et des choix de l&#x27;Utilisateur, la configuration de chaque navigateur est différente. Elle est décrite dans le menu d&#x27;aide du navigateur, qui permettra de savoir de quelle manière l&#x27;Utilisateur peut modifier ses souhaits en matière de Cookies.</p>
+				<p>À tout moment, l&#x27;Utilisateur peut faire le choix d&#x27;exprimer et de modifier ses souhaits en matière de Cookies. www.octo.fr pourra en outre faire appel aux services de prestataires externes pour l&#x27;aider à recueillir et traiter les informations décrites dans cette section.</p>
+				<p>Enfin, en cliquant sur les icônes dédiées aux réseaux sociaux Twitter, Facebook, Linkedin et Google Plus figurant sur le Site de www.octo.fr ou dans son application mobile et si l&#x27;Utilisateur a accepté le dépôt de cookies en poursuivant sa navigation sur le Site Internet ou l&#x27;application mobile de www.octo.fr, Twitter, Facebook, Linkedin et Google Plus peuvent également déposer des cookies sur vos terminaux (ordinateur, tablette, téléphone portable).</p>
+				<p>Ces types de cookies ne sont déposés sur vos terminaux qu&#x27;à condition que vous y consentiez, en continuant votre navigation sur le Site Internet ou l&#x27;application mobile de www.octo.fr. À tout moment, l&#x27;Utilisateur peut néanmoins revenir sur son consentement à ce que www.octo.fr dépose ce type de cookies.</p>
+				<p>9.2 Balises (&quot;tags&quot;) internet</p>
+				<p>www.octo.fr peut employer occasionnellement des balises Internet (également appelées « tags », ou balises d&#x27;action, GIF à un pixel, GIF transparents, GIF invisibles et GIF un à un) et les déployer par l&#x27;intermédiaire d&#x27;un partenaire spécialiste d&#x27;analyses Web susceptible de se trouver (et donc de stocker les informations correspondantes, y compris l&#x27;adresse IP de l&#x27;Utilisateur) dans un pays étranger.</p>
+				<p>Ces balises sont placées à la fois dans les publicités en ligne permettant aux internautes d&#x27;accéder au Site, et sur les différentes pages de celui-ci.</p>
+				<p>Cette technologie permet à www.octo.fr d&#x27;évaluer les réponses des visiteurs face au Site et l&#x27;efficacité de ses actions (par exemple, le nombre de fois où une page est ouverte et les informations consultées), ainsi que l&#x27;utilisation de ce Site par l&#x27;Utilisateur.</p>
+				<p>Le prestataire externe pourra éventuellement recueillir des informations sur les visiteurs du Site et d&#x27;autres sites Internet grâce à ces balises, constituer des rapports sur l&#x27;activité du Site à l&#x27;attention de www.octo.fr, et fournir d&#x27;autres services relatifs à l&#x27;utilisation de celui-ci et d&#x27;Internet.</p>
+			</div>
+			<div class="privacy-content legal-content-block legal-jurisdiction">
+				<h3>10. Droit applicable et attribution de juridiction</h3>
+				<p class="country-clause" data-country="madagascar">Le présent site et ses mentions légales sont régis par le droit malgache. En cas de litige, et après tentative de médiation amiable, le tribunal compétent sera celui d'Antananarivo.</p>
+				<p class="country-clause" data-country="france">Le présent site et ses mentions légales sont régis par le droit français. En cas de litige, et après tentative de médiation amiable, le tribunal compétent sera celui des tribunaux français.</p>
+			</div>
+			<div class="privacy-content legal-content-block">
+				<h3>1. Qu&#x27;est-ce qu&#x27;un cookie</h3>
+				<p>Un cookie est un petit fichier texte déposé sur votre terminal (ordinateur, tablette, smartphone) lors de la consultation d&#x27;un site web. Il permet au site de mémoriser des informations relatives à votre navigation (préférences, identifiant de session, choix de consentement) afin de faciliter vos visites ultérieures et de garantir le bon fonctionnement technique du site.</p>
+				<p>Les cookies désignent plus généralement tout fichier déposé lors de la consultation d&#x27;un site web dans l&#x27;équipement terminal de l&#x27;utilisateur, ayant pour objet la lecture ou l&#x27;écriture d&#x27;informations dans cet équipement.</p>
+			</div>
+			<div class="privacy-content legal-content-block">
+				<h3>2. Cookies utilisés sur ce site</h3>
+				<p>Ce site utilise uniquement des cookies strictement nécessaires au fonctionnement technique et à la gestion du consentement.</p>
+				<p>Aucun cookie publicitaire, de tracking tiers ou de réseaux sociaux n&#x27;est déposé sur ce site.</p>
+				<div class="legal-table-wrap"><table class="legal-table"><thead><tr><th>Cookie</th><th>Éditeur</th><th>Finalité</th><th>Durée</th></tr></thead><tbody><tr><td>Cookies techniques</td><td>à confirmer avec l&#x27;équipe, selon la solution technique retenue</td><td>Fonctionnement du site (sessions, préférences)</td><td>Session ou 13 mois max.</td></tr><tr><td>CookieConsent</td><td>Cookiebot (exemple à confirmer)</td><td>Mémorisation de votre choix de consentement aux cookies</td><td>12 mois</td></tr></tbody></table></div>
+			</div>
+			<div class="privacy-content legal-content-block">
+				<h3>3. Gestion du consentement</h3>
+				<p>Un bandeau d&#x27;information apparaît lors de votre première visite sur le site pour vous informer de la présence des cookies et recueillir, le cas échéant, votre consentement.</p>
+				<p>Si CookieBot est retenu : le site utilise des cookies afin d&#x27;assurer son fonctionnement, mesurer son audience et améliorer l&#x27;expérience utilisateur. Les utilisateurs peuvent gérer leurs préférences via le bandeau de consentement disponible lors de leur première visite.</p>
+				<p>La gestion du consentement est assurée par CookieBot (Cybot A/S). Vous pouvez modifier vos préférences à tout moment en cliquant sur le lien de gestion des cookies accessible en bas de chaque page du site, ou via le bandeau de consentement.</p>
+			</div>
+			<div class="privacy-content legal-content-block">
+				<h3>4. Paramétrage via votre navigateur</h3>
+				<p>Vous pouvez également configurer votre navigateur pour refuser ou supprimer les cookies. Voici les liens vers les pages d&#x27;aide des principaux navigateurs :</p>
+				<p>Firefox</p>
+				<p>Chrome</p>
+				<p>Safari</p>
+				<p>Edge</p>
+				<p>La désactivation des cookies techniques peut affecter le bon fonctionnement du site.</p>
+			</div>
+			<div class="privacy-content legal-content-block">
+				<h3>5. Durée de conservation des cookies</h3>
+				<p>La durée maximale de conservation des cookies est de 13 mois après leur premier dépôt dans votre terminal. Cette durée n&#x27;est pas prolongée à chaque visite, conformément aux recommandations de la CNIL.</p>
+			</div>
+			<div class="privacy-content legal-content-block">
+				<h3>6. Déclaration Cookie</h3>
+				<p>Cette section sera affichée si CookieBot est retenu.</p>
+			</div>
+			<div class="privacy-content legal-content-block">
+				<h3>7. Contact</h3>
+				<p>Pour toute question relative à cette politique de cookies ou à l&#x27;utilisation de vos données personnelles, vous pouvez contacter notre Délégué à la protection des données (DPO) :</p>
+				<p>Fenitra Andrianambinina</p>
+			</div>
+			<div class="privacy-content legal-content-block">
+				<h3>8. Mise à jour</h3>
+				<p>La présente politique de cookies a été mise à jour le à compléter. Octo-SARL se réserve le droit de la modifier à tout moment afin de se conformer aux évolutions législatives et réglementaires. Toute modification substantielle sera signalée par un nouveau bandeau de consentement.</p>
+			</div>
+				</div>
+				<div class="legal-language" data-legal-lang="en">
 
-			<!-- Privacy Content -->
-			<div class="privacy-content">
-				<h4>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for <br> those interested.</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at nisl ligula. Suspendisse vitae ex fermentum, suscipit sem id, dapibus orci. Cras efficitur mi augue, ut sodales felis rhoncus bibendum. Fusce sagittis nibh orci, id vestibulum tortor aliquet ut. Vivamus maximus felis ac nisl luctus, ut aliquet massa suscipit. Sed scelerisque quam justo, sed volutpat neque tempor porta. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam consequat tellus id risus condimentum fringilla. Etiam maximus porttitor magna sit amet consectetur. Integer eget ante scelerisque tortor sodales aliquet. Integer in vestibulum leo, vitae tristique orci. Etiam tortor sem, porttitor at pellentesque sit amet, fringilla nec massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at nisl ligula. Suspendisse vitae ex fermentum, suscipit sem id, dapibus orci.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at nisl ligula. Suspendisse vitae ex fermentum, suscipit sem id, dapibus orci. Cras efficitur mi augue, ut sodales felis rhoncus bibendum.</p>
+			<div class="privacy-content legal-content-block">
+				<h3>Legal Notice</h3>
+				<p>www.octo.fr - Octo-SARL</p>
+				<p>Client: any professional, individual or legal entity visiting the website. Content: all text, images, video and other elements available on the website. Personal information: any information that directly or indirectly identifies a natural person, within the meaning of applicable data protection rules including the GDPR.</p>
 			</div>
-
-			<!-- Privacy Content -->
-			<div class="privacy-content">
-				<h3>Security and Retention</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at nisl ligula. Suspendisse vitae ex fermentum, suscipit sem id, dapibus orci. Cras efficitur mi augue, ut sodales felis rhoncus bibendum. Fusce sagittis nibh orci, id vestibulum tortor aliquet ut. Vivamus maximus felis ac nisl luctus, ut aliquet massa suscipit. Sed scelerisque quam justo, sed volutpat neque tempor porta. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam consequat tellus id risus condimentum fringilla.</p>
+			<div class="privacy-content legal-content-block">
+				<h3>1. Website Presentation</h3>
+				<p>Owner: Octo-SARL, share capital of €2,000, Antananarivo, Madagascar, +261 38 38 38 000.</p>
+				<p>Publication manager: Octo-SARL - contact@octo.fr. Webmaster: Octo-SARL - contact@octo.fr. Hosting provider: to be completed. Data Protection Officer: Fenitra Andrianambinina - contact@octo.fr.</p>
 			</div>
-
-			<!-- Privacy Content -->
-			<div class="privacy-content">
-				<h3>Contact Us</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at nisl ligula. Suspendisse vitae ex fermentum, suscipit sem id, dapibus orci. Cras efficitur mi augue, ut sodales felis rhoncus bibendum. Fusce sagittis nibh orci, id vestibulum tortor aliquet ut. Vivamus maximus felis ac nisl luctus, ut aliquet massa suscipit. Sed scelerisque quam justo, sed volutpat neque tempor porta. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam consequat tellus id risus condimentum fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at nisl ligula.</p>
+			<div class="privacy-content legal-content-block">
+				<h3>2. Terms of Use</h3>
+				<p>The website is an intellectual work protected by intellectual property law and applicable international regulations. Use of the website implies full acceptance of these terms, which may be updated at any time.</p>
 			</div>
-
+			<div class="privacy-content legal-content-block">
+				<h3>3. Services Provided</h3>
+				<p>The website provides information about Octo-SARL's activities. OCTO strives to provide accurate information but cannot be held liable for omissions, inaccuracies or update delays caused by OCTO or by third-party partners.</p>
+			</div>
+			<div class="privacy-content legal-content-block">
+				<h3>4. Technical Data Limitations</h3>
+				<p>The website uses JavaScript. Users must access it with recent, secure and up-to-date equipment and browsers. The hosting provider is expected to ensure service continuity while retaining the right to interrupt hosting for maintenance, improvement or abnormal traffic.</p>
+			</div>
+			<div class="privacy-content legal-content-block">
+				<h3>5. Intellectual Property</h3>
+				<p>OCTO owns or holds usage rights over the elements available on the website, including texts, images, graphics, logos, videos, icons and sounds. Unauthorized reproduction, representation, modification, publication or adaptation is prohibited.</p>
+			</div>
+			<div class="privacy-content legal-content-block">
+				<h3>6. Liability</h3>
+				<p>OCTO is responsible for the quality and accuracy of the content it publishes. OCTO cannot be held liable for direct or indirect damage caused to the user's equipment, compatibility issues, bugs, loss of opportunity, or user content submitted through interactive spaces.</p>
+			</div>
+			<div class="privacy-content legal-content-block">
+				<h3>7. Personal Data</h3>
+				<p>Octo-SARL applies GDPR requirements and Malagasy Law No. 2014-038 on personal data protection. The data controller is Octo-SARL, represented by Fenitra Andrianambinina.</p>
+				<p>Data may be processed for website navigation, service management, fraud prevention, navigation improvement, satisfaction surveys and communication campaigns. OCTO does not sell personal data.</p>
+				<p>Users may request access, rectification, deletion, restriction, objection, portability and post-mortem instructions by contacting Octo-SARL - DPO, Fenitra Andrianambinina, Antananarivo, Madagascar.</p>
+			</div>
+			<div class="privacy-content legal-content-block">
+				<h3>8. Security Incident Notification</h3>
+				<p>No internet transmission or electronic storage method is completely secure. If OCTO becomes aware of a security breach, affected users will be informed so that they can take appropriate measures.</p>
+			</div>
+			<div class="privacy-content legal-content-block">
+				<h3>9. Cookies and Tags</h3>
+				<p>The website may use cookies and web tags to facilitate navigation, provide services and evaluate usage. Users may configure their browser to accept, refuse or delete cookies, while understanding that some features may become unavailable.</p>
+			</div>
+			<div class="privacy-content legal-content-block legal-jurisdiction">
+				<h3>10. Applicable Law and Jurisdiction</h3>
+				<p class="country-clause" data-country="madagascar">This website and its legal notice are governed by Malagasy law. In the event of a dispute, and after an attempt at amicable mediation, the competent court will be the court of Antananarivo.</p>
+				<p class="country-clause" data-country="france">This website and its legal notice are governed by French law. In the event of a dispute, and after an attempt at amicable mediation, the competent court will be the competent French courts.</p>
+			</div>
+			<div class="privacy-content legal-content-block">
+				<h3>Cookie Policy</h3>
+				<p>The website uses strictly necessary cookies for technical operation and consent management. No advertising, third-party tracking or social media cookies are deposited unless a dedicated consent solution is later activated.</p>
+				<p>Users may manage cookies through their browser settings. Technical cookie deactivation may affect proper website operation. For questions about cookies or personal data, users may contact the Data Protection Officer, Fenitra Andrianambinina.</p>
+			</div>
+				</div>
+			</div>
 		</div>
 	</section>
-	<!-- End Privacy Section -->
+	<!-- End Legal Section -->
 
 	<!-- CTA One -->
-	<section class="cta-one style-two">
+	<section class="cta-one style-two legal-cta">
 		<div class="auto-container">
 			<div class="inner-container d-flex justify-content-between align-items-center flex-wrap">
 				<div class="cta-one_content">
-					<div class="cta-one_title">Can You find Now</div>
-					<h3 class="cta-one_heading">Looking for the Best IT Business Solutions?</h3>
+					<div class="cta-one_title" data-i18n="testimonial.eyebrow">Contact</div>
+					<h3 class="cta-one_heading" data-i18n="testimonial.title">Parlons de votre projet</h3>
 				</div>
 				<div class="cta-one_btn">
 					<div class="news-three_button">
 						<a href="contact.html" class="theme-btn btn-style-one">
 							<span class="btn-wrap">
-								<span class="text-one">get a Quote</span>
-								<span class="text-two">get a Quote</span>
+								<span class="text-one" data-i18n="cta.contact">Nous contacter</span>
+								<span class="text-two" data-i18n="cta.contact">Nous contacter</span>
 							</span>
 						</a>
 					</div>
@@ -244,7 +438,6 @@
 		</div>
 	</section>
 	<!-- End CTA One -->
-
 
 	<!-- Main Footer -->
 	<footer class="footer-style_three octo-footer">
@@ -273,6 +466,8 @@
 								<li><a href="project.html">Nos réalisations</a></li>
 								<li><a href="blog.html">Blog</a></li>
 								<li><a href="contact.html">Contact</a></li>
+								<li><a href="terms.html" data-i18n="footer.terms">CGV</a></li>
+								<li><a href="privacy.html" data-i18n="footer.legal">Mentions légales</a></li>
 							</ul>
 						</div>
 					</div>
@@ -349,6 +544,7 @@
 <script src="assets/js/element-in-view.js"></script>
 <script src="assets/js/color-settings.js"></script>
 <script src="assets/js/script.js"></script>
+<script src="assets/js/legal-country.js"></script>
 
 <script src="assets/js/i18n.js"></script>
 

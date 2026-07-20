@@ -13,6 +13,17 @@
 			"nav.work": "Nos réalisations",
 			"nav.blog": "Blog",
 			"nav.contact": "Contact",
+			"legal.terms.title": "Conditions générales de vente",
+			"legal.terms.breadcrumb": "CGV",
+			"legal.notice.big": "Légal",
+			"legal.notice.title": "Mentions légales",
+			"legal.notice.breadcrumb": "Mentions légales",
+			"legal.country.kicker": "Sélection du pays",
+			"legal.country.title": "Choisissez votre pays avant de consulter les mentions légales",
+			"legal.country.text": "La clause de droit applicable et de juridiction s'adapte au pays sélectionné.",
+			"legal.country.madagascar": "Madagascar",
+			"legal.country.france": "France",
+			"legal.country.change": "Modifier le pays",
 			"cta.start": "Démarrer",
 			"cta.work": "Travailler avec nous",
 			"cta.services": "Voir nos services",
@@ -130,6 +141,8 @@
 			"footer.discuss": "discutons !",
 			"footer.email": "contact@octo.digital",
 			"footer.phone": "+33 WhatsApp / +261",
+			"footer.terms": "CGV",
+			"footer.legal": "Mentions légales",
 			"footer.copyright": "OCTO © 2026. Tous droits réservés."
 		},
 		en: {
@@ -140,6 +153,17 @@
 			"nav.work": "Our work",
 			"nav.blog": "Articles",
 			"nav.contact": "Contact us",
+			"legal.terms.title": "Sales Terms",
+			"legal.terms.breadcrumb": "Sales Terms",
+			"legal.notice.big": "Legal",
+			"legal.notice.title": "Legal Notice",
+			"legal.notice.breadcrumb": "Legal Notice",
+			"legal.country.kicker": "Country selection",
+			"legal.country.title": "Choose your country before reading the legal notice",
+			"legal.country.text": "The applicable law and jurisdiction clause adapts to the selected country.",
+			"legal.country.madagascar": "Madagascar",
+			"legal.country.france": "France",
+			"legal.country.change": "Change country",
 			"cta.start": "Get started",
 			"cta.work": "Work with us",
 			"cta.services": "View services",
@@ -257,6 +281,8 @@
 			"footer.discuss": "let's discuss!",
 			"footer.email": "contact@octo.digital",
 			"footer.phone": "+33 WhatsApp / +261",
+			"footer.terms": "Sales Terms",
+			"footer.legal": "Legal Notice",
 			"footer.copyright": "OCTO © 2026. All rights reserved."
 		}
 	};
@@ -455,7 +481,9 @@
 			"OCTO | Détails des réalisations": "OCTO | Work details",
 			"OCTO | Blog": "OCTO | Articles",
 			"OCTO | Articles": "OCTO | Articles",
-			"OCTO | Contact": "OCTO | Contact us"
+			"OCTO | Contact": "OCTO | Contact us",
+			"OCTO | Conditions générales de vente": "OCTO | Sales Terms",
+			"OCTO | Mentions légales": "OCTO | Legal Notice"
 		}
 	};
 
@@ -472,6 +500,9 @@
 			"Blog": "Articles",
 			"Articles": "Articles",
 			"Contact": "Contact us",
+			"CGV": "Sales Terms",
+			"Mentions légales": "Legal Notice",
+			"Conditions générales de vente": "Sales Terms",
 			"Contactez OCTO": "Contact OCTO",
 			"Blog OCTO": "OCTO Blog",
 			"Articles OCTO": "OCTO Articles",
