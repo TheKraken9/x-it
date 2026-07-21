@@ -403,10 +403,18 @@
 	position:relative;
 	width:54px;
 	height:54px;
+	overflow:hidden;
 	margin-left:-20px;
 	border-radius:50px;
 	display:inline-block;
 	border:3px solid var(--white-color);
+}
+
+.slider-one_authors ul li img{
+	width:100%;
+	height:100%;
+	display:block;
+	object-fit:cover;
 }
 
 .slider-one_reviews{
@@ -1430,6 +1438,9 @@
 	position: absolute;
 	right: 15px;
 	top: 0px;
+	width:calc(100% - 30px);
+	height:100%;
+	min-height:660px;
 	opacity: 0;
 	overflow:hidden;
 	border-radius:30px;
@@ -1445,6 +1456,15 @@
 	opacity: 1;
 	-webkit-transform: rotate(0deg) translateX(0px);
     transform: rotate(0deg) translateX(0px);
+}
+
+.offer-one_image img{
+	width:100%;
+	height:100%;
+	min-height:660px;
+	display:block;
+	object-fit:cover;
+	object-position:center;
 }
 
 .offer-one_content-column{
@@ -1540,6 +1560,244 @@
 	font-weight:800;
 	color:rgba(252, 163, 17, 1);
 	font-family:'Font Awesome 6 Free';
+}
+
+/***
+
+====================================================================
+	OCTO Technologies
+====================================================================
+
+***/
+
+.octo-technologies{
+	position:relative;
+	overflow:hidden;
+	padding:110px 0px 95px;
+	background:#ffffff;
+}
+
+.octo-technologies:before{
+	position:absolute;
+	content:'';
+	left:0px;
+	right:0px;
+	bottom:0px;
+	height:1px;
+	background:rgba(20, 33, 61, 0.10);
+}
+
+.octo-technologies_text{
+	position:relative;
+	margin-bottom:18px;
+	font-size:17px;
+	line-height:30px;
+	color:#4f5968;
+}
+
+.octo-technologies_note{
+	position:relative;
+	padding:16px 20px;
+	border-left:4px solid #fca311;
+	border-radius:8px;
+	font-size:15px;
+	line-height:26px;
+	color:#14213d;
+	background:#f6f7fb;
+}
+
+.octo-tech-marquee{
+	position:relative;
+	overflow:hidden;
+	margin-top:54px;
+	padding:18px 0px;
+	border-top:1px solid rgba(20, 33, 61, 0.10);
+	border-bottom:1px solid rgba(20, 33, 61, 0.10);
+}
+
+.octo-tech-track{
+	position:relative;
+	display:flex;
+	width:max-content;
+	gap:18px;
+	animation:octoTechMarquee 28s linear infinite;
+}
+
+.octo-tech-marquee:hover .octo-tech-track{
+	animation-play-state:paused;
+}
+
+.octo-tech-logo{
+	display:inline-flex;
+	align-items:center;
+	justify-content:center;
+	min-width:180px;
+	height:74px;
+	padding:0px 28px;
+	border-radius:8px;
+	border:1px solid rgba(20, 33, 61, 0.16);
+	font-size:20px;
+	font-weight:800;
+	line-height:1;
+	color:#111111;
+	background:#ffffff;
+	filter:grayscale(1);
+	transition:all 350ms ease;
+}
+
+.octo-tech-logo:hover{
+	filter:grayscale(0);
+	transform:translateY(-3px);
+	border-color:transparent;
+	color:#ffffff;
+	box-shadow:0px 18px 34px rgba(20, 33, 61, 0.14);
+}
+
+.octo-tech-logo.wordpress:hover{
+	background:#21759b;
+}
+
+.octo-tech-logo.prestashop:hover{
+	background:#df0067;
+}
+
+.octo-tech-logo.laravel:hover{
+	background:#ff2d20;
+}
+
+.octo-tech-logo.flutter:hover{
+	background:#02569b;
+}
+
+@keyframes octoTechMarquee{
+	0%{
+		transform:translateX(0);
+	}
+	100%{
+		transform:translateX(-50%);
+	}
+}
+
+/***
+
+====================================================================
+	OCTO Home Projects
+====================================================================
+
+***/
+
+.octo-home-projects{
+	position:relative;
+	padding:110px 0px 90px;
+	background:#f6f7fb;
+}
+
+.octo-project-showcase-card{
+	position:relative;
+	display:block;
+	overflow:hidden;
+	min-height:420px;
+	margin-bottom:30px;
+	border-radius:8px;
+	background:#000000;
+	box-shadow:0px 18px 44px rgba(20, 33, 61, 0.10);
+}
+
+.octo-project-showcase-card img{
+	width:100%;
+	height:420px;
+	object-fit:cover;
+	filter:grayscale(1) blur(2px);
+	transform:scale(1.04);
+	transition:all 500ms ease;
+}
+
+.octo-project-showcase-card:hover img{
+	filter:grayscale(0) blur(0);
+	transform:scale(1);
+}
+
+.octo-project-showcase-overlay{
+	position:absolute;
+	left:0px;
+	top:0px;
+	right:0px;
+	bottom:0px;
+	display:flex;
+	flex-direction:column;
+	justify-content:flex-end;
+	padding:34px;
+	color:#ffffff;
+	background:linear-gradient(180deg, rgba(0, 0, 0, 0.08) 0%, rgba(0, 0, 0, 0.76) 100%);
+	opacity:0.92;
+	transition:all 350ms ease;
+}
+
+.octo-project-showcase-card:hover .octo-project-showcase-overlay{
+	opacity:1;
+}
+
+.octo-project-showcase-overlay em{
+	margin-bottom:10px;
+	font-size:13px;
+	font-style:normal;
+	font-weight:800;
+	letter-spacing:0px;
+	text-transform:uppercase;
+	color:#fca311;
+}
+
+.octo-project-showcase-overlay strong{
+	margin-bottom:20px;
+	font-size:28px;
+	line-height:34px;
+	font-weight:800;
+	color:#ffffff;
+}
+
+.octo-project-showcase-overlay i{
+	display:inline-flex;
+	align-items:center;
+	justify-content:center;
+	width:max-content;
+	min-height:44px;
+	padding:0px 18px;
+	border-radius:8px;
+	font-size:14px;
+	font-style:normal;
+	font-weight:800;
+	color:#000000;
+	background:#fca311;
+	transform:translateY(10px);
+	opacity:0;
+	transition:all 350ms ease;
+}
+
+.octo-project-showcase-card:hover .octo-project-showcase-overlay i{
+	opacity:1;
+	transform:translateY(0);
+}
+
+@media only screen and (max-width: 767px){
+	.octo-technologies,
+	.octo-home-projects{
+		padding:80px 0px 60px;
+	}
+
+	.octo-project-showcase-card,
+	.octo-project-showcase-card img{
+		min-height:340px;
+		height:340px;
+	}
+
+	.octo-project-showcase-overlay{
+		padding:26px;
+	}
+
+	.octo-project-showcase-overlay strong{
+		font-size:24px;
+		line-height:30px;
+	}
 }
 
 /***
@@ -8672,6 +8930,188 @@
 	height:7px;
 	border-radius:50px;
 	background-color:var(--main-color);
+}
+
+.legal-page{
+	background:#ffffff;
+}
+
+.legal-page .auto-container{
+	max-width:1100px;
+}
+
+.legal-language{
+	display:block;
+}
+
+html[lang="fr"] .legal-language[data-legal-lang="en"],
+html[lang="en"] .legal-language[data-legal-lang="fr"],
+.legal-language[hidden]{
+	display:none !important;
+}
+
+.legal-content-block{
+	padding:28px 0px 30px;
+}
+
+.legal-content-block h3{
+	font-size:30px;
+	line-height:1.25;
+	margin-bottom:18px;
+	color:#000000;
+}
+
+.legal-content-block h4{
+	font-size:22px;
+	line-height:1.35;
+	margin:18px 0px 14px;
+	color:#14213D;
+}
+
+.legal-content-block p{
+	font-size:16px;
+	line-height:1.85;
+	color:#4d5668;
+}
+
+.legal-content-block .legal-indent{
+	position:relative;
+	padding-left:18px;
+}
+
+.legal-content-block .legal-indent:before{
+	position:absolute;
+	left:0px;
+	top:14px;
+	width:6px;
+	height:6px;
+	content:"";
+	border-radius:50%;
+	background:#FCA311;
+}
+
+.legal-country-gate{
+	position:relative;
+	padding:32px;
+	margin-bottom:36px;
+	border:1px solid rgba(20, 33, 61, 0.14);
+	border-radius:8px;
+	background:#F7F8FA;
+}
+
+.legal-country-gate h3{
+	max-width:760px;
+	margin-bottom:12px;
+	color:#000000;
+}
+
+.legal-country-gate p{
+	max-width:720px;
+	margin-bottom:22px;
+	color:#4d5668;
+}
+
+.legal-country-actions{
+	display:flex;
+	gap:12px;
+	flex-wrap:wrap;
+}
+
+.legal-country-actions button,
+.legal-country-reset{
+	position:relative;
+	display:inline-flex;
+	align-items:center;
+	justify-content:center;
+	min-height:46px;
+	padding:12px 24px;
+	border:1px solid rgba(20, 33, 61, 0.2);
+	border-radius:4px;
+	font-weight:700;
+	color:#14213D;
+	background:#ffffff;
+	transition:all 300ms ease;
+}
+
+.legal-country-actions button:hover,
+.legal-country-actions button.active,
+.legal-country-reset:hover{
+	color:#000000;
+	border-color:#FCA311;
+	background:#FCA311;
+}
+
+.legal-country-reset{
+	display:none;
+	margin-top:16px;
+}
+
+.legal-country-content{
+	display:block;
+}
+
+.legal-page.is-country-selected .legal-country-content{
+	display:block;
+}
+
+.country-clause{
+	display:none;
+	padding:20px 22px;
+	border-left:4px solid #FCA311;
+	border-radius:0px 8px 8px 0px;
+	background:#F7F8FA;
+}
+
+html[data-legal-country="madagascar"] .country-clause[data-country="madagascar"],
+html[data-legal-country="france"] .country-clause[data-country="france"]{
+	display:block;
+}
+
+html:not([data-legal-country]) .country-clause[data-country="madagascar"]{
+	display:block;
+}
+
+.legal-table-wrap{
+	overflow-x:auto;
+	margin:22px 0px 8px;
+}
+
+.legal-table{
+	width:100%;
+	min-width:680px;
+	border-collapse:collapse;
+	background:#ffffff;
+}
+
+.legal-table th,
+.legal-table td{
+	padding:14px 16px;
+	border:1px solid rgba(20, 33, 61, 0.14);
+	text-align:left;
+	vertical-align:top;
+}
+
+.legal-table th{
+	color:#ffffff;
+	background:#14213D;
+}
+
+.octo-legal-link{
+	display:inline-flex;
+	align-items:center;
+	gap:8px;
+	font-weight:700;
+	color:#14213D;
+	border-bottom:2px solid #FCA311;
+}
+
+.octo-legal-link:hover{
+	color:#FCA311;
+	border-color:#14213D;
+}
+
+.legal-cta .cta-one_heading{
+	text-transform:none;
 }
 
 /***

@@ -1,7 +1,8 @@
-(function () {
+﻿(function () {
 	"use strict";
 
 	var storageKey = "octo-language";
+	var languageParam = "lang";
 	var defaultLanguage = "fr";
 
 	var translations = {
@@ -13,14 +14,28 @@
 			"nav.work": "Nos réalisations",
 			"nav.blog": "Blog",
 			"nav.contact": "Contact",
+			"legal.terms.title": "Conditions générales de vente",
+			"legal.terms.breadcrumb": "CGV",
+			"legal.notice.big": "Légal",
+			"legal.notice.title": "Mentions légales",
+			"legal.notice.breadcrumb": "Mentions légales",
+			"legal.cookies.big": "Cookies",
+			"legal.cookies.title": "Politique de cookies",
+			"legal.cookies.breadcrumb": "Cookies",
+			"legal.country.kicker": "Sélection du pays",
+			"legal.country.title": "Choisissez votre pays avant de consulter les mentions légales",
+			"legal.country.text": "La clause de droit applicable et de juridiction s'adapte au pays sélectionné.",
+			"legal.country.madagascar": "Madagascar",
+			"legal.country.france": "France",
+			"legal.country.change": "Modifier le pays",
 			"cta.start": "Démarrer",
 			"cta.work": "Travailler avec nous",
 			"cta.services": "Voir nos services",
 			"cta.contact": "Nous contacter",
 			"cta.contactNow": "Contacter maintenant",
 			"search.placeholder": "Rechercher",
-			"top.email": "contact@octo.digital",
-			"top.address": "<span class=\"icon fa-classic fa-solid fa-location-dot fa-fw\"></span>Tananarive",
+			"top.email": "contact@octo.fr",
+			"top.address": "<span class=\"icon fa-classic fa-solid fa-location-dot fa-fw\"></span>Paris, France / Antananarivo, Madagascar",
 			"sidebar.title": "À propos <span>OCTO</span>",
 			"sidebar.text": "<p>OCTO est une agence portée par une vision humaine du digital, qui vous conseille et vous soutient durablement dans vos projets.</p><p>Nous accompagnons les entreprises dans leur transformation digitale en leur apportant des solutions innovantes et un accompagnement stratégique adaptés à leurs objectifs. Notre approche vise à simplifier les processus, améliorer la performance et optimiser les ressources afin de permettre à chaque organisation de gagner en efficacité et de se concentrer sur son cœur de métier.</p><p>Chez OCTO, nous croyons que le numérique est un véritable levier de croissance, capable de réduire les contraintes opérationnelles et de créer de nouvelles opportunités pour les entreprises de toutes tailles.</p>",
 			"sidebar.item1": "Conseil stratégique",
@@ -28,16 +43,22 @@
 			"sidebar.item3": "Mise en œuvre des solutions",
 			"sidebar.item4": "Suivi et amélioration continue",
 			"sidebar.addressLabel": "Adresse",
-			"sidebar.address": "Tananarive",
+			"sidebar.address": "Paris, France / Antananarivo, Madagascar",
 			"sidebar.emailLabel": "Email",
-			"sidebar.email": "contact@octo.digital",
+			"sidebar.email": "contact@octo.fr",
 			"sidebar.contactLabel": "Contact",
 			"sidebar.contact": "WhatsApp +33 / Ligne +261",
 			"sidebar.subscribe": "Abonnez-vous !",
 			"sidebar.emailPlaceholder": "Votre email",
 			"sidebar.subscribeAction": "S'abonner",
 			"hero.eyebrow": "Libérez votre potentiel digital",
-			"hero.title": "Des solutions <span>digitales</span> pensées pour votre croissance",
+			"hero.title": "Des produits <span>digitaux</span> utiles, fiables et évolutifs",
+			"hero.slide1.eyebrow": "Transformation digitale",
+			"hero.slide1.title": "Des plateformes <span>web</span> pensées pour vos opérations",
+			"hero.slide2.eyebrow": "Design & expérience",
+			"hero.slide2.title": "Des interfaces <span>claires</span> pour vos utilisateurs",
+			"hero.slide3.eyebrow": "Applications métier",
+			"hero.slide3.title": "Des outils <span>mobiles</span> fiables pour vos équipes",
 			"hero.reviews": "Clients accompagnés",
 			"clients.title": "Nous accompagnons les entreprises dans leur transformation digitale",
 			"about.eyebrow": "À propos",
@@ -101,6 +122,20 @@
 			"offers.customItem1": "Un chef de projet",
 			"offers.customItem2": "Réduction progressive selon le volume apporté",
 			"offers.customItem3": "Des équipes dédiées à vos projets",
+			"tech.eyebrow": "Technologies",
+			"tech.title": "Une stack fiable pour externaliser efficacement vos projets digitaux",
+			"tech.text": "OCTO est une agence web offshore qui combine expertise technique et efficacité opérationnelle. Nous utilisons des technologies fiables comme WordPress, PrestaShop, Laravel et Flutter pour développer des sites vitrines, des e-commerces, des projets web sur mesure et des applications mobiles. Notre approche franco-malgache facilite la communication avec les équipes françaises et internationales, avec des livrables alignés sur les standards européens.",
+			"tech.note": "Remarque : la technologie n'est jamais imposée. Elle est choisie selon vos objectifs, votre budget et la maintenabilité du projet.",
+			"homeProjects.eyebrow": "Réalisations",
+			"homeProjects.title": "Quelques-uns des derniers projets que nous avons réalisés",
+			"homeProjects.text": "Des interfaces de sites vitrines, plateformes web et applications mobiles, présentées comme travaux réalisés sans afficher les commanditaires.",
+			"homeProjects.siteType": "Site vitrine",
+			"homeProjects.siteTitle": "Interface corporate claire et évolutive",
+			"homeProjects.ecommerceType": "E-commerce",
+			"homeProjects.ecommerceTitle": "Parcours d'achat et gestion catalogue",
+			"homeProjects.mobileType": "Application mobile",
+			"homeProjects.mobileTitle": "Interface métier pour équipes terrain",
+			"homeProjects.read": "Lire la suite",
 			"testimonial.eyebrow": "Contact",
 			"testimonial.title": "Parlons de votre projet",
 			"testimonial.text": "Notre équipe d'experts est à votre écoute pour vous conseiller et vous accompagner à chaque étape de votre projet. Contactez-nous dès aujourd'hui afin de bénéficier d'un accompagnement personnalisé et de solutions conçues pour répondre efficacement à vos enjeux.",
@@ -128,8 +163,11 @@
 			"blog.article3": "Réussir sa transformation digitale étape par étape",
 			"footer.text": "Nous privilégions la collaboration <br>avec nos clients",
 			"footer.discuss": "discutons !",
-			"footer.email": "contact@octo.digital",
+			"footer.email": "contact@octo.fr",
 			"footer.phone": "+33 WhatsApp / +261",
+			"footer.terms": "CGV",
+			"footer.legal": "Mentions légales",
+			"footer.cookies": "Politique de cookies",
 			"footer.copyright": "OCTO © 2026. Tous droits réservés."
 		},
 		en: {
@@ -140,14 +178,28 @@
 			"nav.work": "Our work",
 			"nav.blog": "Articles",
 			"nav.contact": "Contact us",
+			"legal.terms.title": "Sales Terms",
+			"legal.terms.breadcrumb": "Sales Terms",
+			"legal.notice.big": "Legal",
+			"legal.notice.title": "Legal Notice",
+			"legal.notice.breadcrumb": "Legal Notice",
+			"legal.cookies.big": "Cookies",
+			"legal.cookies.title": "Cookie Policy",
+			"legal.cookies.breadcrumb": "Cookies",
+			"legal.country.kicker": "Country selection",
+			"legal.country.title": "Choose your country before reading the legal notice",
+			"legal.country.text": "The applicable law and jurisdiction clause adapts to the selected country.",
+			"legal.country.madagascar": "Madagascar",
+			"legal.country.france": "France",
+			"legal.country.change": "Change country",
 			"cta.start": "Get started",
 			"cta.work": "Work with us",
 			"cta.services": "View services",
 			"cta.contact": "Contact us",
 			"cta.contactNow": "Contact now",
 			"search.placeholder": "Search",
-			"top.email": "contact@octo.digital",
-			"top.address": "<span class=\"icon fa-classic fa-solid fa-location-dot fa-fw\"></span>Antananarivo",
+			"top.email": "contact@octo.fr",
+			"top.address": "<span class=\"icon fa-classic fa-solid fa-location-dot fa-fw\"></span>Paris, France / Antananarivo, Madagascar",
 			"sidebar.title": "About <span>OCTO</span>",
 			"sidebar.text": "<p>OCTO is an agency driven by a human vision of digital work, advising you and supporting your projects over the long term.</p><p>We support companies through their digital transformation by providing innovative solutions and strategic guidance tailored to their goals. Our approach simplifies processes, improves performance and optimizes resources so every organization can become more efficient and focus on its core business.</p><p>At OCTO, we believe digital technology is a true growth driver, able to reduce operational constraints and create new opportunities for companies of every size.</p>",
 			"sidebar.item1": "Strategic consulting",
@@ -155,16 +207,22 @@
 			"sidebar.item3": "Solution implementation",
 			"sidebar.item4": "Monitoring and continuous improvement",
 			"sidebar.addressLabel": "Address",
-			"sidebar.address": "Antananarivo",
+			"sidebar.address": "Paris, France / Antananarivo, Madagascar",
 			"sidebar.emailLabel": "Email",
-			"sidebar.email": "contact@octo.digital",
+			"sidebar.email": "contact@octo.fr",
 			"sidebar.contactLabel": "Contact",
 			"sidebar.contact": "WhatsApp +33 / +261 line",
 			"sidebar.subscribe": "Subscribe!",
 			"sidebar.emailPlaceholder": "Your email",
 			"sidebar.subscribeAction": "Subscribe",
 			"hero.eyebrow": "Unlock digital potential",
-			"hero.title": "Digital <span>solutions</span> designed for your growth",
+			"hero.title": "Useful, reliable and scalable <span>digital</span> products",
+			"hero.slide1.eyebrow": "Digital transformation",
+			"hero.slide1.title": "<span>Web</span> platforms built for your operations",
+			"hero.slide2.eyebrow": "Design & experience",
+			"hero.slide2.title": "<span>Clear</span> interfaces for your users",
+			"hero.slide3.eyebrow": "Business applications",
+			"hero.slide3.title": "Reliable <span>mobile</span> tools for your teams",
 			"hero.reviews": "Clients supported",
 			"clients.title": "We support companies through their digital transformation",
 			"about.eyebrow": "About us",
@@ -228,6 +286,20 @@
 			"offers.customItem1": "A project manager",
 			"offers.customItem2": "Progressive discount based on volume",
 			"offers.customItem3": "Dedicated teams for your projects",
+			"tech.eyebrow": "Technologies",
+			"tech.title": "A reliable stack to outsource your digital projects efficiently",
+			"tech.text": "OCTO is an offshore web agency combining technical expertise with operational efficiency. We use reliable technologies such as WordPress, PrestaShop, Laravel and Flutter to build showcase websites, e-commerce platforms, custom web projects and mobile applications. Our French-Malagasy approach makes communication easier for French and international teams, with deliverables aligned with European standards.",
+			"tech.note": "Note: technology is never imposed. It is selected according to your goals, budget and long-term maintainability.",
+			"homeProjects.eyebrow": "Work",
+			"homeProjects.title": "A few of the latest projects we have delivered",
+			"homeProjects.text": "Showcase website, web platform and mobile app interfaces, presented as completed work without displaying the commissioning clients.",
+			"homeProjects.siteType": "Showcase website",
+			"homeProjects.siteTitle": "Clear, scalable corporate interface",
+			"homeProjects.ecommerceType": "E-commerce",
+			"homeProjects.ecommerceTitle": "Shopping journey and catalog management",
+			"homeProjects.mobileType": "Mobile app",
+			"homeProjects.mobileTitle": "Business interface for field teams",
+			"homeProjects.read": "Read more",
 			"testimonial.eyebrow": "Contact",
 			"testimonial.title": "Let's talk about your project",
 			"testimonial.text": "Our expert team is ready to listen, advise you and support you at every stage of your project. Contact us today to benefit from personalized guidance and solutions designed to address your challenges effectively.",
@@ -255,16 +327,128 @@
 			"blog.article3": "Succeed in digital transformation step by step",
 			"footer.text": "We prioritize collaboration <br>with our clients",
 			"footer.discuss": "let's discuss!",
-			"footer.email": "contact@octo.digital",
+			"footer.email": "contact@octo.fr",
 			"footer.phone": "+33 WhatsApp / +261",
+			"footer.terms": "Sales Terms",
+			"footer.legal": "Legal Notice",
+			"footer.cookies": "Cookie Policy",
 			"footer.copyright": "OCTO © 2026. All rights reserved."
 		}
 	};
 
+	function isKnownLanguage(language) {
+		return Boolean(translations[language]);
+	}
+
+	function storedLanguage() {
+		try {
+			return localStorage.getItem(storageKey);
+		} catch (error) {
+			return null;
+		}
+	}
+
+	function saveLanguage(language) {
+		try {
+			localStorage.setItem(storageKey, language);
+		} catch (error) {
+			return;
+		}
+	}
+
+	function languageFromUrl() {
+		try {
+			var value = new URLSearchParams(window.location.search).get(languageParam);
+			return isKnownLanguage(value) ? value : null;
+		} catch (error) {
+			return null;
+		}
+	}
+
+	function normalizeLanguage(language) {
+		return isKnownLanguage(language) ? language : defaultLanguage;
+	}
+
+	function currentLanguage() {
+		var urlLanguage = languageFromUrl();
+		if (urlLanguage) {
+			saveLanguage(urlLanguage);
+			return urlLanguage;
+		}
+
+		return normalizeLanguage(storedLanguage());
+	}
+
+	function syncCurrentUrlLanguage(language) {
+		if (!window.history || !window.history.replaceState) {
+			return;
+		}
+
+		try {
+			var url = new URL(window.location.href);
+			url.searchParams.set(languageParam, language);
+			var nextUrl = window.location.protocol === "file:" ? url.href : url.pathname + url.search + url.hash;
+			window.history.replaceState(null, document.title, nextUrl);
+		} catch (error) {
+			return;
+		}
+	}
+
+	function hasExternalScheme(href) {
+		return /^[a-z][a-z0-9+.-]*:/i.test(href) || href.indexOf("//") === 0;
+	}
+
+	function withLanguageParam(href, language) {
+		if (!href || href.charAt(0) === "#" || hasExternalScheme(href)) {
+			return href;
+		}
+
+		var hash = "";
+		var hashIndex = href.indexOf("#");
+		var hrefWithoutHash = href;
+		if (hashIndex !== -1) {
+			hash = href.slice(hashIndex);
+			hrefWithoutHash = href.slice(0, hashIndex);
+		}
+
+		var path = hrefWithoutHash;
+		var query = "";
+		var queryIndex = hrefWithoutHash.indexOf("?");
+		if (queryIndex !== -1) {
+			path = hrefWithoutHash.slice(0, queryIndex);
+			query = hrefWithoutHash.slice(queryIndex + 1);
+		}
+
+		if (!/\.html$/i.test(path)) {
+			return href;
+		}
+
+		var params = new URLSearchParams(query);
+		params.set(languageParam, language);
+
+		return path + "?" + params.toString() + hash;
+	}
+
+	function syncLanguageLinks(language) {
+		document.querySelectorAll("a[href]").forEach(function (link) {
+			var originalHref = link.getAttribute("data-original-href");
+			if (!originalHref) {
+				originalHref = link.getAttribute("href") || "";
+				link.setAttribute("data-original-href", originalHref);
+			}
+
+			link.setAttribute("href", withLanguageParam(originalHref, language));
+		});
+	}
+
 	var selectorMap = [
-		{ selector: ".header-top_list li:nth-child(2)", key: "top.address", mode: "html" },
-		{ selector: ".slider-one_title", key: "hero.eyebrow" },
-		{ selector: ".slider-one_heading", key: "hero.title", mode: "html" },
+		{ selector: ".header-top_list li:nth-child(2), .header-top_list-two li:nth-child(2)", key: "top.address", mode: "html" },
+		{ selector: ".main-slider .swiper-slide[data-hero-slide=\"web-platforms\"] .slider-one_title", key: "hero.slide1.eyebrow" },
+		{ selector: ".main-slider .swiper-slide[data-hero-slide=\"web-platforms\"] .slider-one_heading", key: "hero.slide1.title", mode: "html" },
+		{ selector: ".main-slider .swiper-slide[data-hero-slide=\"interface-design\"] .slider-one_title", key: "hero.slide2.eyebrow" },
+		{ selector: ".main-slider .swiper-slide[data-hero-slide=\"interface-design\"] .slider-one_heading", key: "hero.slide2.title", mode: "html" },
+		{ selector: ".main-slider .swiper-slide[data-hero-slide=\"mobile-tools\"] .slider-one_title", key: "hero.slide3.eyebrow" },
+		{ selector: ".main-slider .swiper-slide[data-hero-slide=\"mobile-tools\"] .slider-one_heading", key: "hero.slide3.title", mode: "html" },
 		{ selector: ".slider-one_button .text-one, .slider-one_button .text-two", key: "cta.work" },
 		{ selector: ".slider-one_options .service-btn", key: "cta.services", mode: "html", suffix: " <i class=\"fa-arrow-right\"></i>" },
 		{ selector: ".slider-one_reviews span", key: "hero.reviews" },
@@ -304,6 +488,7 @@
 		{ selector: ".offer-one_tags li:nth-child(3) a", key: "services.tag.dev" },
 		{ selector: ".offer-one_tags li:nth-child(4) a", key: "services.tag.support" },
 		{ selector: ".octo-offers .sec-title_title", key: "offers.eyebrow", mode: "centeredSectionTitle" },
+		{ selector: ".octo-home-projects .sec-title_title", key: "homeProjects.eyebrow", mode: "centeredSectionTitle" },
 		{ selector: ".testimonial-one .sec-title_title", key: "testimonial.eyebrow", mode: "sectionTitle" },
 		{ selector: ".testimonial-one .sec-title_heading", key: "testimonial.title" },
 		{ selector: ".testimonial-one .sec-title_text", key: "testimonial.text", mode: "html" },
@@ -378,12 +563,14 @@
 		{ pages: ["project.html"], selector: ".bread-crumb li:last-child", fr: "Réalisations", en: "Work" },
 		{ pages: ["project.html"], selector: ".octo-project-page .sec-title_title", fr: "Réalisations", en: "Work", mode: "centeredSectionTitle" },
 		{ pages: ["project.html"], selector: ".octo-project-page .sec-title_heading", fr: "Des projets pensés pour des besoins concrets", en: "Projects designed for concrete needs" },
-		{ pages: ["project.html"], selector: ".gallery-block-one:nth-child(1) .gallery-block_one-designation", fr: "Web / E-commerce", en: "Web / E-commerce" },
-		{ pages: ["project.html"], selector: ".gallery-block-one:nth-child(1) .gallery-block-one_title a", fr: "Plateforme e-commerce sur-mesure", en: "Custom e-commerce platform" },
-		{ pages: ["project.html"], selector: ".gallery-block-one:nth-child(2) .gallery-block_one-designation", fr: "Mobile / Opérations", en: "Mobile / Operations" },
-		{ pages: ["project.html"], selector: ".gallery-block-one:nth-child(2) .gallery-block-one_title a", fr: "Application mobile métier", en: "Business mobile app" },
-		{ pages: ["project.html"], selector: ".gallery-block-one:nth-child(3) .gallery-block_one-designation", fr: "Logiciel / SaaS", en: "Software / SaaS" },
-		{ pages: ["project.html"], selector: ".gallery-block-one:nth-child(3) .gallery-block-one_title a", fr: "Outil interne de pilotage", en: "Internal management tool" },
+		{ pages: ["project.html"], selector: ".gallery-block-one:nth-child(1) .gallery-block_one-designation", fr: "Site vitrine", en: "Showcase website" },
+		{ pages: ["project.html"], selector: ".gallery-block-one:nth-child(1) .gallery-block-one_title a", fr: "Interface corporate claire et évolutive", en: "Clear, scalable corporate interface" },
+		{ pages: ["project.html"], selector: ".gallery-block-one:nth-child(2) .gallery-block_one-designation", fr: "Web / E-commerce", en: "Web / E-commerce" },
+		{ pages: ["project.html"], selector: ".gallery-block-one:nth-child(2) .gallery-block-one_title a", fr: "Plateforme e-commerce sur-mesure", en: "Custom e-commerce platform" },
+		{ pages: ["project.html"], selector: ".gallery-block-one:nth-child(3) .gallery-block_one-designation", fr: "Mobile / Opérations", en: "Mobile / Operations" },
+		{ pages: ["project.html"], selector: ".gallery-block-one:nth-child(3) .gallery-block-one_title a", fr: "Application mobile métier", en: "Business mobile app" },
+		{ pages: ["project.html"], selector: ".gallery-block-one:nth-child(4) .gallery-block_one-designation", fr: "Logiciel / SaaS", en: "Software / SaaS" },
+		{ pages: ["project.html"], selector: ".gallery-block-one:nth-child(4) .gallery-block-one_title a", fr: "Outil interne de pilotage", en: "Internal management tool" },
 
 		{ pages: ["blog.html"], selector: ".page-title h1", fr: "Blog OCTO", en: "OCTO Articles" },
 		{ pages: ["blog.html"], selector: ".bread-crumb li:last-child", fr: "Blog", en: "Articles" },
@@ -414,6 +601,9 @@
 
 		{ pages: ["project-detail.html"], selector: ".page-title h1", fr: "Détails des réalisations", en: "Work details" },
 		{ pages: ["project-detail.html"], selector: ".bread-crumb li:last-child", fr: "Détails des réalisations", en: "Work details" },
+		{ pages: ["project-detail.html"], selector: "#site-vitrine-corporate span", fr: "Site vitrine", en: "Showcase website" },
+		{ pages: ["project-detail.html"], selector: "#site-vitrine-corporate h2", fr: "Interface corporate claire et évolutive", en: "Clear, scalable corporate interface" },
+		{ pages: ["project-detail.html"], selector: "#site-vitrine-corporate p", fr: "Un site vitrine conçu pour présenter une activité avec clarté, valoriser l'offre et faciliter la prise de contact. L'historique détaillé du projet sera complété avec les informations fournies.", en: "A showcase website designed to present an activity clearly, highlight the offer and make contact easier. The detailed project history will be completed with the information provided." },
 		{ pages: ["project-detail.html"], selector: "#plateforme-ecommerce h2", fr: "Plateforme e-commerce sur-mesure", en: "Custom e-commerce platform" },
 		{ pages: ["project-detail.html"], selector: "#plateforme-ecommerce p", fr: "Une boutique pensée pour vendre en ligne, gérer les contenus, suivre les commandes et rester simple à faire évoluer.", en: "A store designed to sell online, manage content, track orders and remain easy to evolve." },
 		{ pages: ["project-detail.html"], selector: "#application-mobile-metier h2", fr: "Application mobile métier", en: "Business mobile app" },
@@ -423,6 +613,9 @@
 		{ pages: ["project-detail.html"], selector: ".service-detail_list-two li:nth-child(1)", fr: "Cadrage du besoin et des utilisateurs", en: "Framing needs and users" },
 		{ pages: ["project-detail.html"], selector: ".service-detail_list-two li:nth-child(2)", fr: "Design d'une interface claire et exploitable", en: "Designing a clear and usable interface" },
 		{ pages: ["project-detail.html"], selector: ".service-detail_list-two li:nth-child(3)", fr: "Développement, tests et mise en ligne progressive", en: "Development, testing and progressive launch" },
+		{ pages: ["project-detail.html"], selector: "#site-vitrine-corporate .service-detail_list-two li:nth-child(1)", fr: "Structure de pages pensée pour la compréhension rapide", en: "Page structure designed for quick understanding" },
+		{ pages: ["project-detail.html"], selector: "#site-vitrine-corporate .service-detail_list-two li:nth-child(2)", fr: "Interface responsive avec contenus faciles à faire évoluer", en: "Responsive interface with content that is easy to evolve" },
+		{ pages: ["project-detail.html"], selector: "#site-vitrine-corporate .service-detail_list-two li:nth-child(3)", fr: "Parcours de contact visible et cohérent", en: "Visible and coherent contact journey" },
 
 		{ pages: ["blog-detail.html"], selector: ".page-title h1", fr: "Articles OCTO", en: "OCTO Articles" },
 		{ pages: ["blog-detail.html"], selector: ".bread-crumb li:last-child", fr: "Articles", en: "Articles" },
@@ -455,7 +648,10 @@
 			"OCTO | Détails des réalisations": "OCTO | Work details",
 			"OCTO | Blog": "OCTO | Articles",
 			"OCTO | Articles": "OCTO | Articles",
-			"OCTO | Contact": "OCTO | Contact us"
+			"OCTO | Contact": "OCTO | Contact us",
+			"OCTO | Conditions générales de vente": "OCTO | Sales Terms",
+			"OCTO | Mentions légales": "OCTO | Legal Notice",
+			"OCTO | Politique de cookies": "OCTO | Cookie Policy"
 		}
 	};
 
@@ -472,6 +668,10 @@
 			"Blog": "Articles",
 			"Articles": "Articles",
 			"Contact": "Contact us",
+			"CGV": "Sales Terms",
+			"Mentions légales": "Legal Notice",
+			"Politique de cookies": "Cookie Policy",
+			"Conditions générales de vente": "Sales Terms",
 			"Contactez OCTO": "Contact OCTO",
 			"Blog OCTO": "OCTO Blog",
 			"Articles OCTO": "OCTO Articles",
@@ -547,16 +747,22 @@
 			"Un bon produit digital ne se limite pas à sa technique : il doit aussi être agréable et intuitif à utiliser. Notre équipe design conçoit des interfaces claires, pensées pour l'expérience de vos utilisateurs (UI/UX), ainsi que des identités visuelles cohérentes pour votre marque (logo, charte graphique, supports visuels). Design et développement travaillent main dans la main pour un résultat homogène du premier croquis à la mise en ligne.": "A good digital product is not only technical: it must also be pleasant and intuitive to use. Our design team creates clear interfaces focused on your users' experience (UI/UX), as well as coherent visual identities for your brand (logo, brand guidelines, visual assets). Design and development work hand in hand for a consistent result from first sketch to launch.",
 			"Un site, une application ou un logiciel a besoin d'être entretenu pour rester performant et sécurisé dans le temps. Nous proposons un service de maintenance incluant les mises à jour de sécurité, les corrections de bugs, les petites évolutions et le suivi technique de votre outil. Vous gardez ainsi l'esprit tranquille, avec une équipe qui connaît déjà votre projet et reste disponible en cas de besoin.": "A website, app or software product needs maintenance to remain performant and secure over time. We offer maintenance services including security updates, bug fixes, small improvements and technical monitoring. You keep peace of mind with a team that already knows your project and remains available when needed.",
 			"Besoin de renforcer temporairement votre équipe technique sans passer par un recrutement long et coûteux ? Nous mettons à votre disposition un ou plusieurs de nos développeurs ou designers, intégrés à votre organisation le temps nécessaire à votre projet. Vous gardez le contrôle de votre roadmap, nous apportons la compétence et la disponibilité, avec une grande flexibilité selon vos besoins (de quelques semaines à plusieurs mois).": "Need to temporarily strengthen your technical team without a long and costly recruitment process? We provide one or more of our developers or designers, integrated into your organization for the time your project requires. You keep control of your roadmap, while we bring skills and availability with strong flexibility according to your needs, from a few weeks to several months.",
-			"Nous vous aidons à identifier les processus à simplifier, les outils à mettre en place et les priorités à traiter pour transformer votre organisation sans complexité inutile. L'accompagnement peut couvrir l'audit, la recommandation, le cadrage, la mise en œuvre et la formation des équipes.": "We help you identify processes to simplify, tools to implement and priorities to address in order to transform your organization without unnecessary complexity. Support can cover audits, recommendations, framing, implementation and team training.",
+			"Votre entreprise n'a pas encore franchi le cap du digital, ou ne sait pas par où commencer ? Nous vous accompagnons étape par étape : diagnostic de votre situation actuelle, recommandation des outils adaptés à votre activité, mise en place progressive des solutions, et formation de vos équipes. Pas de jargon technique inutile — un accompagnement pensé pour vous faire avancer à votre rythme.": "Your company has not yet made the digital leap, or does not know where to start? We support you step by step: diagnosis of your current situation, recommendation of tools adapted to your activity, progressive implementation of solutions, and training for your teams. No unnecessary technical jargon, just support designed to help you move forward at your own pace.",
 			"Pourquoi externaliser chez OCTO ?": "Why outsource with OCTO?",
 			"Habitués à collaborer avec des agences, des entreprises et des partenaires techniques, nous nous adaptons à vos méthodes de travail et à vos exigences afin de garantir une collaboration fluide et efficace.": "Used to working with agencies, companies and technical partners, we adapt to your methods and requirements to ensure smooth and efficient collaboration.",
 			"La confidentialité est au cœur de nos engagements. Si nécessaire, nous pouvons signer un accord de confidentialité (NDA) garantissant la protection de vos informations et le respect de votre relation avec vos clients. Nous nous engageons notamment à ne jamais solliciter directement vos clients finaux dans le cadre d'une mission réalisée pour votre compte.": "Confidentiality is central to our commitments. If needed, we can sign a non-disclosure agreement (NDA) guaranteeing the protection of your information and respect for your client relationships. In particular, we commit never to directly solicit your end clients as part of a mission carried out on your behalf.",
 			"Tout au long du projet, vous bénéficiez d'outils de suivi collaboratifs vous permettant de communiquer facilement avec notre équipe et de suivre en toute transparence l'avancement des travaux.": "Throughout the project, you benefit from collaborative tracking tools that let you communicate easily with our team and transparently monitor progress.",
 			"Des projets pensés pour des besoins concrets": "Projects designed for concrete needs",
+			"Site vitrine": "Showcase website",
+			"Interface corporate claire et évolutive": "Clear, scalable corporate interface",
 			"Plateforme e-commerce sur-mesure": "Custom e-commerce platform",
 			"Application mobile métier": "Business mobile app",
 			"Outil interne de pilotage": "Internal management tool",
 			"Mobile / Opérations": "Mobile / Operations",
+			"Un site vitrine conçu pour présenter une activité avec clarté, valoriser l'offre et faciliter la prise de contact. L'historique détaillé du projet sera complété avec les informations fournies.": "A showcase website designed to present an activity clearly, highlight the offer and make contact easier. The detailed project history will be completed with the information provided.",
+			"Structure de pages pensée pour la compréhension rapide": "Page structure designed for quick understanding",
+			"Interface responsive avec contenus faciles à faire évoluer": "Responsive interface with content that is easy to evolve",
+			"Parcours de contact visible et cohérent": "Visible and coherent contact journey",
 			"Une boutique pensée pour vendre en ligne, gérer les contenus, suivre les commandes et rester simple à faire évoluer.": "A store designed to sell online, manage content, track orders and remain easy to evolve.",
 			"Une application iOS et Android pour fluidifier les échanges entre les équipes terrain, les clients et l'administration.": "An iOS and Android app to streamline exchanges between field teams, clients and administration.",
 			"Un outil de suivi opérationnel pour centraliser les données, automatiser les tâches et piloter les décisions.": "An operational tracking tool to centralize data, automate tasks and guide decisions.",
@@ -607,6 +813,13 @@
 		en: {
 			"Choisir la langue": "Choose language",
 			"Équipe OCTO": "OCTO team",
+			"Interface de site vitrine corporate": "Corporate showcase website interface",
+			"Interface de plateforme e-commerce": "E-commerce platform interface",
+			"Interface d'application mobile métier": "Business mobile app interface",
+			"Chef de projet OCTO": "OCTO project manager",
+			"Développeur web OCTO": "OCTO web developer",
+			"Designer UI UX OCTO": "OCTO UI UX designer",
+			"Ingénieur support OCTO": "OCTO support engineer",
 			"Plateforme e-commerce sur-mesure": "Custom e-commerce platform",
 			"Application mobile métier": "Business mobile app",
 			"Outil interne de pilotage": "Internal management tool",
@@ -813,6 +1026,14 @@
 		});
 	}
 
+	function applyLegalLanguageSections(language) {
+		document.querySelectorAll(".legal-language").forEach(function (section) {
+			var isActive = section.getAttribute("data-legal-lang") === language;
+			section.hidden = !isActive;
+			section.setAttribute("aria-hidden", isActive ? "false" : "true");
+		});
+	}
+
 	function applyTranslations(language) {
 		document.documentElement.lang = language;
 		applyDocumentTitle(language);
@@ -842,32 +1063,43 @@
 		});
 
 		applyPageContentTranslations(language);
+		applyLegalLanguageSections(language);
+		syncLanguageLinks(language);
 
 		document.querySelectorAll("[data-lang-switch]").forEach(function (button) {
 			var isActive = button.getAttribute("data-lang-switch") === language;
 			button.classList.toggle("active", isActive);
 			button.setAttribute("aria-pressed", isActive ? "true" : "false");
 		});
+
+		document.dispatchEvent(new CustomEvent("octo:languagechange", {
+			detail: {
+				language: language
+			}
+		}));
 	}
 
 	function setLanguage(language) {
-		var nextLanguage = translations[language] ? language : defaultLanguage;
-		localStorage.setItem(storageKey, nextLanguage);
+		var nextLanguage = normalizeLanguage(language);
+		saveLanguage(nextLanguage);
+		syncCurrentUrlLanguage(nextLanguage);
 		applyTranslations(nextLanguage);
 	}
 
+	function handleLanguageSwitch(event) {
+		var button = event.target.closest && event.target.closest("[data-lang-switch]");
+		if (!button) {
+			return;
+		}
+
+		event.preventDefault();
+		setLanguage(button.getAttribute("data-lang-switch"));
+	}
+
 	function init() {
-		var savedLanguage = localStorage.getItem(storageKey);
-		var language = translations[savedLanguage] ? savedLanguage : defaultLanguage;
+		var language = currentLanguage();
 
-		document.addEventListener("click", function (event) {
-			var button = event.target.closest("[data-lang-switch]");
-			if (!button) {
-				return;
-			}
-
-			setLanguage(button.getAttribute("data-lang-switch"));
-		});
+		document.addEventListener("click", handleLanguageSwitch, true);
 
 		applyTranslations(language);
 	}
