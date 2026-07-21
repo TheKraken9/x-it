@@ -2,6 +2,7 @@
 	"use strict";
 
 	var storageKey = "octo-language";
+	var languageParam = "lang";
 	var defaultLanguage = "fr";
 
 	var translations = {
@@ -334,6 +335,111 @@
 			"footer.copyright": "OCTO © 2026. All rights reserved."
 		}
 	};
+
+	function isKnownLanguage(language) {
+		return Boolean(translations[language]);
+	}
+
+	function storedLanguage() {
+		try {
+			return localStorage.getItem(storageKey);
+		} catch (error) {
+			return null;
+		}
+	}
+
+	function saveLanguage(language) {
+		try {
+			localStorage.setItem(storageKey, language);
+		} catch (error) {
+			return;
+		}
+	}
+
+	function languageFromUrl() {
+		try {
+			var value = new URLSearchParams(window.location.search).get(languageParam);
+			return isKnownLanguage(value) ? value : null;
+		} catch (error) {
+			return null;
+		}
+	}
+
+	function normalizeLanguage(language) {
+		return isKnownLanguage(language) ? language : defaultLanguage;
+	}
+
+	function currentLanguage() {
+		var urlLanguage = languageFromUrl();
+		if (urlLanguage) {
+			saveLanguage(urlLanguage);
+			return urlLanguage;
+		}
+
+		return normalizeLanguage(storedLanguage());
+	}
+
+	function syncCurrentUrlLanguage(language) {
+		if (!window.history || !window.history.replaceState) {
+			return;
+		}
+
+		try {
+			var url = new URL(window.location.href);
+			url.searchParams.set(languageParam, language);
+			var nextUrl = window.location.protocol === "file:" ? url.href : url.pathname + url.search + url.hash;
+			window.history.replaceState(null, document.title, nextUrl);
+		} catch (error) {
+			return;
+		}
+	}
+
+	function hasExternalScheme(href) {
+		return /^[a-z][a-z0-9+.-]*:/i.test(href) || href.indexOf("//") === 0;
+	}
+
+	function withLanguageParam(href, language) {
+		if (!href || href.charAt(0) === "#" || hasExternalScheme(href)) {
+			return href;
+		}
+
+		var hash = "";
+		var hashIndex = href.indexOf("#");
+		var hrefWithoutHash = href;
+		if (hashIndex !== -1) {
+			hash = href.slice(hashIndex);
+			hrefWithoutHash = href.slice(0, hashIndex);
+		}
+
+		var path = hrefWithoutHash;
+		var query = "";
+		var queryIndex = hrefWithoutHash.indexOf("?");
+		if (queryIndex !== -1) {
+			path = hrefWithoutHash.slice(0, queryIndex);
+			query = hrefWithoutHash.slice(queryIndex + 1);
+		}
+
+		if (!/\.html$/i.test(path)) {
+			return href;
+		}
+
+		var params = new URLSearchParams(query);
+		params.set(languageParam, language);
+
+		return path + "?" + params.toString() + hash;
+	}
+
+	function syncLanguageLinks(language) {
+		document.querySelectorAll("a[href]").forEach(function (link) {
+			var originalHref = link.getAttribute("data-original-href");
+			if (!originalHref) {
+				originalHref = link.getAttribute("href") || "";
+				link.setAttribute("data-original-href", originalHref);
+			}
+
+			link.setAttribute("href", withLanguageParam(originalHref, language));
+		});
+	}
 
 	var selectorMap = [
 		{ selector: ".header-top_list li:nth-child(2), .header-top_list-two li:nth-child(2)", key: "top.address", mode: "html" },
@@ -958,6 +1064,7 @@
 
 		applyPageContentTranslations(language);
 		applyLegalLanguageSections(language);
+		syncLanguageLinks(language);
 
 		document.querySelectorAll("[data-lang-switch]").forEach(function (button) {
 			var isActive = button.getAttribute("data-lang-switch") === language;
@@ -973,23 +1080,26 @@
 	}
 
 	function setLanguage(language) {
-		var nextLanguage = translations[language] ? language : defaultLanguage;
-		localStorage.setItem(storageKey, nextLanguage);
+		var nextLanguage = normalizeLanguage(language);
+		saveLanguage(nextLanguage);
+		syncCurrentUrlLanguage(nextLanguage);
 		applyTranslations(nextLanguage);
 	}
 
+	function handleLanguageSwitch(event) {
+		var button = event.target.closest && event.target.closest("[data-lang-switch]");
+		if (!button) {
+			return;
+		}
+
+		event.preventDefault();
+		setLanguage(button.getAttribute("data-lang-switch"));
+	}
+
 	function init() {
-		var savedLanguage = localStorage.getItem(storageKey);
-		var language = translations[savedLanguage] ? savedLanguage : defaultLanguage;
+		var language = currentLanguage();
 
-		document.addEventListener("click", function (event) {
-			var button = event.target.closest("[data-lang-switch]");
-			if (!button) {
-				return;
-			}
-
-			setLanguage(button.getAttribute("data-lang-switch"));
-		});
+		document.addEventListener("click", handleLanguageSwitch, true);
 
 		applyTranslations(language);
 	}
