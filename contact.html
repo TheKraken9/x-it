@@ -2,7 +2,26 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8">
-<title>OCTO | Contact</title>
+<title>Contact OCTO | Demander un accompagnement digital</title>
+<!-- SEO -->
+<meta name="description" content="Contactez OCTO pour un projet web, mobile, logiciel sur mesure, maintenance ou externalisation d'equipe entre Paris et Antananarivo.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://octo.fr/contact">
+<link rel="alternate" hreflang="fr" href="https://octo.fr/contact?lang=fr">
+<link rel="alternate" hreflang="en" href="https://octo.fr/contact?lang=en">
+<link rel="alternate" hreflang="x-default" href="https://octo.fr/contact">
+<meta property="og:site_name" content="OCTO">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Contact OCTO | Demander un accompagnement digital">
+<meta property="og:description" content="Contactez OCTO pour un projet web, mobile, logiciel sur mesure, maintenance ou externalisation d'equipe entre Paris et Antananarivo.">
+<meta property="og:url" content="https://octo.fr/contact">
+<meta property="og:image" content="https://octo.fr/assets/images/octo/generated/service-overview.jpg">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Contact OCTO | Demander un accompagnement digital">
+<meta name="twitter:description" content="Contactez OCTO pour un projet web, mobile, logiciel sur mesure, maintenance ou externalisation d'equipe entre Paris et Antananarivo.">
+<meta name="twitter:image" content="https://octo.fr/assets/images/octo/generated/service-overview.jpg">
+<!-- End SEO -->
 <!-- Stylesheets -->
 <link href="assets/css/bootstrap.css" rel="stylesheet">
 <link href="assets/css/style.css" rel="stylesheet">
@@ -201,13 +220,19 @@
 				<div class="contact-one_form-column col-lg-7 col-md-12 col-sm-12">
 					<div class="contact-one_form-outer">
 						<div class="default-form contact-form">
-							<form method="post" action="mailto:contact@octo.fr" enctype="text/plain">
+							<form id="octo-contact-form" method="post" action="/api/contact" data-contact-form>
 								<div class="row clearfix">
-									<div class="form-group col-lg-6 col-md-6 col-sm-12"><input type="text" name="name" placeholder="Votre nom" required></div>
-									<div class="form-group col-lg-6 col-md-6 col-sm-12"><input type="email" name="email" placeholder="Votre email" required></div>
-									<div class="form-group col-lg-12 col-md-12 col-sm-12"><input type="text" name="subject" placeholder="Sujet du projet" required></div>
-									<div class="form-group col-lg-12 col-md-12 col-sm-12"><textarea name="message" placeholder="Décrivez votre besoin"></textarea></div>
-									<div class="form-group col-lg-12 col-md-12 col-sm-12"><a href="#" class="theme-btn btn-style-one"><span class="btn-wrap"><span class="text-one">Envoyer le message</span><span class="text-two">Envoyer le message</span></span></a></div>
+									<div class="form-group col-lg-6 col-md-6 col-sm-12"><input type="text" name="name" placeholder="Votre nom" data-i18n-placeholder="contact.form.name" autocomplete="name" required></div>
+									<div class="form-group col-lg-6 col-md-6 col-sm-12"><input type="email" name="email" placeholder="Votre email" data-i18n-placeholder="contact.form.email" autocomplete="email" required></div>
+									<div class="form-group col-lg-12 col-md-12 col-sm-12"><input type="text" name="subject" placeholder="Sujet du projet" data-i18n-placeholder="contact.form.subject" required></div>
+									<div class="form-group col-lg-12 col-md-12 col-sm-12"><textarea name="message" placeholder="Décrivez votre besoin" data-i18n-placeholder="contact.form.message" required></textarea></div>
+									<div class="form-group octo-hidden-field col-lg-12 col-md-12 col-sm-12" aria-hidden="true"><input type="text" name="website" tabindex="-1" autocomplete="off"></div>
+									<div class="form-group col-lg-12 col-md-12 col-sm-12">
+										<button type="submit" class="theme-btn btn-style-one" data-contact-submit>
+											<span class="btn-wrap"><span class="text-one" data-i18n="contact.form.submit">Envoyer le message</span><span class="text-two" data-i18n="contact.form.submit">Envoyer le message</span></span>
+										</button>
+										<div class="octo-contact-status" data-contact-status role="status" aria-live="polite"></div>
+									</div>
 								</div>
 							</form>
 						</div>
@@ -325,6 +350,8 @@
 <script src="assets/js/script.js"></script>
 
 <script src="assets/js/i18n.js"></script>
+<script src="assets/js/seo.js"></script>
+<script src="assets/js/contact-form.js"></script>
 
 </body>
 </html>
