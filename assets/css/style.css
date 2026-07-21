@@ -11410,6 +11410,50 @@ html:not([data-legal-country]) .country-clause[data-country="madagascar"]{
 	opacity:1;
 }
 
+.octo-hidden-field{
+	position:absolute;
+	left:-9999px;
+	width:1px;
+	height:1px;
+	overflow:hidden;
+}
+
+.octo-contact-page .contact-form button.theme-btn{
+	border:0px;
+	cursor:pointer;
+}
+
+.octo-contact-page .contact-form button.theme-btn[disabled]{
+	cursor:not-allowed;
+	opacity:0.72;
+}
+
+.octo-contact-status{
+	display:none;
+	margin-top:18px;
+	padding:14px 16px;
+	border-radius:8px;
+	font-size:15px;
+	line-height:24px;
+	font-weight:600;
+}
+
+.octo-contact-status.is-visible{
+	display:block;
+}
+
+.octo-contact-status.is-success{
+	color:#0a3622;
+	background:#d1e7dd;
+	border:1px solid #a3cfbb;
+}
+
+.octo-contact-status.is-error{
+	color:#58151c;
+	background:#f8d7da;
+	border:1px solid #f1aeb5;
+}
+
 @media only screen and (max-width: 991px){
 	.octo-process .process-one_content{
 		align-items:flex-start;
