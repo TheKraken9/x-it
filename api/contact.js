@@ -29,6 +29,29 @@ function escapeHtml(value) {
     .replace(/'/g, "&#039;");
 }
 
+function extractEmail(value) {
+  const text = clean(value);
+  const bracketMatch = text.match(/<([^>]+)>/);
+
+  return (bracketMatch ? bracketMatch[1] : text).toLowerCase();
+}
+
+function isPersonalMailboxSender(value) {
+  const email = extractEmail(value);
+  const domain = email.split("@")[1] || "";
+  const personalDomains = [
+    "gmail.com",
+    "googlemail.com",
+    "yahoo.com",
+    "hotmail.com",
+    "outlook.com",
+    "live.com",
+    "icloud.com"
+  ];
+
+  return personalDomains.indexOf(domain) !== -1;
+}
+
 function json(res, status, payload) {
   res.statusCode = status;
   res.setHeader("Content-Type", "application/json; charset=utf-8");
@@ -58,7 +81,11 @@ module.exports = async function handler(req, res) {
 
   const apiKey = process.env.RESEND_API_KEY;
   const toEmail = process.env.CONTACT_TO_EMAIL || "contact@octo.fr";
-  const fromEmail = process.env.CONTACT_FROM_EMAIL || "OCTO <contact@octo.fr>";
+  const configuredFromEmail = process.env.CONTACT_FROM_EMAIL || "";
+  const fallbackFromEmail = "OCTO <onboarding@resend.dev>";
+  const fromEmail = configuredFromEmail && !isPersonalMailboxSender(configuredFromEmail)
+    ? configuredFromEmail
+    : fallbackFromEmail;
 
   if (!apiKey) {
     return json(res, 503, { ok: false, error: "email_service_not_configured" });
