@@ -1,8 +1,8 @@
 (function () {
 	"use strict";
 
-	var siteUrl = "https://octo.fr";
-	var defaultImage = siteUrl + "/assets/images/octo/generated/service-overview.jpg";
+	var siteUrl = "https://evocto.fr";
+	var defaultImage = siteUrl + "/assets/images/evocto/generated/service-overview.jpg";
 
 	var pages = {
 		"index.html": {
@@ -20,7 +20,7 @@
 			path: "/about",
 			title: {
 				fr: "A propos d'OCTO | Vision humaine du digital",
-				en: "About OCTO | A human vision of digital work"
+				en: "About evocto | A human vision of digital work"
 			},
 			description: {
 				fr: "Decouvrez OCTO, une agence digitale franco-malgache qui simplifie les processus et accompagne durablement les projets tech.",
@@ -30,7 +30,7 @@
 		"services.html": {
 			path: "/services",
 			title: {
-				fr: "Services OCTO | Web, mobile, logiciel, UI/UX et maintenance",
+				fr: "Services evocto | Web, mobile, logiciel, UI/UX et maintenance",
 				en: "OCTO Services | Web, mobile, software, UI/UX and maintenance"
 			},
 			description: {
@@ -41,18 +41,18 @@
 		"service-detail.html": {
 			path: "/service-detail",
 			title: {
-				fr: "Details des services OCTO | Offres CMS, regie et sur mesure",
+				fr: "Details des services evocto | Offres CMS, regie et sur mesure",
 				en: "OCTO Service Details | CMS, dedicated team and custom offers"
 			},
 			description: {
-				fr: "Explorez les services OCTO en detail : sites web, applications mobiles, logiciels, maintenance, digitalisation et offres CMS, regie, sur mesure.",
-				en: "Explore OCTO services in detail: websites, mobile apps, software, maintenance, digitalization and CMS, dedicated team and custom offers."
+				fr: "Explorez les services evocto en detail : sites web, applications mobiles, logiciels, maintenance, digitalisation et offres CMS, regie, sur mesure.",
+				en: "Explore evocto services in detail: websites, mobile apps, software, maintenance, digitalization and CMS, dedicated team and custom offers."
 			}
 		},
 		"project.html": {
 			path: "/project",
 			title: {
-				fr: "Realisations OCTO | Interfaces web et applications",
+				fr: "Realisations evocto | Interfaces web et applications",
 				en: "OCTO Work | Web interfaces and applications"
 			},
 			description: {
@@ -63,7 +63,7 @@
 		"project-detail.html": {
 			path: "/project-detail",
 			title: {
-				fr: "Detail de realisation OCTO | Historique projet digital",
+				fr: "Detail de realisation evocto | Historique projet digital",
 				en: "OCTO Project Detail | Digital project story"
 			},
 			description: {
@@ -74,18 +74,18 @@
 		"blog.html": {
 			path: "/blog",
 			title: {
-				fr: "Blog OCTO | Transformation digitale et bonnes pratiques tech",
+				fr: "Blog evocto | Transformation digitale et bonnes pratiques tech",
 				en: "OCTO Blog | Digital transformation and tech best practices"
 			},
 			description: {
-				fr: "Articles OCTO sur la strategie digitale, la creation de contenu, les projets web, mobile et la transformation numerique.",
+				fr: "Articles evocto sur la strategie digitale, la creation de contenu, les projets web, mobile et la transformation numerique.",
 				en: "OCTO articles about digital strategy, content creation, web and mobile projects, and digital transformation."
 			}
 		},
 		"blog-detail.html": {
 			path: "/blog-detail",
 			title: {
-				fr: "Article OCTO | Structurer un projet digital efficace",
+				fr: "Article evocto | Structurer un projet digital efficace",
 				en: "OCTO Article | Structuring an effective digital project"
 			},
 			description: {
@@ -96,12 +96,12 @@
 		"contact.html": {
 			path: "/contact",
 			title: {
-				fr: "Contact OCTO | Demander un accompagnement digital",
-				en: "Contact OCTO | Request digital project support"
+				fr: "Contact evocto | Demander un accompagnement digital",
+				en: "Contact evocto | Request digital project support"
 			},
 			description: {
-				fr: "Contactez OCTO pour un projet web, mobile, logiciel sur mesure, maintenance ou externalisation d'equipe entre Paris et Antananarivo.",
-				en: "Contact OCTO for a web, mobile, custom software, maintenance or team outsourcing project between Paris and Antananarivo."
+				fr: "Contactez evocto pour un projet web, mobile, logiciel sur mesure, maintenance ou externalisation d'equipe entre Paris et Antananarivo.",
+				en: "Contact evocto for a web, mobile, custom software, maintenance or team outsourcing project between Paris and Antananarivo."
 			}
 		},
 		"terms.html": {
@@ -118,7 +118,7 @@
 		"privacy.html": {
 			path: "/privacy",
 			title: {
-				fr: "Mentions legales OCTO | France et Madagascar",
+				fr: "Mentions legales evocto | France et Madagascar",
 				en: "OCTO Legal Notice | France and Madagascar"
 			},
 			description: {
@@ -133,19 +133,19 @@
 				en: "OCTO Cookie Policy"
 			},
 			description: {
-				fr: "Politique de cookies OCTO : finalites, gestion du consentement, traceurs et droits des visiteurs.",
+				fr: "Politique de cookies evocto : finalites, gestion du consentement, traceurs et droits des visiteurs.",
 				en: "OCTO cookie policy: purposes, consent management, trackers and visitor rights."
 			}
 		},
 		"team-detail.html": {
 			path: "/team-detail",
 			title: {
-				fr: "Equipe OCTO | Profils web, mobile, UI/UX et support",
+				fr: "Equipe evocto | Profils web, mobile, UI/UX et support",
 				en: "OCTO Team | Web, mobile, UI/UX and support profiles"
 			},
 			description: {
-				fr: "Decouvrez les profils mobilisables par OCTO pour renforcer vos projets digitaux : developpement, design, gestion et support.",
-				en: "Discover the profiles OCTO can mobilize for your digital projects: development, design, management and support."
+				fr: "Decouvrez les profils mobilisables par evocto pour renforcer vos projets digitaux : developpement, design, gestion et support.",
+				en: "Discover the profiles evocto can mobilize for your digital projects: development, design, management and support."
 			}
 		},
 		"not-found.html": {
@@ -156,8 +156,8 @@
 				en: "Page not found | OCTO"
 			},
 			description: {
-				fr: "La page demandee est introuvable. Retournez vers l'accueil OCTO ou contactez notre equipe.",
-				en: "The requested page could not be found. Return to the OCTO homepage or contact our team."
+				fr: "La page demandee est introuvable. Retournez vers l'accueil evocto ou contactez notre equipe.",
+				en: "The requested page could not be found. Return to the evocto homepage or contact our team."
 			}
 		}
 	};
@@ -192,8 +192,8 @@
 				en: "OCTO | Archived page"
 			},
 			description: {
-				fr: "Cette page OCTO n'est pas destinee a etre indexee. Retrouvez les contenus officiels depuis la navigation principale.",
-				en: "This OCTO page is not intended for indexing. Use the main navigation to access official content."
+				fr: "Cette page evocto n'est pas destinee a etre indexee. Retrouvez les contenus officiels depuis la navigation principale.",
+				en: "This evocto page is not intended for indexing. Use the main navigation to access official content."
 			}
 		};
 	}
@@ -230,12 +230,12 @@
 	}
 
 	function updateSchema(page, language) {
-		var schema = document.getElementById("octo-schema-organization");
+		var schema = document.getElementById("evocto-schema-organization");
 
 		if (!schema) {
 			schema = document.createElement("script");
 			schema.type = "application/ld+json";
-			schema.id = "octo-schema-organization";
+			schema.id = "evocto-schema-organization";
 			document.head.appendChild(schema);
 		}
 
@@ -245,9 +245,9 @@
 				{
 					"@type": "Organization",
 					"@id": siteUrl + "/#organization",
-					name: "OCTO",
+					name: "EVOCTO",
 					url: siteUrl + "/",
-					email: "contact@octo.fr",
+					email: "contact@evocto.fr",
 					logo: siteUrl + "/assets/images/favicon.png",
 					image: defaultImage,
 					address: [
@@ -268,7 +268,7 @@
 					"@type": "WebSite",
 					"@id": siteUrl + "/#website",
 					url: siteUrl + "/",
-					name: "OCTO",
+					name: "EVOCTO",
 					publisher: {
 						"@id": siteUrl + "/#organization"
 					},
@@ -311,7 +311,7 @@
 		ensureLink('link[rel="alternate"][hreflang="en"]', { rel: "alternate", hreflang: "en", href: absoluteUrl(page.path, "en") });
 		ensureLink('link[rel="alternate"][hreflang="x-default"]', { rel: "alternate", hreflang: "x-default", href: absoluteUrl(page.path) });
 
-		ensureMeta('meta[property="og:site_name"]', { property: "og:site_name", content: "OCTO" });
+		ensureMeta('meta[property="og:site_name"]', { property: "og:site_name", content: "EVOCTO" });
 		ensureMeta('meta[property="og:type"]', { property: "og:type", content: "website" });
 		ensureMeta('meta[property="og:title"]', { property: "og:title", content: title });
 		ensureMeta('meta[property="og:description"]', { property: "og:description", content: description });
@@ -326,7 +326,7 @@
 		updateSchema(page, language);
 	}
 
-	document.addEventListener("octo:languagechange", applySeo);
+	document.addEventListener("evocto:languagechange", applySeo);
 
 	if (document.readyState === "loading") {
 		document.addEventListener("DOMContentLoaded", applySeo);

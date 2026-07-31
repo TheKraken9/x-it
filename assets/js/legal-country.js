@@ -1,8 +1,8 @@
 (function () {
 	"use strict";
 
-	var countryStorageKey = "octo-legal-country";
-	var languageStorageKey = "octo-language";
+	var countryStorageKey = "evocto-legal-country";
+	var languageStorageKey = "evocto-language";
 	var validCountries = ["madagascar", "france"];
 	var validLanguages = ["fr", "en"];
 
@@ -105,7 +105,7 @@
 
 		applyLegalLanguage();
 
-		document.addEventListener("octo:languagechange", function (event) {
+		document.addEventListener("evocto:languagechange", function (event) {
 			applyLegalLanguage(event.detail && event.detail.language);
 		});
 

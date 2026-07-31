@@ -1,8 +1,8 @@
 <?php
 
 // Define some constants
-define( "RECIPIENT_NAME", "OCTO" );
-define( "RECIPIENT_EMAIL", "contact@octo.fr" );
+define( "RECIPIENT_NAME", "EVOCTO" );
+define( "RECIPIENT_EMAIL", "contact@evocto.fr" );
 
 
 // Read the form values
@@ -15,7 +15,7 @@ $senderEmail = filter_var( $senderEmail, FILTER_VALIDATE_EMAIL ) ? $senderEmail 
 // If all values exist, send the email
 if ( $userName && $senderEmail && $message ) {
   $recipient = RECIPIENT_NAME . " <" . RECIPIENT_EMAIL . ">";
-  $subject = "Nouveau message depuis octo.fr";
+  $subject = "Nouveau message depuis evocto.fr";
   $headers = "From: " . $userName . " <" . $senderEmail . ">\r\n";
   $headers .= "Reply-To: " . $senderEmail . "\r\n";
   $msgBody = "Name: " . $userName . "\nEmail: " . $senderEmail . "\nMessage: " . $message;

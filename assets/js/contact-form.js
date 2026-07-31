@@ -4,15 +4,15 @@
 	var messages = {
 		fr: {
 			sending: "Envoi en cours...",
-			success: "Merci, votre message a bien ete envoye. L'equipe OCTO vous repondra rapidement.",
-			error: "Le message n'a pas pu etre envoye. Vous pouvez nous ecrire directement a contact@octo.fr.",
+			success: "Merci, votre message a bien ete envoye. L'equipe evocto vous repondra rapidement.",
+			error: "Le message n'a pas pu etre envoye. Vous pouvez nous ecrire directement a contact@evocto.fr.",
 			invalid: "Merci de completer les champs obligatoires avec une adresse e-mail valide.",
 			submit: "Envoyer le message"
 		},
 		en: {
 			sending: "Sending...",
-			success: "Thank you, your message has been sent. The OCTO team will reply soon.",
-			error: "The message could not be sent. You can email us directly at contact@octo.fr.",
+			success: "Thank you, your message has been sent. The evocto team will reply soon.",
+			error: "The message could not be sent. You can email us directly at contact@evocto.fr.",
 			invalid: "Please complete the required fields with a valid email address.",
 			submit: "Send message"
 		}
@@ -34,12 +34,12 @@
 	}
 
 	function setStatus(statusElement, type, message) {
-		statusElement.className = "octo-contact-status is-visible is-" + type;
+		statusElement.className = "evocto-contact-status is-visible is-" + type;
 		statusElement.textContent = message;
 	}
 
 	function clearStatus(statusElement) {
-		statusElement.className = "octo-contact-status";
+		statusElement.className = "evocto-contact-status";
 		statusElement.textContent = "";
 	}
 
@@ -57,7 +57,7 @@
 		var button = form.querySelector("[data-contact-submit]");
 		var statusElement = form.querySelector("[data-contact-status]");
 
-		document.addEventListener("octo:languagechange", function () {
+		document.addEventListener("evocto:languagechange", function () {
 			if (!button.disabled) {
 				setButtonText(button, text("submit"));
 			}
