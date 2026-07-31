@@ -821,7 +821,7 @@
 	if ($('.variable-text').length) {
 		
 		$('.variable-text').typeIt({
-			 strings: ["ITHUB"],
+			 strings: ["EVOCTO"],
 			 speed: 450,
 			 breakLines: true,
 			 loop:true,

@@ -5,6 +5,78 @@
   force = true
 
 [[redirects]]
+  from = "/testimonial*"
+  to = "/about"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/price*"
+  to = "/services"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/shop-detail*"
+  to = "/service-detail"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/shop*"
+  to = "/services"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/cart*"
+  to = "/services"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/checkout*"
+  to = "/contact"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/register*"
+  to = "/contact"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/coming-soon*"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/contact-2*"
+  to = "/contact"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog-2*"
+  to = "/blog"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog-classic*"
+  to = "/blog"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/faq*"
+  to = "/contact"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/:page.html"
   to = "/:page"
   status = 301

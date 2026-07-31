@@ -22,6 +22,126 @@
   ],
   "redirects": [
     {
+      "source": "/testimonial",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/testimonial.html",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/price",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/price.html",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/shop",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/shop.html",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/shop-detail",
+      "destination": "/service-detail",
+      "permanent": true
+    },
+    {
+      "source": "/shop-detail.html",
+      "destination": "/service-detail",
+      "permanent": true
+    },
+    {
+      "source": "/cart",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/cart.html",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/checkout",
+      "destination": "/contact",
+      "permanent": true
+    },
+    {
+      "source": "/checkout.html",
+      "destination": "/contact",
+      "permanent": true
+    },
+    {
+      "source": "/register",
+      "destination": "/contact",
+      "permanent": true
+    },
+    {
+      "source": "/register.html",
+      "destination": "/contact",
+      "permanent": true
+    },
+    {
+      "source": "/coming-soon",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/coming-soon.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/contact-2",
+      "destination": "/contact",
+      "permanent": true
+    },
+    {
+      "source": "/contact-2.html",
+      "destination": "/contact",
+      "permanent": true
+    },
+    {
+      "source": "/blog-2",
+      "destination": "/blog",
+      "permanent": true
+    },
+    {
+      "source": "/blog-2.html",
+      "destination": "/blog",
+      "permanent": true
+    },
+    {
+      "source": "/blog-classic",
+      "destination": "/blog",
+      "permanent": true
+    },
+    {
+      "source": "/blog-classic.html",
+      "destination": "/blog",
+      "permanent": true
+    },
+    {
+      "source": "/faq",
+      "destination": "/contact",
+      "permanent": true
+    },
+    {
+      "source": "/faq.html",
+      "destination": "/contact",
+      "permanent": true
+    },
+    {
       "source": "/index.html",
       "destination": "/",
       "permanent": true
