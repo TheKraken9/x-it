@@ -82,7 +82,7 @@ module.exports = async function handler(req, res) {
   const apiKey = process.env.RESEND_API_KEY;
   const toEmail = process.env.CONTACT_TO_EMAIL || "contact@evocto.fr";
   const configuredFromEmail = process.env.CONTACT_FROM_EMAIL || "";
-  const fallbackFromEmail = "OCTO <onboarding@resend.dev>";
+  const fallbackFromEmail = "EVOCTO <onboarding@resend.dev>";
   const fromEmail = configuredFromEmail && !isPersonalMailboxSender(configuredFromEmail)
     ? configuredFromEmail
     : fallbackFromEmail;
@@ -102,7 +102,7 @@ module.exports = async function handler(req, res) {
   ].join("\n");
 
   const html = `
-    <h2>Nouveau message depuis octo.fr</h2>
+    <h2>Nouveau message depuis evocto.fr</h2>
     <p><strong>Nom :</strong> ${escapeHtml(name)}</p>
     <p><strong>Email :</strong> ${escapeHtml(email)}</p>
     <p><strong>Sujet :</strong> ${escapeHtml(subject)}</p>
@@ -121,7 +121,7 @@ module.exports = async function handler(req, res) {
         from: fromEmail,
         to: [toEmail],
         reply_to: email,
-        subject: `[OCTO] ${subject}`,
+        subject: `[EVOCTO] ${subject}`,
         text,
         html
       })

@@ -8,30 +8,30 @@
 		"index.html": {
 			path: "/",
 			title: {
-				fr: "OCTO | Agence web offshore, developpement web et mobile",
-				en: "OCTO | Offshore web, mobile and software agency"
+				fr: "EVOCTO | Agence web offshore, developpement web et mobile",
+				en: "EVOCTO | Offshore web, mobile and software agency"
 			},
 			description: {
-				fr: "OCTO accompagne les entreprises avec des sites web, applications mobiles, logiciels sur mesure, UI/UX, maintenance et equipes dediees.",
-				en: "OCTO helps companies build websites, mobile apps, custom software, UI/UX experiences, maintenance plans and dedicated digital teams."
+				fr: "EVOCTO accompagne les entreprises avec des sites web, applications mobiles, logiciels sur mesure, UI/UX, maintenance et equipes dediees.",
+				en: "EVOCTO helps companies build websites, mobile apps, custom software, UI/UX experiences, maintenance plans and dedicated digital teams."
 			}
 		},
 		"about.html": {
 			path: "/about",
 			title: {
-				fr: "A propos d'OCTO | Vision humaine du digital",
-				en: "About evocto | A human vision of digital work"
+				fr: "A propos d'EVOCTO | Vision humaine du digital",
+				en: "About EVOCTO | A human vision of digital work"
 			},
 			description: {
-				fr: "Decouvrez OCTO, une agence digitale franco-malgache qui simplifie les processus et accompagne durablement les projets tech.",
-				en: "Discover OCTO, a French-Malagasy digital agency that simplifies operations and supports tech projects over the long term."
+				fr: "Decouvrez EVOCTO, une agence digitale franco-malgache qui simplifie les processus et accompagne durablement les projets tech.",
+				en: "Discover EVOCTO, a French-Malagasy digital agency that simplifies operations and supports tech projects over the long term."
 			}
 		},
 		"services.html": {
 			path: "/services",
 			title: {
-				fr: "Services evocto | Web, mobile, logiciel, UI/UX et maintenance",
-				en: "OCTO Services | Web, mobile, software, UI/UX and maintenance"
+				fr: "Services EVOCTO | Web, mobile, logiciel, UI/UX et maintenance",
+				en: "EVOCTO Services | Web, mobile, software, UI/UX and maintenance"
 			},
 			description: {
 				fr: "Developpement web, mobile, logiciel sur mesure, design UI/UX, support et externalisation d'equipe pour vos projets digitaux.",
@@ -41,52 +41,52 @@
 		"service-detail.html": {
 			path: "/service-detail",
 			title: {
-				fr: "Details des services evocto | Offres CMS, regie et sur mesure",
-				en: "OCTO Service Details | CMS, dedicated team and custom offers"
+				fr: "Details des services EVOCTO | Offres CMS, regie et sur mesure",
+				en: "EVOCTO Service Details | CMS, dedicated team and custom offers"
 			},
 			description: {
-				fr: "Explorez les services evocto en detail : sites web, applications mobiles, logiciels, maintenance, digitalisation et offres CMS, regie, sur mesure.",
+				fr: "Explorez les services EVOCTO en detail : sites web, applications mobiles, logiciels, maintenance, digitalisation et offres CMS, regie, sur mesure.",
 				en: "Explore evocto services in detail: websites, mobile apps, software, maintenance, digitalization and CMS, dedicated team and custom offers."
 			}
 		},
 		"project.html": {
 			path: "/project",
 			title: {
-				fr: "Realisations evocto | Interfaces web et applications",
-				en: "OCTO Work | Web interfaces and applications"
+				fr: "Realisations EVOCTO | Interfaces web et applications",
+				en: "EVOCTO Work | Web interfaces and applications"
 			},
 			description: {
-				fr: "Parcourez des exemples de sites vitrines, plateformes web, e-commerce et applications mobiles realises par OCTO.",
-				en: "Browse examples of showcase websites, web platforms, ecommerce projects and mobile apps built by OCTO."
+				fr: "Parcourez des exemples de sites vitrines, plateformes web, e-commerce et applications mobiles realises par EVOCTO.",
+				en: "Browse examples of showcase websites, web platforms, ecommerce projects and mobile apps built by EVOCTO."
 			}
 		},
 		"project-detail.html": {
 			path: "/project-detail",
 			title: {
-				fr: "Detail de realisation evocto | Historique projet digital",
-				en: "OCTO Project Detail | Digital project story"
+				fr: "Detail de realisation EVOCTO | Historique projet digital",
+				en: "EVOCTO Project Detail | Digital project story"
 			},
 			description: {
-				fr: "Decouvrez le contexte, l'approche et les choix d'interface derriere une realisation digitale accompagnee par OCTO.",
-				en: "Discover the context, approach and interface decisions behind a digital project supported by OCTO."
+				fr: "Decouvrez le contexte, l'approche et les choix d'interface derriere une realisation digitale accompagnee par EVOCTO.",
+				en: "Discover the context, approach and interface decisions behind a digital project supported by EVOCTO."
 			}
 		},
 		"blog.html": {
 			path: "/blog",
 			title: {
-				fr: "Blog evocto | Transformation digitale et bonnes pratiques tech",
-				en: "OCTO Blog | Digital transformation and tech best practices"
+				fr: "Blog EVOCTO | Transformation digitale et bonnes pratiques tech",
+				en: "EVOCTO Blog | Digital transformation and tech best practices"
 			},
 			description: {
-				fr: "Articles evocto sur la strategie digitale, la creation de contenu, les projets web, mobile et la transformation numerique.",
-				en: "OCTO articles about digital strategy, content creation, web and mobile projects, and digital transformation."
+				fr: "Articles EVOCTO sur la strategie digitale, la creation de contenu, les projets web, mobile et la transformation numerique.",
+				en: "EVOCTO articles about digital strategy, content creation, web and mobile projects, and digital transformation."
 			}
 		},
 		"blog-detail.html": {
 			path: "/blog-detail",
 			title: {
-				fr: "Article evocto | Structurer un projet digital efficace",
-				en: "OCTO Article | Structuring an effective digital project"
+				fr: "Article EVOCTO | Structurer un projet digital efficace",
+				en: "EVOCTO Article | Structuring an effective digital project"
 			},
 			description: {
 				fr: "Conseils pratiques pour cadrer un projet digital, choisir les bons outils et avancer avec une equipe technique fiable.",
@@ -96,68 +96,68 @@
 		"contact.html": {
 			path: "/contact",
 			title: {
-				fr: "Contact evocto | Demander un accompagnement digital",
-				en: "Contact evocto | Request digital project support"
+				fr: "Contact EVOCTO | Demander un accompagnement digital",
+				en: "Contact EVOCTO | Request digital project support"
 			},
 			description: {
-				fr: "Contactez evocto pour un projet web, mobile, logiciel sur mesure, maintenance ou externalisation d'equipe entre Paris et Antananarivo.",
-				en: "Contact evocto for a web, mobile, custom software, maintenance or team outsourcing project between Paris and Antananarivo."
+				fr: "Contactez EVOCTO pour un projet web, mobile, logiciel sur mesure, maintenance ou externalisation d'equipe entre Paris et Antananarivo.",
+				en: "Contact EVOCTO for a web, mobile, custom software, maintenance or team outsourcing project between Paris and Antananarivo."
 			}
 		},
 		"terms.html": {
 			path: "/terms",
 			title: {
-				fr: "Conditions generales de vente OCTO",
-				en: "OCTO Sales Terms"
+				fr: "Conditions generales de vente EVOCTO",
+				en: "EVOCTO Sales Terms"
 			},
 			description: {
-				fr: "Consultez les conditions generales de vente applicables aux prestations digitales proposees par OCTO.",
-				en: "Read the sales terms applicable to the digital services provided by OCTO."
+				fr: "Consultez les conditions generales de vente applicables aux prestations digitales proposees par EVOCTO.",
+				en: "Read the sales terms applicable to the digital services provided by EVOCTO."
 			}
 		},
 		"privacy.html": {
 			path: "/privacy",
 			title: {
-				fr: "Mentions legales evocto | France et Madagascar",
-				en: "OCTO Legal Notice | France and Madagascar"
+				fr: "Mentions legales EVOCTO | France et Madagascar",
+				en: "EVOCTO Legal Notice | France and Madagascar"
 			},
 			description: {
-				fr: "Mentions legales OCTO, responsabilites, donnees de contact et juridiction applicable selon le pays selectionne.",
-				en: "OCTO legal notice, responsibilities, contact details and applicable jurisdiction according to the selected country."
+				fr: "Mentions legales EVOCTO, responsabilites, donnees de contact et juridiction applicable selon le pays selectionne.",
+				en: "EVOCTO legal notice, responsibilities, contact details and applicable jurisdiction according to the selected country."
 			}
 		},
 		"cookies.html": {
 			path: "/cookies",
 			title: {
-				fr: "Politique de cookies OCTO",
-				en: "OCTO Cookie Policy"
+				fr: "Politique de cookies EVOCTO",
+				en: "EVOCTO Cookie Policy"
 			},
 			description: {
-				fr: "Politique de cookies evocto : finalites, gestion du consentement, traceurs et droits des visiteurs.",
-				en: "OCTO cookie policy: purposes, consent management, trackers and visitor rights."
+				fr: "Politique de cookies EVOCTO : finalites, gestion du consentement, traceurs et droits des visiteurs.",
+				en: "EVOCTO cookie policy: purposes, consent management, trackers and visitor rights."
 			}
 		},
 		"team-detail.html": {
 			path: "/team-detail",
 			title: {
-				fr: "Equipe evocto | Profils web, mobile, UI/UX et support",
-				en: "OCTO Team | Web, mobile, UI/UX and support profiles"
+				fr: "Equipe EVOCTO | Profils web, mobile, UI/UX et support",
+				en: "EVOCTO Team | Web, mobile, UI/UX and support profiles"
 			},
 			description: {
-				fr: "Decouvrez les profils mobilisables par evocto pour renforcer vos projets digitaux : developpement, design, gestion et support.",
-				en: "Discover the profiles evocto can mobilize for your digital projects: development, design, management and support."
+				fr: "Decouvrez les profils mobilisables par EVOCTO pour renforcer vos projets digitaux : developpement, design, gestion et support.",
+				en: "Discover the profiles EVOCTO can mobilize for your digital projects: development, design, management and support."
 			}
 		},
 		"not-found.html": {
 			path: "/not-found",
 			noindex: true,
 			title: {
-				fr: "Page introuvable | OCTO",
-				en: "Page not found | OCTO"
+				fr: "Page introuvable | EVOCTO",
+				en: "Page not found | EVOCTO"
 			},
 			description: {
-				fr: "La page demandee est introuvable. Retournez vers l'accueil evocto ou contactez notre equipe.",
-				en: "The requested page could not be found. Return to the evocto homepage or contact our team."
+				fr: "La page demandee est introuvable. Retournez vers l'accueil EVOCTO ou contactez notre equipe.",
+				en: "The requested page could not be found. Return to the EVOCTO homepage or contact our team."
 			}
 		}
 	};
@@ -188,12 +188,12 @@
 			path: "/" + segment,
 			noindex: true,
 			title: {
-				fr: "OCTO | Page archivee",
-				en: "OCTO | Archived page"
+				fr: "EVOCTO | Page archivee",
+				en: "EVOCTO | Archived page"
 			},
 			description: {
-				fr: "Cette page evocto n'est pas destinee a etre indexee. Retrouvez les contenus officiels depuis la navigation principale.",
-				en: "This evocto page is not intended for indexing. Use the main navigation to access official content."
+				fr: "Cette page EVOCTO n'est pas destinee a etre indexee. Retrouvez les contenus officiels depuis la navigation principale.",
+				en: "This EVOCTO page is not intended for indexing. Use the main navigation to access official content."
 			}
 		};
 	}
