@@ -172,7 +172,7 @@ body {
     top: 0;
     left: 0;
     background-color: rgba(20, 33, 61, 1);
-    background-image: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(20, 33, 61, 1) 58%, rgba(252, 163, 17, 1) 100%);
+    background-image: none;
     z-index: 9999999;
     display: flex;
     justify-content: center;
@@ -506,7 +506,7 @@ img{
 	text-transform: capitalize;
 	font-family: 'Manrope', sans-serif;
 	background-color: rgba(20, 33, 61, 1);
-	background-image: linear-gradient(90deg, rgba(20, 33, 61, 1) 0%, rgba(252, 163, 17, 1) 100%);
+	background-image: none;
 }
 
 .btn-style-one:before{
@@ -522,7 +522,8 @@ img{
 	transform: translateX(-50%);
 	border-radius: 50%;
 	z-index: 1;
-	background-image: linear-gradient(90deg, rgba(252, 163, 17, 1) 0%, rgba(20, 33, 61, 1) 100%);
+	background-color:#FCA311;
+	background-image: none;
 }
 
 .btn-style-one:hover:before{
@@ -611,7 +612,8 @@ img{
 	transform: translateX(-50%);
 	border-radius: 50%;
 	z-index: 1;
-	background-image: linear-gradient(90deg, rgba(252, 163, 17, 1) 0%, rgba(20, 33, 61, 1) 100%);
+	background-color:#14213D;
+	background-image: none;
 }
 
 .btn-style-two:hover:before{
@@ -700,7 +702,7 @@ img{
 	border-radius: 50%;
 	z-index: 1;
 	background-color: rgba(20, 33, 61, 1);
-	background-image: linear-gradient(90deg, rgba(20, 33, 61, 1) 0%, rgba(252, 163, 17, 1) 100%);
+	background-image: none;
 }
 
 .btn-style-three:hover:before{
@@ -823,8 +825,8 @@ img{
 	display:inline-block;
 	animation: zoom-in-out 3s infinite;
     opacity: 0;
-	background-color: rgba(20, 33, 61, 0);
-    background-image: linear-gradient(0deg, rgba(20, 33, 61, 1) 0%, rgba(252, 163, 17, 1) 100%);
+	background-color:#FCA311;
+    background-image:none;
 }
 
 .sec-title_heading{
@@ -845,8 +847,8 @@ img{
 }
 
 .sec-title.light .sec-title_title span{
-	background-color: rgba(255, 255, 255, 0);
-    background-image: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+	background-color:#ffffff;
+    background-image:none;
 }
 
 .sec-title.light .sec-title_big-title{

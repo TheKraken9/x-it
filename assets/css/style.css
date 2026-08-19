@@ -139,8 +139,8 @@
 	right:0px;
 	bottom:0px;
 	opacity:0.20;
-	background-color: rgba(20, 33, 61, 0);
-	background-image: linear-gradient(90deg, rgba(20, 33, 61, 1) 0%, rgba(252, 163, 17, 0) 100%);
+	background-color:#14213D;
+	background-image:none;
 }
 
 .slider-one .swiper-slide-active .slider-one_image-layer{
@@ -182,8 +182,8 @@
 	-ms-transition:all 900ms ease;
 	-o-transition:all 900ms ease;
 	text-transform:capitalize;
-	background-color: rgba(20, 33, 61, 0);
-	background-image: linear-gradient(90deg, rgba(20, 33, 61, 1) 0%, rgba(252, 163, 17, 1) 100%);
+	background-color:#14213D;
+	background-image:none;
 }
 
 .slider-one .swiper-slide-active .slider-one_title{
@@ -304,7 +304,7 @@
 	-ms-transition:all 300ms ease;
 	-o-transition:all 300ms ease;
 	background-color: rgba(20, 33, 61, 1);
-	background-image: linear-gradient(90deg, rgba(20, 33, 61, 1) 0%, rgba(252, 163, 17, 1) 100%);
+	background-image: none;
 }
 
 /* Slider Socials Box */
@@ -547,7 +547,7 @@
 	padding:24px 28px;
 	border-radius:8px;
 	border:1px solid rgba(20, 33, 61, 0.12);
-	background:linear-gradient(135deg, rgba(20, 33, 61, 0.95) 0%, rgba(0, 0, 0, 0.95) 58%);
+	background:#14213D;
 	box-shadow:0px 20px 45px rgba(20, 33, 61, 0.12);
 }
 
@@ -731,7 +731,7 @@
 }
 
 .marketing-one h1:hover{
-	background: linear-gradient(to right, #14213D, #FCA311);
+	background: #14213D;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -824,7 +824,7 @@
 	-ms-transition:all 500ms ease;
 	-o-transition:all 500ms ease;
 	background-color: rgba(20, 33, 61, 1);
-    background-image: linear-gradient(180deg, rgba(20, 33, 61, 1) 0%, rgba(252, 163, 17, 1) 100%);
+    background-image: none;
 }
 
 .counter-one_inner:hover::before{
@@ -944,7 +944,7 @@
 	border:20px solid var(--white-color);
 	background-color: rgba(20, 33, 61, 1);
 	box-shadow:0px 20px 20px rgba(0,0,0,0.15);
-    background-image: linear-gradient(180deg, rgba(20, 33, 61, 1) 0%, rgba(252, 163, 17, 1) 100%);
+    background-image: none;
 	-webkit-animation: icon-bounce 0.8s ease-out infinite;
     animation: icon-bounce 0.8s ease-out infinite;
 }
@@ -1112,7 +1112,7 @@
 	line-height:1em;
 	font-weight:800;
 	font-size:96px;
-	background: linear-gradient(to bottom, #14213D, #FCA311);
+	background: #14213D;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -1200,7 +1200,7 @@
 	height:1100px;
 	border-radius:50px;
 	background-color: rgba(20, 33, 61, 1);
-    background-image: linear-gradient(180deg, rgba(20, 33, 61, 1) 0%, rgba(252, 163, 17, 1) 100%);
+    background-image: none;
 }
 
 .offer-one .auto-container{
@@ -1217,7 +1217,7 @@
 	border-radius:20px;
 	border:10px solid var(--white-color);
 	background-color: rgba(20, 33, 61, 1);
-    background-image: linear-gradient(180deg, rgba(20, 33, 61, 1) 0%, rgba(252, 163, 17, 1) 100%);
+    background-image: none;
 }
 
 .step-award_box:before{
@@ -1276,7 +1276,7 @@
 	color:var(--white-color);
 	background-color: rgba(20, 33, 61, 1);
     box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.15);
-    background-image: linear-gradient(180deg, rgba(20, 33, 61, 1) 0%, rgba(252, 163, 17, 1) 100%);
+    background-image: none;
 }
 
 .offer-one_title.active .offer-one_arrow img,
@@ -1344,7 +1344,7 @@
 	color:var(--white-color);
 	background-color: rgba(20, 33, 61, 1);
     box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.15);
-    background-image: linear-gradient(180deg, rgba(20, 33, 61, 1) 0%, rgba(252, 163, 17, 1) 100%);
+    background-image: none;
 }
 
 .offer-one_heading{
@@ -1379,7 +1379,7 @@
 	color: var(--white-color);
     background-color: rgba(20, 33, 61, 1);
     box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.15);
-    background-image: linear-gradient(180deg, rgba(20, 33, 61, 1) 0%, rgba(252, 163, 17, 1) 100%);
+    background-image: none;
 }
 
 .offer-one_title.active .offer-one_heading a,
@@ -1481,6 +1481,129 @@
 /***
 
 ====================================================================
+	EVOCTO Digital Benefits
+====================================================================
+
+***/
+
+.evocto-impact{
+	position:relative;
+	padding:110px 0px 80px;
+	background:#ffffff;
+}
+
+.evocto-impact .sec-title{
+	max-width:920px;
+	margin:0px auto 48px;
+}
+
+.evocto-impact .sec-title_text{
+	max-width:760px;
+	margin:18px auto 0px;
+	font-size:17px;
+	line-height:29px;
+	color:#626262;
+}
+
+.evocto-impact .row{
+	row-gap:30px;
+}
+
+.evocto-impact-card{
+	position:relative;
+	height:100%;
+	padding:32px 30px;
+	border-radius:8px;
+	background:#ffffff;
+	border:1px solid rgba(20, 33, 61, 0.12);
+	box-shadow:0px 18px 44px rgba(0, 0, 0, 0.05);
+	transition:all 400ms ease;
+}
+
+.evocto-impact-card:hover{
+	transform:translateY(-6px);
+	border-color:rgba(252, 163, 17, 0.55);
+	box-shadow:0px 24px 54px rgba(20, 33, 61, 0.12);
+}
+
+.evocto-impact-card_top{
+	display:flex;
+	gap:18px;
+	align-items:center;
+	margin-bottom:22px;
+}
+
+.evocto-impact-card_icon{
+	width:58px;
+	height:58px;
+	min-width:58px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	border-radius:8px;
+	font-size:24px;
+	color:#000000;
+	background:#FCA311;
+}
+
+.evocto-impact-card_metric{
+	margin-bottom:4px;
+	font-size:15px;
+	line-height:1;
+	font-weight:900;
+	letter-spacing:0px;
+	text-transform:uppercase;
+	color:#14213D;
+}
+
+.evocto-impact-card h3{
+	margin:0px;
+	font-size:24px;
+	line-height:31px;
+	color:#000000;
+	text-transform:none;
+}
+
+.evocto-impact-card p{
+	margin-bottom:14px;
+	font-size:15px;
+	line-height:26px;
+	color:#555555;
+}
+
+.evocto-impact-card p strong{
+	color:#14213D;
+}
+
+.evocto-impact-card_quote{
+	margin:20px 0px 18px;
+	padding:15px 16px;
+	border-left:4px solid #FCA311;
+	border-radius:8px;
+	font-size:16px;
+	line-height:26px;
+	font-weight:800;
+	color:#14213D;
+	background:#fff8ed;
+}
+
+.evocto-impact-card_link{
+	display:inline-flex;
+	align-items:center;
+	gap:8px;
+	font-size:15px;
+	line-height:22px;
+	font-weight:900;
+	color:#14213D;
+}
+
+.evocto-impact-card_link:hover{
+	color:#000000;
+}
+
+/***
+
+====================================================================
 	EVOCTO Offers
 ====================================================================
 
@@ -1521,7 +1644,7 @@
 	letter-spacing:0px;
 	color:var(--white-color);
 	text-transform:uppercase;
-	background-image:linear-gradient(180deg, rgba(20, 33, 61, 1) 0%, rgba(252, 163, 17, 1) 100%);
+	background-image:none;
 }
 
 .evocto-offer-card h3{
@@ -1752,7 +1875,7 @@
 	justify-content:flex-end;
 	padding:34px;
 	color:#ffffff;
-	background:linear-gradient(180deg, rgba(0, 0, 0, 0.08) 0%, rgba(0, 0, 0, 0.76) 100%);
+	background:rgba(20, 33, 61, 0.78);
 	opacity:0.92;
 	transition:all 350ms ease;
 }
@@ -1912,7 +2035,7 @@
 	text-align:center;
 	border-radius:8px;
 	color:var(--white-color);
-	background-image:linear-gradient(180deg, rgba(20, 33, 61, 1) 0%, rgba(252, 163, 17, 1) 100%);
+	background-image:none;
 }
 
 .evocto-contact-method strong{
@@ -2063,14 +2186,14 @@
 	text-align:center;
 	display:inline-block;
 	color:var(--white-color);
-	background-image: linear-gradient(180deg, #14213D, #000000);
+	background-image: none;
 
 }
 
 .testimonial-one_carousel-prev:hover,
 .testimonial-one_carousel-next:hover{
 	color:var(--white-color);
-	background-image: linear-gradient(180deg, var(--black-color), var(--black-color));
+	background-image: none;
 }
 
 /***
@@ -2410,9 +2533,8 @@
 	bottom:0px;
 	border-radius:50px;
 	background-color:#14213D;
-	background-image:
-		linear-gradient(90deg, rgba(0, 0, 0, 0.86) 0%, rgba(20, 33, 61, 0.58) 45%, rgba(252, 163, 17, 0.18) 100%),
-		url(../images/evocto/generated/abstract-incredible.jpg);
+	background-image:url(../images/evocto/generated/abstract-incredible.jpg);
+	background-blend-mode:multiply;
 	background-size:cover;
 	background-position:center right;
 	background-repeat:no-repeat;
@@ -2631,7 +2753,7 @@
 	text-transform: capitalize;
 	font-family: "Outfit", serif;
 	background-color: rgba(20, 33, 61, 1);
-    background-image: linear-gradient(90deg, rgba(20, 33, 61, 1) 0%, rgba(252, 163, 17, 1) 100%);
+    background-image: none;
 	outline: 5px solid var(--white-color);
 	outline-offset: 0px;
 }
@@ -2711,7 +2833,7 @@
 	border-radius:50px;
 	transform:rotate(90deg);
 	background-color: rgba(20, 33, 61, 1);
-    background-image: linear-gradient(0deg, rgba(20, 33, 61, 1) 0%, rgba(252, 163, 17, 1) 100%);
+    background-image: none;
 	transition:all 500ms ease;
 	-moz-transition:all 500ms ease;
 	-webkit-transition:all 500ms ease;
@@ -2776,7 +2898,7 @@
 	right:0px;
 	bottom:240px;
 	background-color: rgba(0, 1, 3, 1);
-    background-image: linear-gradient(180deg, rgba(0, 1, 3, 1) 0%, rgba(2, 4, 72, 1) 100%);
+    background-image: none;
 }
 
 .slider-two .slider-one_pagination{
@@ -2838,8 +2960,8 @@
 	-ms-transition:all 900ms ease;
 	-o-transition:all 900ms ease;
 	text-transform:capitalize;
-	background-color: rgba(20, 33, 61, 0);
-	background-image: linear-gradient(90deg, rgba(20, 33, 61, 1) 0%, rgba(252, 163, 17, 1) 100%);
+	background-color:#14213D;
+	background-image:none;
 	transition: 1.3s cubic-bezier(0.5, 0.5, 0, 1);
     clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
 }
@@ -3155,7 +3277,7 @@
 	color:var(--white-color);
 	background-color: rgba(20, 33, 61, 1);
     box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.15);
-    background-image: linear-gradient(180deg, rgba(20, 33, 61, 1) 0%, rgba(252, 163, 17, 1) 100%);
+    background-image: none;
 }
 
 .about-two_video .ripple,
@@ -3314,8 +3436,8 @@
 	height:16px;
 	width:0px;
 	border-radius:50px;
-	background-color: rgba(20, 33, 61, 0);
-    background-image: linear-gradient(90deg, rgba(20, 33, 61, 1) 0%, rgba(252, 163, 17, 1) 100%);
+	background-color:#14213D;
+    background-image:none;
 	-webkit-transition:all 2000ms ease;
 	-ms-transition:all 2000ms ease;
 	-o-transition:all 2000ms ease;
@@ -3472,7 +3594,7 @@
 	-ms-transition:all 500ms ease;
 	-o-transition:all 500ms ease;
     background-color: rgba(20, 33, 61, 1);
-    background-image: linear-gradient(180deg, rgba(20, 33, 61, 1) 0%, rgba(252, 163, 17, 1) 100%);
+    background-image: none;
 }
 
 .service-block_one-inner:hover .service-block_one-icon{
@@ -3714,7 +3836,7 @@
 
 .gallery-block-one_inner:hover .gallery-block_one-arrow{
 	background-color: rgba(20, 33, 61, 1);
-    background-image: linear-gradient(180deg, rgba(20, 33, 61, 1) 0%, rgba(252, 163, 17, 1) 100%);
+    background-image: none;
 }
 
 .gallery-block_one-hand{
@@ -3797,7 +3919,7 @@
     left: -10px;
     right: -10px;
     bottom: -10px;
-    background: linear-gradient(to bottom, #ffffff, #FCA311);
+    background: #14213D;
     border-radius: 360px; /* Slightly larger for a smooth effect */
 }
 
@@ -3825,7 +3947,7 @@
     left: -10px;
     right: -10px;
     bottom: -10px;
-    background: linear-gradient(to bottom, #030fff, #ffffff);
+    background: #14213D;
     border-radius: 360px; /* Slightly larger for a smooth effect */
 }
 
@@ -3902,7 +4024,7 @@
 	-ms-transition:all 500ms ease;
 	-o-transition:all 500ms ease;
 	background-color: rgba(20, 33, 61, 1);
-    background-image: linear-gradient(180deg, rgba(20, 33, 61, 1) 0%, rgba(252, 163, 17, 1) 100%);
+    background-image: none;
 }
 
 .accordion-box .block .acc-btn.active .icon-outer .icon{
@@ -4011,7 +4133,7 @@
 	-ms-transition:all 500ms ease;
 	-o-transition:all 500ms ease;
 	background-color: rgba(20, 33, 61, 1);
-    background-image: linear-gradient(180deg, rgba(20, 33, 61, 1) 0%, rgba(252, 163, 17, 1) 100%);
+    background-image: none;
 }
 
 .offer-block_one-inner:hover::before{
@@ -4359,13 +4481,13 @@
     text-transform: capitalize;
     font-family: 'Manrope', sans-serif;
     background-color: rgba(20, 33, 61, 1);
-    background-image: linear-gradient(90deg, rgba(20, 33, 61, 1) 0%, rgba(252, 163, 17, 1) 100%);
+    background-image: none;
 }
 
 .price-block_one-btn:hover{
 	color: var(--white-color);
 	background-color: rgba(20, 33, 61, 1);
-    background-image: linear-gradient(0deg, rgba(20, 33, 61, 1) 0%, rgba(252, 163, 17, 1) 100%);
+    background-image: none;
 }
 
 /***
@@ -4543,8 +4665,8 @@
 	right:0px;
 	bottom:0px;
 	opacity:0.10;
-	background-color: rgba(20, 33, 61, 0);
-    background-image: linear-gradient(0deg, rgba(20, 33, 61, 1) 0%, rgba(252, 163, 17, 1) 100%);
+	background-color:#14213D;
+    background-image:none;
 }
 
 .slider-three .swiper-slide-active .slider-three_image-layer{
@@ -4849,7 +4971,7 @@
 	border-radius:50px;
 	display:inline-block;
 	background-color: rgba(20, 33, 61, 1);
-    background-image: linear-gradient(180deg, rgba(20, 33, 61, 1) 0%, rgba(252, 163, 17, 1) 100%);
+    background-image: none;
 }
 
 .empower-block_one-content{
@@ -5129,7 +5251,7 @@
 	right:0px;
 	height:100px;
 	background-color: rgba(20, 33, 61, 1);
-    background-image: linear-gradient(-90deg, rgba(20, 33, 61, 1) 0%, rgba(252, 163, 17, 1) 100%);
+    background-image: none;
 }
 
 .inspire-one .animation_mode{
@@ -5228,7 +5350,7 @@
 	overflow:hidden;
 	padding:130px 0px 85px;
 	background-color: rgba(20, 33, 61, 1);
-    background-image: linear-gradient(0deg, rgba(20, 33, 61, 1) 0%, rgba(252, 163, 17, 1) 100%);
+    background-image: none;
 }
 
 .business-one_vector{
@@ -5287,7 +5409,7 @@
 	border:12px solid var(--white-color);
 	background-color: rgba(20, 33, 61, 1);
     box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.15);
-    background-image: linear-gradient(180deg, rgba(20, 33, 61, 1) 0%, rgba(252, 163, 17, 1) 100%);
+    background-image: none;
 }
 
 .business-one_play .ripple,
@@ -5754,7 +5876,7 @@
 	border-radius:100px;
 	transform:rotate(-45deg);
 	background-color: rgba(20, 33, 61, 1);
-    background-image: linear-gradient(90deg, rgba(20, 33, 61, 1) 0%, rgba(252, 163, 17, 1) 100%);
+    background-image: none;
 }
 
 /* Team Block Three */
@@ -5788,7 +5910,7 @@
 	padding:15px 15px;
 	border-radius:50%;
 	background-color: rgba(20, 33, 61, 1);
-    background-image: linear-gradient(90deg, rgba(20, 33, 61, 1) 0%, rgba(252, 163, 17, 1) 100%);
+    background-image: none;
 }
 
 .team-block_two-image img{
@@ -5844,7 +5966,7 @@
 
 .team-block_two-socials a:hover{
 	background-color: rgba(20, 33, 61, 1);
-    background-image: linear-gradient(180deg, rgba(20, 33, 61, 1) 0%, rgba(252, 163, 17, 1) 100%);
+    background-image: none;
 }
 
 .team-two .thumbs-column{
@@ -6125,7 +6247,7 @@
 	border-radius:50px;
 	display:inline-block;
 	background-color: rgba(20, 33, 61, 1);
-    background-image: linear-gradient(180deg, rgba(20, 33, 61, 1) 0%, rgba(252, 163, 17, 1) 100%);
+    background-image: none;
 }
 
 .contact-one_info li strong{
@@ -6279,7 +6401,7 @@
 
 .news-block_two-inner:hover .news-block_two-arrow a{
 	background-color: rgba(20, 33, 61, 1);
-    background-image: linear-gradient(180deg, rgba(20, 33, 61, 1) 0%, rgba(252, 163, 17, 1) 100%);
+    background-image: none;
 }
 
 .news-block_two-hover{
@@ -6330,7 +6452,7 @@
 	border-radius:150px;
 	border:2px solid var(--color-two);
 	background-color: rgba(255, 255, 255, 1);
-    background-image: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(223, 248, 255, 1) 100%);
+    background-image: none;
 }
 
 .cta-one_title{
@@ -6476,7 +6598,7 @@
 	line-height:1em;
 	display:inline-block;
 	font-family: "Outfit", serif;
-	background: linear-gradient(to top, #14213D, #FCA311);
+	background: #14213D;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -6489,7 +6611,7 @@
 	transform:rotate(-90deg);
 	transform-origin: 36% -15%;
 	font-family: "Outfit", serif;
-	background: linear-gradient(to top, #14213D, #FCA311);
+	background: #14213D;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -7026,8 +7148,8 @@
 	color: var(--black-color);
 	text-transform: capitalize;
 	font-family: "Outfit", serif;
-	background-color: rgba(20, 33, 61, 0);
-    background-image: linear-gradient(-90deg, rgba(20, 33, 61, 1) 0%, rgba(252, 163, 17, 1) 100%);
+	background-color:#14213D;
+    background-image:none;
 	-webkit-transition:all 300ms ease;
 	-moz-transition:all 300ms ease;
 	-ms-transition:all 300ms ease;
@@ -7065,8 +7187,8 @@
 	padding:12px 12px;
 	border-radius:50px;
 	display:inline-block;
-	background-color: rgba(20, 33, 61, 0);
-    background-image: linear-gradient(-90deg, rgba(20, 33, 61, 1) 0%, rgba(252, 163, 17, 1) 100%);
+	background-color:#14213D;
+    background-image:none;
 }
 
 .category-list li a:hover span{
@@ -7187,7 +7309,7 @@
 
 .service-detail_tag span{
 	position:relative;
-	background: linear-gradient(to right, #14213D, #FCA311);
+	background: #14213D;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -7297,7 +7419,7 @@
 	outline: 8px solid var(--white-color);
 	outline-offset: -26px;
 	background-color: rgba(20, 33, 61, 1);
-    background-image: linear-gradient(90deg, rgba(20, 33, 61, 1) 0%, rgba(252, 163, 17, 1) 100%);
+    background-image: none;
 }
 
 .team-block_three-image img{
@@ -7379,7 +7501,7 @@
 
 .team-block_three-socials a:hover{
 	background-color: rgba(20, 33, 61, 1);
-    background-image: linear-gradient(180deg, rgba(20, 33, 61, 1) 0%, rgba(252, 163, 17, 1) 100%);
+    background-image: none;
 }
 
 .team-block_three-layer{
@@ -7539,7 +7661,7 @@
 .team-tabs .tab-btns .tab-btn.active-btn{
 	color:var(--white-color);
 	background-color: rgba(20, 33, 61, 1);
-    background-image: linear-gradient(90deg, rgba(20, 33, 61, 1) 0%, rgba(252, 163, 17, 1) 100%);
+    background-image: none;
 }
 
 .team-tabs .tabs-content{
@@ -7705,7 +7827,7 @@
 	-moz-transition:all 500ms ease;
 	color:var(--white-color);
 	background-color: rgba(20, 33, 61, 1);
-    background-image: linear-gradient(90deg, rgba(20, 33, 61, 1) 0%, rgba(252, 163, 17, 1) 100%);
+    background-image: none;
 }
 
 .styled-pagination li.prev a,
@@ -7808,7 +7930,7 @@
 	text-transform: capitalize;
 	font-family: "Outfit", serif;
 	background-color: rgba(20, 33, 61, 1);
-    background-image: linear-gradient(90deg, rgba(20, 33, 61, 1) 0%, rgba(252, 163, 17, 1) 100%);
+    background-image: none;
 	outline: 5px solid var(--white-color);
 	outline-offset: 0px;
 }
@@ -7894,7 +8016,7 @@
 	display:inline-block;
 	transform:rotate(90deg);
 	background-color: rgba(20, 33, 61, 1);
-    background-image: linear-gradient(0deg, rgba(20, 33, 61, 1) 0%, rgba(252, 163, 17, 1) 100%);
+    background-image: none;
 	transition:all 500ms ease;
 	-moz-transition:all 500ms ease;
 	-webkit-transition:all 500ms ease;
@@ -7992,7 +8114,7 @@
 	-ms-transition:all 500ms ease;
 	-o-transition:all 500ms ease;
 	background-color: rgba(20, 33, 61, 1);
-    background-image: linear-gradient(0deg, rgba(20, 33, 61, 1) 0%, rgba(252, 163, 17, 1) 100%);
+    background-image: none;
 }
 
 .sidebar .search-box .form-group button:hover{
@@ -8116,7 +8238,7 @@
 
 .category-list_two li a:hover{
 	background-color: rgba(20, 33, 61, 1);
-    background-image: linear-gradient(0deg, rgba(20, 33, 61, 1) 0%, rgba(252, 163, 17, 1) 100%);
+    background-image: none;
 	color: var(--white-color);
 }
 
@@ -8246,7 +8368,7 @@
 	text-transform: capitalize;
 	font-family: "Outfit", serif;
 	background-color: rgba(20, 33, 61, 1);
-    background-image: linear-gradient(90deg, rgba(20, 33, 61, 1) 0%, rgba(252, 163, 17, 1) 100%);
+    background-image: none;
 	outline: 5px solid var(--white-color);
 	outline-offset: 0px;
 }
@@ -8370,7 +8492,7 @@
 	text-align:center;
 	display:inline-block;
 	background-color: rgba(20, 33, 61, 1);
-    background-image: linear-gradient(90deg, rgba(20, 33, 61, 1) 0%, rgba(252, 163, 17, 1) 100%);
+    background-image: none;
 }
 
 .blog-detail blockquote i{
@@ -11021,7 +11143,7 @@ html:not([data-legal-country]) .country-clause[data-country="madagascar"]{
 .btn-style-one{
 	color:var(--white-color);
 	background-color:#14213D;
-	background-image:linear-gradient(90deg, #14213D 0%, #000000 100%);
+	background-image:none;
 }
 
 .btn-style-one:before{
@@ -11044,7 +11166,7 @@ html:not([data-legal-country]) .country-clause[data-country="madagascar"]{
 
 .btn-style-three:before{
 	background-color:#14213D;
-	background-image:linear-gradient(90deg, #14213D 0%, #000000 100%);
+	background-image:none;
 }
 
 .btn-style-three .btn-wrap .text-one,
@@ -11211,7 +11333,7 @@ html:not([data-legal-country]) .country-clause[data-country="madagascar"]{
 
 .evocto-process .step-block_one-number span{
 	font-size:72px;
-	background:linear-gradient(180deg, #14213D 0%, #FCA311 100%);
+	background:#14213D;
 	-webkit-background-clip:text;
 	-webkit-text-fill-color:transparent;
 }
@@ -11371,6 +11493,9 @@ html:not([data-legal-country]) .country-clause[data-country="madagascar"]{
 	align-items:center;
 	justify-content:center;
 	padding:0px;
+	background:#FCA311;
+	border:2px solid #14213D;
+	box-shadow:0px 8px 18px rgba(20, 33, 61, 0.16);
 }
 
 .category-list li span img{
@@ -11379,6 +11504,32 @@ html:not([data-legal-country]) .country-clause[data-country="madagascar"]{
 	max-width:24px;
 	max-height:24px;
 	object-fit:contain;
+	filter:brightness(0) saturate(100%) invert(10%) sepia(39%) saturate(1165%) hue-rotate(184deg) brightness(92%) contrast(94%);
+}
+
+.category-list li a{
+	color:#14213D;
+}
+
+.category-list li a:hover,
+.category-list li a:focus-visible{
+	color:#ffffff;
+	background-color:#14213D;
+}
+
+.category-list li a:focus-visible::before{
+	opacity:0;
+}
+
+.category-list li a:hover span,
+.category-list li a:focus-visible span{
+	background:#FCA311;
+	border-color:#FCA311;
+}
+
+.category-list li a:hover span img,
+.category-list li a:focus-visible span img{
+	filter:brightness(0) saturate(100%) invert(10%) sepia(39%) saturate(1165%) hue-rotate(184deg) brightness(92%) contrast(94%);
 }
 
 .evocto-contact-page{
@@ -11386,8 +11537,8 @@ html:not([data-legal-country]) .country-clause[data-country="madagascar"]{
 }
 
 .evocto-contact-page:before{
-	background:#000000;
-	background-image:linear-gradient(90deg, #000000 0%, #14213D 100%);
+	background:#14213D;
+	background-image:none;
 }
 
 .evocto-contact-page .sec-title_title{
@@ -11487,6 +11638,10 @@ html:not([data-legal-country]) .country-clause[data-country="madagascar"]{
 }
 
 @media only screen and (max-width: 991px){
+	.evocto-impact{
+		padding:90px 0px 62px;
+	}
+
 	.evocto-process .process-one_content{
 		align-items:flex-start;
 	}
@@ -11497,6 +11652,27 @@ html:not([data-legal-country]) .country-clause[data-country="madagascar"]{
 }
 
 @media only screen and (max-width: 767px){
+	.evocto-impact{
+		padding:72px 0px 46px;
+	}
+
+	.evocto-impact .sec-title{
+		margin-bottom:34px;
+	}
+
+	.evocto-impact-card{
+		padding:26px 22px;
+	}
+
+	.evocto-impact-card_top{
+		align-items:flex-start;
+	}
+
+	.evocto-impact-card h3{
+		font-size:22px;
+		line-height:29px;
+	}
+
 	.evocto-process{
 		padding:80px 0px 70px;
 	}

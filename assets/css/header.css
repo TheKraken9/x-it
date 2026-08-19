@@ -100,7 +100,7 @@
 	padding:13px 20px;
 	border-radius:50px;
 	background-color: rgba(20, 33, 61, 1);
-	background-image: linear-gradient(90deg, rgba(20, 33, 61, 1) 0%, rgba(252, 163, 17, 1) 100%);
+	background-image: none;
 }
 
 .header-top_list li{
@@ -150,7 +150,7 @@
 	border-radius:12px;
 	transform:skewX(15deg);
 	background-color: rgba(20, 33, 61, 1);
-	background-image: linear-gradient(-90deg, rgba(20, 33, 61, 1) 0%, rgba(252, 163, 17, 1) 100%);
+	background-image: none;
 }
 
 .header-top_list-two li{
@@ -1332,9 +1332,9 @@
 .main-header.header-style-two .header-lower .nav-outer{
 	border-radius:50px;
 	padding:0px 50px;
-	background-color: rgba(20, 33, 61, 0);
+	background-color:#14213D;
 	border-left:8px solid var(--black-color);
-    background-image: linear-gradient(-90deg, rgba(20, 33, 61, 1) 0%, rgba(252, 163, 17, 1) 100%);
+    background-image: none;
 }
 
 /* Header Style Three */
@@ -1386,7 +1386,7 @@
 .main-header.header-style-three .main-menu .navigation > li > a:hover,
 .main-header.header-style-three .main-menu .navigation > li.current > a{
 	background-color: rgba(20, 33, 61, 1);
-    background-image: linear-gradient(180deg, rgba(20, 33, 61, 1) 0%, rgba(252, 163, 17, 1) 100%);
+    background-image: none;
 }
 
 .header-style-three.fixed-header .header-lower{
@@ -1772,7 +1772,7 @@
 .language-switcher_btn.active{
 	color:var(--white-color);
 	background-color:var(--main-color);
-	background-image:linear-gradient(90deg,var(--main-color) 0%,var(--color-two) 100%);
+	background-image:none;
 }
 
 /***
@@ -2357,7 +2357,7 @@
 	border:0px;
 	flex:0 0 52px;
 	color:var(--white-color);
-	background-image:linear-gradient(180deg, rgba(20, 33, 61, 1) 0%, rgba(252, 163, 17, 1) 100%);
+	background-image:none;
 }
 
 .about-sidebar .social-box{

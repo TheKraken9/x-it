@@ -100,41 +100,8 @@
 				en: "Contact EVOCTO | Request digital project support"
 			},
 			description: {
-				fr: "Contactez EVOCTO pour un projet web, mobile, logiciel sur mesure, maintenance ou externalisation d'equipe entre Paris et Antananarivo.",
-				en: "Contact EVOCTO for a web, mobile, custom software, maintenance or team outsourcing project between Paris and Antananarivo."
-			}
-		},
-		"terms.html": {
-			path: "/terms",
-			title: {
-				fr: "Conditions generales de vente EVOCTO",
-				en: "EVOCTO Sales Terms"
-			},
-			description: {
-				fr: "Consultez les conditions generales de vente applicables aux prestations digitales proposees par EVOCTO.",
-				en: "Read the sales terms applicable to the digital services provided by EVOCTO."
-			}
-		},
-		"privacy.html": {
-			path: "/privacy",
-			title: {
-				fr: "Mentions legales EVOCTO | France et Madagascar",
-				en: "EVOCTO Legal Notice | France and Madagascar"
-			},
-			description: {
-				fr: "Mentions legales EVOCTO, responsabilites, donnees de contact et juridiction applicable selon le pays selectionne.",
-				en: "EVOCTO legal notice, responsibilities, contact details and applicable jurisdiction according to the selected country."
-			}
-		},
-		"cookies.html": {
-			path: "/cookies",
-			title: {
-				fr: "Politique de cookies EVOCTO",
-				en: "EVOCTO Cookie Policy"
-			},
-			description: {
-				fr: "Politique de cookies EVOCTO : finalites, gestion du consentement, traceurs et droits des visiteurs.",
-				en: "EVOCTO cookie policy: purposes, consent management, trackers and visitor rights."
+				fr: "Contactez EVOCTO pour un projet web, mobile, logiciel sur mesure, maintenance ou externalisation d'equipe à Antananarivo.",
+				en: "Contact EVOCTO for a web, mobile, custom software, maintenance or team outsourcing project in Antananarivo."
 			}
 		},
 		"team-detail.html": {
@@ -248,20 +215,20 @@
 					name: "EVOCTO",
 					url: siteUrl + "/",
 					email: "contact@evocto.fr",
+					telephone: "+33759560896",
 					logo: siteUrl + "/assets/images/favicon.png",
 					image: defaultImage,
-					address: [
-						{
-							"@type": "PostalAddress",
-							addressLocality: "Paris",
-							addressCountry: "FR"
-						},
-						{
-							"@type": "PostalAddress",
-							addressLocality: "Antananarivo",
-							addressCountry: "MG"
-						}
-					],
+					address: {
+						"@type": "PostalAddress",
+						addressLocality: "Antananarivo",
+						addressCountry: "MG"
+					},
+					contactPoint: {
+						"@type": "ContactPoint",
+						telephone: "+33759560896",
+						contactType: "customer support",
+						availableLanguage: ["French", "English"]
+					},
 					areaServed: ["France", "Madagascar", "Europe", "International"]
 				},
 				{

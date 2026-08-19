@@ -81,33 +81,8 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://evocto.fr/contact?lang=en" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://evocto.fr/contact" />
   </url>
-  <url>
-    <loc>https://evocto.fr/terms</loc>
-    <lastmod>2026-07-21</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://evocto.fr/terms?lang=fr" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://evocto.fr/terms?lang=en" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://evocto.fr/terms" />
-  </url>
-  <url>
-    <loc>https://evocto.fr/privacy</loc>
-    <lastmod>2026-07-21</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://evocto.fr/privacy?lang=fr" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://evocto.fr/privacy?lang=en" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://evocto.fr/privacy" />
-  </url>
-  <url>
-    <loc>https://evocto.fr/cookies</loc>
-    <lastmod>2026-07-21</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://evocto.fr/cookies?lang=fr" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://evocto.fr/cookies?lang=en" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://evocto.fr/cookies" />
-  </url>
+
+
   <url>
     <loc>https://evocto.fr/team-detail</loc>
     <lastmod>2026-07-21</lastmod>

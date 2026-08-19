@@ -22,6 +22,36 @@
   ],
   "redirects": [
     {
+      "source": "/terms",
+      "destination": "/not-found",
+      "permanent": false
+    },
+    {
+      "source": "/terms.html",
+      "destination": "/not-found",
+      "permanent": false
+    },
+    {
+      "source": "/privacy",
+      "destination": "/not-found",
+      "permanent": false
+    },
+    {
+      "source": "/privacy.html",
+      "destination": "/not-found",
+      "permanent": false
+    },
+    {
+      "source": "/cookies",
+      "destination": "/not-found",
+      "permanent": false
+    },
+    {
+      "source": "/cookies.html",
+      "destination": "/not-found",
+      "permanent": false
+    },
+    {
       "source": "/testimonial",
       "destination": "/about",
       "permanent": true

@@ -1,4 +1,22 @@
 [[redirects]]
+  from = "/terms*"
+  to = "/not-found"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/privacy*"
+  to = "/not-found"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/cookies*"
+  to = "/not-found"
+  status = 302
+  force = true
+
+[[redirects]]
   from = "/index.html"
   to = "/"
   status = 301
