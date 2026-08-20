@@ -215,7 +215,7 @@
 					name: "EVOCTO",
 					url: siteUrl + "/",
 					email: "contact@evocto.fr",
-					telephone: "+33759560896",
+					telephone: "+261383838000",
 					logo: siteUrl + "/assets/images/favicon.png",
 					image: defaultImage,
 					address: {
@@ -225,7 +225,7 @@
 					},
 					contactPoint: {
 						"@type": "ContactPoint",
-						telephone: "+33759560896",
+						telephone: "+261383838000",
 						contactType: "customer support",
 						availableLanguage: ["French", "English"]
 					},
