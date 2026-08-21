@@ -4,9 +4,13 @@
 	
 	
 	//Hide Loading Box (Preloader)
+	var preloaderHidden = false;
 	function handlePreloader() {
-		if($('.preloader').length){
-			$('.preloader').delay(200).fadeOut(500);
+		if($('.preloader').length && !preloaderHidden){
+			preloaderHidden = true;
+			$('.preloader').stop(true, true).delay(80).fadeOut(300, function() {
+				$(this).remove();
+			});
 		}
 	}
 	
@@ -1336,6 +1340,10 @@
 /* ==========================================================================
    When document is loading, do
    ========================================================================== */
+
+	$(function() {
+		handlePreloader();
+	});
 	
 	$(window).on('load', function() {
 		handlePreloader();
