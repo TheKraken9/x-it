@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://evocto.fr</loc>
-    <lastmod>2026-07-21</lastmod>
+    <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://evocto.fr?lang=fr" />
@@ -11,7 +11,7 @@
   </url>
   <url>
     <loc>https://evocto.fr/about</loc>
-    <lastmod>2026-07-21</lastmod>
+    <lastmod>2026-08-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://evocto.fr/about?lang=fr" />
@@ -20,7 +20,7 @@
   </url>
   <url>
     <loc>https://evocto.fr/services</loc>
-    <lastmod>2026-07-21</lastmod>
+    <lastmod>2026-08-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://evocto.fr/services?lang=fr" />
@@ -29,7 +29,7 @@
   </url>
   <url>
     <loc>https://evocto.fr/service-detail</loc>
-    <lastmod>2026-07-21</lastmod>
+    <lastmod>2026-08-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://evocto.fr/service-detail?lang=fr" />
@@ -38,7 +38,7 @@
   </url>
   <url>
     <loc>https://evocto.fr/project</loc>
-    <lastmod>2026-07-21</lastmod>
+    <lastmod>2026-08-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://evocto.fr/project?lang=fr" />
@@ -47,7 +47,7 @@
   </url>
   <url>
     <loc>https://evocto.fr/project-detail</loc>
-    <lastmod>2026-07-21</lastmod>
+    <lastmod>2026-08-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://evocto.fr/project-detail?lang=fr" />
@@ -56,7 +56,7 @@
   </url>
   <url>
     <loc>https://evocto.fr/blog</loc>
-    <lastmod>2026-07-21</lastmod>
+    <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://evocto.fr/blog?lang=fr" />
@@ -65,7 +65,7 @@
   </url>
   <url>
     <loc>https://evocto.fr/blog-detail</loc>
-    <lastmod>2026-07-21</lastmod>
+    <lastmod>2026-08-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://evocto.fr/blog-detail?lang=fr" />
@@ -74,7 +74,7 @@
   </url>
   <url>
     <loc>https://evocto.fr/contact</loc>
-    <lastmod>2026-07-21</lastmod>
+    <lastmod>2026-08-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://evocto.fr/contact?lang=fr" />
@@ -85,7 +85,7 @@
 
   <url>
     <loc>https://evocto.fr/team-detail</loc>
-    <lastmod>2026-07-21</lastmod>
+    <lastmod>2026-08-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://evocto.fr/team-detail?lang=fr" />

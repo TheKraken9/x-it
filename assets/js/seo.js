@@ -3,6 +3,31 @@
 
 	var siteUrl = "https://evocto.fr";
 	var defaultImage = siteUrl + "/assets/images/evocto/generated/service-overview.jpg";
+	var logoUrl = siteUrl + "/assets/images/favicon.png";
+	var contactPhone = "+33759560896";
+	// Add only verified EVOCTO social profiles here before exposing sameAs.
+	var officialSocialProfiles = [];
+
+	var serviceCatalog = {
+		fr: [
+			{ name: "Développement web", description: "Sites vitrines, boutiques e-commerce et plateformes web sur mesure." },
+			{ name: "Développement mobile", description: "Applications iOS et Android pensées pour les besoins métier." },
+			{ name: "Logiciel sur mesure", description: "Outils internes, gestion, logistique, SaaS et dashboards adaptés." },
+			{ name: "Design UI/UX et identité visuelle", description: "Interfaces claires, parcours intuitifs et supports de marque cohérents." },
+			{ name: "Maintenance et support", description: "Mises à jour, corrections, petites évolutions et suivi technique." },
+			{ name: "Externalisation d'équipe", description: "Développeurs et designers dédiés intégrés à vos projets." },
+			{ name: "Accompagnement à la digitalisation", description: "Diagnostic, recommandations, déploiement progressif et formation." }
+		],
+		en: [
+			{ name: "Web development", description: "Showcase websites, ecommerce stores and custom web platforms." },
+			{ name: "Mobile development", description: "iOS and Android applications designed for business needs." },
+			{ name: "Custom software", description: "Internal tools, management, logistics, SaaS products and tailored dashboards." },
+			{ name: "UI/UX design and visual identity", description: "Clear interfaces, intuitive journeys and consistent brand assets." },
+			{ name: "Maintenance and support", description: "Updates, fixes, small improvements and technical monitoring." },
+			{ name: "Dedicated team outsourcing", description: "Dedicated developers and designers integrated into your projects." },
+			{ name: "Digitalization support", description: "Diagnosis, recommendations, progressive rollout and team training." }
+		]
+	};
 
 	var pages = {
 		"index.html": {
@@ -196,6 +221,66 @@
 		});
 	}
 
+	function serviceListSchema(page, language) {
+		if (page.path !== "/services" && page.path !== "/service-detail") {
+			return null;
+		}
+
+		return {
+			"@type": "ItemList",
+			"@id": absoluteUrl(page.path, language) + "#services",
+			name: language === "fr" ? "Services digitaux EVOCTO" : "EVOCTO digital services",
+			itemListElement: serviceCatalog[language].map(function (service, index) {
+				return {
+					"@type": "ListItem",
+					position: index + 1,
+					item: {
+						"@type": "Service",
+						"@id": siteUrl + "/service-detail#service-" + (index + 1),
+						name: service.name,
+						description: service.description,
+						provider: {
+							"@id": siteUrl + "/#organization"
+						},
+						areaServed: [
+							{ "@type": "Country", name: "Madagascar" },
+							{ "@type": "Country", name: "France" },
+							{ "@type": "Place", name: "International" }
+						]
+					}
+				};
+			})
+		};
+	}
+
+	function breadcrumbSchema(page, language) {
+		var homeName = language === "fr" ? "Accueil" : "Home";
+		var pageName = page.title[language].split("|")[0].trim();
+		var items = [
+			{
+				"@type": "ListItem",
+				position: 1,
+				name: homeName,
+				item: siteUrl + "/"
+			}
+		];
+
+		if (page.path !== "/") {
+			items.push({
+				"@type": "ListItem",
+				position: 2,
+				name: pageName,
+				item: absoluteUrl(page.path, language)
+			});
+		}
+
+		return {
+			"@type": "BreadcrumbList",
+			"@id": absoluteUrl(page.path, language) + "#breadcrumb",
+			itemListElement: items
+		};
+	}
+
 	function updateSchema(page, language) {
 		var schema = document.getElementById("evocto-schema-organization");
 
@@ -206,56 +291,93 @@
 			document.head.appendChild(schema);
 		}
 
+		var organization = {
+			"@type": "Organization",
+			"@id": siteUrl + "/#organization",
+			name: "EVOCTO",
+			alternateName: "Evocto",
+			url: siteUrl + "/",
+			email: "contact@evocto.fr",
+			telephone: contactPhone,
+			logo: {
+				"@type": "ImageObject",
+				url: logoUrl
+			},
+			image: defaultImage,
+			description: language === "fr"
+				? "EVOCTO accompagne les entreprises dans leur transformation digitale avec des sites web, applications mobiles, logiciels sur mesure, UI/UX, maintenance et équipes dédiées."
+				: "EVOCTO supports companies through digital transformation with websites, mobile apps, custom software, UI/UX, maintenance and dedicated teams.",
+			address: {
+				"@type": "PostalAddress",
+				addressLocality: "Antananarivo",
+				addressCountry: "MG"
+			},
+			contactPoint: {
+				"@type": "ContactPoint",
+				telephone: contactPhone,
+				email: "contact@evocto.fr",
+				contactType: "customer support",
+				availableLanguage: ["French", "English"]
+			},
+			areaServed: [
+				{ "@type": "Country", name: "Madagascar" },
+				{ "@type": "Country", name: "France" },
+				{ "@type": "Place", name: "International" }
+			],
+			knowsAbout: serviceCatalog[language].map(function (service) {
+				return service.name;
+			})
+		};
+
+		if (officialSocialProfiles.length) {
+			organization.sameAs = officialSocialProfiles;
+		}
+
+		var graph = [
+			organization,
+			{
+				"@type": "WebSite",
+				"@id": siteUrl + "/#website",
+				url: siteUrl + "/",
+				name: "EVOCTO",
+				alternateName: "Evocto",
+				publisher: {
+					"@id": siteUrl + "/#organization"
+				},
+				inLanguage: ["fr", "en"]
+			},
+			{
+				"@type": "WebPage",
+				"@id": absoluteUrl(page.path, language) + "#webpage",
+				url: absoluteUrl(page.path, language),
+				name: page.title[language],
+				description: page.description[language],
+				isPartOf: {
+					"@id": siteUrl + "/#website"
+				},
+				about: {
+					"@id": siteUrl + "/#organization"
+				},
+				breadcrumb: {
+					"@id": absoluteUrl(page.path, language) + "#breadcrumb"
+				},
+				primaryImageOfPage: {
+					"@type": "ImageObject",
+					url: defaultImage
+				},
+				inLanguage: language
+			},
+			breadcrumbSchema(page, language)
+		];
+		var services = serviceListSchema(page, language);
+
+		if (services) {
+			graph.push(services);
+		}
+
 		schema.textContent = JSON.stringify({
 			"@context": "https://schema.org",
-			"@graph": [
-				{
-					"@type": "Organization",
-					"@id": siteUrl + "/#organization",
-					name: "EVOCTO",
-					url: siteUrl + "/",
-					email: "contact@evocto.fr",
-					telephone: "+261383838000",
-					logo: siteUrl + "/assets/images/favicon.png",
-					image: defaultImage,
-					address: {
-						"@type": "PostalAddress",
-						addressLocality: "Antananarivo",
-						addressCountry: "MG"
-					},
-					contactPoint: {
-						"@type": "ContactPoint",
-						telephone: "+261383838000",
-						contactType: "customer support",
-						availableLanguage: ["French", "English"]
-					},
-					areaServed: ["France", "Madagascar", "Europe", "International"]
-				},
-				{
-					"@type": "WebSite",
-					"@id": siteUrl + "/#website",
-					url: siteUrl + "/",
-					name: "EVOCTO",
-					publisher: {
-						"@id": siteUrl + "/#organization"
-					},
-					inLanguage: language
-				},
-				{
-					"@type": "WebPage",
-					"@id": absoluteUrl(page.path, language) + "#webpage",
-					url: absoluteUrl(page.path, language),
-					name: page.title[language],
-					description: page.description[language],
-					isPartOf: {
-						"@id": siteUrl + "/#website"
-					},
-					about: {
-						"@id": siteUrl + "/#organization"
-					},
-					inLanguage: language
-				}
-			]
+			"@graph": graph
 		});
 	}
 
