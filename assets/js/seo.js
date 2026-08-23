@@ -6,7 +6,10 @@
 	var logoUrl = siteUrl + "/assets/images/favicon.png";
 	var contactPhone = "+33759560896";
 	// Add only verified EVOCTO social profiles here before exposing sameAs.
-	var officialSocialProfiles = [];
+	var officialSocialProfiles = [
+		"https://www.linkedin.com/company/evocto/",
+		"https://www.facebook.com/profile.php?id=61592525497708"
+	];
 
 	var serviceCatalog = {
 		fr: [
