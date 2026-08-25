@@ -103,8 +103,7 @@
 	}
 	
 	.team-two .inner-container::before,
-	.offer-one_bg-color,
-	.about-one_image-two{
+	.offer-one_bg-color{
 		display:none;
 	}
 	
@@ -1602,4 +1601,1685 @@
 		display:block;
 	}
 	
+}
+
+/* EVOCTO final mobile overrides */
+@media only screen and (max-width: 767px){
+	html,
+	body,
+	.page-wrapper{
+		max-width:100%;
+		overflow-x:hidden;
+	}
+
+	.main-header{
+		top:10px;
+		min-height:0px;
+	}
+
+	.header-top,
+	.header-top_two,
+	.header-top_socials,
+	.header-top_list,
+	.header-top_list-two{
+		display:none !important;
+	}
+
+	.main-header.header-style-one .header-lower .inner-container{
+		padding:0px 14px;
+		border-radius:28px;
+	}
+
+	.main-header .header-lower .inner-container > .d-flex{
+		min-height:66px;
+		flex-wrap:nowrap !important;
+		gap:10px;
+	}
+
+	.main-header .header-lower .logo-box .logo{
+		padding:10px 0px;
+	}
+
+	.evocto-brand-logo{
+		font-size:28px;
+		line-height:34px;
+	}
+
+	.main-header.header-style-three.alternate .evocto-brand-logo{
+		color:#14213D;
+	}
+
+	.main-header .outer-box{
+		display:flex !important;
+		flex-wrap:nowrap !important;
+		align-items:center;
+		justify-content:flex-end;
+		gap:8px;
+		margin-left:auto;
+	}
+
+	.main-header .main-menu .navbar-header,
+	.main-header .main-menu .navbar-header .navbar-toggler,
+	.about-widget,
+	.main-header_button,
+	.main-header .search-box-outer{
+		display:none !important;
+	}
+
+	.language-switcher{
+		padding:3px;
+	}
+
+	.language-switcher_btn{
+		height:30px;
+		min-width:36px;
+		padding:0px 9px;
+		line-height:30px;
+	}
+
+	.main-header .mobile-nav-toggler{
+		width:38px;
+		height:38px;
+		display:flex;
+		float:none;
+		align-items:center;
+		justify-content:center;
+		font-size:23px;
+		line-height:38px;
+	}
+
+	.auto-container{
+		padding-left:16px;
+		padding-right:16px;
+	}
+
+	.sec-title{
+		margin-bottom:28px;
+	}
+
+	.sec-title_heading{
+		font-size:32px;
+		line-height:1.16;
+	}
+
+	.sec-title_text,
+	.evocto-rich-text,
+	.evocto-rich-text p{
+		font-size:15px;
+		line-height:24px;
+	}
+
+	.page-title{
+		padding-top:150px;
+		padding-bottom:22px;
+	}
+
+	.page-title_bg-image{
+		left:10px;
+		top:10px;
+		right:10px;
+		border-radius:24px;
+		background-attachment:scroll;
+	}
+
+	.page-title_big-title{
+		display:none;
+	}
+
+	.page-title h1{
+		font-size:34px;
+		line-height:40px;
+	}
+
+	.page-title .bread-crumb{
+		margin-top:48px;
+	}
+
+	.page-title .bread-crumb li{
+		font-size:12px;
+	}
+
+	.slider-one .swiper-slide{
+		min-height:auto;
+		padding-top:170px;
+		padding-bottom:120px;
+	}
+
+	.slider-one_heading{
+		margin-top:14px;
+		margin-bottom:24px;
+		font-size:42px;
+		line-height:1.08;
+		text-transform:none;
+		clip-path:none !important;
+	}
+
+	.slider-one_heading span{
+		color:inherit;
+		font-family:inherit;
+		-webkit-text-stroke-width:0px;
+		-webkit-text-fill-color:currentColor;
+	}
+
+	.slider-one_title{
+		padding:8px 18px;
+		font-size:14px;
+	}
+
+	.slider-one .slider-one_button,
+	.slider-one .theme-btn{
+		width:100%;
+		text-align:center;
+	}
+
+	.slider-one .slider-one_button{
+		clip-path:none !important;
+	}
+
+	.slider-one .theme-btn{
+		padding:15px 24px;
+	}
+
+	.clients-one .inner-container{
+		padding:26px 18px;
+		border-radius:28px;
+	}
+
+	.clients-one_title{
+		margin-bottom:14px;
+		font-size:15px;
+		line-height:22px;
+	}
+
+	.about-one,
+	.evocto-page-section,
+	.evocto-process,
+	.evocto-impact,
+	.evocto-offers,
+	.evocto-technologies,
+	.evocto-home-projects,
+	.testimonial-one,
+	.news-four,
+	.evocto-contact-page{
+		padding-top:56px;
+		padding-bottom:44px;
+	}
+
+	.marketing-one{
+		padding-top:24px;
+		padding-bottom:42px;
+	}
+
+	.achieve-one{
+		padding-top:58px;
+		padding-bottom:48px;
+	}
+
+	.video-one{
+		padding-bottom:44px;
+	}
+
+	.video-one .video-box{
+		margin-top:0px;
+	}
+
+	.video-box .video-image{
+		border:0px;
+		border-radius:12px;
+	}
+
+	.video-box .video-image img{
+		aspect-ratio:16 / 10;
+		object-fit:cover;
+		border-radius:12px;
+	}
+
+	.about-one_image-outer{
+		margin-bottom:28px;
+		text-align:left;
+	}
+
+	.about-one_text{
+		max-width:100%;
+		margin-top:22px;
+		font-size:16px;
+		line-height:26px;
+	}
+
+	.about-one_text p{
+		margin-bottom:12px;
+	}
+
+	.about-one_years{
+		margin-top:24px;
+	}
+
+	.evocto-years-badge{
+		min-height:auto;
+		padding:18px;
+		gap:14px;
+	}
+
+	.evocto-years-badge_number{
+		font-size:40px;
+		line-height:44px;
+	}
+
+	.evocto-years-badge_text{
+		font-size:14px;
+		line-height:20px;
+	}
+
+	.evocto-process .sec-title,
+	.evocto-impact .sec-title{
+		margin-bottom:28px;
+	}
+
+	.evocto-process .sec-title_heading{
+		font-size:32px;
+		line-height:1.16;
+	}
+
+	.evocto-process .row,
+	.evocto-impact .row{
+		row-gap:16px;
+	}
+
+	.evocto-process .step-block_one-inner{
+		min-height:0px;
+		padding:22px;
+	}
+
+	.evocto-process .step-block_one-number span{
+		font-size:46px;
+	}
+
+	.evocto-process .step-block_one-heading{
+		margin-top:18px;
+		font-size:21px;
+		line-height:27px;
+	}
+
+	.evocto-process .step-block_one-text,
+	.evocto-process .process-one_content-text{
+		font-size:15px;
+		line-height:24px;
+	}
+
+	.evocto-process .process-one_content{
+		gap:16px;
+		margin-top:20px;
+		padding:18px;
+	}
+
+	.evocto-impact .sec-title_text{
+		margin-top:12px;
+		font-size:15px;
+		line-height:24px;
+	}
+
+	.evocto-impact-card{
+		padding:20px 18px;
+	}
+
+	.evocto-impact-card_top{
+		gap:14px;
+		margin-bottom:16px;
+	}
+
+	.evocto-impact-card_icon{
+		width:48px;
+		height:48px;
+		min-width:48px;
+		font-size:20px;
+	}
+
+	.evocto-impact-card h3{
+		font-size:20px;
+		line-height:26px;
+	}
+
+	.evocto-impact-card p{
+		margin-bottom:10px;
+		font-size:14px;
+		line-height:23px;
+	}
+
+	.evocto-impact-card_quote{
+		margin:14px 0px;
+		padding:12px 14px;
+		font-size:14px;
+		line-height:22px;
+	}
+
+	.offer-one_title{
+		padding:18px 0px 18px 64px;
+	}
+
+	.offer-one_icon{
+		width:46px;
+		height:46px;
+		line-height:42px;
+	}
+
+	.offer-one_icon img{
+		width:28px;
+		height:28px;
+		max-width:28px;
+		max-height:28px;
+	}
+
+	.offer-one_number{
+		width:20px;
+		height:20px;
+		line-height:20px;
+		font-size:11px;
+	}
+
+	.offer-one_heading{
+		margin-top:0px;
+		font-size:21px;
+		line-height:27px;
+	}
+
+	.evocto-service-summary{
+		padding-right:0px;
+		font-size:14px;
+		line-height:22px;
+	}
+
+	.offer-one_tags{
+		margin-top:10px;
+	}
+
+	.offer-one_tags li a{
+		padding:5px 10px;
+		font-size:11px;
+	}
+
+	.evocto-service-card{
+		margin-bottom:18px;
+	}
+
+	.evocto-service-card_inner{
+		padding:22px 18px;
+		box-shadow:0px 12px 28px rgba(0,0,0,0.05);
+	}
+
+	.evocto-service-card_media{
+		margin-bottom:18px;
+		aspect-ratio:16 / 9;
+	}
+
+	.evocto-service-card h3{
+		font-size:21px;
+		line-height:27px;
+	}
+
+	.evocto-service-card p,
+	.evocto-offer-card li{
+		font-size:14px;
+		line-height:22px;
+	}
+
+	.evocto-offer-card{
+		margin-bottom:18px;
+		padding:22px 18px;
+	}
+
+	.evocto-offer-card_price{
+		margin-bottom:16px;
+		font-size:24px;
+		line-height:30px;
+	}
+
+	.evocto-offer-card li{
+		margin-bottom:9px;
+	}
+
+	.evocto-tech-marquee{
+		margin-top:28px;
+		padding:12px 0px;
+	}
+
+	.evocto-tech-logo{
+		width:104px;
+		height:84px;
+		gap:7px;
+		font-size:11px;
+	}
+
+	.evocto-tech-logo i{
+		font-size:32px;
+	}
+
+	.evocto-tech-logo img{
+		width:32px;
+		height:32px;
+	}
+
+	.evocto-project-showcase-card,
+	.evocto-project-showcase-card img{
+		min-height:260px;
+		height:260px;
+	}
+
+	.evocto-project-showcase-overlay{
+		padding:20px;
+	}
+
+	.evocto-project-showcase-overlay strong{
+		margin-bottom:14px;
+		font-size:21px;
+		line-height:27px;
+	}
+
+	.testimonial-one_carousel-content{
+		padding:24px 18px 14px;
+	}
+
+	.testimonial-block_one-inner{
+		padding-left:0px;
+	}
+
+	.testimonial-block_one-author{
+		min-height:0px;
+		padding-top:0px;
+		padding-left:0px;
+		font-size:20px;
+		line-height:26px;
+	}
+
+	.testimonial-block_one-author_image{
+		position:relative;
+		width:56px;
+		height:56px;
+		margin-bottom:14px;
+	}
+
+	.testimonial-block_one-text{
+		font-size:16px;
+		line-height:26px;
+	}
+
+	.sidebar-page-container{
+		padding-top:56px;
+	}
+
+	.sidebar-widget{
+		margin-bottom:28px;
+	}
+
+	.category-list li{
+		margin-bottom:9px;
+	}
+
+	.category-list li a{
+		min-height:54px;
+		padding:12px 16px 12px 62px;
+		border-radius:28px;
+		font-size:17px;
+		line-height:21px;
+	}
+
+	.category-list li span{
+		left:8px;
+		top:8px;
+		width:38px;
+		height:38px;
+	}
+
+	.category-list li span img{
+		width:20px;
+		height:20px;
+		max-width:20px;
+		max-height:20px;
+	}
+
+	.rating-widget .widget-content{
+		padding:22px 18px;
+		border-radius:18px;
+	}
+
+	.rating-widget_rating{
+		font-size:72px;
+		line-height:76px;
+	}
+
+	.service-detail_image{
+		border-radius:12px;
+	}
+
+	.service-detail_image img{
+		aspect-ratio:16 / 10;
+		object-fit:cover;
+	}
+
+	.service-detail_tag{
+		position:relative;
+		left:auto;
+		bottom:auto;
+		display:inline-block;
+		margin-top:10px;
+		padding:8px 14px;
+		border-radius:8px;
+		font-size:14px;
+	}
+
+	.service-detail_title{
+		margin-top:20px;
+		margin-bottom:12px;
+		font-size:26px;
+		line-height:32px;
+	}
+
+	.service-detail_text,
+	.service-detail_list li,
+	.service-detail_list-two li{
+		margin-bottom:16px;
+		font-size:15px;
+		line-height:25px;
+	}
+
+	.evocto-service-detail-block{
+		margin-bottom:28px;
+		padding-bottom:28px;
+		scroll-margin-top:80px;
+	}
+
+	.evocto-contact-page:before{
+		margin:0px;
+		border-radius:0px;
+	}
+
+	.evocto-contact-page .contact-one_form-outer,
+	.contact-one_form-outer{
+		padding:22px 18px;
+	}
+
+	.contact-form .form-group input[type="text"],
+	.contact-form .form-group input[type="email"],
+	.contact-form .form-group input[type="tel"],
+	.contact-form .form-group textarea{
+		height:54px;
+		padding:14px 18px;
+		border-radius:18px;
+	}
+
+	.contact-form .form-group textarea{
+		height:140px;
+	}
+
+	.evocto-contact-visual{
+		margin:20px 0px;
+	}
+
+	.evocto-contact-method{
+		padding:14px;
+	}
+
+	.cta-one{
+		padding-top:54px;
+	}
+
+	.cta-one .inner-container{
+		padding:28px 20px;
+		border-radius:24px;
+		text-align:left;
+	}
+
+	.cta-one_heading{
+		font-size:28px;
+		line-height:34px;
+	}
+
+	.cta-one .theme-btn{
+		margin-top:18px;
+		padding:15px 24px;
+	}
+
+	.news-block_three{
+		margin-bottom:22px;
+	}
+
+	.news-block_three-content{
+		padding:24px 18px;
+	}
+
+	.news-block_three-title a{
+		font-size:21px;
+		line-height:28px;
+	}
+
+	.footer-style_three.evocto-footer{
+		margin:0px;
+		padding-bottom:42px;
+	}
+
+	.footer-style_three-bg,
+	.footer-style_three-bg_image{
+		bottom:0px;
+		border-radius:24px;
+	}
+
+	.footer-style_three-bg_image{
+		display:none;
+	}
+
+	.footer-style_three .widgets-section{
+		padding-top:44px;
+		padding-bottom:18px;
+	}
+
+	.footer-style_three .footer-three_widget{
+		margin-bottom:18px;
+	}
+
+	.evocto-footer-logo{
+		margin-bottom:12px;
+		font-size:30px;
+		line-height:36px;
+	}
+
+	.footer-three_logo{
+		margin-bottom:12px;
+	}
+
+	.footer-three_text{
+		margin-bottom:18px;
+		font-size:14px;
+		line-height:23px;
+	}
+
+	.footer-three_text br{
+		display:none;
+	}
+
+	.footer-contact_list{
+		gap:8px;
+		margin-top:12px;
+	}
+
+	.footer-contact_list li{
+		margin-bottom:8px;
+		font-size:14px;
+		line-height:22px;
+		word-break:break-word;
+	}
+
+	.footer-three_widget.links-widget{
+		padding-left:0px;
+	}
+
+	.footer-three_title{
+		margin-bottom:10px;
+		font-size:18px;
+		line-height:24px;
+	}
+
+	.footer-three_list{
+		margin-top:10px;
+	}
+
+	.footer-three_list li{
+		margin-bottom:8px;
+	}
+
+	.footer-three_list li a{
+		font-size:14px;
+		line-height:22px;
+	}
+
+	.footer-three_bottom{
+		padding:14px 12px;
+		border-radius:18px;
+	}
+
+	.footer-three_copyright{
+		font-size:13px;
+		line-height:20px;
+	}
+}
+
+@media only screen and (max-width: 479px){
+	.sec-title_heading{
+		font-size:28px;
+		line-height:34px;
+	}
+
+	.evocto-process .sec-title_heading,
+	.evocto-contact-page .sec-title_heading{
+		font-size:28px;
+		line-height:34px;
+	}
+
+	.page-title{
+		padding-top:135px;
+	}
+
+	.page-title h1{
+		font-size:30px;
+		line-height:36px;
+	}
+
+	.page-title .bread-crumb{
+		margin-top:34px;
+	}
+
+	.slider-one .swiper-slide{
+		padding-top:150px;
+		padding-bottom:96px;
+	}
+
+	.slider-one_heading{
+		font-size:34px;
+		line-height:1.12;
+	}
+
+	.about-one,
+	.evocto-page-section,
+	.evocto-process,
+	.evocto-impact,
+	.evocto-offers,
+	.evocto-technologies,
+	.evocto-home-projects,
+	.testimonial-one,
+	.news-four,
+	.evocto-contact-page{
+		padding-top:46px;
+		padding-bottom:38px;
+	}
+
+	.evocto-impact-card,
+	.evocto-offer-card,
+	.evocto-service-card_inner,
+	.evocto-process .step-block_one-inner,
+	.testimonial-one_carousel-content{
+		padding-left:16px;
+		padding-right:16px;
+	}
+
+	.offer-one_title{
+		padding-left:58px;
+	}
+
+	.offer-one_heading{
+		font-size:19px;
+		line-height:25px;
+	}
+
+	.service-detail_title{
+		font-size:24px;
+		line-height:30px;
+	}
+
+	.category-list li a{
+		font-size:16px;
+		line-height:20px;
+	}
+}
+
+/* EVOCTO mobile comfort pass */
+@media only screen and (max-width: 767px){
+	.marketing-one{
+		display:none;
+	}
+
+	.achieve-one{
+		min-height:0px;
+		padding-top:42px;
+		padding-bottom:34px;
+		overflow:hidden;
+	}
+
+	.achieve-one .sec-title{
+		margin-left:0px;
+		margin-bottom:0px;
+	}
+
+	.achieve-one .sec-title_heading{
+		font-size:28px;
+		line-height:34px;
+	}
+
+	.achieve-one_bg{
+		left:0px;
+		right:0px;
+		border-radius:0px;
+	}
+
+	.achieve-one_vector,
+	.achieve-one_vector-two{
+		display:none;
+	}
+
+	.video-one{
+		padding-top:0px;
+		padding-bottom:36px;
+	}
+
+	.offer-one{
+		padding-top:50px;
+		padding-bottom:42px;
+	}
+
+	.offer-one_content-column{
+		margin-bottom:0px;
+	}
+
+	.offer-one_content-outer{
+		padding-top:0px;
+		padding-left:0px;
+	}
+
+	.offer-one_image-column,
+	.step-award_box{
+		display:none;
+	}
+
+	.offer-one_title{
+		margin-bottom:14px;
+		padding:14px 48px 14px 58px;
+		border-width:1px;
+	}
+
+	.offer-one_icon-outer{
+		top:15px;
+	}
+
+	.offer-one_icon{
+		width:38px;
+		height:38px;
+		line-height:36px;
+	}
+
+	.offer-one_icon:before{
+		right:3px;
+		bottom:3px;
+	}
+
+	.offer-one_icon img{
+		width:20px;
+		height:20px;
+		max-width:20px;
+		max-height:20px;
+	}
+
+	.offer-one_number{
+		left:-4px;
+		top:-5px;
+		width:20px;
+		height:20px;
+		font-size:11px;
+		line-height:20px;
+	}
+
+	.offer-one_heading{
+		margin-top:0px;
+		font-size:18px;
+		line-height:23px;
+	}
+
+	.evocto-service-summary{
+		margin-top:7px;
+		padding-right:0px;
+		font-size:14px;
+		line-height:22px;
+	}
+
+	.offer-one_tags{
+		display:none;
+	}
+
+	.offer-one_arrow{
+		right:12px;
+		top:18px;
+		width:30px;
+		height:30px;
+		line-height:28px;
+	}
+
+	.evocto-impact-card{
+		padding:20px 18px;
+	}
+
+	.evocto-impact-card_top{
+		gap:12px;
+		margin-bottom:12px;
+	}
+
+	.evocto-impact-card_icon{
+		width:42px;
+		height:42px;
+		min-width:42px;
+		font-size:18px;
+	}
+
+	.evocto-impact-card_metric{
+		font-size:13px;
+	}
+
+	.evocto-impact-card h3{
+		font-size:20px;
+		line-height:25px;
+	}
+
+	.evocto-impact-card p{
+		margin-bottom:9px;
+		font-size:14px;
+		line-height:22px;
+	}
+
+	.evocto-impact-card_quote{
+		margin:12px 0px;
+		padding:10px 12px;
+		font-size:14px;
+		line-height:21px;
+	}
+
+	.evocto-impact-card_link{
+		font-size:14px;
+		line-height:20px;
+	}
+
+	.evocto-process .step-block_one-inner{
+		padding:18px;
+	}
+
+	.evocto-process .step-block_one-number span{
+		font-size:38px;
+	}
+
+	.evocto-process .step-block_one-heading{
+		margin-top:12px;
+		font-size:19px;
+		line-height:24px;
+	}
+
+	.evocto-process .step-block_one-text{
+		font-size:14px;
+		line-height:22px;
+	}
+
+	.testimonial-one{
+		padding-top:50px;
+		padding-bottom:42px;
+	}
+
+	.testimonial-one_talk,
+	.about-one_arrows{
+		display:none !important;
+	}
+
+	.testimonial-one_button{
+		margin-top:18px;
+		justify-content:flex-start !important;
+	}
+
+	.testimonial-one_button .theme-btn{
+		width:100%;
+		text-align:center;
+	}
+
+	.testimonial-one_carousel-column{
+		display:none;
+	}
+
+	.incredible-one{
+		padding:44px 0px;
+	}
+
+	.incredible-one_bg{
+		left:0px;
+		right:0px;
+		border-radius:0px;
+	}
+
+	.incredible-one_pattern,
+	.incredible-one_vector,
+	.incredible-one_title{
+		display:none;
+	}
+
+	.experiance-one{
+		padding:42px 0px;
+		overflow:hidden;
+	}
+
+	.experiance-one .marque-outer{
+		display:none;
+	}
+
+	.experiance-one_years{
+		display:block !important;
+	}
+
+	.experiance-one_years-inner{
+		margin-top:0px;
+		padding:24px 20px;
+		border-radius:12px;
+	}
+
+	.experiance-one_text{
+		max-width:100%;
+		margin-bottom:20px;
+		font-size:18px;
+		line-height:28px;
+	}
+
+	.experiance-one_button .theme-btn{
+		width:100%;
+		text-align:center;
+	}
+
+	.footer-style_three.evocto-footer{
+		margin-left:0px;
+		margin-right:0px;
+		padding-bottom:0px;
+		border-radius:24px 24px 0px 0px;
+		background:#14213D;
+		overflow:hidden;
+	}
+
+	.footer-style_three-bg{
+		border-radius:24px 24px 0px 0px;
+		background:#14213D;
+	}
+
+	.footer-style_three .widgets-section{
+		padding-top:34px;
+		padding-bottom:12px;
+	}
+
+	.footer-three_column{
+		margin-bottom:18px;
+	}
+
+	.footer-style_three .footer-three_widget{
+		margin-bottom:0px;
+	}
+
+	.footer-three_bottom,
+	.footer-bottom{
+		margin-top:4px;
+	}
+}
+
+@media only screen and (max-width: 479px){
+	.offer-one_title{
+		padding-right:42px;
+	}
+
+	.incredible-one{
+		padding:36px 0px;
+	}
+
+	.experiance-one{
+		padding:36px 0px;
+	}
+}
+
+/* EVOCTO tighter mobile sections */
+@media only screen and (max-width: 767px){
+	.about-one{
+		padding-top:42px;
+		padding-bottom:34px;
+	}
+
+	.about-one_years{
+		margin-left:0px;
+	}
+
+	.evocto-years-badge{
+		width:100%;
+	}
+
+	.about-one_pattern-layer,
+	.about-one_pattern-two,
+	.about-one_vector{
+		display:none;
+	}
+
+	.about-one_image img,
+	.about-one_image-two img{
+		aspect-ratio:16 / 9;
+		object-fit:cover;
+	}
+
+	.about-one_image-two{
+		display:none;
+	}
+
+	.evocto-impact{
+		padding-top:44px;
+		padding-bottom:34px;
+	}
+
+	.evocto-impact .row{
+		row-gap:12px;
+	}
+
+	.evocto-impact-card{
+		box-shadow:none;
+	}
+
+	.evocto-impact-card_top{
+		align-items:flex-start;
+	}
+
+	.evocto-offers{
+		padding-top:44px;
+		padding-bottom:30px;
+	}
+
+	.evocto-offer-card{
+		margin-bottom:14px;
+		padding:20px 18px;
+		box-shadow:none;
+	}
+
+	.evocto-offer-card_label{
+		margin-bottom:10px;
+	}
+
+	.evocto-offer-card h3{
+		font-size:20px;
+		line-height:26px;
+	}
+
+	.evocto-offer-card_price{
+		margin-top:8px;
+		margin-bottom:10px;
+		font-size:20px;
+		line-height:26px;
+	}
+
+	.evocto-offer-card ul li{
+		margin-bottom:8px;
+		font-size:14px;
+		line-height:22px;
+	}
+
+	.evocto-technologies{
+		padding-top:44px;
+		padding-bottom:34px;
+	}
+
+	.evocto-technologies_text,
+	.evocto-technologies_note{
+		font-size:14px;
+		line-height:22px;
+	}
+
+	.evocto-tech-marquee{
+		margin-top:20px;
+	}
+
+	.evocto-tech-logo{
+		min-width:118px;
+		padding:14px 12px;
+	}
+
+	.evocto-tech-logo i{
+		font-size:24px;
+	}
+
+	.evocto-tech-logo span{
+		margin-top:8px;
+		font-size:13px;
+		line-height:18px;
+	}
+
+	.evocto-home-projects{
+		padding-top:44px;
+		padding-bottom:34px;
+	}
+
+	.evocto-project-showcase-card{
+		margin-bottom:14px;
+	}
+
+	.evocto-project-showcase-card,
+	.evocto-project-showcase-card img{
+		aspect-ratio:16 / 10;
+	}
+
+	.testimonial-one .sec-title{
+		margin-bottom:18px;
+	}
+
+	.evocto-contact-methods{
+		margin-top:18px;
+	}
+
+	.evocto-contact-methods h3{
+		margin-bottom:12px;
+		font-size:21px;
+		line-height:27px;
+	}
+
+	.evocto-contact-method{
+		margin-bottom:10px;
+		padding:12px 12px 12px 58px;
+	}
+
+	.evocto-contact-method span{
+		left:12px;
+		top:14px;
+		width:34px;
+		height:34px;
+		line-height:34px;
+		font-size:14px;
+	}
+
+	.evocto-contact-method strong{
+		font-size:15px;
+		line-height:21px;
+	}
+
+	.evocto-contact-method em{
+		margin-top:3px;
+		font-size:13px;
+		line-height:20px;
+	}
+
+	.incredible-one .sec-title{
+		margin-bottom:0px;
+	}
+
+	.footer-style_three .widgets-section{
+		padding-top:30px;
+	}
+
+	.evocto-footer-logo{
+		font-size:28px;
+		line-height:32px;
+	}
+
+	.footer-three_text{
+		margin-bottom:12px;
+		font-size:15px;
+		line-height:23px;
+	}
+
+	.footer-contact_list li{
+		margin-bottom:6px;
+		font-size:14px;
+		line-height:21px;
+	}
+
+	.footer-three_title{
+		margin-bottom:8px;
+		font-size:20px;
+		line-height:25px;
+	}
+
+	.footer-three_list{
+		margin-top:8px;
+	}
+
+	.footer-three_list li{
+		margin-bottom:7px;
+	}
+
+	.footer-three_list li a{
+		font-size:14px;
+		line-height:21px;
+	}
+
+	.footer-bottom,
+	.footer-style_three .footer-bottom,
+	.footer-three_bottom{
+		padding:10px 56px 12px 12px;
+		border-radius:0px;
+		background:rgba(255, 255, 255, 0.07);
+	}
+
+	.main-footer_copyright,
+	.footer-three_copyright{
+		font-size:13px;
+		line-height:19px;
+		text-align:left;
+		white-space:normal;
+	}
+}
+
+@media only screen and (max-width: 479px){
+	.slider-one .swiper-slide{
+		padding-top:136px;
+		padding-bottom:78px;
+	}
+
+	.slider-one_title{
+		padding:7px 16px;
+		font-size:13px;
+		line-height:18px;
+	}
+
+	.slider-one_heading{
+		margin-top:12px;
+		margin-bottom:18px;
+		font-size:30px;
+		line-height:1.14;
+	}
+
+	.slider-one .theme-btn{
+		padding:13px 20px;
+		font-size:14px;
+	}
+
+	.evocto-years-badge{
+		padding:15px;
+		gap:12px;
+	}
+
+	.evocto-years-badge_number{
+		font-size:32px;
+		line-height:36px;
+	}
+
+	.evocto-years-badge_text{
+		font-size:13px;
+		line-height:18px;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1300px){
+	.about-one_image-two{
+		display:inline-block;
+		width:92%;
+		max-width:620px;
+		margin-top:18px;
+		margin-left:0px;
+	}
+}
+
+/* EVOCTO mobile density pass */
+@media only screen and (max-width: 767px){
+	.evocto-impact-card{
+		padding:15px 14px;
+	}
+
+	.evocto-impact-card_top{
+		gap:10px;
+		margin-bottom:10px;
+	}
+
+	.evocto-impact-card_icon{
+		width:36px;
+		height:36px;
+		min-width:36px;
+		font-size:15px;
+	}
+
+	.evocto-impact-card_metric{
+		font-size:12px;
+	}
+
+	.evocto-impact-card h3{
+		font-size:18px;
+		line-height:22px;
+	}
+
+	.evocto-impact-card p{
+		margin-bottom:5px;
+		font-size:13px;
+		line-height:19px;
+	}
+
+	.evocto-impact-card_quote{
+		margin:8px 0px;
+		padding:8px 10px;
+		border-left-width:3px;
+		font-size:13px;
+		line-height:19px;
+	}
+
+	.evocto-impact-card_link{
+		font-size:13px;
+		line-height:18px;
+	}
+
+	.evocto-process .step-block_one{
+		margin-bottom:12px;
+	}
+
+	.evocto-process .step-block_one-inner{
+		padding:14px 15px;
+	}
+
+	.evocto-process .step-block_one-number span{
+		font-size:32px;
+		line-height:36px;
+	}
+
+	.evocto-process .step-block_one-heading{
+		margin-top:8px;
+		font-size:18px;
+		line-height:22px;
+	}
+
+	.evocto-process .step-block_one-text{
+		margin-top:8px;
+		font-size:13px;
+		line-height:20px;
+	}
+
+	.evocto-process .process-one_content{
+		margin-top:8px;
+		padding:14px;
+	}
+
+	.offer-one_title{
+		margin-bottom:9px;
+		min-height:0px;
+		padding:10px 38px 10px 48px;
+		border-radius:28px;
+	}
+
+	.offer-one_icon-outer{
+		top:11px;
+		left:10px;
+	}
+
+	.offer-one_icon{
+		width:30px;
+		height:30px;
+		line-height:28px;
+	}
+
+	.offer-one_icon img{
+		width:16px;
+		height:16px;
+		max-width:16px;
+		max-height:16px;
+	}
+
+	.offer-one_heading{
+		font-size:16px;
+		line-height:20px;
+	}
+
+	.offer-one_number{
+		width:17px;
+		height:17px;
+		font-size:10px;
+		line-height:17px;
+	}
+
+	.offer-one_arrow{
+		top:12px;
+		right:9px;
+		width:24px;
+		height:24px;
+		line-height:22px;
+	}
+
+	.evocto-service-summary{
+		display:none;
+	}
+
+	.evocto-offer-card{
+		margin-bottom:10px;
+		padding:16px 14px;
+	}
+
+	.evocto-offer-card_label{
+		margin-bottom:8px;
+		padding:5px 10px;
+		font-size:11px;
+	}
+
+	.evocto-offer-card h3{
+		margin-bottom:8px;
+		font-size:18px;
+		line-height:23px;
+	}
+
+	.evocto-offer-card_price{
+		margin-top:4px;
+		margin-bottom:8px;
+		font-size:18px;
+		line-height:23px;
+	}
+
+	.evocto-offer-card ul li,
+	.evocto-offer-card li{
+		margin-bottom:5px;
+		padding-left:22px;
+		font-size:13px;
+		line-height:19px;
+	}
+
+	.evocto-home-projects .row{
+		margin-left:0px;
+		margin-right:0px;
+	}
+
+	.evocto-home-projects [class*="col-"]{
+		padding-left:0px;
+		padding-right:0px;
+	}
+
+	.evocto-project-showcase-card,
+	.evocto-project-showcase-card img{
+		width:100%;
+		min-height:220px;
+		height:220px;
+	}
+
+	.evocto-project-showcase-overlay{
+		padding:18px;
+	}
+
+	.evocto-project-showcase-overlay em{
+		margin-bottom:6px;
+		font-size:11px;
+	}
+
+	.evocto-project-showcase-overlay strong{
+		margin-bottom:12px;
+		font-size:20px;
+		line-height:25px;
+	}
+
+	.evocto-project-showcase-overlay i{
+		min-height:36px;
+		padding:0px 14px;
+		font-size:13px;
+	}
+
+	.evocto-contact-method{
+		min-height:0px;
+	}
+
+	.evocto-contact-method em{
+		display:none;
+	}
+
+	.testimonial-one_button{
+		margin-top:12px;
+	}
+
+	.progress-wrap{
+		right:18px;
+		bottom:58px;
+		width:34px;
+		height:34px;
+	}
+}
+
+/* EVOCTO mobile horizontal sections */
+@media only screen and (max-width: 767px){
+	.evocto-impact .row,
+	.evocto-offers .row,
+	.evocto-home-projects .row{
+		flex-wrap:nowrap;
+		overflow-x:auto;
+		overflow-y:hidden;
+		margin-left:-4px;
+		margin-right:-4px;
+		padding-bottom:8px;
+		scroll-snap-type:x mandatory;
+		-webkit-overflow-scrolling:touch;
+		scrollbar-width:none;
+	}
+
+	.evocto-impact .row::-webkit-scrollbar,
+	.evocto-offers .row::-webkit-scrollbar,
+	.evocto-home-projects .row::-webkit-scrollbar{
+		display:none;
+	}
+
+	.evocto-impact .row > [class*="col-"],
+	.evocto-offers .row > [class*="col-"],
+	.evocto-home-projects .row > [class*="col-"]{
+		flex:0 0 84%;
+		max-width:84%;
+		padding-left:4px;
+		padding-right:4px;
+		scroll-snap-align:start;
+	}
+
+	.evocto-impact-card,
+	.evocto-offer-card,
+	.evocto-project-showcase-card{
+		margin-bottom:0px;
+	}
+}
+
+/* EVOCTO about image collage */
+@media only screen and (max-width: 767px){
+	.about-one .row > .column:last-child{
+		position:relative;
+	}
+
+	.about-one_image-outer{
+		margin-bottom:0px;
+	}
+
+	.about-one_image{
+		display:block;
+		width:100%;
+		border-radius:18px;
+	}
+
+	.about-one_image-two{
+		position:absolute;
+		right:26px;
+		bottom:-18px;
+		z-index:2;
+		display:block;
+		width:54%;
+		max-width:220px;
+		margin:0px;
+		border:5px solid #ffffff;
+		border-radius:16px;
+		box-shadow:0px 18px 38px rgba(20, 33, 61, 0.18);
+	}
+
+	.about-one_image-two img{
+		aspect-ratio:16 / 10;
+		object-fit:cover;
+	}
 }
