@@ -138,11 +138,26 @@
 	top:0px;
 	right:0px;
 	bottom:0px;
+	z-index:2;
 	opacity:0.20;
 	background-color:#14213D;
 	background-image:none;
 }
 
+.slider-one_image-layer picture,
+.slider-one_image-layer img{
+	position:absolute;
+	left:0px;
+	top:0px;
+	z-index:1;
+	width:100%;
+	height:100%;
+	display:block;
+	object-fit:cover;
+	object-position:center center;
+}
+
+.main-slider .swiper-slide:first-child .slider-one_image-layer,
 .slider-one .swiper-slide-active .slider-one_image-layer{
 	opacity: 1;
 	clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
@@ -218,6 +233,7 @@
     -webkit-text-stroke-color: rgba(var(--white-color-rgb), 1);
 }
 
+.main-slider .swiper-slide:first-child .slider-one_heading,
 .slider-one .swiper-slide-active .slider-one_heading{
 	-webkit-transition-delay: 800ms;
 	-moz-transition-delay: 800ms;
@@ -265,6 +281,7 @@
 	background-color:var(--white-color);
 }
 
+.main-slider .swiper-slide:first-child .slider-one_button,
 .slider-one .swiper-slide-active .slider-one_button{
 	-webkit-transition-delay: 1400ms;
 	-moz-transition-delay: 1400ms;
@@ -311,12 +328,13 @@
 
 .slider-one_socials{
 	position: absolute;
-	left: 5px;
-	bottom: -15px;
-	z-index: 1;
+	left: 28px;
+	top: 50%;
+	bottom: auto;
+	z-index: 5;
 	padding: 25px 30px;
-    transform-origin: 8% 45%;
-	transform: rotate(-90deg);
+	transform-origin: left center;
+	transform: translateY(-50%) rotate(-90deg);
 	border-radius: 0px 50px 50px 0px;
 	background-color: rgba(var(--white-color-rgb), 0.05);
 }
@@ -467,6 +485,10 @@
 .clients-one .client-image{
 	position:relative;
 	text-align:center;
+}
+
+.clients-one .client-image picture{
+	display:block;
 }
 
 .clients-one .client-image img{
@@ -626,6 +648,12 @@
 	height:auto;
 	display:block;
 	object-fit:cover;
+}
+
+.about-one_image picture,
+.about-one_image-two picture,
+.video-box .video-image picture{
+	display:block;
 }
 
 .about-one_image-two{
@@ -1458,11 +1486,15 @@
     transform: rotate(0deg) translateX(0px);
 }
 
+.offer-one_image picture,
 .offer-one_image img{
 	width:100%;
 	height:100%;
 	min-height:660px;
 	display:block;
+}
+
+.offer-one_image img{
 	object-fit:cover;
 	object-position:center;
 }
@@ -4959,6 +4991,10 @@
 }
 .empower-block_one-inner:hover .empower-block_one-image:before{
 	background: url(../images/icons/vector-6.png);
+}
+
+.evocto-project-showcase-card picture{
+	display:block;
 }
 .empower-block_one-icon{
 	position:absolute;
