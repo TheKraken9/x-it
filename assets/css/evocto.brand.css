@@ -1,0 +1,692 @@
+/*
+	EVOCTO brand layer.
+	The original logo PNG files are intentionally displayed as-is; this file
+	only controls their on-page viewport because the assets include large
+	transparent protection zones.
+*/
+
+:root{
+	--evocto-ink:#252A34;
+	--evocto-ink-rgb:37,42,52;
+	--evocto-cyan:#52BEC4;
+	--evocto-cyan-rgb:82,190,196;
+	--evocto-pink:#E83466;
+	--evocto-pink-rgb:232,52,102;
+	--main-color:rgb(37,42,52);
+	--main-color-rgb:37,42,52;
+	--color-two:rgb(232,52,102);
+	--color-two-rgb:232,52,102;
+	--color-four:rgb(82,190,196);
+	--color-four-rgb:82,190,196;
+}
+
+.evocto-logo{
+	position:relative;
+	display:inline-flex;
+	align-items:center;
+	justify-content:center;
+	width:190px;
+	height:58px;
+	overflow:hidden;
+	flex-shrink:0;
+	line-height:1;
+	color:transparent;
+}
+
+.evocto-logo img{
+	position:absolute;
+	left:50%;
+	top:50%;
+	width:268px;
+	height:auto;
+	max-width:none !important;
+	transform:translate(-50%, -54%);
+	display:block;
+}
+
+.main-header .header-lower .logo-box .logo{
+	display:flex;
+	align-items:center;
+	min-width:190px;
+}
+
+.main-header.header-style-one .header-lower .inner-container,
+.main-header.header-style-three.alternate .header-lower .inner-container:before{
+	border:1px solid rgba(var(--evocto-ink-rgb), 0.12);
+	box-shadow:0px 18px 48px rgba(var(--evocto-ink-rgb), 0.09);
+}
+
+.main-header.header-style-three .header-lower .inner-container:before,
+.header-style-three.fixed-header .header-lower{
+	background-color:var(--evocto-ink);
+}
+
+.main-header.header-style-three.alternate .header-lower .inner-container:before,
+.main-header.header-style-three.alternate.fixed-header .header-lower{
+	background-color:var(--white-color);
+}
+
+.mobile-menu .nav-logo .evocto-logo{
+	width:180px;
+	height:58px;
+}
+
+.mobile-menu .nav-logo .evocto-logo img{
+	width:254px;
+}
+
+.footer-three_logo .evocto-logo{
+	width:220px;
+	height:70px;
+	margin-bottom:22px;
+	border-radius:0;
+	background:transparent;
+	box-shadow:none;
+}
+
+.footer-three_logo .evocto-logo img{
+	width:310px;
+}
+
+.slider-one{
+	overflow:hidden;
+}
+
+.slider-one_image-layer:before{
+	opacity:1;
+	background:
+		linear-gradient(90deg, rgba(255, 255, 255, 0.32) 0%, rgba(255, 255, 255, 0.70) 52%, rgba(255, 255, 255, 0.98) 78%),
+		linear-gradient(90deg, rgba(var(--evocto-ink-rgb), 0.18), rgba(var(--evocto-cyan-rgb), 0.06));
+}
+
+.slider-one_content{
+	max-width:min(760px, 100%);
+}
+
+.slider-one_heading,
+.slider-one .slider-one_button{
+	clip-path:none !important;
+}
+
+.slider-one_heading{
+	color:var(--evocto-ink);
+	max-width:720px;
+	font-size:clamp(56px, 5.4vw, 78px);
+	line-height:1.08;
+	text-shadow:0 1px 0 rgba(255, 255, 255, 0.55), 0 18px 40px rgba(255, 255, 255, 0.72);
+}
+
+.slider-one_heading span{
+	-webkit-text-stroke-color:var(--evocto-ink);
+}
+
+.slider-one .theme-btn{
+	max-width:100%;
+}
+
+.evocto-mobile-break{
+	display:none;
+}
+
+.preloader{
+	background:var(--evocto-ink);
+}
+
+.preloader .box{
+	width:92px;
+	height:92px;
+	animation:none;
+	background:url("../images/evocto/brand/Evocto_Transparent-09.png") center / 168px auto no-repeat;
+}
+
+.preloader .box:before,
+.preloader .box:after{
+	display:none;
+}
+
+.btn-style-one,
+.btn-style-three:before,
+.category-list li a:hover,
+.category-list li a:focus-visible,
+.evocto-contact-page:before,
+.evocto-process .process-one_content,
+.footer-style_three.evocto-footer,
+.footer-style_three-bg,
+.main-footer_bg-color{
+	background-color:var(--evocto-ink);
+	background-image:none;
+}
+
+.btn-style-one:before,
+.btn-style-two,
+.sec-title_dots span,
+.evocto-pill-list span,
+.evocto-offer-card_label,
+.language-switcher_btn:hover,
+.language-switcher_btn.active,
+.progress-wrap::after{
+	background:var(--evocto-pink);
+	background-image:none;
+}
+
+.btn-style-one .btn-wrap .text-two,
+.btn-style-one:hover .btn-wrap .text-two,
+.btn-style-two,
+.evocto-offer-card_label,
+.language-switcher_btn:hover,
+.language-switcher_btn.active{
+	color:#ffffff;
+}
+
+.sec-title_title,
+.evocto-service-card_count,
+.evocto-link,
+.evocto-detail-article span,
+.evocto-offer-card_price,
+.evocto-process .step-block_one-inner:hover .step-block_one-heading,
+.rating-widget_rating{
+	color:var(--evocto-ink);
+}
+
+.evocto-service-card_icon,
+.evocto-contact-method span,
+.category-list li a:hover span,
+.category-list li a:focus-visible span{
+	background:rgba(var(--evocto-cyan-rgb), 0.16);
+	border-color:rgba(var(--evocto-cyan-rgb), 0.46);
+}
+
+.evocto-service-card_icon img,
+.category-list li span img{
+	filter:none;
+}
+
+.evocto-contact-page .sec-title_title,
+.evocto-footer .footer-three_list a:hover,
+.footer-contact_list a:hover,
+.footer-social_box a:hover,
+.slider-one_socials a:hover{
+	color:var(--evocto-cyan);
+}
+
+.evocto-offer-card.featured,
+.evocto-offer-card:hover,
+.evocto-contact-method:hover{
+	border-color:rgba(var(--evocto-pink-rgb), 0.72);
+	box-shadow:0px 20px 46px rgba(var(--evocto-ink-rgb), 0.14);
+}
+
+.evocto-process .step-block_one-number,
+.testimonial-block_one-author{
+	color:var(--evocto-ink);
+}
+
+.evocto-process .step-block_one-number span{
+	background:var(--evocto-ink);
+	-webkit-background-clip:text;
+	-webkit-text-fill-color:transparent;
+}
+
+.testimonial-block_one-author_image{
+	background:var(--evocto-ink);
+}
+
+.footer-style_three .footer-bottom{
+	border-color:rgba(255, 255, 255, 0.18);
+}
+
+@media only screen and (max-width: 767px){
+	.main-header .header-lower .nav-outer{
+		display:none !important;
+	}
+
+	.main-header .search-box-outer,
+	.main-header_button,
+	.about-widget{
+		display:none !important;
+	}
+
+	.main-header .header-lower .inner-container{
+		max-width:calc(100vw - 28px);
+		margin-left:14px;
+		margin-right:14px;
+	}
+
+	.main-header .header-lower .inner-container > .d-flex{
+		position:relative;
+	}
+
+	.main-header .outer-box{
+		position:absolute !important;
+		right:54px;
+		top:50%;
+		margin-left:0 !important;
+		transform:translateY(-50%);
+	}
+
+	.main-header .mobile-nav-toggler{
+		position:absolute !important;
+		right:10px;
+		top:50%;
+		z-index:30;
+		display:flex !important;
+		width:36px;
+		height:36px;
+		align-items:center;
+		justify-content:center;
+		line-height:36px;
+		color:var(--evocto-ink) !important;
+		transform:translateY(-50%);
+	}
+
+	.main-header .language-switcher{
+		margin-right:42px;
+	}
+
+	.main-header .header-lower .logo-box .logo{
+		min-width:132px;
+		padding:8px 0;
+	}
+
+	.evocto-logo{
+		width:132px;
+		height:48px;
+	}
+
+	.evocto-logo img{
+		width:186px;
+	}
+
+	.mobile-menu .nav-logo .evocto-logo{
+		width:164px;
+		height:54px;
+	}
+
+	.mobile-menu .nav-logo .evocto-logo img{
+		width:232px;
+	}
+
+	.footer-three_logo .evocto-logo{
+		width:178px;
+		height:60px;
+	}
+
+	.footer-three_logo .evocto-logo img{
+		width:250px;
+	}
+
+	.evocto-mobile-break{
+		display:block;
+	}
+
+	.slider-one .auto-container{
+		max-width:100%;
+		padding-left:18px;
+		padding-right:18px;
+	}
+
+	.slider-one_content{
+		width:100%;
+		max-width:100%;
+	}
+
+	.slider-one_content-inner{
+		width:100%;
+		max-width:100%;
+	}
+
+	.slider-one_heading{
+		width:100% !important;
+		max-width:calc(100vw - 36px) !important;
+		font-size:26px !important;
+		line-height:1.16 !important;
+		overflow-wrap:normal;
+		word-break:normal;
+	}
+
+	.slider-one_heading div{
+		max-width:100% !important;
+		white-space:normal !important;
+	}
+
+	.slider-one .slider-one_button{
+		width:auto;
+		max-width:100%;
+	}
+
+	.slider-one .theme-btn{
+		width:auto;
+		min-width:0;
+		max-width:calc(100vw - 36px);
+		white-space:normal;
+	}
+}
+
+@media only screen and (max-width: 479px){
+	.slider-one_heading{
+		max-width:calc(100vw - 72px) !important;
+		font-size:22px !important;
+		line-height:1.2 !important;
+	}
+
+	.slider-one .theme-btn{
+		padding-left:22px;
+		padding-right:22px;
+	}
+}
+
+@media only screen and (max-width: 360px){
+	.slider-one_heading{
+		font-size:20px !important;
+	}
+}
+
+/*
+	Brand cleanup for remaining template colors.
+	Keep the official dark ink as the only dark blue and replace orange/yellow
+	accents with the EVOCTO cyan/pink palette.
+*/
+
+.evocto-years-badge{
+	border-color:rgba(var(--evocto-cyan-rgb), 0.24);
+	background:
+		linear-gradient(135deg, var(--evocto-ink) 0%, #1b2029 100%);
+	box-shadow:0px 20px 46px rgba(var(--evocto-ink-rgb), 0.16);
+}
+
+.evocto-years-badge_number{
+	color:var(--evocto-pink);
+}
+
+.evocto-years-badge_text{
+	color:#ffffff;
+}
+
+.evocto-impact-card{
+	border-color:rgba(var(--evocto-ink-rgb), 0.12);
+	box-shadow:0px 18px 44px rgba(var(--evocto-ink-rgb), 0.06);
+}
+
+.evocto-impact-card:hover{
+	border-color:rgba(var(--evocto-cyan-rgb), 0.62);
+	box-shadow:0px 24px 54px rgba(var(--evocto-ink-rgb), 0.12);
+}
+
+.evocto-impact-card_icon{
+	color:#ffffff;
+	background:
+		linear-gradient(135deg, var(--evocto-cyan) 0%, var(--evocto-pink) 100%);
+	box-shadow:0px 12px 26px rgba(var(--evocto-cyan-rgb), 0.22);
+}
+
+.evocto-impact .row > [class*="col-"]:nth-child(2n) .evocto-impact-card_icon{
+	background:
+		linear-gradient(135deg, var(--evocto-pink) 0%, var(--evocto-ink) 100%);
+	box-shadow:0px 12px 26px rgba(var(--evocto-pink-rgb), 0.20);
+}
+
+.evocto-impact-card_metric,
+.evocto-impact-card p strong,
+.evocto-impact-card_quote,
+.evocto-impact-card_link{
+	color:var(--evocto-ink);
+}
+
+.evocto-impact-card_quote{
+	border-left-color:var(--evocto-pink);
+	background:
+		linear-gradient(90deg, rgba(var(--evocto-cyan-rgb), 0.11) 0%, rgba(var(--evocto-pink-rgb), 0.08) 100%);
+}
+
+.evocto-impact-card_link:hover{
+	color:var(--evocto-pink);
+}
+
+.offer-one_color{
+	background:
+		linear-gradient(180deg, rgba(var(--evocto-ink-rgb), 0.08) 0%, rgba(var(--evocto-cyan-rgb), 0.10) 100%);
+}
+
+.offer-one_bg-color{
+	display:none;
+}
+
+.offer-one_title{
+	border-bottom-color:rgba(var(--evocto-ink-rgb), 0.12);
+}
+
+.offer-one_icon{
+	border-color:rgba(var(--evocto-cyan-rgb), 0.58);
+	background:
+		linear-gradient(135deg, rgba(var(--evocto-cyan-rgb), 0.95) 0%, rgba(var(--evocto-pink-rgb), 0.95) 100%);
+	box-shadow:0px 14px 30px rgba(var(--evocto-ink-rgb), 0.10);
+}
+
+.offer-one_icon:before{
+	border-color:rgba(255, 255, 255, 0.58);
+}
+
+.offer-one_icon img{
+	filter:brightness(0) invert(1);
+}
+
+.offer-one_number,
+.offer-one_title.active .offer-one_number,
+.offer-one_title:hover .offer-one_number{
+	color:#ffffff;
+	background:var(--evocto-ink);
+	box-shadow:0px 10px 20px rgba(var(--evocto-ink-rgb), 0.18);
+}
+
+.offer-one_title.active .offer-one_icon,
+.offer-one_title:hover .offer-one_icon{
+	border-color:rgba(var(--evocto-pink-rgb), 0.70);
+	background:
+		linear-gradient(135deg, var(--evocto-pink) 0%, var(--evocto-ink) 100%);
+}
+
+.offer-one_title.active .offer-one_heading a,
+.offer-one_title:hover .offer-one_heading a,
+.offer-one_heading a{
+	color:var(--evocto-ink);
+}
+
+.offer-one_tags li a:hover{
+	color:#ffffff;
+	border-color:var(--evocto-pink);
+	background:var(--evocto-pink);
+}
+
+.offer-one_arrow,
+.offer-one_title.active .offer-one_arrow,
+.offer-one_title:hover .offer-one_arrow{
+	color:#ffffff;
+	background:var(--evocto-ink);
+	box-shadow:0px 18px 34px rgba(var(--evocto-ink-rgb), 0.16);
+}
+
+.offer-one_arrow img,
+.offer-one_title.active .offer-one_arrow img,
+.offer-one_title:hover .offer-one_arrow img{
+	filter:brightness(0) invert(1);
+}
+
+.footer-style_three.evocto-footer,
+.footer-style_three-bg,
+.main-footer_bg-color{
+	background:var(--evocto-ink);
+}
+
+.main-footer_vector{
+	display:none !important;
+}
+
+.footer-style_three.evocto-footer{
+	overflow:hidden;
+	background:transparent;
+}
+
+.footer-style_three-bg_image{
+	display:block !important;
+	overflow:hidden;
+	opacity:1;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:cover;
+}
+
+.footer-style_three-bg_image:after{
+	content:"";
+	position:absolute;
+	inset:0;
+	border-radius:inherit;
+	pointer-events:none;
+	background:
+		linear-gradient(90deg, rgba(var(--evocto-ink-rgb), 0.95) 0%, rgba(var(--evocto-ink-rgb), 0.82) 46%, rgba(var(--evocto-ink-rgb), 0.62) 100%),
+		radial-gradient(circle at 88% 14%, rgba(var(--evocto-cyan-rgb), 0.24), transparent 34%),
+		radial-gradient(circle at 8% 95%, rgba(var(--evocto-pink-rgb), 0.22), transparent 36%);
+}
+
+.footer-style_three .auto-container{
+	position:relative;
+	z-index:1;
+}
+
+.footer-three_logo .evocto-logo{
+	overflow:hidden;
+}
+
+.footer-discuss{
+	color:transparent;
+	-webkit-text-stroke:1px rgba(var(--evocto-cyan-rgb), 0.34);
+	opacity:0.45;
+}
+
+.testimonial-one_pattern-layer,
+.testimonial-one_carousel-content:before,
+.testimonial-one_carousel-content:after,
+.testimonial-one_carousel-layer{
+	display:none !important;
+}
+
+.testimonial-one_talk,
+.testimonial-block_one-author_image span,
+.testimonial-block_one-rating span,
+.evocto-contact-page .sec-title_title{
+	color:var(--evocto-pink);
+}
+
+.testimonial-one_talk i img{
+	filter:brightness(0) saturate(100%) invert(35%) sepia(99%) saturate(2324%) hue-rotate(321deg) brightness(95%) contrast(92%);
+}
+
+.testimonial-one_carousel-prev,
+.testimonial-one_carousel-next,
+.testimonial-block_one-author_image{
+	background:var(--evocto-ink);
+}
+
+.testimonial-one_carousel-prev:hover,
+.testimonial-one_carousel-next:hover{
+	color:#ffffff;
+	background:var(--evocto-pink);
+}
+
+.evocto-contact-method:hover{
+	border-color:rgba(var(--evocto-cyan-rgb), 0.46);
+	box-shadow:0px 14px 34px rgba(var(--evocto-ink-rgb), 0.10);
+}
+
+.evocto-contact-method span,
+.category-list li span{
+	color:#ffffff;
+	background:rgba(var(--evocto-cyan-rgb), 0.18);
+	border-color:rgba(var(--evocto-cyan-rgb), 0.46);
+}
+
+.category-list li span img{
+	filter:none;
+}
+
+.category-list li a,
+.legal-content-block h4,
+.legal-country-actions button,
+.legal-country-reset{
+	color:var(--evocto-ink);
+}
+
+.legal-content-block .legal-indent:before,
+.legal-country-actions button:hover,
+.legal-country-actions button.active,
+.legal-country-reset:hover{
+	background:var(--evocto-pink);
+	border-color:var(--evocto-pink);
+}
+
+.country-clause{
+	border-left-color:var(--evocto-pink);
+}
+
+.experiance-one h1{
+	color:var(--evocto-ink);
+}
+
+.experiance-one h1.light{
+	-webkit-text-stroke-color:rgba(var(--evocto-ink-rgb), 0.55);
+}
+
+.experiance-one h2{
+	-webkit-text-stroke-color:rgba(var(--evocto-pink-rgb), 0.34);
+}
+
+.experiance-one h2:hover{
+	-webkit-text-fill-color:var(--evocto-pink);
+}
+
+.evocto-footer .footer-three_list a:hover,
+.footer-contact_list a:hover,
+.footer-social_box a:hover{
+	color:var(--evocto-cyan);
+}
+
+@media only screen and (max-width: 767px){
+	.offer-one_color{
+		opacity:0.62;
+	}
+
+	.offer-one_icon{
+		box-shadow:none;
+	}
+
+	.evocto-impact-card{
+		box-shadow:none;
+	}
+
+	.footer-style_three.evocto-footer,
+	.footer-style_three-bg{
+		background:var(--evocto-ink);
+	}
+
+	.footer-style_three-bg_image{
+		display:block !important;
+		opacity:0.86;
+		background-position:center top;
+	}
+
+	.footer-style_three-bg_image:after{
+		background:
+			linear-gradient(180deg, rgba(var(--evocto-ink-rgb), 0.96) 0%, rgba(var(--evocto-ink-rgb), 0.88) 56%, rgba(var(--evocto-ink-rgb), 0.78) 100%),
+			radial-gradient(circle at 92% 8%, rgba(var(--evocto-cyan-rgb), 0.20), transparent 38%),
+			radial-gradient(circle at 4% 94%, rgba(var(--evocto-pink-rgb), 0.18), transparent 40%);
+	}
+
+	.footer-three_logo .evocto-logo{
+		width:188px;
+		height:58px;
+		margin-bottom:14px;
+	}
+
+	.footer-three_logo .evocto-logo img{
+		width:265px;
+	}
+}
